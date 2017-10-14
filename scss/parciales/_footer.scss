@@ -1,0 +1,380 @@
+footer {
+    background: $primaryColor;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    & .ayuda_user {
+        background: $secondColor;
+        width: 100%;
+        & .content_ayuda {
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            @media screen and (max-width: 993px) {
+                padding: 2rem 0 0 0;
+                text-align: center;
+            }
+            & div {
+                margin: 0;
+                padding: 0;
+                & span {
+                    font-size: 1.6rem;
+                    display: block;
+                    text-align: center;
+                    padding: 0 1rem;
+                    @media screen and (max-width: 993px) {
+                        margin: 0 1rem 2rem 1rem;
+                        width: 90%;
+                    }
+                }
+            }
+            & .cont_btn_ayuda {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & .btn {
+                    box-shadow: none;
+                    display: flex;
+                    line-height: 100px;
+                    height: 100px;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 0;
+                    & i {
+                        font-size: 2rem;
+                    }
+                }
+                & .btn:nth-child(1) {
+                    background: rgba(1, 82, 104, 0.1);
+                    @media screen and (max-width: 768px) {
+                        //background: rgb(17, 100, 139);
+                    }
+                }
+                & .btn:nth-child(2) {
+                    background: rgba(1, 82, 104, 0.2);
+                    @media screen and (max-width: 768px) {
+                        //background: rgba(37, 169, 244, 0.35);
+                    }
+                }
+                & .btn:nth-child(3) {
+                    background: rgba(1, 82, 104, 0.3);
+                    @media screen and (max-width: 768px) {
+                        //background: rgb(17, 100, 139);
+                    }
+                }
+                & .btn:nth-child(4) {
+                    background: rgba(1, 82, 104, 0.4);
+                    @media screen and (max-width: 768px) {
+                        //background: rgba(37, 169, 244, 0.35);
+                    }
+                }
+                & .btn:hover {
+                    background: rgba(255, 255, 255, 0.05);
+                }
+            }
+        }
+    }
+    //Informacion Desktop
+    & .cont_box_foot {
+        padding: 3rem 0 2rem 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        & .section_maps {
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: 0 25px 20px -10px rgba(0, 0, 0, .1);
+        }
+        & .section {
+            padding-right: 2rem;
+            color: white;
+            & i {
+                color: $secondColor;
+                font-size: 1.5rem;
+            }
+            & h5 {
+                font-size: 16px;
+                font-weight: 500;
+            }
+            & p,
+            & a {
+                color: rgba(255, 255, 255, .6);
+                font-size: 13px;
+                font-weight: 500;
+            }
+            & a.mail-executive {
+                color: $secondColor;
+            }
+            & a:hover {
+                color: white;
+            }
+            & .name_executive {
+                font-weight: 500;
+            }
+            & .section-form {
+                padding-bottom: 14px;
+            }
+            & .form-news {
+                width: 100%;
+                & .input-field {
+                    width: 120%;
+                    margin-left: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & .input-email-news {
+                        box-shadow: 0 0 0 1px $secondColor;
+                        padding-left: 1rem;
+                        font-weight: 500;
+                        width: 100%;
+                        border-bottom: none;
+                        font-size: .9rem;
+                        border-radius: 3px 0 0 3px;
+                        margin-bottom: 0;
+                    }
+                    & .label-email-news {
+                        color: rgba(255, 255, 255, 0.6);
+                        font-size: .9rem;
+                        padding-left: 1rem;
+                        font-weight: 500;
+                    }
+                    & .label-email-news:after {
+                        margin-top: 20px;
+                        padding-left: 1rem;
+                        font-weight: 600;
+                    }
+                    & .submit-email-news {
+                        height: 3rem;
+                        background: $secondColor;
+                        outline: none;
+                        border: none;
+                        padding: 0 1rem;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        box-shadow: 0 0 0 1px $secondColor;
+                        font-size: .9rem;
+                        font-weight: 500;
+                        border-radius: 0 3px 3px 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        & .section::nth-of-type(4) {
+            padding-right: 0;
+        }
+        & .section_redes_footer {
+            padding-right: 0;
+            & .icon-redes {
+                box-shadow: 0 0 0 1px $secondColor;
+                display: inline-block;
+                text-align: center;
+                width: 45px;
+                line-height: 45px;
+                margin-right: 10px;
+                border-radius: 22.5px;
+                margin-top: 10px;
+                color: $secondColor;
+                & .icon-footer {
+                    display: block;
+                    line-height: 45px;
+                    font-size: 1.3rem;
+                    transition: $transition1;
+                }
+                & .icon-brand10 {
+                    font-size: 1.5rem;
+                }
+            }
+            & .icon-redes:hover,
+            & .icon-redes:focus {
+                background: $secondColor;
+                box-shadow: none;
+            }
+            & .icon-redes:hover .icon-footer,
+            & .icon-redes:focus .icon-footer {
+                color: white;
+            }
+        }
+    }
+    //Informacion Legal
+    & .cont_legal_foot {
+        margin-bottom: 0;
+        @media screen and (max-width: 768px) {
+            width: 85%;
+        }
+        //Legal Ofertas
+        & .box_legal {
+            padding: 2rem 0 1.5rem 0;
+            margin-bottom: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            align-items: center;
+            justify-content: center;
+            & .cont_logo_sello {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                @media screen and (max-width: 993px) {
+                    margin-bottom: 2rem;
+                }
+                & .logo-declima-foot {
+                    width: 170px;
+                }
+                & .sello-midea {
+                    margin-left: 1rem;
+                    @media screen and (max-width: 768px) {
+                        width: 70px;
+                    }
+                }
+            }
+            & .legal-foot {
+                color: rgba(255, 255, 255, 0.4);
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 20px;
+                margin-top: 0;
+                text-align: justify;
+            }
+        }
+        //Logotipos Sponsor
+        & .box_logos {
+            @extend .box_legal;
+            border-bottom: 0;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                align-items: flex-start;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            & .info-logos {
+                justify-content: center;
+                align-items: center;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+                & h6 {
+                    color: rgba(255, 255, 255, 0.4);
+                    font-size: 11px;
+                    font-weight: 500;
+                    @media screen and (max-width: 768px) {
+                        margin-bottom: 1rem;
+                    }
+                }
+                & img {
+                    margin-left: 1rem;
+                    transition: $transition1;
+                    @media screen and (max-width: 768px) {
+                        margin-left: 0;
+                    }
+                }
+                & img:hover {
+                    opacity: 1;
+                }
+                & .logo-proveedores {
+                    width: 80px;
+                    opacity: .4;
+                    @media screen and (max-width: 768px) {
+                        width: 90px;
+                    }
+                }
+                & .logo-cesar {
+                    width: 40px;
+                    opacity: .4;
+                    @media screen and (max-width: 768px) {
+                        width: 50px;
+                    }
+                }
+                & .logo-webpay {
+                    width: 240px;
+                    @media screen and (max-width: 768px) {
+                        width: 300px;
+                    }
+                }
+            }
+            & .info-logos:nth-of-type(3) {
+                @media screen and (max-width: 768px) {
+                    order: -1;
+                }
+            }
+        }
+    }
+    //Informacion Version Mobile
+    & .cont_box_foot_mobile {
+        & ul.collapsible {
+            margin: 0;
+            font-size: 1.1rem;
+            & .collapsible-header {
+                color: $secondColor;
+                padding: 1.5rem;
+                & i {
+                    color: $secondColor;
+                }
+            }
+            & .collapsible-body {
+                color: $greyColor;
+                background: #F5F5F5;
+            }
+        }
+    }
+    // Pie Footer
+    & .cont_pie {
+        width: 100%;
+        max-width: 100%;
+        & .box_pie_foot {
+            background: #0d4e6c;
+            position: relative;
+            color: white;
+            margin: 0;
+            align-items: center;
+            & h6 {
+                text-align: center;
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 11px;
+                padding: 1rem;
+                margin: 0;
+                font-weight: 500;
+                line-height: 18px;
+            }
+            & .subir {
+                position: absolute;
+                cursor: pointer;
+                @media screen and (max-width: 480px) {
+                    position: relative;
+                    width: 100%;
+                    //background-color: $secondColor;
+                    //border-top: solid 1px rgba(255, 255, 255, 0.15);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                & h6 {
+                    padding: 1rem 1rem 1rem .5rem;
+                    color: white;
+                    @media screen and (max-width: 480px) {
+                        font-size: 1rem;
+                        opacity: .4;
+                    }
+                }
+                & i.icon-chevron-up {
+                    font-size: 1rem;
+                    padding-left: 1rem;
+                    color: white;
+                    display: block;
+                    @media screen and (max-width: 480px) {
+                        font-size: 1.3rem;
+                        opacity: .4;
+                    }
+                }
+            }
+        }
+    }
+}
