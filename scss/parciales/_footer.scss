@@ -81,7 +81,7 @@ footer {
     & .cont_box_foot {
         padding: 3rem 0 2rem 0;
         margin-bottom: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        border-bottom: 1px solid $greylightColor;
         & .section_maps {
             border-radius: 3px;
             overflow: hidden;
@@ -114,7 +114,7 @@ footer {
                 font-weight: 500;
             }
             & .section-form {
-                padding-bottom: 14px;
+                padding-bottom: 0px;
             }
             & .form-news {
                 width: 100%;
@@ -148,6 +148,7 @@ footer {
                     & .submit-email-news {
                         height: 3rem;
                         background: $secondColor;
+                        color: $whiteColor;
                         outline: none;
                         border: none;
                         padding: 0 1rem;
@@ -169,10 +170,11 @@ footer {
         & .section_redes_footer {
             padding-right: 0;
             & .icon-redes {
-                box-shadow: 0 0 0 1px $secondColor;
+                border: 1px solid $secondColor;
                 display: inline-block;
                 text-align: center;
                 width: 45px;
+                height: 45px;
                 line-height: 45px;
                 margin-right: 10px;
                 border-radius: 22.5px;
@@ -209,7 +211,7 @@ footer {
         & .box_legal {
             padding: 2rem 0 1.5rem 0;
             margin-bottom: 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            border-bottom: 1px solid $greylightColor;
             align-items: center;
             justify-content: center;
             & .cont_logo_sello {
@@ -218,6 +220,7 @@ footer {
                 align-items: center;
                 @media screen and (max-width: 993px) {
                     margin-bottom: 2rem;
+                    justify-content: space-between;
                 }
                 & .logo-declima-foot {
                     width: 170px;
@@ -312,16 +315,129 @@ footer {
         & ul.collapsible {
             margin: 0;
             font-size: 1.1rem;
+            border: none;
+            box-shadow: none;
             & .collapsible-header {
-                color: $secondColor;
+                color: $whiteColor;
+                background-color: $primaryColor;
                 padding: 1.5rem;
+                font-weight: 500;
+                font-size: 1.1rem;
+                border-bottom: 1px solid $greylightColor;
                 & i {
                     color: $secondColor;
                 }
             }
             & .collapsible-body {
                 color: $greyColor;
-                background: #F5F5F5;
+                background: $whiteColor;
+            }
+            & .collapsible-comercial {
+                & a {
+                    line-height: 30px;
+                    display: block;
+                }
+                & a:hover {
+                    color: $primaryColor;
+                    padding-left: 10px;
+                }
+                & .name_executive {
+                    font-weight: 600;
+                }
+            }
+            //Servicios - Comercial - Usuarios
+            & .collapsible-links {
+                & a {
+                    line-height: 40px;
+                    display: block;
+                }
+                & a:hover {
+                    color: $primaryColor;
+                    padding-left: 10px;
+                }
+            }
+            //News
+            & .collapsible-news {
+                & .input-field {
+                    width: 100%;
+                    margin-left: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & .input-email-news {
+                        border: solid 1px $secondColor;
+                        outline: none;
+                        padding-left: 1rem;
+                        font-weight: 500;
+                        width: 100%;
+                        font-size: .9rem;
+                        border-radius: 3px 0 0 3px;
+                        margin-bottom: 0;
+                    }
+                    & .label-email-news {
+                        color: $secondColor;
+                        font-size: .9rem;
+                        padding-left: 1rem;
+                        font-weight: 500;
+                    }
+                    & .label-email-news:after {
+                        margin-top: 20px;
+                        padding-left: 1rem;
+                        font-weight: 600;
+                    }
+                    & .submit-email-news {
+                        height: 3rem;
+                        background: $secondColor;
+                        color: $whiteColor;
+                        outline: none;
+                        border: none;
+                        padding: 0 1rem;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        box-shadow: 0 0 0 1px $secondColor;
+                        font-size: .9rem;
+                        font-weight: 500;
+                        border-radius: 0 3px 3px 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            //Redes
+            & .collapsible-redes {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                & .icon-redes {
+                    border: 1px solid $secondColor;
+                    display: inline-block;
+                    text-align: center;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    margin-right: 10px;
+                    border-radius: 22.5px;
+                    margin-top: 10px;
+                    color: $secondColor;
+                    & .icon-footer {
+                        display: block;
+                        line-height: 45px;
+                        font-size: 1.3rem;
+                        transition: $transition1;
+                    }
+                    & .icon-brand10 {
+                        font-size: 1.5rem;
+                    }
+                }
+                & .icon-redes:hover,
+                & .icon-redes:focus {
+                    background: $secondColor;
+                    box-shadow: none;
+                }
+                & .icon-redes:hover .icon-footer,
+                & .icon-redes:focus .icon-footer {
+                    color: white;
+                }
             }
         }
     }
@@ -351,9 +467,9 @@ footer {
                     position: relative;
                     width: 100%;
                     //background-color: $secondColor;
-                    //border-top: solid 1px rgba(255, 255, 255, 0.15);
+                    border-top: solid 1px $greylightColor;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
                     align-items: center;
                 }
                 & h6 {

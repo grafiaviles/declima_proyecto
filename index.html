@@ -11,6 +11,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="fonts/icons/icon-fonts.css">
+    <link rel="stylesheet" href="fonts/fontawesome/font-awesome.min.css">
+    <!--Favicon-->
     <link rel="shortcut icon" href="img/favicon.png">
     <!-- Data Seo -->
     <meta name="author" content="César Avilés | Designer UX UI - Developer Frontend | www.laescala.cl">
@@ -58,21 +60,62 @@
 </head>
 
 <body>
-    <main style="min-height:200px;">
-        hola
+    <main class="container-fluid">
+        <!-- CLIENTES -->
+        <div class="container container-box">
+            <div class="row cont-logos">
+                <div class="col s12 l12 title-section"><span class="flow-text"> <i class="icon-heart"></i> Clientes que confiaron en <b>Declima</b> </span></div>
+                <div class="cont-clientes valign-wrapper ">
+                    <div class="col s6 l3 waves-effect waves-light">
+                        <img src="img/clientes/entel.svg" class="logos-svg responsive-img" alt="">
+                    </div>
+                    <div class="col s6 l3 waves-effect waves-light">
+                        <img src="img/clientes/vans.svg" class="logos-svg responsive-img" alt="">
+                    </div>
+                    <div class="col s6 l3 waves-effect waves-light">
+                        <img src="img/clientes/alemana.svg" class="logos-svg responsive-img" alt="">
+                    </div>
+                    <div class="col s6 l3 waves-effect waves-light">
+                        <img src="img/clientes/mall.svg" class="logos-svg responsive-img" alt="">
+                    </div>
+                    <div class="col s6 l3 waves-effect waves-light">
+                        <img src="img/clientes/aconcagua.svg" class="logos-svg responsive-img" alt="">
+                    </div>
+                    <div class="col s6 l3 waves-effect waves-light">
+                        <img src="img/clientes/nike.svg" class="logos-svg responsive-img" alt="">
+                    </div>
+                    <div class="col s6 l3 waves-effect waves-light">
+                        <img src="img/clientes/latam.svg" class="logos-svg responsive-img" alt="">
+                    </div>
+                    <div class="col s6 l3 waves-effect waves-light">
+                        <img src="img/clientes/jumbo.svg" class="logos-svg responsive-img" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TESTIMONIOS -->
+        <div class="container container-box">
+            <div class="row">
+                <div class="col s12 l12 title-section"><span class="flow-text"> <i class="icon-d_happy"></i>Testimonios, el compromiso es la clave...</span></div>
+                <!-- Testimonios -->
+                <div class="testimonios">
+                    <div class="tiva-testimonials-slider" data-source="json" data-items="3" data-style="6" data-autoplay="true" data-color='{"rating":"#00587A"}'></div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- FOOTER -->
     <footer>
         <!-- Centro de Ayuda -->
         <div class="ayuda_user">
             <div class="content_ayuda valign-wrapper row">
-                <div class="col s12 l7"><span class="white-text flow-text"><b>¿Necesitas Ayuda?</b> comunícate con nuestros ejecutivos</span></div>
+                <div class="col s12 l7"><span class="white-text flow-text"><b>¿Necesitas Ayuda?</b> comunícate con nuestros especialistas</span></div>
                 <div class="col s12 l5">
                     <div class="row cont_btn_ayuda valign-wrapper">
-                        <a href="tel:+56225858181" class="waves-effect waves-light btn tooltipped col s4 l4" data-position="bottom" data-delay="50" data-tooltip="Lámenos 22 585 8181"><i class="icon-phone-call"></i></a>
+                        <a href="tel:+56229046383" class="waves-effect waves-light btn tooltipped col s4 l4" data-position="bottom" data-delay="50" data-tooltip="Llámenos (+562) 2904 6383"><i class="icon-phone-call"></i></a>
                         <a href="" class="waves-effect waves-light btn tooltipped col s4 l4" data-position="bottom" data-delay="50" data-tooltip="Conversemos"><i class="icon-comment-circle"></i></a>
                         <a href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,amontero@declima.cl,dvenegas@declima.cl" class="waves-effect waves-light btn tooltipped col s4 l4" data-position="bottom" data-delay="50" data-tooltip="Escríbanos"><i class="icon-mail"></i></a>
-                        <a href="" class="waves-effect waves-light btn tooltipped col s4 l4" data-position="bottom" data-delay="50" data-tooltip="FAQ"><i class="icon-life-buoy"></i></a>
+                        <a href="" class="waves-effect waves-light btn tooltipped col s4 l4" data-position="bottom" data-delay="50" data-tooltip="FAQ"><i class="icon-flag"></i></a>
                     </div>
                 </div>
             </div>
@@ -85,8 +128,10 @@
                         <i class="icon-map-pin"></i>
                         <h5>Sala de Ventas</h5>
                         <p>Av. Artemio Gutiérrez #1268, <br>Santiago de Chile</p><br>
-                        <p>Horarios de Atención:<br>Lunes a viernes de<br> 09:00am - 18:30pm hrs.
-                        </p>
+                        <p>Horarios de Atención:<br>Lunes a viernes de<br> 09:00am - 18:30pm hrs.</p>
+                        <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,amontero@declima.cl,dvenegas@declima.cl,info@declima.cl">info@declima.cl</a><br>
+                        <a href="tel:+56229046383"><b>(+562) 2904 6383</b></a><br>
+                        <a href="tel:+562226051140"><b>(+562) 2605 1140</b></a>
                     </div>
                     <div class="section">
                         <iframe class="section_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.5964753483413!2d-70.63931634956197!3d-33.45981818067696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c56ed1ef9fd9%3A0x608ba36da8d8fe95!2sArtemio+Guti%C3%A9rrez+1268%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1507455161209"
@@ -98,26 +143,24 @@
                     <div class="section">
                         <i class="icon-headphones"></i>
                         <h5>Información Comercial</h5>
-                        <p><span class="name_executive"></span> </p>
-                        <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,amontero@declima.cl,dvenegas@declima.cl,info@declima.cl">info@declima.cl</a><br>
-                        <a href="tel:+56225858181">22 585 8181 -</a>
-                        <a href="tel:+56225858181"> 22 585 8181</a>
-                    </div>
-
-                    <div class="section">
-                        <p><span class="name_executive">Lenis Civira</span> <br>Ejecutiva Comercial</p>
+                        <p><span class="name_executive">Lenis Civira</span> <br>Business Executive</p>
                         <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,amontero@declima.cl,dvenegas@declima.cl">lcivira@declima.cl</a>
                     </div>
 
                     <div class="section">
-                        <p><span class="name_executive">Angela Montero</span> <br>Ejecutiva Comercial</p>
+                        <p><span class="name_executive">Angela Montero</span> <br>Business Executive</p>
                         <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,
                     amontero@declima.cl,dvenegas@declima.cl">amontero@declima.cl</a>
                     </div>
 
                     <div class="section">
-                        <p><span class="name_executive">Domingo Venegas</span> <br>Jefe de Proyectos</p>
+                        <p><span class="name_executive">Domingo Venegas</span> <br>Proyect Manager</p>
                         <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,amontero@declima.cl,dvenegas@declima.cl">dvenegas@declima.cl</a>
+                    </div>
+
+                    <div class="section">
+                        <p><span class="name_executive">César Avilés</span> <br>Marketing & Design Manager</p>
+                        <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,amontero@declima.cl,dvenegas@declima.cl">caviles@declima.cl</a>
                     </div>
                 </div>
                 <div class="col s12 m3 l3 box_foot">
@@ -141,7 +184,7 @@
                     </div>
                 </div>
                 <div class="col s12 m3 l3 box_foot">
-                    <div class="section">
+                    <div class="section" style="min-height:227px;">
                         <i class="icon-at-sign"></i>
                         <h5>Declima News</h5>
                         <p>Regístrate sólo con tu correo y recibe nuestras ofertas, noticias, novedades y mucho más.</p>
@@ -154,13 +197,13 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="section section_redes_footer">
-                            <i class="icon-share"></i>
-                            <h5>Redes Sociales</h5>
-                            <a class="icon-redes" href="https://www.facebook.com/declimachile" target="_blank"><i class="icon-footer icon-facebook"></i></a>
-                            <a class="icon-redes" href="https://www.instagram.com/declima/" target="_blank"><i class="icon-footer icon-instagram"></i></a>
-                            <a class="icon-redes" href="https://plus.google.com/u/0/112998915048326285751" target="_blank"><i class="icon-footer icon-brand10"></i></a>
-                        </div>
+                    </div>
+                    <div class="section section_redes_footer">
+                        <i class="icon-thumbs-up"></i>
+                        <h5>Redes Sociales</h5>
+                        <a class="icon-redes" href="https://www.facebook.com/declimachile" target="_blank"><i class="icon-footer icon-facebook"></i></a>
+                        <a class="icon-redes" href="https://www.instagram.com/declima/" target="_blank"><i class="icon-footer icon-instagram"></i></a>
+                        <a class="icon-redes" href="https://plus.google.com/u/0/112998915048326285751" target="_blank"><i class="icon-footer icon-brand10"></i></a>
                     </div>
                 </div>
             </div>
@@ -170,20 +213,93 @@
             <div class="row cont_box_foot_mobile">
                 <ul class="collapsible" data-collapsible="accordion">
                     <li>
-                        <div class="collapsible-header"><i class="icon-map-pin"></i>Sala de Ventas</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="active collapsible-header waves-effect waves-dark"><i class="icon-map-pin"></i>Sala de Ventas</div>
+                        <div class="collapsible-body collapsible-sala-ventas">
+                            <div class="section collapsible-comercial">
+                                <p><span class="name_executive">Horario de Atención:</span><br>Lunes a viernes desde las 09:00am hasta 18:30pm hrs.
+                                </p><br>
+                                <span class="name_executive">Dirección:</span>
+                                <p>Av. Artemio Gutiérrez #1268, Santiago Centro, Chile</p>
+                            </div>
+                            <div class="section">
+                                <iframe class="section_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.5964753483413!2d-70.63931634956197!3d-33.45981818067696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c56ed1ef9fd9%3A0x608ba36da8d8fe95!2sArtemio+Guti%C3%A9rrez+1268%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1507455161209"
+                                    width="100%" height="160" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <div class="collapsible-header"><i class="icon-headphones"></i>Ejecutivos comerciales</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="collapsible-header waves-effect waves-dark"><i class="icon-headphones"></i>Información Comercial</div>
+                        <div class="collapsible-body collapsible-comercial">
+                            <div class="section">
+                                <p><span class="name_executive">Contáctenos</span> <br>Declima Informaciones</p>
+                                <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,amontero@declima.cl,dvenegas@declima.cl,info@declima.cl">info@declima.cl</a>
+                                <a href="tel:+56229046383">(+562) 2904 6383</a>
+                                <a href="tel:+562226051140"> (+562) 2605 1140</a>
+                            </div>
+
+                            <div class="section">
+                                <p><span class="name_executive">Lenis Civira</span> <br>Business Executive</p>
+                                <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,amontero@declima.cl,dvenegas@declima.cl">lcivira@declima.cl</a>
+                            </div>
+
+                            <div class="section">
+                                <p><span class="name_executive">Angela Montero</span> <br>Business Executive</p>
+                                <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,
+                                    amontero@declima.cl,dvenegas@declima.cl">amontero@declima.cl</a>
+                            </div>
+
+                            <div class="section">
+                                <p><span class="name_executive">Domingo Venegas</span> <br>Project Manager</p>
+                                <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,amontero@declima.cl,dvenegas@declima.cl">dvenegas@declima.cl</a>
+                            </div>
+                            <div class="section">
+                                <p><span class="name_executive">César Avilés</span> <br>Marketing & Design Manager</p>
+                                <a class="mail-executive" href="mailto:lcivira@declima.cl,grafiaviles@gmail.com,amontero@declima.cl,dvenegas@declima.cl">caviles@declima.cl</a>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <div class="collapsible-header"><i class="icon-user-plus"></i>Información para Usuarios</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="collapsible-header waves-effect waves-dark"><i class="icon-cog"></i>Información de Servicios</div>
+                        <div class="collapsible-body collapsible-links">
+                            <a href="#">Preguntas Frecuentes FAQ</a>
+                            <a href="#">Cambios o Devoluciones</a>
+                            <a href="#">Cálcula tu Despacho</a>
+                            <a href="#">Terminos y Condiciones</a>
+                            <a href="#">Garantías de Productos</a>
+                            <a href="#">Brochure Online</a>
+                        </div>
                     </li>
                     <li>
-                        <div class="collapsible-header"><i class="icon-at-sign"></i>Declima News</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="collapsible-header waves-effect waves-dark"><i class="icon-user-plus"></i>Información para Usuarios</div>
+                        <div class="collapsible-body collapsible-links">
+                            <a href="#">¿Cómo puedo comprar?</a>
+                            <a href="#">Cálcula tu Aire Acondicionado</a>
+                            <a href="#">Blog de aprendisaje</a>
+                            <a href="#">Trabaja con nosotros</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect waves-dark"><i class="icon-at-sign"></i>Declima News - Regístrate</div>
+                        <div class="collapsible-body collapsible-news">
+                            <p>Regístrate sólo con tu correo y recibe nuestras ofertas, noticias, novedades y mucho más.</p>
+                            <div class="section section-form">
+                                <form class="form-news" autocomplete="off">
+                                    <div class="input-field inline">
+                                        <input id="email-news" type="email" class="input-email-news validate">
+                                        <label class="label-email-news" for="email-news" data-error="Invalido" data-success="Correcto">Ingrese su Email</label>
+                                        <input type="submit" value="Enviar" class="submit-email-news">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header waves-effect waves-dark"><i class="icon-thumbs-up"></i>Redes Sociales</div>
+                        <div class="collapsible-body collapsible-redes">
+                            <a class="icon-redes" href="https://www.facebook.com/declimachile" target="_blank"><i class="icon-footer icon-facebook"></i></a>
+                            <a class="icon-redes" href="https://www.instagram.com/declima/" target="_blank"><i class="icon-footer icon-instagram"></i></a>
+                            <a class="icon-redes" href="https://plus.google.com/u/0/112998915048326285751" target="_blank"><i class="icon-footer icon-brand10"></i></a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -241,8 +357,11 @@
             </div>
         </div>
     </footer>
-    <script src="lib/jquery-3.2.1.min.js"></script>
+
+    <script src="lib/jquery.min.js"></script>
     <script src="lib/materialize.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/testimonial.js"></script>
     <script src="js/effects.js"></script>
 </body>
 

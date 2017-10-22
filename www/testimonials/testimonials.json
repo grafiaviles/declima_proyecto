@@ -1,0 +1,31 @@
+{
+    "items": [{
+            "name": "Felipe Alburquenque",
+            "image": "testimonials/images/jack.jpg",
+            "job": "Ingeniero Eléctrico - Galenica",
+            "rating": "5",
+            "content": "La experiencia con Declima a sido satisfactoria. entregándonos un buen servicio, responsabilidad e instalaciones de calidad, como encargado de proyectos recomiendo a Declima."
+        },
+        {
+            "name": "Natalia Stepanova",
+            "image": "testimonials/images/natalia.jpg",
+            "job": "Director",
+            "rating": "4",
+            "content": "La experiencia con Declima a sido satisfactoria. entregándonos un buen servicio, responsabilidad e instalaciones de calidad, como encargado de proyectos recomiendo a Declima."
+        },
+        {
+            "name": "Agnes A. Bell",
+            "image": "testimonials/images/agnes.jpg",
+            "job": "Assistant Project Manager",
+            "rating": "4",
+            "content": "La experiencia con Declima a sido satisfactoria. entregándonos un buen servicio, responsabilidad e instalaciones de calidad, como encargado de proyectos recomiendo a Declima."
+        },
+        {
+            "name": "Steven Forest",
+            "image": "testimonials/images/steven.jpg",
+            "job": "Lead Analyst",
+            "rating": "5",
+            "content": "La experiencia con Declima a sido satisfactoria. entregándonos un buen servicio, responsabilidad e instalaciones de calidad, como encargado de proyectos recomiendo a Declima."
+        }
+    ]
+}

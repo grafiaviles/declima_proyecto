@@ -1,0 +1,256 @@
+/* Common */
+
+.loading {
+    text-align: center;
+    margin: 130px 0;
+}
+
+
+/* Testimonials Slider */
+
+.tiva-testimonials-slider {
+    margin: 25px 0;
+}
+
+.tiva-testimonials-slider .testimonial-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tiva-testimonials-slider .testimonial-item.background {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.tiva-testimonials-slider .testimonial-item .testimonial-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.tiva-testimonials-slider .testimonial-item .testimonial-image img.square {
+    border-radius: 15%;
+}
+
+.tiva-testimonials-slider .testimonial-item .testimonial-name {
+    color: rgba(117, 117, 117, 1);
+    font-size: 15px;
+    line-height: 17px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin-bottom: 5px;
+}
+
+.tiva-testimonials-slider .testimonial-item .testimonial-job {
+    font-size: 14px;
+    color: rgba(117, 117, 117, 1);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.tiva-testimonials-slider .testimonial-item .testimonial-rating {
+    color: #bebebe;
+    margin-top: 5px;
+}
+
+.tiva-testimonials-slider .testimonial-item .testimonial-rating i {
+    margin-right: 3px;
+}
+
+.tiva-testimonials-slider .testimonial-item .testimonial-content {
+    color: #818181;
+    font-size: 14px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.tiva-testimonials-slider .testimonial-item .cell-left {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 15px;
+}
+
+.tiva-testimonials-slider .testimonial-item .cell-right {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+
+
+/* Quote */
+
+.tiva-testimonials-slider .testimonial-item .testimonial-content.quote {
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.tiva-testimonials-slider .testimonial-item .testimonial-content.quote i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+/* Tiva Tooltip */
+
+.tiva-testimonials-slider .tiva-tooltip .testimonial-content {
+    background: #fff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.tiva-testimonials-slider .tiva-tooltip .testimonial-content::before,
+.tiva-testimonials-slider .tiva-tooltip .testimonial-content::after {
+    top: 100%;
+    left: 0;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+.tiva-testimonials-slider .tiva-tooltip .testimonial-content::after {
+    border-top-color: #fff;
+    border-width: 8px;
+    margin-left: -8px;
+}
+
+.tiva-testimonials-slider .tiva-tooltip .testimonial-content::before {
+    border-top-color: #cccccc;
+    border-width: 9px;
+    margin-left: -9px;
+}
+
+
+/* Style 2 */
+
+.tiva-testimonials-slider .testimonial-item.style-2 .testimonial-content::before,
+.tiva-testimonials-slider .testimonial-item.style-2 .testimonial-content::after {
+    left: 50%;
+}
+
+
+/* Style 3 */
+
+.tiva-testimonials-slider .testimonial-item.style-3 .testimonial-content {
+    text-align: left;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-3 .testimonial-content::before,
+.tiva-testimonials-slider .testimonial-item.style-3 .testimonial-content::after {
+    left: 50px;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-3 .testimonial-image img {
+    width: 90px;
+}
+
+
+/* Style 4 */
+
+.tiva-testimonials-slider .testimonial-item.style-4 .cell-left {
+    width: 120px;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-4 .cell-right {
+    vertical-align: top;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-4 .testimonial-content {
+    text-align: left;
+    margin-top: 5px;
+    min-height: 80px;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-4 .testimonial-content::before,
+.tiva-testimonials-slider .testimonial-item.style-4 .testimonial-content::after {
+    border-top-color: transparent;
+    top: 40px;
+    left: -18px;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-4 .testimonial-content::after {
+    border-right-color: #fff;
+    border-width: 8px;
+    margin-left: 2px;
+    margin-top: 1px;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-4 .testimonial-content::before {
+    border-right-color: #cccccc;
+    border-width: 9px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+
+/* Style 5 */
+
+.tiva-testimonials-slider .testimonial-item.style-5 .testimonial-image {
+    width: 170px;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-5 .testimonial-image img {
+    width: 160px;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-5 .cell-right {
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+
+/* Style 6 */
+
+.tiva-testimonials-slider .testimonial-item.style-6 .testimonial-content {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-6 .testimonial-image img {
+    width: 90px;
+}
+
+
+/* Style 7 */
+
+.tiva-testimonials-slider .testimonial-item.style-7 {
+    padding-bottom: 10px;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-7 .testimonial-content {
+    margin-bottom: 20px;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-7 .testimonial-image {
+    float: right;
+    width: 22%;
+    margin-top: -10px;
+    margin-left: 3%;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-7 .testimonial-image img {
+    width: 90%;
+}
+
+.tiva-testimonials-slider .testimonial-item.style-7 .cell-right {
+    display: block;
+    float: right;
+    text-align: right;
+    border-top: 2px solid rgba(117, 117, 117, 1);
+    padding-top: 15px;
+    width: 75%;
+}

@@ -1,0 +1,78 @@
+.container-box {
+    margin: auto;
+    padding: 60px 0 0 0;
+    & .title-section {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & .flow-text {
+            color: $primaryColor;
+            font-size: 1.6rem;
+            display: block;
+            text-align: center;
+            padding: 0 1rem;
+            margin-bottom: 50px;
+            @media screen and (max-width: 480px) {
+                margin-bottom: 20px;
+            }
+            & i {
+                color: $secondColor;
+                font-weight: normal;
+                padding-right: 10px;
+                font-size: 35px;
+                position: relative;
+                top: -2px;
+                vertical-align: middle;
+                @media screen and (max-width: 480px) {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+    & .cont-logos {
+        width: 100%;
+        margin: auto;
+        & .cont-clientes {
+            justify-content: space-between;
+            //background: gray;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            & .logos-svg {
+                width: 100%;
+                padding: 10px;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                border: solid 1px $greysoftColor;
+                margin-bottom: 25px;
+                border-radius: 3px;
+                transition: $transition2;
+                @media screen and (max-width: 480px) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    padding: 0;
+                }
+            }
+            & .logos-svg:hover {
+                background-color: $greysoftColor;
+            }
+        }
+    }
+    & .testimonios {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 40px;
+        padding: 0 20px;
+        @media screen and (max-width: 480px) {
+            width: 90%;
+            padding: 0 10px;
+            margin-bottom: 0px;
+        }
+    }
+}
