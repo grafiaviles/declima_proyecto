@@ -37,7 +37,7 @@
 }
 
 .tiva-testimonials-slider .testimonial-item .testimonial-name {
-    color: rgba(117, 117, 117, 1);
+    color: $primaryColor;
     font-size: 15px;
     line-height: 17px;
     font-style: normal;
@@ -63,7 +63,7 @@
 }
 
 .tiva-testimonials-slider .testimonial-item .testimonial-content {
-    color: #818181;
+    color: $greyColor;
     font-size: 14px;
     line-height: 26px;
     font-style: normal;
@@ -91,7 +91,7 @@
     margin-top: 0;
     text-align: left;
     margin-bottom: 15px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .tiva-testimonials-slider .testimonial-item .testimonial-content.quote i {

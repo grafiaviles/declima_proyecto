@@ -1,7 +1,7 @@
 .owl-theme .owl-controls {
     margin-top: 10px;
     text-align: center;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
 
 .owl-theme .owl-controls .owl-nav [class*=owl-] {
@@ -16,7 +16,7 @@
 }
 
 .owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
-    background: #869791;
+    background: $primaryColor;
     color: #fff;
     text-decoration: none
 }
@@ -45,5 +45,5 @@
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #869791
+    background: $primaryColor
 }
