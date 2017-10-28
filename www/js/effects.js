@@ -11,4 +11,5 @@ $(window).scroll(function() {
 $('.collapsible').collapsible();
 // Toolstips
 $('.tooltipped').tooltip('remove');
-// Carrusel
+// Paralax
+$('.parallax').parallax();
