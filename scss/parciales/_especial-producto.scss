@@ -1,15 +1,13 @@
 .full-container-especial {
-    padding-bottom: 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    min-height: auto;
     @media screen and (max-width: 480px) {
         padding-bottom: 0;
     }
     & .parallax-container {
-        height: 113vh;
+        height: auto;
         width: 100%;
         @media screen and (max-width: 480px) {
             padding-bottom: 20px;
@@ -21,12 +19,13 @@
             background: linear-gradient(90deg, #2c7a92, $primaryColor);
         }
         .cont-especial {
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             & .cont-title-especial {
                 align-items: center;
                 justify-content: center;
                 position: relative;
                 margin-bottom: 1.5rem;
+                flex-wrap: wrap;
                 & .tags-new {
                     background-color: $thirdColor;
                     color: #fff;
@@ -39,7 +38,12 @@
                     border-radius: 17px 0 0 17px;
                     padding-left: 3px;
                     position: relative;
-                    margin-right: 10px;
+                    margin-right: 1rem;
+                    box-shadow: 0 3px 2px -1px rgba(0, 0, 0, .05);
+                    @media screen and (max-width: 480px) {
+                        margin-bottom: 2rem;
+                        margin-right: 0;
+                    }
                 }
                 & .tags-new::after {
                     content: "";
@@ -56,11 +60,13 @@
                     font-size: 45px;
                     color: $whiteColor;
                     margin: auto 0;
+                    font-weight: 300;
                     & span {
                         font-weight: 600;
                     }
                     @media screen and (max-width: 480px) {
                         font-size: 35px;
+                        width: 100%;
                     }
                 }
                 & h3.sub-title-especial {
@@ -93,10 +99,16 @@
                         justify-content: flex-start;
                         min-height: 200px;
                     }
-                    & img {
-                        width: 90px;
+                    & .pulse-notification-img {
+                        width: 110px;
+                        height: 110px;
+                        position: relative;
+                        padding: 10px;
+                        background-color: transparent;
+                        box-shadow: none;
                         @media screen and (max-width: 480px) {
-                            width: 120px;
+                            width: 130px;
+                            height: 130px;
                         }
                     }
                     & .pulse-notification {
@@ -106,10 +118,12 @@
                         height: 50px;
                         line-height: 50px;
                         box-shadow: none;
+                        transition: $transition1;
                         & i {
                             text-align: center;
                             line-height: 50px;
                             display: block;
+                            color: $whiteColor;
                         }
                     }
                     @media screen and (max-width: 480px) {
@@ -149,9 +163,11 @@
                         @media screen and (max-width: 480px) {
                             top: calc(55% - 65px);
                             left: calc(22% - 65px);
+                            display: none;
                         }
                     }
-                    & img:nth-child(2) {
+                    & img:nth-child(2),
+                    & #image-scroll {
                         z-index: 10;
                         @media screen and (max-width: 480px) {
                             transform: rotate(-90deg);
@@ -187,6 +203,7 @@
                         @media screen and (max-width: 480px) {
                             border-bottom: 1px solid $greylightColor;
                             padding-bottom: 2rem;
+                            font-size: 18px;
                             width: 80%;
                             margin: auto;
                             display: block;
@@ -202,12 +219,10 @@
                                 width: 100%;
                                 padding: 0;
                                 margin-bottom: 1rem;
+                                font-size: 30px;
                             }
                         }
-                        & i.icon-bluetooth {
-                            color: $secondColor;
-                        }
-                        & .icon-especial:nth-child(odd) {
+                        & .icon-especial:nth-child(1) {
                             color: $thirdColor;
                         }
                     }
