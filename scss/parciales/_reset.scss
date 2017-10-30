@@ -24,3 +24,45 @@ a {
     width: 100%;
     margin: 0 auto;
 }
+
+//Titulos y Subtitulos
+.cont-title-especial {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    & .title-white,
+    & .title-blue,
+    & .title-grey {
+        font-weight: lighter;
+        font-size: 45px;
+        margin: auto 0;
+        font-weight: 300;
+        @media screen and (max-width: 480px) {
+            font-size: 35px;
+            width: 100%;
+        }
+    }
+    & .subtitle-white,
+    & .subtitle-blue,
+    & .subtitle-grey {
+        font-size: 18px;
+        width: 80%;
+        line-height: 30px;
+        font-weight: 400;
+        margin: 0;
+    }
+    & .title-white,
+    & .subtitle-white {
+        color: $whiteColor;
+    }
+    & .title-blue,
+    & .subtitle-blue {
+        color: $primaryColor;
+    }
+    & .title-grey,
+    & .subtitle-grey {
+        color: $greyColor;
+    }
+}
