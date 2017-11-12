@@ -10,7 +10,7 @@ pump = require('pump');
 htmlmin = require('gulp-htmlmin');
 
 // Static Server + watching scss/html files
-gulp.task('default', ['sass', 'htmlminify', 'javascript'], function() {
+gulp.task('default', ['htmlminify', 'sass', 'javascript'], function() {
 
     browserSync.init({
         server: "./www"

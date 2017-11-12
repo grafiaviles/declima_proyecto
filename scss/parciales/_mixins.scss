@@ -1,4 +1,5 @@
-@mixin background-image($gradient) {
-    background-image: -webkit-$gradient;
-    background-image: -moz-$gradient;
+@mixin gradient($gradient) {
+    background: $primaryColor;
+    background: -webkit-linear-gradient(90deg, #2c7a92, $primaryColor);
+    background: linear-gradient(90deg, #2c7a92, $primaryColor);
 }

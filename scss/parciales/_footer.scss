@@ -1,5 +1,5 @@
 footer {
-    background: $primaryColor;
+    background: $greydarkColor;
     align-self: flex-end;
     display: flex;
     flex-direction: column;
@@ -48,25 +48,25 @@ footer {
                     }
                 }
                 & .btn:nth-child(1) {
-                    background: rgba(1, 82, 104, 0.1);
+                    background-color: rgba(1, 82, 104, 0.1);
                     @media screen and (max-width: 768px) {
                         //background: rgb(17, 100, 139);
                     }
                 }
                 & .btn:nth-child(2) {
-                    background: rgba(1, 82, 104, 0.2);
+                    background-color: rgba(1, 82, 104, 0.2);
                     @media screen and (max-width: 768px) {
                         //background: rgba(37, 169, 244, 0.35);
                     }
                 }
                 & .btn:nth-child(3) {
-                    background: rgba(1, 82, 104, 0.3);
+                    background-color: rgba(1, 82, 104, 0.3);
                     @media screen and (max-width: 768px) {
                         //background: rgb(17, 100, 139);
                     }
                 }
                 & .btn:nth-child(4) {
-                    background: rgba(1, 82, 104, 0.4);
+                    background-color: rgba(1, 82, 104, 0.4);
                     @media screen and (max-width: 768px) {
                         //background: rgba(37, 169, 244, 0.35);
                     }
@@ -131,7 +131,7 @@ footer {
                         width: 100%;
                         border-bottom: none;
                         font-size: .9rem;
-                        border-radius: 3px 0 0 3px;
+                        border-radius: 5px 0 0 5px;
                         margin-bottom: 0;
                     }
                     & .label-email-news {
@@ -192,7 +192,7 @@ footer {
             }
             & .icon-redes:hover,
             & .icon-redes:focus {
-                background: $secondColor;
+                background-color: $secondColor;
                 box-shadow: none;
             }
             & .icon-redes:hover .icon-footer,
@@ -297,7 +297,7 @@ footer {
                     }
                 }
                 & .logo-webpay {
-                    width: 240px;
+                    width: 220px;
                     @media screen and (max-width: 768px) {
                         width: 300px;
                     }
@@ -431,7 +431,7 @@ footer {
                 }
                 & .icon-redes:hover,
                 & .icon-redes:focus {
-                    background: $secondColor;
+                    background-color: $secondColor;
                     box-shadow: none;
                 }
                 & .icon-redes:hover .icon-footer,
@@ -446,7 +446,7 @@ footer {
         width: 100%;
         max-width: 100%;
         & .box_pie_foot {
-            background: #0d4e6c;
+            background: #333;
             position: relative;
             color: white;
             margin: 0;

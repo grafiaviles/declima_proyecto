@@ -1,0 +1,210 @@
+.fluid-equipos {
+    background: $primaryColor;
+    background: -webkit-linear-gradient(90deg, #2c7a92, $primaryColor);
+    background: linear-gradient(90deg, #2c7a92, $primaryColor);
+    height: 770px;
+    overflow: hidden;
+    @media screen and (max-width: 480px) {
+        height: auto;
+    }
+    & .container-box {
+        //margin-bottom: 0;
+    }
+    & .cont-section {
+        padding-bottom: 4rem;
+        margin-bottom: 0;
+    }
+    & .cont-title-especial {
+        margin-bottom: 3rem;
+    }
+    /* Tabs Navs Equipos */
+    & .cont-tabs-equipos {
+        width: 100%;
+        & .nav-equipos-home {
+            background: transparent;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3rem;
+            & li {
+                & a {
+                    font-weight: 500;
+                    text-transform: none;
+                    font-size: 18px;
+                    color: rgba(255, 255, 255, 0.6);
+                    & i {
+                        margin-right: 1rem;
+                        color: $secondColor;
+                        opacity: .5;
+                        font-size: 1.5rem;
+                        vertical-align: middle;
+                        position: relative;
+                        top: -3px;
+                    }
+                    & .icon-alert-circle {
+                        margin-left: 1rem;
+                        opacity: .5;
+                        color: $thirdColor!important;
+                        transform: rotate(180deg);
+                        display: inline-block;
+                    }
+                }
+                & a.active {
+                    opacity: 1;
+                    color: $whiteColor;
+                    & i {
+                        opacity: 1;
+                        color: $secondColor;
+                    }
+                }
+            }
+            & .indicator {
+                background-color: $whiteColor;
+                @media screen and (max-width: 480px) {
+                    background-color: $secondColor;
+                }
+            }
+        }
+        /* Mostrar Secciones Tabs */
+        & .cont-slider-slick {
+            height: auto;
+            padding: 0;
+            & .slide-slick-equipos {
+                height: auto;
+                & .box-equipos {
+                    border: 1px $whiteColor solid;
+                    height: auto;
+                    padding: 0;
+                    margin-bottom: 2rem;
+                    outline: none;
+                    margin-right: 1rem;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    position: relative;
+                    & .descuento-item {
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        color: $whiteColor;
+                        background: $secondColor;
+                        border-radius: 0 5px 5px 0;
+                        font-weight: 600;
+                        width: 55px;
+                        height: 45px;
+                        top: 10px;
+                        left: 0;
+                        & p:first-child {
+                            font-size: 1.1rem;
+                            margin: 0;
+                            line-height: 1rem;
+                            & sup {
+                                position: relative;
+                                top: -2px;
+                                margin: 0;
+                            }
+                        }
+                        & p:last-child {
+                            line-height: 1rem;
+                            font-size: .85rem;
+                            margin: 0;
+                            text-align: center;
+                        }
+                    }
+                    & .imagen-equipo {
+                        width: 100%;
+                        min-height: 160px;
+                        position: relative;
+                        & .img-product {
+                            margin: auto;
+                            width: 100%;
+                            height: auto;
+                        }
+                        & img {
+                            height: 130px;
+                            width: 130px;
+                            margin: auto;
+                        }
+                    }
+                    & .descripcion-equipo {
+                        padding: 1rem 1rem 0 1rem;
+                        color: $whiteColor;
+                        text-align: center;
+                        font-weight: 500;
+                        & .name-equipo,
+                        & .atributo-equipo,
+                        & .precio-oferta,
+                        & .atributo-parrafo,
+                        & .precio-normal,
+                        & .stock {
+                            font-weight: 500;
+                            margin: 0;
+                            margin-bottom: .3rem;
+                        }
+                        & .name-equipo,
+                        & .atributo-equipo {
+                            font-size: 20px;
+                        }
+                        & .atributo-parrafo {
+                            opacity: .6;
+                            font-size: .95rem;
+                        }
+                        & .precio-oferta {
+                            font-size: 25px;
+                            font-weight: 600;
+                            & sup {
+                                font-size: 15px;
+                                vertical-align: middle;
+                                top: -2px;
+                            }
+                        }
+                        & .precio-normal {
+                            font-size: 1rem;
+                            text-decoration: line-through;
+                        }
+                        & .stock {
+                            opacity: .6;
+                            font-size: .8rem;
+                        }
+                    }
+                    & .btn-box-equipos {
+                        margin-top: 1rem;
+                        width: 100%;
+                        text-align: center;
+                        & a {
+                            background: $whiteColor;
+                            color: $secondColor;
+                            font-weight: 600;
+                            padding: .8rem;
+                            display: block;
+                            outline: none;
+                        }
+                        & a:hover {
+                            background-color: $whiteColor;
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+        }
+        /* Dots navs */
+        & .slick-dots {
+            bottom: 0;
+            position: relative;
+            & button:before {
+                color: $whiteColor;
+                transition: all .4s ease;
+            }
+            & li.slick-active button:before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.carousel {
+    min-height: 520px!important;
+    @media screen and (max-width: 480px) {
+        min-height: 450px!important;
+    }
+}

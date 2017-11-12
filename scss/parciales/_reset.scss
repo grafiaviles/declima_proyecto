@@ -25,6 +25,14 @@ a {
     margin: 0 auto;
 }
 
+.cont-section {
+    padding-bottom: 60px;
+}
+
+.container-box {
+    padding: 60px 0 0 0;
+}
+
 //Titulos y Subtitulos
 .cont-title-especial {
     align-items: center;
@@ -36,21 +44,21 @@ a {
     & .title-blue,
     & .title-grey {
         font-weight: lighter;
-        font-size: 45px;
+        font-size: 40px;
         margin: auto 0;
-        font-weight: 300;
+        line-height: normal;
         @media screen and (max-width: 480px) {
-            font-size: 35px;
-            width: 100%;
+            font-size: 30px;
+            width: 90%;
         }
     }
     & .subtitle-white,
     & .subtitle-blue,
     & .subtitle-grey {
         font-size: 18px;
-        width: 80%;
+        width: 90%;
         line-height: 30px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0;
     }
     & .title-white,

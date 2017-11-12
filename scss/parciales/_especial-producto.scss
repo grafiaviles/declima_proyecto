@@ -24,8 +24,9 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
                 flex-wrap: wrap;
+                padding-top: 30px;
                 & .tags-new {
                     background-color: $thirdColor;
                     color: #fff;
@@ -57,7 +58,7 @@
                 }
                 & h1.title-especial {
                     font-weight: lighter;
-                    font-size: 45px;
+                    font-size: 40px;
                     color: $whiteColor;
                     margin: auto 0;
                     font-weight: 300;
@@ -65,8 +66,8 @@
                         font-weight: 600;
                     }
                     @media screen and (max-width: 480px) {
-                        font-size: 35px;
-                        width: 100%;
+                        font-size: 30px;
+                        width: 90%;
                     }
                 }
                 & h3.sub-title-especial {
@@ -74,10 +75,11 @@
                     font-size: 18px;
                     width: 80%;
                     line-height: 30px;
-                    font-weight: 400;
+                    font-weight: 500;
                     margin: 0;
                     @media screen and (max-width: 993px) {
                         width: 90%;
+                        font-weight: 400;
                     }
                 }
                 & .precio-smarkitt {
@@ -86,18 +88,24 @@
                     width: 100%;
                     text-align: center;
                     color: $whiteColor;
+                    @media screen and (max-width: 480px) {
+                        white-space: pre-wrap;
+                        line-height: normal;
+                        width: 90%;
+                    }
                     & span {
                         font-size: 30px;
                         align-self: center;
                         position: relative;
                         font-weight: 600;
                         top: .1em;
-                        & sup {
-                            font-size: 15px;
-                            vertical-align: middle;
-                            top: -0.15em;
-                            margin-right: .2em;
-                        }
+                    }
+                    & sup {
+                        font-size: 15px;
+                        vertical-align: middle;
+                        top: -0.15em;
+                        margin-right: .2em;
+                        font-weight: 600;
                     }
                 }
             }
@@ -220,7 +228,7 @@
                     }
                     & .flow-text {
                         font-size: 16px;
-                        font-weight: 400;
+                        font-weight: 500;
                         @media screen and (max-width: 480px) {
                             border-bottom: 1px solid $greylightColor;
                             padding-bottom: 2rem;
@@ -259,29 +267,36 @@
                 flex-wrap: wrap;
                 & a:first-child {
                     margin-bottom: 2rem;
-                    margin-right: 2rem;
+                    //margin-right: 2rem;
                     @media screen and (max-width: 480px) {
                         margin-right: 0;
                     }
                 }
                 & a {
                     box-shadow: none;
-                    border-radius: 50px;
+                    border-radius: 5px 0 0 5px;
                     line-height: 45px;
                     height: 50px;
                     background: transparent;
                     border: 2px solid $secondColor;
                     color: $whiteColor;
-                    font-weight: 600;
+                    font-weight: 500;
                     text-transform: inherit;
                     width: 300px;
                     font-size: 1rem;
+                    text-transform: uppercase;
                     @media screen and (max-width: 480px) {
                         width: 270px;
+                        border-radius: 5px;
+                        text-transform: uppercase;
                     }
                 }
                 & a:last-child {
+                    border-radius: 0 5px 5px 0;
                     background: $secondColor;
+                    @media screen and (max-width: 480px) {
+                        border-radius: 5px;
+                    }
                 }
                 & a:hover {
                     background: $secondColor;
