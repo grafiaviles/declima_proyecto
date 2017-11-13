@@ -13,3 +13,10 @@ $('.collapsible').collapsible();
 $('.tooltipped').tooltip('remove');
 // Paralax
 $('.parallax').parallax();
+// Tabs Equipos Home slider
+
+$(document).ready(function() {
+    $('ul.tabs').tabs({
+        swipeable: true
+    });
+});

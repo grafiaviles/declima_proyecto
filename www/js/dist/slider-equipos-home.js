@@ -1,0 +1,1 @@
+$(".slide-slick-equipos").slick({dots:!0,slidesToShow:4,arrows:!1,centerPadding:"30px",autoplay:!0,responsive:[{breakpoint:768,settings:{arrows:!1,centerMode:!0,centerPadding:"30px",slidesToShow:3,dots:!0}},{breakpoint:480,settings:{arrows:!1,centerMode:!0,centerPadding:"30px",slidesToShow:1,dots:!0}}]});
