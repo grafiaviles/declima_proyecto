@@ -2030,7 +2030,7 @@ small { font-size: 75%; }
   .tabs .tab { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
   .tabs .tab a { padding: 0 12px; } }
 
-.material-tooltip { padding: 10px 8px; font-size: 1rem; z-index: 2000; background-color: transparent; border-radius: 2px; color: #fff; min-height: 36px; line-height: 120%; opacity: 0; position: absolute; text-align: center; max-width: calc(100% - 4px); overflow: hidden; left: 0; top: 0; pointer-events: none; visibility: hidden; }
+.material-tooltip { padding: 10px 8px; font-size: 1rem; z-index: 2000; background-color: transparent; border-radius: 2px; color: #fff; min-height: 36px; line-height: 10%; opacity: 0; position: absolute; text-align: center; max-width: calc(100% - 4px); overflow: hidden; left: 0; top: 0px; pointer-events: none; visibility: hidden; }
 
 .backdrop { position: absolute; opacity: 0; height: 7px; width: 14px; border-radius: 0 0 50% 50%; background-color: #323232; z-index: -1; -webkit-transform-origin: 50% 0%; transform-origin: 50% 0%; visibility: hidden; }
 
@@ -3398,9 +3398,11 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .slick-dots li.slick-active button:before { color: black; opacity: 0.75; }
 
-.fluid-equipos { background: #00587a; background: -webkit-gradient(linear, left top, right top, from(#2c7a92), to(#00587a)); background: linear-gradient(90deg, #2c7a92, #00587a); height: 770px; overflow: hidden; /* Tabs Navs Equipos */ }
+.fluid-equipos { background: #00587a; background: -webkit-gradient(linear, left top, right top, from(#2c7a92), to(#00587a)); background: linear-gradient(90deg, #2c7a92, #00587a); height: 800px; overflow: hidden; /* Tabs Navs Equipos */ }
 
-@media screen and (max-width: 480px) { .fluid-equipos { height: auto; } }
+@media screen and (max-width: 480px) { .fluid-equipos { height: 800px; } }
+
+@media screen and (max-width: 320px) { .fluid-equipos { height: 760px; } }
 
 .fluid-equipos .cont-section { padding-bottom: 4rem; margin-bottom: 0; }
 
@@ -3430,19 +3432,35 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos { border: 1px #fff solid; height: auto; padding: 0; margin-bottom: 2rem; outline: none; margin-right: 1rem; border-radius: 5px; overflow: hidden; position: relative; }
 
-.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descuento-item { position: absolute; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #fff; background: #3fa7f3; border-radius: 0 5px 5px 0; font-weight: 600; width: 55px; height: 45px; top: 10px; left: 0; }
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo { width: 100%; position: relative; }
 
-.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descuento-item p:first-child { font-size: 1.1rem; margin: 0; line-height: 1rem; }
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .mega-tag { background-color: #3fa7f3; width: 100%; padding: 0 1rem; height: 25px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: absolute; bottom: 35px; }
 
-.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descuento-item p:first-child sup { position: relative; top: -2px; margin: 0; }
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .mega-tag .instalacion { text-align: center; bottom: 0; color: #fff; font-weight: 500; font-size: .8rem; line-height: normal; }
 
-.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descuento-item p:last-child { line-height: 1rem; font-size: .85rem; margin: 0; text-align: center; }
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .cont-icon-equipos { background-color: transparent; width: 100%; height: 35px; -ms-flex-pack: distribute; justify-content: space-around; border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
 
-.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo { width: 100%; min-height: 160px; position: relative; }
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .cont-icon-equipos .icon-equipos { font-size: 17px; line-height: 50px; margin: 0; color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; opacity: 1; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; z-index: 10; }
+
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .cont-icon-equipos .icon-feather { font-size: 15.5px; margin: 0; color: #fff; }
+
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .cont-icon-equipos .icon-equipos:hover { opacity: .5; }
 
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .img-product { margin: auto; width: 100%; height: auto; }
 
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo img { height: 130px; width: 130px; margin: auto; }
+
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .descuento-tag, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .instalacion-tag { position: absolute; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #fff; background-color: #3fa7f3; border-radius: 0 5px 5px 0; font-weight: 600; width: 45px; height: 45px; top: 10px; left: 0; }
+
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .descuento-tag p:first-child, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .instalacion-tag p:first-child { font-size: 1.1rem; margin: 0; line-height: 1rem; }
+
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .descuento-tag p:first-child sup, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .instalacion-tag p:first-child sup { position: relative; top: -2px; margin: 0; }
+
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .descuento-tag p:last-child, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .instalacion-tag p:last-child { line-height: 1rem; font-size: .85rem; margin: 0; text-align: center; }
+
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .instalacion-tag { color: #3fa7f3; background: #fff; width: 80px; height: 40px; top: 60px; }
+
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .instalacion-tag p { line-height: 1rem; font-size: .85rem; margin: 0; text-align: left !important; padding-left: .5rem; }
 
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo { padding: 1rem 1rem 0 1rem; color: #fff; text-align: center; font-weight: 500; }
 
@@ -3474,7 +3492,7 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .carousel { min-height: 520px !important; }
 
-@media screen and (max-width: 480px) { .carousel { min-height: 450px !important; } }
+@media screen and (max-width: 480px) { .carousel { min-height: 500px !important; } }
 
 .cont-proyectos { margin-bottom: 80px; }
 

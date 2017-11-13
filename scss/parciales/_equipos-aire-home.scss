@@ -2,10 +2,13 @@
     background: $primaryColor;
     background: -webkit-linear-gradient(90deg, #2c7a92, $primaryColor);
     background: linear-gradient(90deg, #2c7a92, $primaryColor);
-    height: 770px;
+    height: 800px;
     overflow: hidden;
     @media screen and (max-width: 480px) {
-        height: auto;
+        height: 800px;
+    }
+    @media screen and (max-width: 320px) {
+        height: 760px;
     }
     & .container-box {
         //margin-bottom: 0;
@@ -31,6 +34,9 @@
                     text-transform: none;
                     font-size: 18px;
                     color: rgba(255, 255, 255, 0.6);
+                    @media screen and (max-width: 480px) {
+                        //font-size: 16px;
+                    }
                     & i {
                         margin-right: 1rem;
                         color: $secondColor;
@@ -80,41 +86,52 @@
                     border-radius: 5px;
                     overflow: hidden;
                     position: relative;
-                    & .descuento-item {
-                        position: absolute;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        color: $whiteColor;
-                        background: $secondColor;
-                        border-radius: 0 5px 5px 0;
-                        font-weight: 600;
-                        width: 55px;
-                        height: 45px;
-                        top: 10px;
-                        left: 0;
-                        & p:first-child {
-                            font-size: 1.1rem;
-                            margin: 0;
-                            line-height: 1rem;
-                            & sup {
-                                position: relative;
-                                top: -2px;
-                                margin: 0;
-                            }
-                        }
-                        & p:last-child {
-                            line-height: 1rem;
-                            font-size: .85rem;
-                            margin: 0;
-                            text-align: center;
-                        }
-                    }
                     & .imagen-equipo {
                         width: 100%;
-                        min-height: 160px;
                         position: relative;
+                        & .mega-tag {
+                            background-color: $secondColor;
+                            width: 100%;
+                            padding: 0 1rem;
+                            height: 25px;
+                            justify-content: space-between;
+                            align-items: center;
+                            position: absolute;
+                            bottom: 35px;
+                            & .instalacion {
+                                text-align: center;
+                                bottom: 0;
+                                color: $whiteColor;
+                                font-weight: 500;
+                                font-size: .8rem;
+                                line-height: normal;
+                            }
+                        }
+                        & .cont-icon-equipos {
+                            background-color: transparent;
+                            width: 100%;
+                            height: 35px;
+                            justify-content: space-around;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                            & .icon-equipos {
+                                font-size: 17px;
+                                line-height: 50px;
+                                margin: 0;
+                                color: $whiteColor;
+                                display: flex;
+                                opacity: 1;
+                                transition: $transition1;
+                                z-index: 10;
+                            }
+                            & .icon-feather {
+                                font-size: 15.5px;
+                                margin: 0;
+                                color: $whiteColor;
+                            }
+                            & .icon-equipos:hover {
+                                opacity: .5;
+                            }
+                        }
                         & .img-product {
                             margin: auto;
                             width: 100%;
@@ -124,6 +141,52 @@
                             height: 130px;
                             width: 130px;
                             margin: auto;
+                        }
+                        & .descuento-tag {
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            color: $whiteColor;
+                            background-color: $secondColor;
+                            border-radius: 0 5px 5px 0;
+                            font-weight: 600;
+                            width: 45px;
+                            height: 45px;
+                            top: 10px;
+                            left: 0;
+                            & p:first-child {
+                                font-size: 1.1rem;
+                                margin: 0;
+                                line-height: 1rem;
+                                & sup {
+                                    position: relative;
+                                    top: -2px;
+                                    margin: 0;
+                                }
+                            }
+                            & p:last-child {
+                                line-height: 1rem;
+                                font-size: .85rem;
+                                margin: 0;
+                                text-align: center;
+                            }
+                        }
+                        & .instalacion-tag {
+                            @extend .descuento-tag;
+                            color: $secondColor;
+                            background: $whiteColor;
+                            width: 80px;
+                            height: 40px;
+                            top: 60px;
+                            & p {
+                                line-height: 1rem;
+                                font-size: .85rem;
+                                margin: 0;
+                                text-align: left!important;
+                                padding-left: .5rem;
+                            }
                         }
                     }
                     & .descripcion-equipo {
@@ -205,6 +268,6 @@
 .carousel {
     min-height: 520px!important;
     @media screen and (max-width: 480px) {
-        min-height: 450px!important;
+        min-height: 500px!important;
     }
 }
