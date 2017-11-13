@@ -2,10 +2,10 @@
     background: $primaryColor;
     background: -webkit-linear-gradient(90deg, #2c7a92, $primaryColor);
     background: linear-gradient(90deg, #2c7a92, $primaryColor);
-    height: 800px;
+    height: 820px;
     overflow: hidden;
     @media screen and (max-width: 480px) {
-        height: 800px;
+        height: 820px;
     }
     @media screen and (max-width: 320px) {
         height: 760px;
@@ -16,6 +16,8 @@
     & .cont-section {
         padding-bottom: 4rem;
         margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
     & .cont-title-especial {
         margin-bottom: 3rem;
