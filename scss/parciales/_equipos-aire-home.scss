@@ -1,8 +1,8 @@
 .fluid-equipos {
     background: $primaryColor;
-    background: -webkit-linear-gradient(90deg, #2c7a92, $primaryColor);
-    background: linear-gradient(90deg, #2c7a92, $primaryColor);
-    height: 820px;
+    background: -webkit-linear-gradient(180deg, #2c7a92, $primaryColor);
+    background: linear-gradient(180deg, #2c7a92, $primaryColor);
+    height: 800px;
     overflow: hidden;
     @media screen and (max-width: 480px) {
         height: 820px;
@@ -18,6 +18,9 @@
         margin-bottom: 0;
         margin-left: 0;
         margin-right: 0;
+        @media screen and (min-width: 1400px) {
+            padding-bottom: 0;
+        }
     }
     & .cont-title-especial {
         margin-bottom: 3rem;
@@ -25,11 +28,15 @@
     /* Tabs Navs Equipos */
     & .cont-tabs-equipos {
         width: 100%;
+        height: auto;
         & .nav-equipos-home {
             background: transparent;
             justify-content: center;
             align-items: center;
             margin-bottom: 3rem;
+            @media screen and (min-width: 1400px) {
+                margin-bottom: 5rem;
+            }
             & li {
                 & a {
                     font-weight: 500;
@@ -239,7 +246,7 @@
                         & a {
                             background: $whiteColor;
                             color: $secondColor;
-                            font-weight: 600;
+                            font-weight: 500;
                             padding: .8rem;
                             display: block;
                             outline: none;

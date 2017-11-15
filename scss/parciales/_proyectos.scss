@@ -1,8 +1,11 @@
 .cont-proyectos {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0;
+    & .cont-section {
+        padding-bottom: 0;
+    }
     & .proyectos {
         width: 100%;
         justify-content: space-between;
@@ -12,14 +15,57 @@
         flex-wrap: wrap;
         & .principal-proyecto {
             min-height: 422.5px;
-            overflow: hidden;
+            position: relative;
             & .box-proyecto {
+                overflow: hidden;
                 border-radius: 5px;
-                padding: 2rem;
-                background-color: $thirdColor;
                 min-height: 422.5px;
+                margin: 0;
+                background-image: url(../img/proyectos/proyect-1.jpg);
+                background-position: center;
+                box-shadow: none;
+                display: flex;
+                position: relative;
+                justify-content: flex-end;
+                box-shadow: 0 30px 70px -10px rgba(0, 0, 0, .05);
                 @media screen and (max-width: 993px) {
                     margin-bottom: 1.5rem;
+                }
+                & .logo-cliente {
+                    background: $primaryColor;
+                    background: linear-gradient(to bottom, rgba(0, 88, 122, .8) 0%, rgba(0, 88, 122, 0.1) 50%);
+                    background: -webkit-linear-gradient(to bottom, rgba(0, 88, 122, .8) 0%, rgba(0, 88, 122, 0.1) 50%);
+                    width: 100%;
+                    min-height: 100%;
+                    margin: 0;
+                    position: absolute;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    & img {
+                        max-width: 250px;
+                        padding-left: 1rem;
+                    }
+                }
+                & .card-content {
+                    width: 90%;
+                    border-radius: 5px 5px 0 0;
+                    background: $whiteColor;
+                    position: relative;
+                    align-self: flex-end;
+                    & .card-title {
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                    }
+                    & p {
+                        font-weight: 500;
+                    }
+                }
+                & .card-reveal {
+                    height: 422.5px;
+                    background: $primaryColor;
+                    background: -webkit-linear-gradient(110deg, #2c7a92, $primaryColor);
+                    background: linear-gradient(110deg, #2c7a92, $primaryColor);
                 }
             }
         }
@@ -32,7 +78,7 @@
                 min-height: 200px;
                 margin-bottom: 1.5rem;
                 width: calc((100% - 30px) / 2);
-                @media screen and (max-width: 993px) {
+                @media screen and (max-width: 768px) {
                     width: calc((100% - 0px) / 1);
                     width: -webkit-calc((100% - 0px) / 1);
                 }
