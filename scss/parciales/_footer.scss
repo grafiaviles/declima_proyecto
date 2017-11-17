@@ -4,6 +4,9 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    @media screen and (max-width: 480px) {
+        background: $primaryColor;
+    }
     & .ayuda_user {
         background: $secondColor;
         width: 100%;
@@ -480,7 +483,7 @@ footer {
                     padding: 1rem 1rem 1rem .5rem;
                     color: white;
                     @media screen and (max-width: 480px) {
-                        font-size: 1rem;
+                        font-size: 11px;
                         opacity: .4;
                     }
                 }
@@ -490,7 +493,7 @@ footer {
                     color: white;
                     display: block;
                     @media screen and (max-width: 480px) {
-                        font-size: 1.3rem;
+                        font-size: 1rem;
                         opacity: .4;
                     }
                 }
