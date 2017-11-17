@@ -1,110 +1,87 @@
-.cont-proyectos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 0;
-    & .cont-section {
-        padding-bottom: 0;
-    }
-    & .proyectos {
-        width: 100%;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding-top: 3rem;
+    .cont-proyectos {
         display: flex;
-        flex-wrap: wrap;
-        & .principal-proyecto {
-            min-height: 422.5px;
-            position: relative;
-            & .box-proyecto {
-                overflow: hidden;
-                border-radius: 5px;
-                min-height: 422.5px;
-                margin: 0;
-                background-image: url(../img/proyectos/proyect-1.jpg);
-                background-position: center;
-                box-shadow: none;
-                display: flex;
-                position: relative;
-                justify-content: flex-end;
-                box-shadow: 0 30px 70px -10px rgba(0, 0, 0, .05);
-                @media screen and (max-width: 993px) {
-                    margin-bottom: 1.5rem;
-                }
-                & .logo-cliente {
-                    background: $primaryColor;
-                    background: linear-gradient(to bottom, rgba(0, 88, 122, .6) 0%, rgba(255, 255, 255, 0.1) 50%);
-                    background: -webkit-linear-gradient(to bottom, rgba(0, 88, 122, .6) 0%, rgba(255, 255, 255, 0.1) 50%);
-                    width: 100%;
-                    min-height: 100%;
-                    margin: 0;
-                    position: absolute;
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    & img {
-                        max-width: 250px;
-                        padding-left: 1rem;
-                    }
-                }
-                & .card-content {
-                    width: 90%;
-                    border-radius: 5px 5px 0 0;
-                    background: $whiteColor;
-                    position: relative;
-                    align-self: flex-end;
-                    & .card-title {
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                    }
-                    & p {
-                        font-weight: 500;
-                    }
-                }
-                & .card-reveal {
-                    height: 422.5px;
-                    background: $primaryColor;
-                    background: -webkit-linear-gradient(110deg, #2c7a92, $primaryColor);
-                    background: linear-gradient(110deg, #2c7a92, $primaryColor);
-                }
-            }
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+        & .cont-section {
+            padding-bottom: 0;
         }
-        & .otros-proyecto {
-            overflow: hidden;
-            min-height: 400px;
-            & .box-proyectos {
-                border-radius: 5px;
-                padding: 2rem;
-                min-height: 200px;
+        & .proyectos {
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-top: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            & .principal-proyecto {
+                height: 350px;
+                position: relative;
+                background-color: $whiteColor;
                 margin-bottom: 1.5rem;
-                width: calc((100% - 30px) / 2);
-                @media screen and (max-width: 768px) {
-                    width: calc((100% - 0px) / 1);
-                    width: -webkit-calc((100% - 0px) / 1);
+                & .box-proyecto {
+                    overflow: hidden;
+                    border-radius: 5px;
+                    height: 350px;
+                    margin: 0;
+                    background-image: url(../img/proyectos/proyect-1.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    box-shadow: none;
+                    display: flex;
+                    position: relative;
+                    justify-content: flex-end;
+                    box-shadow: 0 30px 70px -10px rgba(0, 0, 0, .05);
+                    & .logo-cliente {
+                        @include gradient1;
+                        width: 100%;
+                        min-height: 100%;
+                        margin: 0;
+                        position: absolute;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        & img {
+                            max-width: 220px;
+                            transition: $transition1;
+                        }
+                    }
+                    & .card-content {
+                        width: 100%;
+                        border-radius: 0;
+                        background: $whiteColor;
+                        position: relative;
+                        align-self: flex-end;
+                        @media screen and (max-width: 480px) {
+                            width: 100%;
+                            border-radius: 0;
+                        }
+                        & .card-title {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: $primaryColor;
+                            margin-bottom: 0;
+                            transition: $transition1;
+                            & i {
+                                //color: $primaryColor;
+                            }
+                        }
+                        & p {
+                            font-weight: 500;
+                        }
+                    }
                 }
             }
-            & .box-proyectos:nth-child(1) {
-                margin-right: 1.5rem;
-                background-color: $secondColor;
+            & .principal-proyecto:nth-of-type(2) .box-proyecto {
+                background-image: url(../img/proyectos/proyect-2.jpg);
             }
-            & .box-proyectos:nth-child(2) {
-                background-color: $primaryColor;
+            & .principal-proyecto:nth-of-type(3) .box-proyecto {
+                background-image: url(../img/proyectos/proyect-3.jpg);
             }
-            & .box-proyectos:nth-child(3) {
-                margin-right: 1.5rem;
-                background-color: $primaryColor;
-                margin-bottom: 0;
-                @media screen and (max-width: 993px) {
-                    margin-bottom: 1.5rem;
-                }
+            & .principal-proyecto:nth-of-type(4) .box-proyecto {
+                background-image: url(../img/proyectos/proyect-4.jpg);
             }
-            & .box-proyectos:nth-child(4) {
-                background-color: $secondColor;
-                margin-bottom: 0;
-                @media screen and (max-width: 993px) {
-                    margin-bottom: 1.5rem;
-                }
+            & .principal-proyecto:hover .logo-cliente>img {
+                transform: scale(.90);
             }
         }
     }
-}

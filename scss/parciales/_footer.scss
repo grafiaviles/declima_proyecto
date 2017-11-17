@@ -333,7 +333,11 @@ footer {
                 background: $whiteColor;
             }
             & .collapsible-comercial {
+                & p {
+                    font-size: 1rem;
+                }
                 & a {
+                    font-size: 1rem;
                     line-height: 30px;
                     display: block;
                 }

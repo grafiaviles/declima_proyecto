@@ -3,9 +3,7 @@
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    background: $primaryColor;
-    background: linear-gradient(to bottom, rgba(0, 88, 122, 1) 0%, rgba(0, 88, 122, 0.3) 100%);
-    background: -webkit-linear-gradient(to bottom, rgba(0, 88, 122, 1) 0%, rgba(0, 88, 122, 0.3) 100%);
+    @include gradient3;
     @media screen and (max-width: 480px) {
         background: -webkit-linear-gradient(0deg, #2c7a92, $primaryColor);
         background: linear-gradient(0deg, #2c7a92, $primaryColor);

@@ -1,7 +1,5 @@
 .fluid-equipos {
-    background: $primaryColor;
-    background: -webkit-linear-gradient(180deg, #2c7a92, $primaryColor);
-    background: linear-gradient(180deg, #2c7a92, $primaryColor);
+    @include gradient2;
     height: 800px;
     overflow: hidden;
     @media screen and (max-width: 480px) {
@@ -43,6 +41,9 @@
                     text-transform: none;
                     font-size: 18px;
                     color: rgba(255, 255, 255, 0.6);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     @media screen and (max-width: 480px) {
                         //font-size: 16px;
                     }
@@ -53,14 +54,14 @@
                         font-size: 1.5rem;
                         vertical-align: middle;
                         position: relative;
-                        top: -3px;
+                        top: -2px;
                     }
                     & .icon-alert-circle {
                         margin-left: 1rem;
                         opacity: .5;
+                        top: -1px;
                         color: $thirdColor!important;
                         transform: rotate(180deg);
-                        display: inline-block;
                     }
                 }
                 & a.active {

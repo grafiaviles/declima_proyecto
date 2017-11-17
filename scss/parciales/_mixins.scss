@@ -1,5 +1,26 @@
-@mixin gradient($gradient) {
+@mixin gradient1 {
     background: $primaryColor;
-    background: -webkit-linear-gradient(90deg, #2c7a92, $primaryColor);
-    background: linear-gradient(90deg, #2c7a92, $primaryColor);
+    background: -webkit-linear-gradient(to bottom, rgba(0, 88, 122, .6) 0%, rgba(255, 255, 255, 0.1) 50%);
+    background: -moz-linear-gradient(to bottom, rgba(0, 88, 122, .6) 0%, rgba(255, 255, 255, 0.1) 50%);
+    background: -o-linear-gradient(to bottom, rgba(0, 88, 122, .6) 0%, rgba(255, 255, 255, 0.1) 50%);
+    background: -ms-linear-gradient(to bottom, rgba(0, 88, 122, .6) 0%, rgba(255, 255, 255, 0.1) 50%);
+    background: linear-gradient(to bottom, rgba(0, 88, 122, .6) 0%, rgba(255, 255, 255, 0.1) 50%);
+}
+
+@mixin gradient2 {
+    background: $primaryColor;
+    background: -webkit-linear-gradient(180deg, #2c7a92, $primaryColor);
+    background: -moz-linear-gradient(180deg, #2c7a92, $primaryColor);
+    background: -o-linear-gradient(180deg, #2c7a92, $primaryColor);
+    background: -ms-linear-gradient(180deg, #2c7a92, $primaryColor);
+    background: linear-gradient(180deg, #2c7a92, $primaryColor);
+}
+
+@mixin gradient3 {
+    background: $primaryColor;
+    background: -webkit-linear-gradient(to bottom, rgba(0, 88, 122, 1) 0%, rgba(0, 88, 122, .1) 100%);
+    background: -moz-linear-gradient(to bottom, rgba(0, 88, 122, 1) 0%, rgba(0, 88, 122, .1) 100%);
+    background: -o-linear-gradient(to bottom, rgba(0, 88, 122, 1) 0%, rgba(0, 88, 122, .1) 100%);
+    background: -ms-linear-gradient(to bottom, rgba(0, 88, 122, 1) 0%, rgba(0, 88, 122, .1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 88, 122, 1) 0%, rgba(0, 88, 122, .1) 100%);
 }
