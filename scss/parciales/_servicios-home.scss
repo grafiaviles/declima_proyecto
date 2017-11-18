@@ -1,0 +1,73 @@
+.fluid-servicios {
+    .cont-section {
+        padding-bottom: 40px;
+        @media screen and (max-width: 480px) {
+            padding-bottom: 20px;
+        }
+    }
+    .cont-servicios {
+        width: 100%;
+        margin-bottom: 80px;
+        margin-left: 0!important;
+        margin-right: 0!important;
+        margin-top: 2rem;
+        .row-servicios {
+            position: relative;
+            width: 100%;
+            clear: both;
+            margin: 0;
+            margin-bottom: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+            .servicios {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding-right: 2rem;
+                @media screen and (max-width: 480px) {
+                    padding-right: 0;
+                    margin-bottom: 4rem;
+                }
+                & figure {
+                    background-color: $whiteColor;
+                    width: 85px;
+                    height: 85px;
+                    padding: 1.5rem;
+                    border-radius: 20px;
+                    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, .05);
+                    transition: $transition1;
+                    margin: 0;
+                    margin-bottom: 1rem;
+                    & .icon-services {
+                        transition: $transition1;
+                        opacity: .5;
+                    }
+                }
+                & figure:hover .icon-services {}
+                & h3 {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                & p {
+                    line-height: 25px;
+                }
+            }
+            & .servicios:last-child {
+                //padding-right: 0;
+            }
+            & .servicios:hover .icon-services {
+                opacity: 1;
+            }
+            & .servicios:hover figure {
+                border-radius: 45px;
+            }
+        }
+        & .row-servicios:nth-child(2) {
+            //margin-bottom: 0;
+        }
+    }
+}

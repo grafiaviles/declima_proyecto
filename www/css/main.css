@@ -3237,7 +3237,7 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .container-fluid { width: 100%; margin: 0 auto; }
 
-.cont-section { padding-bottom: 80px; width: 100%; }
+.cont-section { padding-bottom: 80px; width: 100%; margin-left: 0 !important; margin-right: 0 !important; margin-bottom: 0; margin-top: 0; }
 
 .container-box { padding: 80px 0 0 0; }
 
@@ -3405,6 +3405,32 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 .slick-dots li button:before { position: absolute; top: 0; left: 0; content: "•"; width: 20px; height: 20px; font-family: "grafiaviles"; font-size: 35px; line-height: 20px; text-align: center; color: black; opacity: 0.25; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .slick-dots li.slick-active button:before { color: black; opacity: 0.75; }
+
+.fluid-servicios .cont-section { padding-bottom: 40px; }
+
+@media screen and (max-width: 480px) { .fluid-servicios .cont-section { padding-bottom: 20px; } }
+
+.fluid-servicios .cont-servicios { width: 100%; margin-bottom: 80px; margin-left: 0 !important; margin-right: 0 !important; margin-top: 2rem; }
+
+.fluid-servicios .cont-servicios .row-servicios { position: relative; width: 100%; clear: both; margin: 0; margin-bottom: 4rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+@media screen and (max-width: 768px) { .fluid-servicios .cont-servicios .row-servicios { display: block; } }
+
+.fluid-servicios .cont-servicios .row-servicios .servicios { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-right: 2rem; }
+
+@media screen and (max-width: 480px) { .fluid-servicios .cont-servicios .row-servicios .servicios { padding-right: 0; margin-bottom: 4rem; } }
+
+.fluid-servicios .cont-servicios .row-servicios .servicios figure { background-color: #fff; width: 85px; height: 85px; padding: 1.5rem; border-radius: 20px; -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05); box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05); -webkit-transition: all 0.4s ease; transition: all 0.4s ease; margin: 0; margin-bottom: 1rem; }
+
+.fluid-servicios .cont-servicios .row-servicios .servicios figure .icon-services { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; opacity: .5; }
+
+.fluid-servicios .cont-servicios .row-servicios .servicios h3 { font-size: 18px; font-weight: 500; }
+
+.fluid-servicios .cont-servicios .row-servicios .servicios p { line-height: 25px; }
+
+.fluid-servicios .cont-servicios .row-servicios .servicios:hover .icon-services { opacity: 1; }
+
+.fluid-servicios .cont-servicios .row-servicios .servicios:hover figure { border-radius: 45px; }
 
 .fluid-equipos { background: #00587a; background: -webkit-gradient(linear, left top, left bottom, from(#2c7a92), to(#00587a)); background: linear-gradient(180deg, #2c7a92, #00587a); height: 800px; overflow: hidden; /* Tabs Navs Equipos */ }
 
