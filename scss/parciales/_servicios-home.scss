@@ -1,36 +1,44 @@
 .fluid-servicios {
-    .cont-section {
+    background: $whiteColor;
+    & .cont-section {
         padding-bottom: 40px;
         @media screen and (max-width: 480px) {
             padding-bottom: 20px;
         }
     }
-    .cont-servicios {
+    & .cont-servicios {
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         margin-left: 0!important;
         margin-right: 0!important;
         margin-top: 2rem;
-        .row-servicios {
+        @media screen and (max-width: 480px) {
+            margin-top: 0;
+        }
+        & .row-servicios {
             position: relative;
             width: 100%;
             clear: both;
             margin: 0;
-            margin-bottom: 4rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
             @media screen and (max-width: 768px) {
                 display: block;
             }
-            .servicios {
+            & .servicios {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
-                padding-right: 2rem;
+                margin-bottom: 4rem;
+                margin-right: 4rem;
+                transition: $transition1;
+                box-shadow: 0 1px 0 0 rgba(63, 168, 243, 0.2);
+                @media screen and (max-width: 768px) {
+                    margin-right: 0;
+                }
                 @media screen and (max-width: 480px) {
-                    padding-right: 0;
-                    margin-bottom: 4rem;
+                    margin-right: 0;
                 }
                 & figure {
                     background-color: $whiteColor;
@@ -44,30 +52,42 @@
                     margin-bottom: 1rem;
                     & .icon-services {
                         transition: $transition1;
-                        opacity: .5;
+                        opacity: 1;
                     }
                 }
-                & figure:hover .icon-services {}
                 & h3 {
                     font-size: 18px;
                     font-weight: 500;
+                    color: $primaryColor;
                 }
                 & p {
                     line-height: 25px;
+                    width: 100%;
+                }
+                & .btn-services {
+                    font-weight: 500;
+                    padding: 1rem 0;
+                    transform: translateX(20px);
+                    transition: $transition1;
+                    opacity: 0;
+                    visibility: hidden;
+                    font-size: 1rem;
                 }
             }
-            & .servicios:last-child {
-                //padding-right: 0;
+            & .servicios:nth-child(3) {
+                margin-right: 0;
             }
-            & .servicios:hover .icon-services {
+            & .servicios:hover .btn-services {
+                transform: translateX(0px);
                 opacity: 1;
+                visibility: visible;
+            }
+            & .servicios:hover {
+                box-shadow: 0 1px 0 0 rgba(63, 168, 243, 1);
             }
             & .servicios:hover figure {
                 border-radius: 45px;
             }
-        }
-        & .row-servicios:nth-child(2) {
-            //margin-bottom: 0;
         }
     }
 }

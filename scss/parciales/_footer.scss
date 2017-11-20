@@ -85,10 +85,16 @@ footer {
         padding: 3rem 0 2rem 0;
         margin-bottom: 0;
         border-bottom: 1px solid $greylightColor;
+        & .maps-desktop {
+            padding-top: 0;
+        }
         & .section_maps {
             border-radius: 3px;
             overflow: hidden;
             box-shadow: 0 25px 20px -10px rgba(0, 0, 0, .1);
+            & img {
+                width: 245px;
+            }
         }
         & .section {
             padding-right: 2rem;
@@ -112,6 +118,12 @@ footer {
             }
             & a:hover {
                 color: white;
+            }
+            & .number-footer {
+                color: $secondColor;
+                font-size: 1rem;
+                margin-top: .5rem;
+                display: inline-block;
             }
             & .name_executive {
                 font-weight: 500;
@@ -347,6 +359,11 @@ footer {
                 & a:hover {
                     color: $primaryColor;
                     padding-left: 10px;
+                }
+                & .number-footer {
+                    color: $secondColor;
+                    font-size: 1.2rem;
+                    display: block;
                 }
                 & .name_executive {
                     font-weight: 600;
