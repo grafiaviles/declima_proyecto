@@ -72,7 +72,7 @@
                 background-color: rgba(1, 82, 104, 0.3);
             }
             & .box-producto:hover {
-                background: rgba(255, 255, 255, 0.05);
+                background: $primaryColor;
             }
         }
     }
