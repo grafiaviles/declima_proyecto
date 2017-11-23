@@ -3442,13 +3442,13 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .slider-home .slides .caption h3 .logo-wifi { width: 80px; height: 80px; display: inline-block; margin: 0; position: absolute; vertical-align: middle; top: -3px; margin-left: 1rem; }
 
+.slider-home .slides .caption h3 .logo-midea { width: 100px; height: auto; position: absolute; left: -110px; }
+
+@media screen and (max-width: 480px) { .slider-home .slides .caption h3 .logo-midea { width: 70px; } }
+
 @media screen and (max-width: 480px) { .slider-home .slides .caption h3 { font-size: 2.6rem; } }
 
 .slider-home .slides .caption h5 { font-size: 1.5rem; margin-bottom: 1.5rem; line-height: 2rem; margin-top: .5rem; }
-
-.slider-home .slides .caption .logo-midea { width: 100px; height: auto; margin-bottom: .5rem; }
-
-@media screen and (max-width: 480px) { .slider-home .slides .caption .logo-midea { width: 70px; } }
 
 .slider-home .slides .caption .cont-btn-slider { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 
