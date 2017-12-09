@@ -3408,7 +3408,7 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .slick-dots li.slick-active button:before { color: black; opacity: 0.75; }
 
-header { height: auto; overflow: hidden; }
+header { height: auto; }
 
 header .main-menu { padding: 0 1.5rem; background: transparent; -webkit-box-shadow: none; box-shadow: none; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; height: auto; }
 
