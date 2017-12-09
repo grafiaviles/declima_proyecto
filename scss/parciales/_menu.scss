@@ -1,0 +1,329 @@
+            header {
+                height: auto;
+                overflow: hidden;
+                & .main-menu {
+                    padding: 0 1.5rem;
+                    background: transparent;
+                    box-shadow: none;
+                    transition: $transition1;
+                    height: auto;
+                    @media screen and (max-width: 768px) {
+                        padding: 0;
+                    }
+                    @media screen and (max-width: 480px) {
+                        background: $primaryColor;
+                    }
+                    & .nav-wrapper {
+                        //Logo Principal
+                        & .brand-logo {
+                            display: flex;
+                            align-items: center;
+                            line-height: 64px;
+                            height: 64px;
+                            & img {
+                                width: 140px;
+                                @media screen and (max-width: 480px) {
+                                    width: 120px;
+                                }
+                            }
+                            @media screen and (max-width: 768px) {
+                                line-height: 56px;
+                                height: 56px;
+                            }
+                        }
+                        //Menu Principal
+                        & .menu-desktop {
+                            height: 64px;
+                            display: flex;
+                            align-items: center;
+                            & .list-category {
+                                //position: relative;
+                                & .link-category {
+                                    font-weight: 500;
+                                    font-size: 1rem;
+                                    position: relative;
+                                    padding: 0 .8rem;
+                                    color: $whiteColor;
+                                    box-shadow: 0 3px 0 transparent inset;
+                                    transition: $transition1;
+                                    line-height: 64px;
+                                    height: 64px;
+                                    display: flex;
+                                    align-items: center;
+                                    opacity: .8;
+                                    & .icon-chevron-down {
+                                        font-size: 1rem;
+                                        padding-left: .3rem;
+                                        position: relative;
+                                        top: 1px;
+                                    }
+                                }
+                                & .link-category:hover,
+                                & .active-link {
+                                    box-shadow: 0 3px 0 $whiteColor inset;
+                                    background: transparent;
+                                    opacity: 1;
+                                }
+                                & .link-icon-category {
+                                    box-shadow: 0 0 0 transparent inset;
+                                    transition: $transition1;
+                                    border-radius: 40px;
+                                    line-height: 40px;
+                                    height: 40px;
+                                    width: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    opacity: .8;
+                                    padding: 0;
+                                    & i {
+                                        font-size: 1.3rem;
+                                    }
+                                }
+                                & .link-icon-category:hover {
+                                    color: $primaryColor;
+                                    background: $whiteColor;
+                                    opacity: 1;
+                                }
+                            }
+                            & .dropdown-content-menu {
+                                max-width: 100%;
+                                max-height: none;
+                                min-width: 100%;
+                                min-height: auto;
+                                width: 100%;
+                                left: 50%!important;
+                                top: 64px!important;
+                                border-radius: 3px;
+                                margin-left: -50%;
+                                padding: 2rem .5rem 2rem .5rem;
+                                box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.08);
+                                & .container-sub-menu {
+                                    margin: 0;
+                                    & .box-submenu {
+                                        //margin-bottom: 1rem;
+                                        & .title-category-submenu {
+                                            margin: 0;
+                                            margin-bottom: 1.5rem;
+                                            font-size: 1rem;
+                                            font-weight: 500;
+                                            padding: 0;
+                                            padding-left: 1.5rem;
+                                            color: $primaryColor;
+                                            line-height: normal;
+                                            height: auto;
+                                            position: relative;
+                                            border-bottom: 1px solid $greysoftColor;
+                                            padding-bottom: 1.5rem;
+                                            width: 100%;
+                                            & i {
+                                                line-height: normal;
+                                                height: auto;
+                                                display: inline-block;
+                                                font-size: 1.5rem;
+                                                padding-right: .5rem;
+                                            }
+                                            & .icon-1 {
+                                                color: #fcc607;
+                                            }
+                                            & .icon-2 {
+                                                color: $thirdColor;
+                                            }
+                                            & .icon-3 {
+                                                color: salmon;
+                                            }
+                                            & .icon-4 {
+                                                color: $secondColor;
+                                            }
+                                            & .icon-home,
+                                            & .icon-layers,
+                                            & .icon-check-circle {
+                                                font-size: 1.3rem;
+                                                position: relative;
+                                                top: 1px;
+                                            }
+                                            & .icon-smartphone {
+                                                transform: rotate(90deg);
+                                                margin-top: 2px;
+                                            }
+                                        }
+                                        & a {
+                                            font-size: .95rem;
+                                            display: flex;
+                                            align-items: center;
+                                            font-weight: 500;
+                                            margin: 0;
+                                            padding: 0;
+                                            padding-left: 1.5rem;
+                                            color: $greyColor;
+                                            transition: $transition1;
+                                            margin-bottom: .7rem;
+                                            width: 95%;
+                                            line-height: normal;
+                                            position: relative;
+                                            & .producto-submenu {
+                                                width: 100%;
+                                                max-width: 47.5px;
+                                                margin-right: 1rem;
+                                                transition: $transition1;
+                                            }
+                                            & .icon-submenu {
+                                                width: 40px;
+                                                max-width: 40px;
+                                                margin-right: 1.5rem;
+                                                display: none;
+                                            }
+                                            & .icon-chevron-right {
+                                                transition: $transition1;
+                                                position: absolute;
+                                                right: 0;
+                                                top: -5px;
+                                                opacity: .5;
+                                                font-size: .9rem;
+                                            }
+                                        }
+                                        & a:hover .producto-submenu {
+                                            transform: scale(.90);
+                                        }
+                                        & a:hover {
+                                            color: $primaryColor;
+                                            background-color: transparent;
+                                        }
+                                        & a:hover .icon-chevron-right {
+                                            opacity: 1;
+                                        }
+                                        & .box-calc-app {
+                                            width: 90%;
+                                            margin: auto;
+                                            padding: 0;
+                                            margin-bottom: 1rem;
+                                            & .img-calc-app {
+                                                margin: 0 auto;
+                                                width: 100%;
+                                                max-width: 300px;
+                                                padding: 0;
+                                                text-align: center;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border-radius: 5px;
+                                                position: relative;
+                                                overflow: hidden;
+                                                & .img-proyecto {
+                                                    width: 300px;
+                                                    margin: 0;
+                                                }
+                                            }
+                                            //Menu de Proyectos
+                                            & .bg-proyect-menu {
+                                                transition: $transition1;
+                                                max-width: 100%;
+                                                overflow: hidden;
+                                                position: relative;
+                                                background-color: rgba(0, 89, 122, 0.2);
+                                                min-height: 200px;
+                                                & .img-proyecto {
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    left: 0;
+                                                    top: 0;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    z-index: -1;
+                                                }
+                                                & .brand-cliente {
+                                                    width: 200px;
+                                                }
+                                            }
+                                            & .bg-proyect-menu:hover {
+                                                background-color: rgba(0, 89, 122, 0.4);
+                                            }
+                                            & .description-calc-app {
+                                                @extend .img-calc-app;
+                                                min-height: 120px;
+                                                background: transparent;
+                                                & p {
+                                                    color: $greyColor;
+                                                    line-height: 25px;
+                                                    font-weight: 500;
+                                                    font-size: 1rem;
+                                                    width: 90%;
+                                                    text-align: center;
+                                                }
+                                            }
+                                            & .link-calc-app {
+                                                line-height: 45px;
+                                                width: 100%;
+                                                max-width: 300px;
+                                                padding: 0 1rem;
+                                                margin: auto;
+                                                text-align: center;
+                                                background: transparent;
+                                                color: $secondColor;
+                                                border: 2px solid $secondColor;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                font-weight: 500;
+                                                border-radius: 3px;
+                                                position: relative;
+                                                & i {
+                                                    font-size: 1rem;
+                                                    line-height: normal;
+                                                    height: auto;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    margin-top: -.5rem;
+                                                    right: 1.5rem;
+                                                }
+                                            }
+                                            & .link-calc-app:hover {
+                                                background-color: $secondColor;
+                                                color: $whiteColor;
+                                            }
+                                        }
+                                    }
+                                    & .box-submenu:last-child {
+                                        border-right: none;
+                                    }
+                                }
+                            }
+                            & .link-ver-todo {
+                                margin: auto;
+                                display: block;
+                                margin-left: 25px;
+                                border-radius: 3px;
+                                margin-right: 25px;
+                                margin-bottom: 0;
+                                margin-top: 1rem;
+                                & a {
+                                    border: 2px solid $secondColor;
+                                    color: $secondColor;
+                                    text-align: center;
+                                    font-weight: 500;
+                                    width: 100%;
+                                    display: block;
+                                    margin: auto;
+                                    line-height: 55px;
+                                    & i {
+                                        line-height: 55px;
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                                & a:hover {
+                                    background-color: $secondColor;
+                                    color: $whiteColor;
+                                }
+                            }
+                        }
+                        & .menu-mobile {}
+                    }
+                }
+                & .menu-fixed {
+                    background-color: $primaryColor;
+                }
+            }
+            
+            #sidenav-overlay {
+                z-index: 996;
+            }

@@ -1,16 +1,17 @@
 .slider-home {
     position: relative!important;
-    height: 85.5vh!important;
+    min-height: 85.5vh!important;
+    background-color: $primaryColor;
     @media screen and (min-width: 1400px) {
-        height: 90vh!important;
+        min-height: 90vh!important;
     }
     @media screen and (max-width: 480px) {
-        height: 100vh!important;
+        min-height: 100vh!important;
     }
     & .slides {
         background-color: $primaryColor;
         & .caption {
-            top: 25%!important;
+            top: 30%!important;
             @media screen and (max-width: 480px) {
                 text-align: center;
                 top: 15%!important;

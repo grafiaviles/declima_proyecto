@@ -1,0 +1,98 @@
+//Modal Buscador
+.modal-buscador {
+    background: $whiteColor;
+    height: 64px;
+    border-radius: 3px;
+    .buscador-container {
+        width: 100%;
+        overflow-y: hidden;
+        background: $whiteColor;
+        & input#search {
+            font-weight: 400;
+            font-size: 1rem;
+        }
+        & .icon-search {
+            position: absolute;
+            top: -11px;
+            color: $secondColor!important;
+        }
+    }
+}
+
+//Modal Cotizador
+.cotizador-cantainer {
+    border-radius: 3px;
+    background: $whiteColor;
+    padding: 0 2rem;
+    & .modal-content {
+        position: relative!important;
+        height: auto!important;
+        background: $secondColor;
+        margin-bottom: .5rem;
+        padding: 1.5rem 2.5rem;
+        & h4 {
+            margin-bottom: 0;
+            color: $whiteColor;
+            font-size: 1.5rem;
+            display: inline-block;
+        }
+        & i {
+            font-size: 1.4rem;
+            position: relative;
+            top: 3px;
+            cursor: pointer;
+            opacity: .8;
+            right: -10px;
+        }
+    }
+    & .form-cotizador {
+        padding: 0 2rem;
+        & .select-box {
+            margin-bottom: 0;
+        }
+    }
+    & .modal-footer {
+        border-top: none!important;
+        background-color: $whiteColor!important;
+        & .btn {
+            background: transparent;
+            margin: 0;
+            color: $secondColor;
+            right: 35px;
+            bottom: 25px;
+            box-shadow: none;
+            font-weight: 600;
+            border: 2px solid $secondColor;
+            line-height: normal;
+            border-radius: 3px;
+            height: 45px;
+            transition: $transition1;
+            @media screen and (max-width: 480px) {
+                bottom: 15px;
+            }
+        }
+        & .btn:hover {
+            background-color: $secondColor;
+            color: $whiteColor;
+        }
+    }
+}
+
+.dropdown-content li>span {
+    color: $secondColor;
+}
+
+.select-wrapper {
+    color: $greyColor;
+}
+
+.select-wrapper input.select-dropdown {
+    color: #ababab;
+    border-bottom: 1px solid #ccc;
+}
+
+.my-disabled {
+    opacity: .5;
+    cursor: default;
+    pointer-events: none;
+}

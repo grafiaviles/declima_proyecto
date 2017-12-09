@@ -51,7 +51,7 @@ a {
     & .title-white,
     & .title-blue,
     & .title-grey {
-        font-weight: lighter;
+        font-weight: 400;
         font-size: 40px;
         margin: auto 0;
         line-height: normal;
@@ -66,7 +66,7 @@ a {
         font-size: 18px;
         width: 90%;
         line-height: 30px;
-        font-weight: 500;
+        font-weight: 400;
         margin: 0;
         @media screen and (max-width: 480px) {
             //font-size: 16px;
