@@ -93,19 +93,22 @@
                 </div>
                 <div class="row select-box">
                     <div class="input-field col s12 m6">
-                        <select>
-                            <option value="" disabled selected>Santiago</option>
-                            <option value="">Algarrobo</option>
-                            <option value="">Alto del Carmen</option>
-                            <option value="">Ancud</option>
-                            <option value="">Andacollo</option>
-                            <option value="">Antofagasta</option>
-                            <option value="">Antuco</option>
-                            <option value="">Arauco</option>
-                            <option value="">Arica</option>
-                            <option value="">Bulnes</option>
+                        <select data-error="Error" data-success="Correcto">
+                            <option value="" disabled selected>Región Metropolitana</option>
+                            <option value="">I Tarapacá</option>
+                            <option value="">II Antofagasta</option>
+                            <option value="">III Atacama</option>
+                            <option value="">IV Coquimbo</option>
+                            <option value="">V Valaparaíso</option>
+                            <option value="">Metropolitana de Santiago</option>
+                            <option value="">VII Maule</option>
+                            <option value="">VIII Bío Bío</option>
+                            <option value="">IX La Araucanía</option>
+                            <option value="">X Los Lagos</option>
+                            <option value="">XI Aisén del General Carlos Ibañez del Campo</option>
+                            <option value="">XII Magallanes y Antártica Chilena</option>
                         </select>
-                        <label>Selecciona una Comuna</label>
+                        <label>Selecciona tu región</label>
                     </div>
                     <div class="input-field col s12 m6">
                         <select>
@@ -140,7 +143,7 @@
                                   <option value="">Reparación</option>
                               </optgroup>
                         </select>
-                        <label>Selecciona un Servicio o Producto</label>
+                        <label>Selecciona un servicio o producto</label>
                     </div>
                 </div>
                 <div class="row">
@@ -152,16 +155,121 @@
             </form>
         </div>
         <div class="modal-footer">
+            <form action="" class="checkbox-condiciones">
+                <p class="left">
+                    <input type="checkbox" id="test6" checked="checked" />
+                    <label for="test6">Acepto recibir novedades y oportunidades de los productos y servicios que Declima ofrece en su sitio web.</label>
+                </p>
+            </form>
             <button class="my-disabled btn waves-effect waves-light" type="submit" name="action">ENVIAR</button>
         </div>
     </div>
+
+    <!-- Slider Carro de Compras Desktop-->
+    <ul id="slide-carro" class="side-nav">
+        <!-- Prodcutos Agregados -->
+        <div class="container-bag-product">
+            <div class="section side-nav-bag waves-effect waves-light chip chip-product">
+                <i class="close close-product-bag icon-x"></i>
+                <a class="row cont-bag-product" href="">
+                    <img src="img/menu/carro/product-001.jpg" alt="">
+                    <div class="">
+                        <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
+                        <h3 class="left-align">$166.990</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="section side-nav-bag waves-effect waves-light chip chip-product">
+                <i class="close close-product-bag icon-x"></i>
+                <a class="row cont-bag-product" href="">
+                    <img src="img/menu/carro/product-001.jpg" alt="">
+                    <div class="">
+                        <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
+                        <h3 class="left-align">$166.990</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="section side-nav-bag waves-effect waves-light chip chip-product">
+                <i class="close close-product-bag icon-x"></i>
+                <a class="row cont-bag-product" href="">
+                    <img src="img/menu/carro/product-001.jpg" alt="">
+                    <div class="">
+                        <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
+                        <h3 class="left-align">$166.990</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- TOTAL -->
+        <div class="container-total">
+            <div class="section btn-nav-comprar ">
+                <h3 class="left-align total-compra">Productos seleccionados (4)</h3>
+                <h3 class="left-align total-compra">TOTAL: <span class="right"><sup>$</sup>780.997</span></h3>
+                <a class="btn-comprar waves-effect waves-dark center-align" href="#!">IR A COMPRAR<i class="icon-arrow-right right"></i></a>
+            </div>
+        </div>
+    </ul>
+    <!-- Slider Carro de Compras Mobile-->
+    <ul id="slide-carro-mobile" class="side-nav">
+        <!-- Prodcutos Agregados -->
+        <div class="container-bag-product">
+            <div class="section side-nav-bag waves-effect waves-light chip chip-product">
+                <i class="close close-product-bag icon-x"></i>
+                <a class="row cont-bag-product" href="">
+                    <img src="img/menu/carro/product-001.jpg" alt="">
+                    <div class="">
+                        <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
+                        <h3 class="left-align">$166.990</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="section side-nav-bag waves-effect waves-light chip chip-product">
+                <i class="close close-product-bag icon-x"></i>
+                <a class="row cont-bag-product" href="">
+                    <img src="img/menu/carro/product-001.jpg" alt="">
+                    <div class="">
+                        <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
+                        <h3 class="left-align">$166.990</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="section side-nav-bag waves-effect waves-light chip chip-product">
+                <i class="close close-product-bag icon-x"></i>
+                <a class="row cont-bag-product" href="">
+                    <img src="img/menu/carro/product-001.jpg" alt="">
+                    <div class="">
+                        <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
+                        <h3 class="left-align">$166.990</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- TOTAL -->
+        <div class="container-total">
+            <div class="section btn-nav-comprar ">
+                <h3 class="left-align total-compra">Productos seleccionados (4)</h3>
+                <h3 class="left-align total-compra">TOTAL: <span class="right"><sup>$</sup>780.997</span></h3>
+                <a class="btn-comprar waves-effect waves-dark center-align" href="#!">IR A COMPRAR<i class="icon-arrow-right right"></i></a>
+            </div>
+        </div>
+    </ul>
+
+
+    <!-- Menu Mobile -->
+    <ul class="side-nav menu-mobile" id="mobile-menu">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+    </ul>
 
     <!-- HEADER -->
     <header class="navbar-fixed">
         <nav class="main-menu efecto-menu">
             <div class="nav-wrapper">
                 <a href="" class="brand-logo"><img src="img/logo-declima-mobile.svg" alt="Declima"></a>
-                <a href="#" data-activates="mobile-demo" class="left button-collapse"><i class="icon-menu"></i></a>
+                <a href="#mobile-menu" data-activates="mobile-menu" class="left button-collapse"><i class="icon-menu"></i></a>
+                <a href="#slide-carro-mobile" data-activates="slide-carro-mobile" class="right button-collapse link-icon-category"><i class="icon-shopping-cart"></i></a>
                 <!-- Menu Desktop -->
                 <ul class="right hide-on-med-and-down menu-desktop">
                     <li class="list-category"><a href="" class="link-category">Inicio</a></li>
@@ -174,7 +282,7 @@
                             <!-- Box Category 1 -->
                             <div class="col s3 box-submenu">
                                 <h5 class="text-primary title-category-submenu">Ofertas para este Verano<i class="right icon-1 icon-sun"></i> </h5>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Aire Acondicionado<br>Portátil<i class="icon-chevron-right"></i></a>
+                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Portátiles<i class="icon-chevron-right"></i></a>
                                 <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Split Piso Cielo<br><i class=" icon-chevron-right"></i></a>
                                 <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Split Muro Inverter<br> <i class="icon-chevron-right"></i></a>
                                 <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Split Muro Blanc Wifi<br><i class="icon-chevron-right"></i></a>
@@ -322,16 +430,15 @@
                     <li class="list-category"><a href="" class="waves-effect waves-dark link-category">Equipo</a></li>
                     <li class="list-category"><a href="#cotizador" class="modal-trigger waves-effect waves-dark active-link link-category" data-target="cotizador">Cotizar</a></li>
                     <li class="list-category"><a href="#buscador-desktop" data-target="buscador-desktop" class="modal-trigger link-icon-category tooltipped" data-delay="50" data-tooltip="¿Qué buscas?"><i class="icon-search"></i></a></li>
-                    <li class="list-category"><a href="" class="link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Mi cuenta"><i class="icon-user"></i></a></li>
-                    <li class="list-category"><a href="" class="link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras"><i class="icon-shopping-cart"></i></a></li>
-                    <li class="list-category"><a href="tel:+56229046383" class="link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Fono ventas (+562) 2904 6383"><i class="icon-phone"></i></a></li>
-                </ul>
-                <!-- Menu Mobile -->
-                <ul class="side-nav menu-mobile" id="mobile-demo">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
+                    <li class="list-category"><a href="#" class="dropdown-button link-icon-category" data-activates='micuenta'><i class="icon-user"></i></a></li>
+                    <!-- Dropdown Mi Cuenta -->
+                    <ul id='micuenta' class='dropdown-content-menu-icon dropdown-content'>
+                        <li><a href="#"><i class="icon-user-check"></i>Iniciar Sesión</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-user-plus"></i>Regístrate</a></li>
+                    </ul>
+                    <li class="list-category"><a href="" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i></a></li>
+                    <li class="list-category"><a href="tel:+56229046383" class="link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ventas (+562) 2904 6383"><i class="icon-phone"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -390,18 +497,16 @@
             </li>
         </ul>
     </div>
-
-
     <main class="container-fluid">
         <!-- LO MÁS BUSCADO -->
         <div class="mas-buscado">
             <div class="content-buscado row">
                 <div class="cont-box-buscado col s12">
 
-                    <div class="col s12 l3 llamado-buscado"><span class="white-text flow-text">Ofertas <b>destacadas</b> para ti</span>
+                    <div class="col s12 m6 l3 llamado-buscado"><span class="white-text flow-text">Ofertas <b>destacadas</b> para ti</span>
                     </div>
 
-                    <a href="" class="box-producto waves-effect waves-dark col s12 l3">
+                    <a href="" class="box-producto waves-effect waves-dark col s12 m6 l3">
                         <figure>
                             <img class="circle" src="img/mas-buscado/product-1.jpg" alt="">
                         </figure>
@@ -413,7 +518,7 @@
                         <i class="icon-chevron-right hide-on-med-and-up"></i>
                     </a>
 
-                    <a href="" class="box-producto waves-effect waves-dark col s12 l3">
+                    <a href="" class="box-producto waves-effect waves-dark col s12 m6 l3">
                         <figure>
                             <img class="circle" src="img/mas-buscado/product-1.jpg" alt="">
                         </figure>
@@ -425,7 +530,7 @@
                         <i class="icon-chevron-right hide-on-med-and-up"></i>
                     </a>
 
-                    <a href="" class="box-producto waves-effect waves-dark col s12 l3">
+                    <a href="" class="box-producto waves-effect waves-dark col s12 m6 l3">
                         <figure>
                             <img class="circle" src="img/mas-buscado/product-1.jpg" alt="">
                         </figure>

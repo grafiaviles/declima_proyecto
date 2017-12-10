@@ -102,8 +102,8 @@ textarea.materialize-textarea {
 /* Validation Sass Placeholders */
 
 %valid-input-style {
-    border-bottom: 1px solid $input-success-color;
-    box-shadow: 0 1px 0 0 $input-success-color;
+    border-bottom: 1px solid #7ac743;
+    box-shadow: 0 1px 0 0 #7ac743;
 }
 
 %invalid-input-style {
@@ -113,7 +113,7 @@ textarea.materialize-textarea {
 
 %custom-success-message {
     content: attr(data-success);
-    color: $input-success-color;
+    color: #7ac743;
     opacity: 1;
     transform: translateY(9px);
 }

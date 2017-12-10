@@ -8,7 +8,7 @@ $(window).scroll(function() {
     });
 //Menu Principal
 $(".button-collapse").sideNav({
-    menuWidth: 270
+    menuWidth: 280
 });
 // Acordeon
 $('.collapsible').collapsible();

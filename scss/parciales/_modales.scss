@@ -2,7 +2,7 @@
 .modal-buscador {
     background: $whiteColor;
     height: 64px;
-    border-radius: 3px;
+    border-radius: 5px;
     .buscador-container {
         width: 100%;
         overflow-y: hidden;
@@ -21,7 +21,7 @@
 
 //Modal Cotizador
 .cotizador-cantainer {
-    border-radius: 3px;
+    border-radius: 5px;
     background: $whiteColor;
     padding: 0 2rem;
     & .modal-content {
@@ -34,6 +34,7 @@
             margin-bottom: 0;
             color: $whiteColor;
             font-size: 1.5rem;
+            font-weight: 400;
             display: inline-block;
         }
         & i {
@@ -53,8 +54,29 @@
     }
     & .modal-footer {
         border-top: none!important;
-        background-color: $whiteColor!important;
+        background-color: transparent!important;
+        height: auto;
+        @media screen and (max-width: 480px) {
+            position: relative;
+            width: 100%;
+        }
+        & .checkbox-condiciones {
+            width: 60%;
+            position: relative;
+            left: 35px;
+            bottom: 25px;
+            @media screen and (max-width: 480px) {
+                bottom: 15px;
+                width: 100%;
+            }
+            & label {
+                line-height: normal;
+                font-size: 13px;
+                width: 90%;
+            }
+        }
         & .btn {
+            position: relative;
             background: transparent;
             margin: 0;
             color: $secondColor;
@@ -66,9 +88,11 @@
             line-height: normal;
             border-radius: 3px;
             height: 45px;
+            width: 30%;
             transition: $transition1;
             @media screen and (max-width: 480px) {
                 bottom: 15px;
+                width: 100%;
             }
         }
         & .btn:hover {
@@ -82,17 +106,7 @@
     color: $secondColor;
 }
 
-.select-wrapper {
-    color: $greyColor;
-}
-
 .select-wrapper input.select-dropdown {
-    color: #ababab;
+    color: $greyColor;
     border-bottom: 1px solid #ccc;
-}
-
-.my-disabled {
-    opacity: .5;
-    cursor: default;
-    pointer-events: none;
 }

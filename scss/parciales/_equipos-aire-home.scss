@@ -1,5 +1,5 @@
 .fluid-equipos {
-    @include gradient2;
+    background-color: $primaryColor;
     height: 800px;
     overflow: hidden;
     @media screen and (max-width: 480px) {

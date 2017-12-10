@@ -33,7 +33,7 @@
                 margin-bottom: 4rem;
                 margin-right: 4rem;
                 transition: $transition1;
-                box-shadow: 0 1px 0 0 rgba(63, 168, 243, 0.2);
+                box-shadow: 0 1px 0 0 $greysoftColor;
                 @media screen and (max-width: 768px) {
                     margin-right: 0;
                 }

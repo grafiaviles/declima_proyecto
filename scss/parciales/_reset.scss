@@ -101,3 +101,9 @@ a {
 .text-grey {
     color: $greyColor;
 }
+
+.my-disabled {
+    opacity: .4;
+    cursor: default;
+    pointer-events: none;
+}
