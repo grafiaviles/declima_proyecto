@@ -5,9 +5,8 @@
     position: relative;
     @include gradient3;
     @media screen and (max-width: 480px) {
-        background: -webkit-linear-gradient(0deg, #2c7a92, $primaryColor);
-        background: linear-gradient(0deg, #2c7a92, $primaryColor);
         padding-bottom: 0;
+        background: $primaryColor;
     }
     & .parallax-container {
         display: flex;

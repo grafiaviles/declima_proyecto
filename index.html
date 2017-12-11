@@ -167,8 +167,23 @@
 
     <!-- Slider Carro de Compras Desktop-->
     <ul id="slide-carro" class="side-nav">
+        <!-- Carro Vacio -->
+        <div class="carro-vacio">
+            <div class="cont-icon-carro">
+                <i class="icon-shopping-cart"><i class="icon-alert-circle"></i></i>
+            </div>
+            <p class="center-align">¡UPS!</p>
+            <p class="center-align">Tu carro está vacio, revisa nuestras ofertas</p>
+            <a href="" class="hide">VER OFERTAS</a>
+        </div>
+        <!-- Botones Carro Vacio -->
+        <div class="container-total">
+            <div class="section btn-nav-comprar">
+                <a class="btn-comprar waves-effect waves-dark center-align" href="#!">VER OFERTAS<i class="icon-arrow-right right"></i></a>
+            </div>
+        </div>
         <!-- Prodcutos Agregados -->
-        <div class="container-bag-product">
+        <div class="hide container-bag-product">
             <div class="section side-nav-bag waves-effect waves-light chip chip-product">
                 <i class="close close-product-bag icon-x"></i>
                 <a class="row cont-bag-product" href="">
@@ -201,18 +216,33 @@
             </div>
         </div>
         <!-- TOTAL -->
-        <div class="container-total">
+        <div class="hide container-total">
             <div class="section btn-nav-comprar ">
-                <h3 class="left-align total-compra">Productos seleccionados (4)</h3>
-                <h3 class="left-align total-compra">TOTAL: <span class="right"><sup>$</sup>780.997</span></h3>
+                <h3 class="left-align total-compra">Productos (3) <span class="right">IVA Incluido</span></h3>
+                <h3 class="left-align total-compra">TOTAL A PAGAR: <span class="right"><sup>$</sup> 810.997</span></h3>
                 <a class="btn-comprar waves-effect waves-dark center-align" href="#!">IR A COMPRAR<i class="icon-arrow-right right"></i></a>
             </div>
         </div>
     </ul>
     <!-- Slider Carro de Compras Mobile-->
     <ul id="slide-carro-mobile" class="side-nav">
+        <!-- Carro Vacio -->
+        <div class="carro-vacio">
+            <div class="cont-icon-carro">
+                <i class="icon-shopping-cart"><i class="icon-alert-circle"></i></i>
+            </div>
+            <p class="center-align">¡UPS!</p>
+            <p class="center-align">Tu carro está vacio, revisa nuestras ofertas</p>
+            <a href="" class="hide">VER OFERTAS</a>
+        </div>
+        <!-- Botones Carro Vacio -->
+        <div class="container-total">
+            <div class="section btn-nav-comprar">
+                <a class="btn-comprar waves-effect waves-dark center-align" href="#!">VER OFERTAS<i class="icon-arrow-right right"></i></a>
+            </div>
+        </div>
         <!-- Prodcutos Agregados -->
-        <div class="container-bag-product">
+        <div class="hide container-bag-product">
             <div class="section side-nav-bag waves-effect waves-light chip chip-product">
                 <i class="close close-product-bag icon-x"></i>
                 <a class="row cont-bag-product" href="">
@@ -245,10 +275,10 @@
             </div>
         </div>
         <!-- TOTAL -->
-        <div class="container-total">
+        <div class="hide container-total">
             <div class="section btn-nav-comprar ">
-                <h3 class="left-align total-compra">Productos seleccionados (4)</h3>
-                <h3 class="left-align total-compra">TOTAL: <span class="right"><sup>$</sup>780.997</span></h3>
+                <h3 class="left-align total-compra">Productos (3) <span class="right">IVA Incluido</span></h3>
+                <h3 class="left-align total-compra">TOTAL A PAGAR: <span class="right"><sup>$</sup> 810.997</span></h3>
                 <a class="btn-comprar waves-effect waves-dark center-align" href="#!">IR A COMPRAR<i class="icon-arrow-right right"></i></a>
             </div>
         </div>
@@ -268,8 +298,8 @@
         <nav class="main-menu efecto-menu">
             <div class="nav-wrapper">
                 <a href="" class="brand-logo"><img src="img/logo-declima-mobile.svg" alt="Declima"></a>
-                <a href="#mobile-menu" data-activates="mobile-menu" class="left button-collapse"><i class="icon-menu"></i></a>
-                <a href="#slide-carro-mobile" data-activates="slide-carro-mobile" class="right button-collapse link-icon-category"><i class="icon-shopping-cart"></i></a>
+                <a href="#mobile-menu" data-activates="mobile-menu" class="icon-collapse-mobile left button-collapse"><i class="icon-menu"></i></a>
+                <a href="#slide-carro-mobile" data-activates="slide-carro-mobile" class="icon-collapse-mobile right button-collapse"><i class="icon-shopping-cart"></i></a>
                 <!-- Menu Desktop -->
                 <ul class="right hide-on-med-and-down menu-desktop">
                     <li class="list-category"><a href="" class="link-category">Inicio</a></li>
@@ -430,14 +460,14 @@
                     <li class="list-category"><a href="" class="waves-effect waves-dark link-category">Equipo</a></li>
                     <li class="list-category"><a href="#cotizador" class="modal-trigger waves-effect waves-dark active-link link-category" data-target="cotizador">Cotizar</a></li>
                     <li class="list-category"><a href="#buscador-desktop" data-target="buscador-desktop" class="modal-trigger link-icon-category tooltipped" data-delay="50" data-tooltip="¿Qué buscas?"><i class="icon-search"></i></a></li>
-                    <li class="list-category"><a href="#" class="dropdown-button link-icon-category" data-activates='micuenta'><i class="icon-user"></i></a></li>
+                    <li class="list-category"><a class="dropdown-button link-icon-category" data-activates='micuenta'><i class="icon-user"></i></a></li>
                     <!-- Dropdown Mi Cuenta -->
                     <ul id='micuenta' class='dropdown-content-menu-icon dropdown-content'>
                         <li><a href="#"><i class="icon-user-check"></i>Iniciar Sesión</a></li>
                         <li class="divider"></li>
                         <li><a href="#"><i class="icon-user-plus"></i>Regístrate</a></li>
                     </ul>
-                    <li class="list-category"><a href="" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i></a></li>
+                    <li class="list-category"><a href="#" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i></a></li>
                     <li class="list-category"><a href="tel:+56229046383" class="link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ventas (+562) 2904 6383"><i class="icon-phone"></i></a></li>
                 </ul>
             </div>
@@ -449,19 +479,19 @@
         <ul class="slides">
             <!-- Slider 1 -->
             <li>
-                <img src="img/slider/slider-1.jpg">
+                <img class="" src="img/slider/slider-1.jpg">
                 <div class="caption left-align">
                     <h3>Split Muro <b>Smartkit</b><img class="hide-on-small-only responsive-img logo-wifi" src="img/especial-producto/wifi-logo.svg" alt=""></h3>
                     <h5 class="light white-text text-lighten-3">Controla desde tu Smartphone - <b>Desde $159.990 + IVA</b></h5>
                     <div class="valign-wrapper cont-btn-slider">
                         <a href="" class="waves-effect waves-dark btn-slider">VER ESPECIAL</a>
-                        <a href="" class="waves-effect waves-dark btn-slider btn-slider-2">CÁLCULA TU EQUIPO</a>
+                        <a href="" class="hide-on-small-only waves-effect waves-dark btn-slider btn-slider-2">CÁLCULA TU AIRE ACONDICIONADO</a>
                     </div>
                 </div>
             </li>
             <!-- Slider 2 -->
             <li>
-                <img src="img/slider/slider-2.jpg">
+                <img class="" src="img/slider/slider-2.jpg">
                 <div class="caption left-align">
                     <div class="cont-porcentaje valign-wrapper">
                         <div class="hasta">HASTA</div>
@@ -473,13 +503,13 @@
                     </div>
                     <h5 class="light white-text text-lighten-3">En equipos de <b>Aire Acondicionado Portatil</b></h5>
                     <div class="valign-wrapper cont-btn-slider">
-                        <a href="" class="waves-effect waves-dark btn-slider btn-slider-2">VER EQUIPOS</a>
+                        <a href="" class="waves-effect waves-dark btn-slider-2">VER EQUIPOS</a>
                     </div>
                 </div>
             </li>
             <!-- Slider 3 -->
             <li>
-                <img src="img/slider/slider-3.jpg">
+                <img class="" src="img/slider/slider-3.jpg">
                 <div class="caption left-align">
                     <div class="cont-porcentaje valign-wrapper">
                         <div class="hasta">HASTA</div>
@@ -491,7 +521,7 @@
                     </div>
                     <h5 class="light white-text text-lighten-3">En equipos de <b>Split Muro</b></h5>
                     <div class="valign-wrapper cont-btn-slider">
-                        <a href="" class="waves-effect waves-dark btn-slider btn-slider-2">VER EQUIPOS</a>
+                        <a href="" class="waves-effect waves-dark btn-slider-2">VER EQUIPOS</a>
                     </div>
                 </div>
             </li>

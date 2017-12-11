@@ -3,6 +3,92 @@
         #slide-carro-mobile {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            & .carro-vacio {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-self: flex-end;
+                & .cont-icon-carro {
+                    animation: carro-vacio .7s alternate ease-in;
+                    animation-iteration-count: infinite;
+                    animation-fill-mode: forwards;
+                    & i {
+                        font-size: 5rem;
+                        color: $secondColor;
+                        background-color: transparent;
+                        border-radius: 50%;
+                        display: block;
+                        margin-bottom: .5rem;
+                        position: relative;
+                        & i {
+                            transform: rotate(0deg);
+                            position: absolute;
+                            font-size: 1.2rem;
+                            top: 0;
+                            right: -10px;
+                            font-weight: bold;
+                            background: $secondColor;
+                            color: $whiteColor;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: .4rem;
+                            animation: icon-alert-circle .7s alternate infinite ease-in;
+                        }
+                        @keyframes icon-alert-circle {
+                            0% {
+                                transform: scale(1);
+                                box-shadow: 0 5px 0px rgba(0, 0, 0, .2);
+                            }
+                            100% {
+                                transform: scale(.80);
+                            }
+                        }
+                    }
+                }
+                @keyframes carro-vacio {
+                    0% {
+                        transform: translateY(-10px) rotate(-15deg);
+                    }
+                    50% {
+                        transform: rotate(0deg) rotate(-15deg);
+                    }
+                    100% {
+                        transform: rotate(0deg);
+                    }
+                }
+                & p:nth-of-type(1) {
+                    font-size: 2rem;
+                    color: $primaryColor;
+                    font-weight: 500;
+                }
+                & p:nth-of-type(2) {
+                    font-size: 1.2rem;
+                    color: $primaryColor;
+                    margin-bottom: 1rem;
+                    font-weight: 400;
+                    width: 80%;
+                    margin: auto;
+                    line-height: normal;
+                }
+                & a {
+                    line-height: 40px;
+                    background: transparent;
+                    border: 2px solid $secondColor;
+                    color: $secondColor;
+                    width: 200px;
+                    border-radius: 3px;
+                    margin: auto;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+            }
             .container-bag-product {
                 align-self: flex-start;
                 & .side-nav-bag {
@@ -96,7 +182,8 @@
                         transition: all .4s ease;
                     }
                     & .total-compra:nth-child(1) {
-                        //border-top: 1px solid $greysoftColor;
+                        border-top: 1px solid $greysoftColor;
+                        padding: 1rem 1.5rem;
                     }
                     & .total-compra:nth-child(2) {
                         font-weight: 500;
@@ -111,6 +198,7 @@
                             align-items: center;
                             & sup {
                                 top: 0;
+                                margin-right: 3px;
                             }
                         }
                     }

@@ -2,11 +2,13 @@
     position: relative!important;
     min-height: 85.5vh!important;
     background-color: $primaryColor;
+    //@include gradient2;
     @media screen and (min-width: 1400px) {
         min-height: 90vh!important;
     }
     @media screen and (max-width: 480px) {
         min-height: 100vh!important;
+        background: $primaryColor;
     }
     & .slides {
         background-color: $primaryColor;
@@ -14,7 +16,10 @@
             top: 30%!important;
             @media screen and (max-width: 480px) {
                 text-align: center;
-                top: 15%!important;
+                align-self: center;
+                top: 50%!important;
+                margin-top: -50%;
+                min-height: auto;
             }
             & .cont-porcentaje {
                 align-items: flex-start;
@@ -110,24 +115,22 @@
                 justify-content: flex-start;
                 @media screen and (max-width: 480px) {
                     flex-wrap: wrap;
-                    align-items: flex-start;
+                    align-items: center;
+                    justify-content: center;
                 }
                 & .btn-slider {
                     background-color: $secondColor;
                     color: $whiteColor;
-                    line-height: 45px;
-                    padding: 0 1.5rem;
+                    padding: .8rem 1.5rem;
                     font-weight: 500;
-                    font-size: .9rem;
+                    font-size: 1rem;
                     font-weight: 600;
-                    letter-spacing: 1px;
                     border: 2px solid $secondColor;
                     border-radius: 5px!important;
-                    //box-shadow: 0 20px 50px -10px rgba(0, 0, 0, .03);
                     @media screen and (max-width: 480px) {
+                        max-width: 100%;
+                        width: 200px;
                         margin-bottom: 1rem;
-                        display: block;
-                        width: 100%;
                         text-align: center;
                     }
                 }
@@ -138,9 +141,11 @@
                     }
                 }
                 & .btn-slider-2 {
-                    background-color: $thirdColor;
-                    border: 2px solid $thirdColor;
-                    color: $whiteColor;
+                    @extend .btn-slider;
+                    background-color: $whiteColor;
+                    border: 2px solid $whiteColor;
+                    color: $secondColor;
+                    box-shadow: 0 20px 20px 0px rgba(0, 0, 0, .08);
                 }
                 & .btn-slider:hover {
                     background-color: transparent;
