@@ -65,11 +65,23 @@
                                         top: 1px;
                                     }
                                 }
-                                & .link-category:hover,
-                                & .active-link {
+                                & .link-category:hover {
                                     box-shadow: 0 3px 0 $whiteColor inset;
                                     background: transparent;
                                     opacity: 1;
+                                }
+                                & .active-link {
+                                    line-height: 35px;
+                                    height: 35px;
+                                    background: $thirdColor;
+                                    color: $whiteColor;
+                                    opacity: 1;
+                                    border-radius: 3px;
+                                }
+                                & .active-link:hover {
+                                    background-color: $thirdColor;
+                                    color: $whiteColor;
+                                    box-shadow: none;
                                 }
                                 & .link-icon-category {
                                     box-shadow: 0 0 0 transparent inset;
@@ -81,11 +93,36 @@
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    opacity: .8;
                                     padding: 0;
                                     margin: 0;
+                                    position: relative;
                                     & i {
+                                        opacity: .8;
                                         font-size: 1.3rem;
+                                    }
+                                    & .notification {
+                                        position: absolute;
+                                        background-color: $thirdColor;
+                                        color: $whiteColor;
+                                        z-index: 1;
+                                        line-height: normal;
+                                        font-size: 10px;
+                                        font-weight: 600;
+                                        text-align: center;
+                                        width: 15px;
+                                        height: 15px;
+                                        line-height: 15px;
+                                        opacity: 1;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin: 0;
+                                        padding: 0;
+                                        padding-left: 2px;
+                                        border-radius: 8px;
+                                        right: 0;
+                                        top: 0;
+                                        box-shadow: -1px 2px 0 rgba(0, 0, 0, .1);
                                     }
                                 }
                                 & .link-icon-category:hover {

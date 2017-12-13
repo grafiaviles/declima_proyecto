@@ -53,11 +53,28 @@
                     }
                     & h5 {
                         font-weight: 500;
-                        font-size: 1.1rem;
+                        font-size: 1.2rem;
                         line-height: 1.3rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        & .signo-peso {
+                            font-size: .9rem;
+                            top: -1px;
+                            position: relative;
+                            margin-right: 3px;
+                        }
+                        & .precio-antes {
+                            opacity: .7;
+                            font-size: .9rem;
+                            padding-left: .5rem;
+                            //text-decoration: line-through;
+                        }
                     }
                     & h5:nth-of-type(1) {
+                        font-size: 1.1rem;
                         font-weight: 400;
+                        margin-bottom: 3px;
                     }
                 }
                 & i {

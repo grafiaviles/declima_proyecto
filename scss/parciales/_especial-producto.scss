@@ -60,7 +60,7 @@
                 }
                 & h1.title-especial {
                     font-weight: lighter;
-                    font-size: 40px;
+                    font-size: 35px;
                     color: $whiteColor;
                     margin: auto 0;
                     font-weight: 400;
@@ -286,11 +286,10 @@
                     background: transparent;
                     border: 2px solid $secondColor;
                     color: $whiteColor;
-                    font-weight: 600;
+                    font-weight: 500;
                     text-transform: inherit;
                     width: 300px;
-                    letter-spacing: 1px;
-                    font-size: .9rem;
+                    font-size: 1rem;
                     text-transform: uppercase;
                     @media screen and (max-width: 480px) {
                         width: 270px;
