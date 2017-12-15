@@ -105,13 +105,13 @@ footer {
             }
             & h5 {
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: 600;
             }
             & p,
             & a {
                 color: rgba(255, 255, 255, .6);
                 font-size: 13px;
-                font-weight: 500;
+                font-weight: 400;
             }
             & a.mail-executive {
                 color: $secondColor;
@@ -126,7 +126,7 @@ footer {
                 display: inline-block;
             }
             & .name_executive {
-                font-weight: 500;
+                font-weight: 400;
             }
             & .section-form {
                 padding-bottom: 0px;
@@ -142,7 +142,7 @@ footer {
                     & .input-email-news {
                         box-shadow: 0 0 0 1px $secondColor;
                         padding-left: 1rem;
-                        font-weight: 500;
+                        font-weight: 400;
                         width: 100%;
                         border-bottom: none;
                         font-size: .9rem;
@@ -153,7 +153,7 @@ footer {
                         color: rgba(255, 255, 255, 0.6);
                         font-size: .9rem;
                         padding-left: 1rem;
-                        font-weight: 500;
+                        font-weight: 400;
                     }
                     & .label-email-news:after {
                         margin-top: 20px;
@@ -172,7 +172,7 @@ footer {
                         text-align: center;
                         box-shadow: 0 0 0 1px $secondColor;
                         font-size: .9rem;
-                        font-weight: 500;
+                        font-weight: 400;
                         border-radius: 0 3px 3px 0;
                         margin-bottom: 0;
                     }
@@ -252,7 +252,7 @@ footer {
             }
             & .legal-foot {
                 color: rgba(255, 255, 255, 0.4);
-                font-weight: 500;
+                font-weight: 400;
                 font-size: 11px;
                 line-height: 20px;
                 margin-top: 0;
@@ -285,7 +285,7 @@ footer {
                 & h6 {
                     color: rgba(255, 255, 255, 0.4);
                     font-size: 11px;
-                    font-weight: 500;
+                    font-weight: 400;
                     @media screen and (max-width: 768px) {
                         margin-bottom: 1rem;
                     }
@@ -339,7 +339,7 @@ footer {
                 color: $whiteColor;
                 background-color: $primaryColor;
                 padding: 1.5rem;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 1.1rem;
                 border-bottom: 1px solid $greylightColor;
                 & i {
@@ -352,7 +352,7 @@ footer {
             }
             & .collapsible-comercial {
                 & p {
-                    font-size: 1rem;
+                    font-size: 1rem!important;
                 }
                 & a {
                     font-size: 1rem;
@@ -395,7 +395,7 @@ footer {
                         border: solid 1px $secondColor;
                         outline: none;
                         padding-left: 1rem;
-                        font-weight: 500;
+                        font-weight: 400;
                         width: 100%;
                         font-size: .9rem;
                         border-radius: 3px 0 0 3px;
@@ -405,7 +405,7 @@ footer {
                         color: $secondColor;
                         font-size: .9rem;
                         padding-left: 1rem;
-                        font-weight: 500;
+                        font-weight: 400;
                     }
                     & .label-email-news:after {
                         margin-top: 20px;
@@ -424,7 +424,7 @@ footer {
                         text-align: center;
                         box-shadow: 0 0 0 1px $secondColor;
                         font-size: .9rem;
-                        font-weight: 500;
+                        font-weight: 400;
                         border-radius: 0 3px 3px 0;
                         margin-bottom: 0;
                     }
@@ -484,7 +484,7 @@ footer {
                 font-size: 11px;
                 padding: 1rem;
                 margin: 0;
-                font-weight: 500;
+                font-weight: 400;
                 line-height: 18px;
             }
             & .subir {
