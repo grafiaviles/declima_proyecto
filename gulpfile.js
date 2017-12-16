@@ -27,6 +27,9 @@ gulp.task('htmlminify', function() {
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('./www'));
 });
+gulp.task('obsHtml', function() {
+    gulp.watch('./*.html', ['htmlminify']);
+});
 
 //Javascript Minify
 gulp.task('javascript', function(cb) {

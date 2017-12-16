@@ -3538,7 +3538,7 @@ header .menu-fixed { background-color: #00587a; -webkit-box-shadow: 0 5px 30px -
 
 .modal-buscador .buscador-container { width: 100%; overflow-y: hidden; background: #fff; }
 
-.modal-buscador .buscador-container input#search { font-weight: 600; font-size: 1rem; }
+.modal-buscador .buscador-container input#search { font-weight: 600; font-size: 1.2rem; color: #777; }
 
 .modal-buscador .buscador-container .icon-search { position: absolute; top: -11px; color: #3fa7f3 !important; }
 
@@ -4315,13 +4315,13 @@ footer .cont_box_foot .section .form-news { width: 100%; }
 
 footer .cont_box_foot .section .form-news .input-field { width: 120%; margin-left: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-footer .cont_box_foot .section .form-news .input-field .input-email-news { -webkit-box-shadow: 0 0 0 1px #3fa7f3; box-shadow: 0 0 0 1px #3fa7f3; padding-left: 1rem; font-weight: 400; width: 100%; border-bottom: none; font-size: .9rem; border-radius: 5px 0 0 5px; margin-bottom: 0; }
+footer .cont_box_foot .section .form-news .input-field .input-email-news { -webkit-box-shadow: 0 0 0 1px #3fa7f3; box-shadow: 0 0 0 1px #3fa7f3; padding-left: 1rem; font-weight: 600; width: 100%; border-bottom: none; font-size: .9rem; border-radius: 5px 0 0 5px; margin-bottom: 0; color: white !important; }
 
-footer .cont_box_foot .section .form-news .input-field .label-email-news { color: rgba(255, 255, 255, 0.6); font-size: .9rem; padding-left: 1rem; font-weight: 400; }
+footer .cont_box_foot .section .form-news .input-field .label-email-news { color: rgba(255, 255, 255, 0.6) !important; font-size: .9rem; padding-left: 1rem; font-weight: 600; }
 
 footer .cont_box_foot .section .form-news .input-field .label-email-news:after { margin-top: 20px; padding-left: 1rem; font-weight: 600; }
 
-footer .cont_box_foot .section .form-news .input-field .submit-email-news { height: 3rem; background: #3fa7f3; color: #fff; outline: none; border: none; padding: 0 1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; -webkit-box-shadow: 0 0 0 1px #3fa7f3; box-shadow: 0 0 0 1px #3fa7f3; font-size: .9rem; font-weight: 400; border-radius: 0 3px 3px 0; margin-bottom: 0; }
+footer .cont_box_foot .section .form-news .input-field .submit-email-news { height: 3rem; background: #3fa7f3; color: #fff; outline: none; border: none; padding: 0 1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; -webkit-box-shadow: 0 0 0 1px #3fa7f3; box-shadow: 0 0 0 1px #3fa7f3; font-size: .9rem; font-weight: 600; border-radius: 0 3px 3px 0; margin-bottom: 0; }
 
 footer .cont_box_foot .section::nth-of-type(4) { padding-right: 0; }
 
@@ -4411,13 +4411,13 @@ footer .cont_box_foot_mobile ul.collapsible .collapsible-links a:hover { color: 
 
 footer .cont_box_foot_mobile ul.collapsible .collapsible-news .input-field { width: 100%; margin-left: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-footer .cont_box_foot_mobile ul.collapsible .collapsible-news .input-field .input-email-news { border: solid 1px #3fa7f3; outline: none; padding-left: 1rem; font-weight: 400; width: 100%; font-size: .9rem; border-radius: 3px 0 0 3px; margin-bottom: 0; }
+footer .cont_box_foot_mobile ul.collapsible .collapsible-news .input-field .input-email-news { border: solid 1px #3fa7f3; outline: none; padding-left: 1rem; font-weight: 600; width: 100%; font-size: .9rem; border-radius: 3px 0 0 3px; margin-bottom: 0; }
 
-footer .cont_box_foot_mobile ul.collapsible .collapsible-news .input-field .label-email-news { color: #3fa7f3; font-size: .9rem; padding-left: 1rem; font-weight: 400; }
+footer .cont_box_foot_mobile ul.collapsible .collapsible-news .input-field .label-email-news { color: #3fa7f3; font-size: .9rem; padding-left: 1rem; font-weight: 600; }
 
 footer .cont_box_foot_mobile ul.collapsible .collapsible-news .input-field .label-email-news:after { margin-top: 20px; padding-left: 1rem; font-weight: 600; }
 
-footer .cont_box_foot_mobile ul.collapsible .collapsible-news .input-field .submit-email-news { height: 3rem; background: #3fa7f3; color: #fff; outline: none; border: none; padding: 0 1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; -webkit-box-shadow: 0 0 0 1px #3fa7f3; box-shadow: 0 0 0 1px #3fa7f3; font-size: .9rem; font-weight: 400; border-radius: 0 3px 3px 0; margin-bottom: 0; }
+footer .cont_box_foot_mobile ul.collapsible .collapsible-news .input-field .submit-email-news { height: 3rem; background: #3fa7f3; color: #fff; outline: none; border: none; padding: 0 1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; text-align: center; -webkit-box-shadow: 0 0 0 1px #3fa7f3; box-shadow: 0 0 0 1px #3fa7f3; font-size: .9rem; font-weight: 600; border-radius: 0 3px 3px 0; margin-bottom: 0; }
 
 footer .cont_box_foot_mobile ul.collapsible .collapsible-redes { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 

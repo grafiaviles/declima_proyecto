@@ -142,18 +142,19 @@ footer {
                     & .input-email-news {
                         box-shadow: 0 0 0 1px $secondColor;
                         padding-left: 1rem;
-                        font-weight: 400;
+                        font-weight: 600;
                         width: 100%;
                         border-bottom: none;
                         font-size: .9rem;
                         border-radius: 5px 0 0 5px;
                         margin-bottom: 0;
+                        color: rgba(255, 255, 255, 1)!important;
                     }
                     & .label-email-news {
-                        color: rgba(255, 255, 255, 0.6);
+                        color: rgba(255, 255, 255, 0.6)!important;
                         font-size: .9rem;
                         padding-left: 1rem;
-                        font-weight: 400;
+                        font-weight: 600;
                     }
                     & .label-email-news:after {
                         margin-top: 20px;
@@ -172,7 +173,7 @@ footer {
                         text-align: center;
                         box-shadow: 0 0 0 1px $secondColor;
                         font-size: .9rem;
-                        font-weight: 400;
+                        font-weight: 600;
                         border-radius: 0 3px 3px 0;
                         margin-bottom: 0;
                     }
@@ -395,7 +396,7 @@ footer {
                         border: solid 1px $secondColor;
                         outline: none;
                         padding-left: 1rem;
-                        font-weight: 400;
+                        font-weight: 600;
                         width: 100%;
                         font-size: .9rem;
                         border-radius: 3px 0 0 3px;
@@ -405,7 +406,7 @@ footer {
                         color: $secondColor;
                         font-size: .9rem;
                         padding-left: 1rem;
-                        font-weight: 400;
+                        font-weight: 600;
                     }
                     & .label-email-news:after {
                         margin-top: 20px;
@@ -424,7 +425,7 @@ footer {
                         text-align: center;
                         box-shadow: 0 0 0 1px $secondColor;
                         font-size: .9rem;
-                        font-weight: 400;
+                        font-weight: 600;
                         border-radius: 0 3px 3px 0;
                         margin-bottom: 0;
                     }
