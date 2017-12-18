@@ -185,7 +185,7 @@
                     <p class="container-fluid text-grey">09:00am - 18:30pm hrs.</p>
                 </div>
                 <div class="col s12 m4">
-                    <p class="container-fluid text-second"><b>Consultas</b></p>
+                    <p class="container-fluid text-second"><b>Fono Consultas</b></p>
                     <a href="tel:+56229046383" class="container-fluid text-grey">(+562) 2904 6383</a><br>
                     <a href="tel:+56226051140" class="container-fluid text-grey">(+562) 2605 1140</a>
                 </div>
@@ -507,7 +507,7 @@
                     <li class="list-category"><a href="#" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i>
                         <span class="notification">3</span>
                     </a></li>
-                    <li class="list-category"><a href="tel:+56229046383" class="link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Consultas (+562) 2904 6383"><i class="icon-phone"></i></a></li>
+                    <li class="list-category"><a href="tel:+56229046383" class="link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Consultas 22 904 6383"><i class="icon-phone"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -559,24 +559,33 @@
                                     <div class="swiper-slide" style="background-image:url(../img/ficha-productos/producto-prueba2.jpg)"></div>
                                 </div>
                             </div>
-
                         </div>
                         <!-- Descripcion Producto -->
-                        <div class="col s12 l5 cont-description-producto">
+                        <div class="col s12 l7 cont-description-producto">
                             <!-- INFORMACION PRODUCTO -->
                             <article id="info-producto" class="col s12 box-description">
                                 <p class="sku-producto text-second">SKU: 123456</p>
-                                <hgroup>
-                                    <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
-                                    <h2 class="marca-producto text-primary"><b>Marca del Producto</b><img class="hide logo-marca" src="img/ficha-productos/marca-logo.svg"></h2>
-                                </hgroup>
-                                <p class="semantica-producto text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa.</p>
+                                <div class="box-title-star valign-wrapper">
+                                    <hgroup class="title-producto s12 m6">
+                                        <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
+                                        <h2 class="marca-producto text-grey"><b>Marca del Producto</b><img class="hide logo-marca" src="img/ficha-productos/marca-logo.svg"></h2>
+                                    </hgroup>
+                                    <div class="col s12 m6 star-producto valign-wrapper">
+                                        <h5 class="text-grey right-align">Sin calificación (0)</h5>
+                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                                    </div>
+                                </div>
+                                <p class="semantica-producto text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
                             </article>
                             <!-- ANEXOS -->
                             <article id="anexo-instalacion" class="col s12 box-description">
                                 <!-- Anexo 1 -->
                                 <div class="anexos-productos valign-wrapper">
-                                    <i class="text-second icon-settings"></i>
+                                    <i class="text-second icon-anexos icon-settings"></i>
                                     <div class="description-anexos">
                                         <p class="text-grey nombre-anexo">Incluir instalación básica <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
                                         <!-- Switch 1 -->
@@ -588,11 +597,27 @@
                                             Si
                                             </label>
                                         </div>
+                                        <!-- Precio instalacion -->
+                                        <div class="precio-anexos">
+                                            <p class="text-grey"><span class="precio">$ 100.000</span></p>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- Precio instalacion -->
-                                <div class="hide precio-anexos right">
-                                    <p class="text-second"><span class="precio">$ 100.000</span></p>
+                                <!-- Anexo 2 -->
+                                <div class="anexos-productos valign-wrapper">
+                                    <i class="text-second icon-anexos icon-wifi"></i>
+                                    <div class="description-anexos">
+                                        <p class="text-grey nombre-anexo">Incluir Smartkit <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
+                                        <!-- Switch 1 -->
+                                        <div class="switch">
+                                            <label>
+                                            No
+                                            <input type="checkbox">
+                                            <span class="lever"></span>
+                                            Si
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                             <!-- PRECIOS -->
@@ -638,7 +663,42 @@
                             </article>
                         </div>
                         <!-- Sidebar Producto -->
-                        <aside class="col s12 l2 box-aside">2HOLA MI GENTE DE INSTAGRAM</aside>
+                        <aside class="hide col s12 l2 cont-box-aside">
+                            <div class="col s12 box-aside valign-wrapper">
+                                <h5 class="text-grey title-aside container-fluid">Sin calificación (0)</h5>
+                                <a class="text-second icon-estrella tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy malo" href=""><i class="icon-star"></i></a>
+                                <a class="text-second icon-estrella tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href=""><i class="icon-star"></i></a>
+                                <a class="text-second icon-estrella tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href=""><i class="icon-star"></i></a>
+                                <a class="text-second icon-estrella tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href=""><i class="icon-star"></i></a>
+                                <a class="text-second icon-estrella tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href=""><i class="icon-star"></i></a>
+                            </div>
+                            <div class="col s12 box-aside valign-wrapper">
+                                <h5 class="text-grey title-aside container-fluid">Garantía Extendida</h5>
+                                <a class="icon" href="" target="_blank">Válida por 6 Meses</a>
+                            </div>
+                            <div class="col s12 box-aside valign-wrapper">
+                                <h5 class="text-grey title-aside container-fluid">Catálogo Online</h5>
+                                <a class="icon" href="" target="_blank">Descargar Catálogo</a>
+                            </div>
+                            <div class="col s12 box-aside valign-wrapper">
+                                <h5 class="text-grey title-aside container-fluid">Comparte este producto</h5>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-twitter"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-google-plus"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
+                            </div>
+                            <div class="col s12 box-aside valign-wrapper">
+                                <h5 class="text-grey title-aside container-fluid">Medios de Pago</h5>
+                                <img class="responsive-img" src="img/ficha-productos/pagos.svg" alt="Medio de Pago" width="200">
+                            </div>
+                            <div class="col s12 box-aside valign-wrapper">
+                                <h5 class="text-grey title-aside container-fluid">Etiquetas</h5>
+                                <a class="" href="">Split</a>
+                                <a class="" href="">BTU</a>
+                                <a class="" href="">Portatiles</a>
+                                <a class="" href="">Ecologico</a>
+                            </div>
+                        </aside>
                     </div>
                 </div>
             </div>

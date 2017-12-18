@@ -98,35 +98,75 @@
                         padding-top: 1.2rem;
                         padding-bottom: 1.2rem;
                         border-bottom: 1px solid $greysoftColor;
+                        @media screen and (max-width: 480px) {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
                     }
                     //INFORMACION PRODUCTO
                     & .box-description:nth-of-type(1) {
                         padding-top: 0;
                         & .sku-producto {
-                            font-size: .7rem;
+                            font-size: .8rem;
                             letter-spacing: 1px;
                             font-weight: 600;
                             margin: 0;
                         }
-                        & hgroup {
+                        & .box-title-star {
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            flex-wrap: wrap;
                             margin: 0;
                             margin: 1rem 0;
                             margin-top: .5rem;
-                            & .nombre-producto {
-                                font-size: 1.5rem;
-                                font-weight: 600;
-                                margin: 0;
-                                margin-bottom: 1rem;
-                                text-transform: uppercase;
+                            & .title-producto {
+                                position: relative;
+                                & .nombre-producto {
+                                    font-size: 1.5rem;
+                                    font-weight: 600;
+                                    margin: 0;
+                                    margin-bottom: 1rem;
+                                    text-transform: uppercase;
+                                }
+                                & .marca-producto {
+                                    font-size: 1rem;
+                                    margin: 0;
+                                    & .logo-marca {
+                                        vertical-align: middle;
+                                        display: inline-block;
+                                        max-width: 100px;
+                                        width: 100%;
+                                    }
+                                }
                             }
-                            & .marca-producto {
-                                font-size: 1rem;
-                                margin: 0;
-                                & .logo-marca {
-                                    vertical-align: middle;
-                                    display: inline-block;
-                                    max-width: 100px;
-                                    width: 100%;
+                            & .star-producto {
+                                justify-content: flex-end;
+                                align-items: center;
+                                @media screen and (max-width: 480px) {
+                                    justify-content: flex-start;
+                                    padding: 0;
+                                    margin-top: 1rem;
+                                }
+                                & h5 {
+                                    font-size: .9rem;
+                                    margin: 0;
+                                    padding-right: 5px;
+                                    @media screen and (max-width: 480px) {
+                                        margin-top: -5px;
+                                    }
+                                }
+                                & a {
+                                    font-size: 1rem;
+                                    margin-right: 3px;
+                                    @media screen and (max-width: 480px) {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                                & a:last-child {
+                                    margin-right: 0;
+                                }
+                                & a:hover {
+                                    color: $primaryColor;
                                 }
                             }
                         }
@@ -137,7 +177,7 @@
                     //ANEXOS
                     & .box-description:nth-of-type(2) {
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: flex-start;
                         align-items: flex-start;
                         flex-wrap: wrap;
                         & .anexos-productos {
@@ -145,10 +185,14 @@
                             flex-wrap: wrap;
                             align-items: baseline;
                             justify-content: flex-start;
-                            & .icon-settings {
+                            margin-right: 2rem;
+                            @media screen and (max-width: 480px) {
+                                margin-bottom: 2rem;
+                            }
+                            & .icon-anexos {
                                 font-size: 1.5rem;
                                 margin-right: 1rem;
-                                margin-top: 5px;
+                                margin-top: 3px;
                                 align-self: flex-start;
                             }
                             & .nombre-anexo {
@@ -159,16 +203,19 @@
                                     font-size: 1.1rem;
                                 }
                             }
-                        }
-                        & .precio-anexos {
-                            position: relative;
-                            & p {
-                                font-size: .9rem;
-                                & .precio {
-                                    font-weight: 600;
+                            & .precio-anexos {
+                                margin-top: 15px;
+                                & p {
                                     font-size: .9rem;
+                                    & .precio {
+                                        font-weight: 600;
+                                        font-size: .9rem;
+                                    }
                                 }
                             }
+                        }
+                        & .anexos-productos:nth-child(2) {
+                            margin-bottom: 0;
                         }
                     }
                     //PRECIOS
@@ -299,7 +346,7 @@
                                     & i {
                                         position: absolute;
                                         top: 50%;
-                                        margin-top: -10px;
+                                        margin-top: -8.5px;
                                         right: 10px;
                                         font-size: 1.2rem;
                                         color: $whiteColor;
@@ -314,8 +361,43 @@
                     }
                 }
                 //ASIDE FICHA PRODUCTO
-                & .box-aside {
-                    background-color: red;
+                & .cont-box-aside {
+                    @media screen and (max-width: 768px) {
+                        margin-top: 2rem;
+                    }
+                    & .box-aside {
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+                        padding: 0;
+                        margin-bottom: 1.5rem;
+                        & .title-aside {
+                            font-size: .9rem;
+                            font-weight: 600;
+                            margin-bottom: 8px;
+                        }
+                        & a {
+                            font-size: .9rem;
+                        }
+                        & .icon-estrella {
+                            margin-right: 5px;
+                            font-size: 1rem;
+                            transition: $transition1;
+                        }
+                        & .icon-estrella:hover {
+                            color: $primaryColor;
+                        }
+                        & .icon-redes {
+                            border: 1px solid #3fa7f3;
+                            display: inline-block;
+                            text-align: center;
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            margin-right: 5px;
+                            border-radius: 50px;
+                            color: #3fa7f3;
+                        }
+                    }
                 }
             }
         }
