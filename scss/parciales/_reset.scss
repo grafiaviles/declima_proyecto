@@ -104,8 +104,18 @@ a {
     color: $greyColor;
 }
 
+.text-white {
+    color: $whiteColor;
+}
+
 .my-disabled {
     opacity: .4;
+    cursor: default;
+    pointer-events: none;
+}
+
+.calc-disable {
+    display: none;
     cursor: default;
     pointer-events: none;
 }

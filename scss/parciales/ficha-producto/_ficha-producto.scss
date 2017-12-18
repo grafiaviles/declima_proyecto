@@ -1,0 +1,370 @@
+.cont-ficha-producto {
+    background: $whiteColor;
+    margin: 0;
+    padding: 0;
+    margin-top: 64px;
+    @media screen and (max-width: 480px) {
+        margin-top: 56px;
+    }
+    & .fluid-Breadcrumbs {
+        //background: rgba(63, 168, 243, 0.05);
+        position: relative;
+        & .cont-Breadcrumbs {
+            position: relative;
+            border-bottom: 1px solid $greysoftColor;
+            padding: 1.5rem 0;
+            justify-content: space-between;
+            @media screen and (max-width: 480px) {
+                padding-top: 2rem;
+                padding-bottom: 1rem;
+            }
+            & .nav-breadcrumbs-producto {
+                margin: 0;
+                background: transparent;
+                box-shadow: none;
+                height: auto;
+                & .cont-bradcrumb {
+                    line-height: normal;
+                    @media screen and (max-width: 480px) {
+                        overflow-x: auto;
+                        overflow-y: hidden;
+                        white-space: nowrap;
+                        padding-bottom: 10px;
+                        width: 100%;
+                    }
+                    & .breadcrumb {
+                        color: $greyColor;
+                        font-size: .95rem;
+                        opacity: .5;
+                    }
+                    & .breadcrumb:hover {
+                        color: $secondColor!important;
+                        opacity: 1;
+                    }
+                    & .breadcrumb:before {
+                        content: "\e934";
+                        color: $greyColor;
+                        top: 3px;
+                        position: relative;
+                        font-family: 'grafiaviles';
+                        font-size: .95rem;
+                        @media screen and (max-width: 480px) {
+                            top: 4px;
+                        }
+                    }
+                    & .breadcrumb-active {
+                        color: $primaryColor!important;
+                        font-weight: 600;
+                        opacity: 1;
+                    }
+                    & .calc {
+                        font-size: .95rem;
+                        color: $primaryColor;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin: 0;
+                        padding-right: 4.5rem;
+                        position: relative;
+                        & .img-calc {
+                            top: -8px;
+                            right: 0;
+                            vertical-align: middle;
+                            position: absolute;
+                            transition: $transition1;
+                        }
+                    }
+                    & .calc:hover .img-calc {
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+    & .fluid-ficha-producto {
+        position: relative;
+        min-height: 100%;
+        & .container-ficha {
+            padding: 50px 0;
+            @media screen and (max-width: 480px) {
+                padding-top: 0;
+            }
+            & .row-main-ficha {
+                background: $whiteColor;
+                margin: 0;
+                //Descripción Completa producto
+                & .cont-description-producto {
+                    position: relative;
+                    & .box-description {
+                        padding-top: 1.2rem;
+                        padding-bottom: 1.2rem;
+                        border-bottom: 1px solid $greysoftColor;
+                    }
+                    //INFORMACION PRODUCTO
+                    & .box-description:nth-of-type(1) {
+                        padding-top: 0;
+                        & .sku-producto {
+                            font-size: .7rem;
+                            letter-spacing: 1px;
+                            font-weight: 600;
+                            margin: 0;
+                        }
+                        & hgroup {
+                            margin: 0;
+                            margin: 1rem 0;
+                            margin-top: .5rem;
+                            & .nombre-producto {
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                                margin: 0;
+                                margin-bottom: 1rem;
+                                text-transform: uppercase;
+                            }
+                            & .marca-producto {
+                                font-size: 1rem;
+                                margin: 0;
+                                & .logo-marca {
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                    max-width: 100px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        & .semantica-producto {
+                            font-weight: 400;
+                        }
+                    }
+                    //ANEXOS
+                    & .box-description:nth-of-type(2) {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        flex-wrap: wrap;
+                        & .anexos-productos {
+                            position: relative;
+                            flex-wrap: wrap;
+                            align-items: baseline;
+                            justify-content: flex-start;
+                            & .icon-settings {
+                                font-size: 1.5rem;
+                                margin-right: 1rem;
+                                margin-top: 5px;
+                                align-self: flex-start;
+                            }
+                            & .nombre-anexo {
+                                margin-bottom: 5px;
+                                & i {
+                                    position: relative;
+                                    top: 2px;
+                                    font-size: 1.1rem;
+                                }
+                            }
+                        }
+                        & .precio-anexos {
+                            position: relative;
+                            & p {
+                                font-size: .9rem;
+                                & .precio {
+                                    font-weight: 600;
+                                    font-size: .9rem;
+                                }
+                            }
+                        }
+                    }
+                    //PRECIOS
+                    & .box-description:nth-of-type(3) {
+                        & p {
+                            margin-bottom: .5rem;
+                            font-size: .9rem;
+                            position: relative;
+                            text-align: left;
+                            & .precio {
+                                position: relative;
+                                & .signo {
+                                    padding-right: 5px;
+                                }
+                            }
+                        }
+                        & p:first-child {
+                            font-weight: 600;
+                            font-size: 1.3rem;
+                        }
+                        & p:last-child {
+                            margin-bottom: 0;
+                        }
+                        & p.precio-normal {
+                            text-decoration: none;
+                            & .precio {
+                                text-decoration: line-through;
+                            }
+                        }
+                        & p.precio-instalacion {
+                            font-weight: 600;
+                            & .precio {}
+                        }
+                        & p.precio-descuento {
+                            & .precio {}
+                        }
+                    }
+                    //DISPONIBILIDAD
+                    & .box-description:nth-of-type(4) {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        border-bottom: none;
+                        & .disponible {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            margin: 0;
+                            padding: 0;
+                            & i {
+                                font-size: 1.5rem;
+                                margin-top: 3px;
+                                margin-right: .7rem;
+                            }
+                            & p {
+                                font-size: .9rem;
+                            }
+                            & a {
+                                font-size: .9rem;
+                                font-weight: 600;
+                            }
+                            & a:hover {
+                                opacity: .7;
+                            }
+                        }
+                        & .disponible:first-child {
+                            margin-right: 2rem;
+                        }
+                    }
+                    & .box-description:nth-of-type(5) {
+                        position: relative;
+                        border-bottom: none;
+                        padding-top: 0;
+                        & .cont-call-to-accion {
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 0;
+                            border: 2px solid $primaryColor;
+                            border-radius: 3px;
+                            & .box-accion {
+                                padding: 0;
+                                justify-content: center;
+                                height: 47px;
+                            }
+                            & .box-accion:first-child {
+                                justify-content: space-between;
+                                & span {
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                    & i {
+                                        font-size: 1.2rem;
+                                        font-weight: 400;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        line-height: 48px;
+                                    }
+                                }
+                                & span:nth-last-child(2) {
+                                    border-right: 2px solid $primaryColor;
+                                    border-left: 2px solid $primaryColor;
+                                    height: 100%;
+                                    & p {
+                                        display: flex;
+                                        justify-content: center;
+                                        line-height: 48px;
+                                    }
+                                }
+                                & span:nth-child(odd) {
+                                    height: 100%;
+                                    line-height: 50px;
+                                    cursor: pointer;
+                                }
+                                & span:nth-child(odd):hover {
+                                    background-color: rgba(0, 89, 122, 0.05);
+                                }
+                            }
+                            & .box-accion:last-child {
+                                background-color: $primaryColor;
+                                color: $whiteColor;
+                                position: relative;
+                                & a {
+                                    font-weight: 600;
+                                    display: block;
+                                    width: 100%;
+                                    line-height: 48px;
+                                    text-align: center;
+                                    & i {
+                                        position: absolute;
+                                        top: 50%;
+                                        margin-top: -10px;
+                                        right: 10px;
+                                        font-size: 1.2rem;
+                                        color: $whiteColor;
+                                        transition: $transition1;
+                                    }
+                                }
+                                & a:hover .icon-arrow-right {
+                                    right: 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+                //ASIDE FICHA PRODUCTO
+                & .box-aside {
+                    background-color: red;
+                }
+            }
+        }
+    }
+}
+
+//Slider Producto Swiper
+.cont-swiper-slider {
+    @media screen and (max-width: 480px) {
+        margin-bottom: 2rem;
+    }
+    & .swiper-container {
+        width: 100%!important;
+        height: 400px!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    & .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+    & .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+    & .gallery-thumbs {
+        height: auto!important;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+    & .gallery-thumbs .swiper-slide {
+        width: 25%;
+        max-width: 100px;
+        min-width: 100px;
+        height: 100px;
+        min-height: 100px;
+        opacity: 0.4;
+        cursor: pointer;
+    }
+    & .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
+    .swiper-button-next.swiper-button-white,
+    .swiper-container-rtl .swiper-button-prev.swiper-button-white {
+        background-image: url(../img/ficha-productos/next-arrow.svg);
+    }
+    .swiper-button-prev.swiper-button-white,
+    .swiper-container-rtl .swiper-button-next.swiper-button-white {
+        background-image: url(../img/ficha-productos/next-arrow.svg);
+        transform: rotate(180deg);
+    }
+}

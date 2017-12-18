@@ -24,33 +24,52 @@
 .cotizador-cantainer {
     border-radius: 5px;
     background: $whiteColor;
-    padding: 0 2rem;
+    padding: 0;
     & .modal-content {
         position: relative!important;
         height: auto!important;
         background: $secondColor;
-        margin-bottom: .5rem;
-        padding: 1.5rem 2.5rem;
+        padding: 1.5rem;
+        @media screen and (max-width: 480px) {
+            padding: 1.5rem;
+        }
         & h4 {
             margin-bottom: 0;
             color: $whiteColor;
             font-size: 1.5rem;
             font-weight: 600;
             display: inline-block;
+            @media screen and (max-width: 480px) {
+                font-size: 1.3rem;
+            }
         }
         & i {
             font-size: 1.4rem;
-            position: relative;
-            top: 3px;
+            position: absolute;
+            top: 50%;
             cursor: pointer;
             opacity: .8;
-            right: -10px;
+            right: 15px;
+            margin-top: -10px;
         }
     }
     & .form-cotizador {
-        padding: 0 2rem;
+        padding: 0 1.5rem;
+        margin-top: .5rem;
         & .select-box {
             margin-bottom: 0;
+        }
+        & .comentarios {
+            @media screen and (max-width: 480px) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    //Contenedor para otras modales
+    & .contenido-modal {
+        padding: 1rem 1.5rem;
+        & div {
+            margin-bottom: 1.5rem;
         }
     }
     & .modal-footer {
@@ -60,6 +79,12 @@
         @media screen and (max-width: 480px) {
             position: relative;
             width: 100%;
+            padding: 0 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
         }
         & .checkbox-condiciones {
             width: 60%;
@@ -67,13 +92,17 @@
             left: 35px;
             bottom: 25px;
             @media screen and (max-width: 480px) {
-                bottom: 15px;
+                left: 0;
                 width: 100%;
             }
             & label {
                 line-height: normal;
                 font-size: 13px;
                 width: 90%;
+                @media screen and (max-width: 480px) {
+                    width: 100%;
+                    font-size: 11px;
+                }
             }
         }
         & .btn {
@@ -92,8 +121,9 @@
             width: 30%;
             transition: $transition1;
             @media screen and (max-width: 480px) {
-                bottom: 15px;
                 width: 100%;
+                bottom: 0;
+                right: 0;
             }
         }
         & .btn:hover {
