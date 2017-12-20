@@ -571,12 +571,12 @@
                         <div class="col s12 l7 cont-description-producto">
                             <!-- INFORMACION PRODUCTO -->
                             <article id="info-producto" class="col s12 box-description">
-                                <p class="sku-producto text-second">SKU: 123456</p>
                                 <div class="box-title-star valign-wrapper">
-                                    <hgroup class="title-producto s12 m6">
-                                        <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
+                                    <div class="title-producto s12 m6">
                                         <h2 class="marca-producto text-grey"><b></b><img class="logo-marca" src="img/ficha-productos/marca-logo.svg"></h2>
-                                    </hgroup>
+                                        <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
+                                        <p class="sku-producto text-second">SKU: 123456</p>
+                                    </div>
                                     <div class="col s12 m6 star-producto valign-wrapper">
                                         <h5 class="text-grey right-align">Sin calificación (0)</h5>
                                         <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
@@ -611,10 +611,10 @@
                                     </div>
                                 </div>
                                 <!-- Anexo 2 -->
-                                <div class="anexos-productos valign-wrapper">
+                                <div id="anexo-smarkit" class="anexos-productos valign-wrapper">
                                     <i class="text-second icon-anexos icon-wifi"></i>
                                     <div class="description-anexos">
-                                        <p class="text-grey nombre-anexo">Incluir Smarkit <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
+                                        <p class="text-grey nombre-anexo">Incluir Smarkit Wifi <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
                                         <!-- Switch 1 -->
                                         <div class="switch switch-anexos">
                                             <label>
@@ -633,18 +633,20 @@
                             </article>
                             <!-- PRECIOS -->
                             <article id="precios-productos" class="col s12 box-description">
-                                <p class="text-primary">Internet <span class="precio right"><span class="signo">$</span>150.000</span>
+                                <p class="text-second precio-internet">Internet:<span class="precio right"><span class="signo">$</span>150.000</span>
                                 </p>
-                                <p class="text-grey precio-instalacion">Intalación básica <span class="precio right"><span class="signo">$</span>100.000</span>
+                                <p class="text-grey precio-instalacion">Intalación básica:<span class="precio right"><span class="signo">$</span>100.000</span>
                                 </p>
-                                <p class="text-grey precio-normal">Normal <span class="precio right"><span class="signo">$</span>200.000</span>
+                                <p class="text-grey precio-normal">Normal:<span class="precio right"><span class="signo">$</span>200.000</span>
                                 </p>
-                                <p class="text-grey precio-descuento">Descuento<span class="precio right"><span class="signo">$</span>-50.000</span>
+                                <p class="text-grey precio-descuento">Descuento:<span class="precio right"><span class="signo">$</span>-50.000</span>
+                                </p>
+                                <p class="text-primary precio-total">TOTAL:<span class="precio right"><span class="signo">$</span>250.000</span>
                                 </p>
                             </article>
                             <!-- DISPONIBILIDAD -->
                             <article class="col s12 box-description">
-                                <div class="disponible">
+                                <div class="hide disponible">
                                     <i class="text-second icon-calendar"></i>
                                     <div>
                                         <p class="text-grey">Instalación básica</p>
@@ -654,15 +656,15 @@
                                 <div class="disponible">
                                     <i class="text-second icon-map-pin"></i>
                                     <div>
-                                        <p class="text-grey">Retiro sala de ventas</p>
+                                        <p class="text-grey">Retiro Sala de Ventas</p>
                                         <a class="modal-trigger text-second" href="#maps-info" class="text-grey">¿CÓMO LLEGAR?</a>
                                     </div>
                                 </div>
                                 <div class="disponible">
                                     <i class="text-second icon-lock"></i>
                                     <div>
-                                        <p class="text-grey">Garantía</p>
-                                        <a class="modal-trigger text-second" class="text-grey">6 MESES</a>
+                                        <p class="text-grey">Garantía del Producto</p>
+                                        <a class="modal-trigger text-second" class="text-grey">3 MESES</a>
                                     </div>
                                 </div>
                                 <div class="disponible">
@@ -700,19 +702,70 @@
                                 <h5 class="text-grey title-aside container-fluid">Medios de Pago</h5>
                                 <img class="responsive-img medios-pago-img" src="img/ficha-productos/pagos.svg" alt="Medio de Pago">
                             </div>
-                            <div class="col s12 box-aside valign-wrapper">
-                                <h5 class="text-grey title-aside container-fluid">Etiquetas</h5>
-                                <a class="tags" href="">Split</a>
-                                <a class="tags" href="">BTU</a>
-                                <a class="tags" href="">Portatiles</a>
-                                <a class="tags" href="">Ecologico</a>
-                                <a class="tags" href="">Split</a>
-                                <a class="tags" href="">BTU</a>
-                                <a class="tags" href="">Portatiles</a>
-                                <a class="tags" href="">Ecologico</a>
-                            </div>
                         </aside>
                     </div>
+
+
+                    <!-- ESPECIFICACIONES PRODUCTO -->
+                    <div class="row row-main-ficha row-main-datos">
+                        <!-- Tabs -->
+                        <div class="cont-tabs-datos">
+                            <ul id="tabs-swipe-datos" class="tabs tabs-datos">
+                                <li class="tab col s4"><a class="nombre-datos" href="#datos-1"><b>Descripción</b></a></li>
+                                <li class="tab col s4"><a class="active nombre-datos" href="#datos-2"><b>Especificaciones</b></a></li>
+                                <li class="tab col s4"><a class="nombre-datos" href="#datos-3"><b>Calificaciones</b></a></li>
+                            </ul>
+                            <div id="datos-1" class="col s12 item-tabs-datos">Test 1</div>
+                            <div id="datos-2" class="col s12 item-tabs-datos">
+                                <table class="bordered highlight responsive-table">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Modelo</th>
+                                            <th>Capacidad Frío</th>
+                                            <th>Capacidad Calor</th>
+                                            <th>Potencia Máxima</th>
+                                            <th>Refrigerante</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>MSMAA-09HRN1</td>
+                                            <td>9000 BTU / h</td>
+                                            <td>9500 BTU / h</td>
+                                            <td>1.150 w.</td>
+                                            <td>R410 - 590 g.</td>
+                                        </tr>
+                                    </tbody>
+
+                                    <thead>
+                                        <tr>
+                                            <th>Control Remoto</th>
+                                            <th>Peso Neto</th>
+                                            <th>Ancho</th>
+                                            <th>Profundidad</th>
+                                            <th>Alto</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Sí</td>
+                                            <td>8,5 kg.</td>
+                                            <td>715 mm</td>
+                                            <td>205 mm</td>
+                                            <td>285 mm</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div id="datos-3" class="col s12 item-tabs-datos">Test 3</div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>

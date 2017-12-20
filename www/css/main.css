@@ -3564,6 +3564,8 @@ header .menu-secciones { background: #00587a !important; }
 
 .cotizador-cantainer .form-cotizador .select-box { margin-bottom: 0; }
 
+.cotizador-cantainer .form-cotizador .comentarios { margin-bottom: 10px; }
+
 @media screen and (max-width: 480px) { .cotizador-cantainer .form-cotizador .comentarios { margin-bottom: 5px; } }
 
 .cotizador-cantainer .contenido-modal { padding: 1rem 1.5rem; }
@@ -3854,7 +3856,7 @@ header .menu-secciones { background: #00587a !important; }
 
 @media screen and (min-width: 1400px) { .fluid-equipos .cont-tabs-equipos .nav-equipos-home { margin-bottom: 5rem; } }
 
-.fluid-equipos .cont-tabs-equipos .nav-equipos-home li a { font-weight: 500; text-transform: none; font-size: 18px; color: rgba(255, 255, 255, 0.6); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.fluid-equipos .cont-tabs-equipos .nav-equipos-home li a { font-weight: 600; text-transform: uppercase; font-size: 1rem; color: rgba(255, 255, 255, 0.6); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 .fluid-equipos .cont-tabs-equipos .nav-equipos-home li a i { margin-right: 1rem; color: #3fa7f3; opacity: .5; font-size: 1.5rem; vertical-align: middle; position: relative; top: -2px; }
 
@@ -4507,9 +4509,9 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha { padding: 50px 0; }
 
-@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha { padding-top: 0; } }
+@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha { padding-top: 0; padding-bottom: 30px; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha { background: #fff; margin: 0; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha { background: #fff; margin: 0; margin-bottom: 5rem; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto { position: relative; }
 
@@ -4519,17 +4521,17 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) { padding-top: 0; }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .sku-producto { font-size: .8rem; letter-spacing: 1px; font-weight: 600; margin: 0; }
-
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0; margin: 1rem 0; margin-top: .5rem; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .title-producto { position: relative; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .title-producto .sku-producto { font-size: .8rem; letter-spacing: 1px; font-weight: 600; margin: 0; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .title-producto .nombre-producto { font-size: 1.5rem; font-weight: 600; margin: 0; margin-bottom: 1rem; text-transform: uppercase; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .title-producto .marca-producto { font-size: 1rem; margin: 0; }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .title-producto .marca-producto .logo-marca { vertical-align: middle; display: inline-block; max-width: 100px; width: 100%; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .title-producto .marca-producto .logo-marca { vertical-align: middle; display: inline-block; max-width: 100px; width: 100%; margin-bottom: 1rem; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .star-producto { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -4547,7 +4549,7 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .star-producto a:hover { color: #00587a; }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .semantica-producto { font-weight: 400; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .semantica-producto { font-weight: 400; font-size: 1rem; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(2) { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; padding-bottom: 1.5rem; }
 
@@ -4559,6 +4561,8 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(2) .anexos-productos .nombre-anexo { margin-bottom: 1rem; font-size: .9rem; }
 
+@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(2) .anexos-productos .nombre-anexo { font-size: 1rem; } }
+
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(2) .anexos-productos .nombre-anexo i { position: relative; top: 2px; font-size: 1rem; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(2) .anexos-productos .switch-anexos { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
@@ -4569,6 +4573,8 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(2) .anexos-productos .switch-anexos .precio-anexos p .precio { font-weight: 600; font-size: .9rem; }
 
+@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(2) .anexos-productos .switch-anexos .precio-anexos p .precio { font-size: 1rem; } }
+
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(2) .anexos-productos:nth-child(2) { margin-bottom: 0; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) p { margin-bottom: .5rem; font-size: .9rem; position: relative; text-align: left; }
@@ -4577,9 +4583,11 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) p .precio .signo { padding-right: 5px; }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) p:first-child { font-weight: 600; font-size: 1.3rem; }
+@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) p { font-size: 1rem; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) p:last-child { margin-bottom: 0; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-internet, .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-total { font-weight: 600; font-size: 1.1rem; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-total { font-size: 1.3rem; margin-bottom: 0; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) p.precio-normal { text-decoration: none; }
 
@@ -4629,6 +4637,8 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child { background-color: #00587a; color: #fff; position: relative; }
 
+@media screen and (max-width: 321px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child { width: 100%; } }
+
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child a { font-weight: 600; display: block; width: 100%; line-height: 48px; text-align: center; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child a i { position: absolute; top: 50%; margin-top: -8.5px; right: 10px; font-size: 1.2rem; color: #fff; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
@@ -4649,7 +4659,21 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-box-aside .box-aside .icon-redes { border: 1px solid #3fa7f3; display: inline-block; text-align: center; width: 40px; height: 40px; line-height: 40px; margin-right: 10px; border-radius: 50px; color: #3fa7f3; font-size: 1.2rem; }
 
-@media screen and (max-width: 480px) { .cont-swiper-slider { margin-bottom: 2rem; } }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos li .nombre-datos { font-weight: 500; text-transform: uppercase; font-size: 1rem; color: #3fa7f3; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; opacity: .5; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos li .active { opacity: 1; color: #3fa7f3; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos .indicator { background-color: #3fa7f3; height: 1px; }
+
+@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos .indicator { height: 3px; background-color: #3fa7f3; } }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .carousel { min-height: auto !important; }
+
+table.bordered > thead > tr, table.bordered > tbody > tr { border-bottom: 1px solid #f0f0f0; }
+
+td, th { color: #777; font-size: .9rem; }
+
+@media screen and (max-width: 480px) { .cont-swiper-slider { padding: 0 !important; margin-bottom: 2rem; } }
 
 .cont-swiper-slider .swiper-container { width: 100% !important; height: 400px !important; margin-left: auto; margin-right: auto; }
 
@@ -4667,11 +4691,17 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-swiper-slider .swiper-button-prev.swiper-button-white, .cont-swiper-slider .swiper-container-rtl .swiper-button-next.swiper-button-white { background-image: url(../img/ficha-productos/next-arrow.svg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
-.cont-swiper-slider .box-share { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0; }
+.cont-swiper-slider .box-share { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0; margin-top: 1rem; }
 
 .cont-swiper-slider .box-share .title-share { font-size: .8rem; margin-right: .5rem; }
 
-.cont-swiper-slider .box-share .icon-redes { border: 1px solid #3fa7f3; display: inline-block; text-align: center; width: 35px; height: 35px; line-height: 35px; margin-right: 5px; border-radius: 50px; color: #3fa7f3; }
+.cont-swiper-slider .box-share .icon-redes { border: 1px solid #00587a; color: #00587a; display: inline-block; text-align: center; width: 35px; height: 35px; line-height: 35px; margin-right: 10px; border-radius: 50px; }
+
+.cont-swiper-slider .box-share .icon-redes:nth-of-type(3) { font-size: 1.25rem; }
+
+.cont-swiper-slider .box-share .icon-redes:nth-of-type(4) { font-size: 1.1rem; }
+
+.cont-swiper-slider .box-share .icon-redes:hover { border: 1px solid #00587a; color: #fff; background: #00587a; }
 
 /** Swiper 4.0.7 Most modern mobile touch slider and framework with hardware accelerated transitions http://www.idangero.us/swiper/ Copyright 2014-2017 Vladimir Kharlampidi Released under the MIT License Released on: November 28, 2017 */
 .swiper-container { margin: 0 auto; position: relative; overflow: hidden; list-style: none; padding: 0; /* Fix of Webkit flickering */ z-index: 1; }

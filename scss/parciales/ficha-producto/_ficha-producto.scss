@@ -87,10 +87,12 @@
             padding: 50px 0;
             @media screen and (max-width: 480px) {
                 padding-top: 0;
+                padding-bottom: 30px;
             }
             & .row-main-ficha {
                 background: $whiteColor;
                 margin: 0;
+                margin-bottom: 5rem;
                 //Descripción Completa producto
                 & .cont-description-producto {
                     position: relative;
@@ -106,12 +108,6 @@
                     //INFORMACION PRODUCTO
                     & .box-description:nth-of-type(1) {
                         padding-top: 0;
-                        & .sku-producto {
-                            font-size: .8rem;
-                            letter-spacing: 1px;
-                            font-weight: 600;
-                            margin: 0;
-                        }
                         & .box-title-star {
                             justify-content: space-between;
                             align-items: flex-start;
@@ -120,6 +116,12 @@
                             margin: 1rem 0;
                             margin-top: .5rem;
                             & .title-producto {
+                                & .sku-producto {
+                                    font-size: .8rem;
+                                    letter-spacing: 1px;
+                                    font-weight: 600;
+                                    margin: 0;
+                                }
                                 position: relative;
                                 & .nombre-producto {
                                     font-size: 1.5rem;
@@ -136,6 +138,7 @@
                                         display: inline-block;
                                         max-width: 100px;
                                         width: 100%;
+                                        margin-bottom: 1rem
                                     }
                                 }
                             }
@@ -172,6 +175,7 @@
                         }
                         & .semantica-producto {
                             font-weight: 400;
+                            font-size: 1rem;
                         }
                     }
                     //ANEXOS
@@ -199,6 +203,9 @@
                             & .nombre-anexo {
                                 margin-bottom: 1rem;
                                 font-size: .9rem;
+                                @media screen and (max-width: 480px) {
+                                    font-size: 1rem;
+                                }
                                 & i {
                                     position: relative;
                                     top: 2px;
@@ -219,6 +226,9 @@
                                         & .precio {
                                             font-weight: 600;
                                             font-size: .9rem;
+                                            @media screen and (max-width: 480px) {
+                                                font-size: 1rem;
+                                            }
                                         }
                                     }
                                 }
@@ -241,12 +251,17 @@
                                     padding-right: 5px;
                                 }
                             }
+                            @media screen and (max-width: 480px) {
+                                font-size: 1rem;
+                            }
                         }
-                        & p:first-child {
+                        & .precio-internet {
                             font-weight: 600;
-                            font-size: 1.3rem;
+                            font-size: 1.1rem;
                         }
-                        & p:last-child {
+                        & .precio-total {
+                            @extend .precio-internet;
+                            font-size: 1.3rem;
                             margin-bottom: 0;
                         }
                         & p.precio-normal {
@@ -363,6 +378,9 @@
                                 background-color: $primaryColor;
                                 color: $whiteColor;
                                 position: relative;
+                                @media screen and (max-width: 321px) {
+                                    width: 100%;
+                                }
                                 & a {
                                     font-weight: 600;
                                     display: block;
@@ -426,13 +444,59 @@
                     }
                 }
             }
+            //ESPECIFICACIONES PRODUCTO
+            .row-main-datos {
+                //margin-bottom: 0;
+                & .tabs-datos {
+                    & li {
+                        & .nombre-datos {
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            font-size: 1rem;
+                            color: $secondColor;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            opacity: .5;
+                        }
+                        & .active {
+                            opacity: 1;
+                            color: $secondColor;
+                        }
+                    }
+                    & .indicator {
+                        background-color: $secondColor;
+                        height: 1px;
+                        @media screen and (max-width: 480px) {
+                            height: 3px;
+                            background-color: $secondColor;
+                        }
+                    }
+                }
+                & .carousel {
+                    min-height: auto!important;
+                }
+            }
         }
     }
+}
+
+//Edit border color table
+table.bordered>thead>tr,
+table.bordered>tbody>tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+td,
+th {
+    color: $greyColor;
+    font-size: .9rem;
 }
 
 //Slider Producto Swiper
 .cont-swiper-slider {
     @media screen and (max-width: 480px) {
+        padding: 0!important;
         margin-bottom: 2rem;
     }
     & .swiper-container {
@@ -479,20 +543,32 @@
         justify-content: flex-start;
         align-items: center;
         padding: 0;
+        margin-top: 1rem;
         & .title-share {
             font-size: .8rem;
             margin-right: .5rem;
         }
         & .icon-redes {
-            border: 1px solid #3fa7f3;
+            border: 1px solid $primaryColor;
+            color: $primaryColor;
             display: inline-block;
             text-align: center;
             width: 35px;
             height: 35px;
             line-height: 35px;
-            margin-right: 5px;
+            margin-right: 10px;
             border-radius: 50px;
-            color: #3fa7f3;
+        }
+        & .icon-redes:nth-of-type(3) {
+            font-size: 1.25rem;
+        }
+        & .icon-redes:nth-of-type(4) {
+            font-size: 1.1rem;
+        }
+        & .icon-redes:hover {
+            border: 1px solid $primaryColor;
+            color: $whiteColor;
+            background: $primaryColor;
         }
     }
 }
