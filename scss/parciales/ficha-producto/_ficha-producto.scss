@@ -180,6 +180,7 @@
                         justify-content: flex-start;
                         align-items: flex-start;
                         flex-wrap: wrap;
+                        padding-bottom: 1.5rem;
                         & .anexos-productos {
                             position: relative;
                             flex-wrap: wrap;
@@ -190,26 +191,35 @@
                                 margin-bottom: 2rem;
                             }
                             & .icon-anexos {
-                                font-size: 1.5rem;
+                                font-size: 1.3rem;
                                 margin-right: 1rem;
                                 margin-top: 3px;
                                 align-self: flex-start;
                             }
                             & .nombre-anexo {
-                                margin-bottom: 5px;
+                                margin-bottom: 1rem;
+                                font-size: .9rem;
                                 & i {
                                     position: relative;
                                     top: 2px;
-                                    font-size: 1.1rem;
+                                    font-size: 1rem;
                                 }
                             }
-                            & .precio-anexos {
-                                margin-top: 15px;
-                                & p {
-                                    font-size: .9rem;
-                                    & .precio {
-                                        font-weight: 600;
+                            & .switch-anexos {
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                & label {
+                                    margin-right: 1rem;
+                                }
+                                & .precio-anexos {
+                                    //margin-top: 15px;
+                                    & p {
                                         font-size: .9rem;
+                                        & .precio {
+                                            font-weight: 600;
+                                            font-size: .9rem;
+                                        }
                                     }
                                 }
                             }
@@ -256,19 +266,30 @@
                     //DISPONIBILIDAD
                     & .box-description:nth-of-type(4) {
                         display: flex;
-                        justify-content: flex-start;
+                        //justify-content: flex-start;
+                        justify-content: space-between;
                         align-items: flex-start;
+                        flex-wrap: wrap;
                         border-bottom: none;
+                        @media screen and (max-width: 480px) {
+                            justify-content: space-between;
+                        }
                         & .disponible {
                             display: flex;
                             justify-content: flex-start;
                             align-items: flex-start;
                             margin: 0;
+                            //margin-right: 1rem;
+                            margin-right: 0;
                             padding: 0;
+                            @media screen and (max-width: 480px) {
+                                margin-bottom: 1.5rem;
+                                width: 50%;
+                            }
                             & i {
-                                font-size: 1.5rem;
+                                font-size: 1.3rem;
                                 margin-top: 3px;
-                                margin-right: .7rem;
+                                margin-right: .5rem;
                             }
                             & p {
                                 font-size: .9rem;
@@ -281,8 +302,13 @@
                                 opacity: .7;
                             }
                         }
-                        & .disponible:first-child {
-                            margin-right: 2rem;
+                        & .disponible:nth-child(3),
+                        & .disponible:nth-child(4) {
+                            margin-right: 0;
+                            margin-bottom: 0;
+                            @media screen and (max-width: 480px) {
+                                margin-bottom: 1rem;
+                            }
                         }
                     }
                     & .box-description:nth-of-type(5) {
@@ -362,8 +388,11 @@
                 }
                 //ASIDE FICHA PRODUCTO
                 & .cont-box-aside {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
                     @media screen and (max-width: 768px) {
-                        margin-top: 2rem;
+                        margin-top: 1.5rem;
                     }
                     & .box-aside {
                         justify-content: flex-start;
@@ -372,30 +401,27 @@
                         margin-bottom: 1.5rem;
                         & .title-aside {
                             font-size: .9rem;
-                            font-weight: 600;
-                            margin-bottom: 8px;
+                            font-weight: 400;
+                            margin-bottom: 1rem;
                         }
                         & a {
                             font-size: .9rem;
                         }
-                        & .icon-estrella {
-                            margin-right: 5px;
-                            font-size: 1rem;
-                            transition: $transition1;
-                        }
-                        & .icon-estrella:hover {
-                            color: $primaryColor;
+                        & .medios-pago-img {
+                            max-width: 280px;
+                            width: 100%;
                         }
                         & .icon-redes {
                             border: 1px solid #3fa7f3;
                             display: inline-block;
                             text-align: center;
-                            width: 35px;
-                            height: 35px;
-                            line-height: 35px;
-                            margin-right: 5px;
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            margin-right: 10px;
                             border-radius: 50px;
                             color: #3fa7f3;
+                            font-size: 1.2rem;
                         }
                     }
                 }
@@ -448,5 +474,25 @@
     .swiper-container-rtl .swiper-button-next.swiper-button-white {
         background-image: url(../img/ficha-productos/next-arrow.svg);
         transform: rotate(180deg);
+    }
+    & .box-share {
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        & .title-share {
+            font-size: .8rem;
+            margin-right: .5rem;
+        }
+        & .icon-redes {
+            border: 1px solid #3fa7f3;
+            display: inline-block;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            margin-right: 5px;
+            border-radius: 50px;
+            color: #3fa7f3;
+        }
     }
 }

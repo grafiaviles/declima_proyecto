@@ -559,6 +559,13 @@
                                     <div class="swiper-slide" style="background-image:url(../img/ficha-productos/producto-prueba2.jpg)"></div>
                                 </div>
                             </div>
+                            <div class="hide-on-small-only col s12 box-share valign-wrapper">
+                                <p class="text-grey title-share">Compartir:</p>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-twitter"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-google-plus"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
+                            </div>
                         </div>
                         <!-- Descripcion Producto -->
                         <div class="col s12 l7 cont-description-producto">
@@ -568,7 +575,7 @@
                                 <div class="box-title-star valign-wrapper">
                                     <hgroup class="title-producto s12 m6">
                                         <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
-                                        <h2 class="marca-producto text-grey"><b>Marca del Producto</b><img class="hide logo-marca" src="img/ficha-productos/marca-logo.svg"></h2>
+                                        <h2 class="marca-producto text-grey"><b></b><img class="logo-marca" src="img/ficha-productos/marca-logo.svg"></h2>
                                     </hgroup>
                                     <div class="col s12 m6 star-producto valign-wrapper">
                                         <h5 class="text-grey right-align">Sin calificación (0)</h5>
@@ -589,17 +596,17 @@
                                     <div class="description-anexos">
                                         <p class="text-grey nombre-anexo">Incluir instalación básica <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
                                         <!-- Switch 1 -->
-                                        <div class="switch">
+                                        <div class="switch switch-anexos">
                                             <label>
                                             No
                                             <input type="checkbox">
                                             <span class="lever"></span>
                                             Si
                                             </label>
-                                        </div>
-                                        <!-- Precio instalacion -->
-                                        <div class="precio-anexos">
-                                            <p class="text-grey"><span class="precio">$ 100.000</span></p>
+                                            <!-- Precio instalacion -->
+                                            <div class="precio-anexos">
+                                                <p class="text-grey"><span class="precio">$ 0</span></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -607,15 +614,19 @@
                                 <div class="anexos-productos valign-wrapper">
                                     <i class="text-second icon-anexos icon-wifi"></i>
                                     <div class="description-anexos">
-                                        <p class="text-grey nombre-anexo">Incluir Smartkit <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
+                                        <p class="text-grey nombre-anexo">Incluir Smarkit <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
                                         <!-- Switch 1 -->
-                                        <div class="switch">
+                                        <div class="switch switch-anexos">
                                             <label>
-                                            No
-                                            <input type="checkbox">
-                                            <span class="lever"></span>
-                                            Si
-                                            </label>
+                                                No
+                                                <input type="checkbox">
+                                                <span class="lever"></span>
+                                                Si
+                                                </label>
+                                            <!-- Precio instalacion -->
+                                            <div class="precio-anexos">
+                                                <p class="text-grey"><span class="precio">$ 100.000</span></p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -647,6 +658,20 @@
                                         <a class="modal-trigger text-second" href="#maps-info" class="text-grey">¿CÓMO LLEGAR?</a>
                                     </div>
                                 </div>
+                                <div class="disponible">
+                                    <i class="text-second icon-lock"></i>
+                                    <div>
+                                        <p class="text-grey">Garantía</p>
+                                        <a class="modal-trigger text-second" class="text-grey">6 MESES</a>
+                                    </div>
+                                </div>
+                                <div class="disponible">
+                                    <i class="text-second icon-file"></i>
+                                    <div>
+                                        <p class="text-grey">Catálogo PDF</p>
+                                        <a class="modal-trigger text-second" href="#" target="_blank" class="text-grey">VER CATÁLOGO</a>
+                                    </div>
+                                </div>
                             </article>
                             <!-- BOTONES DE COMPRA -->
                             <article class="col s12 box-description">
@@ -663,23 +688,7 @@
                             </article>
                         </div>
                         <!-- Sidebar Producto -->
-                        <aside class="hide col s12 l2 cont-box-aside">
-                            <div class="col s12 box-aside valign-wrapper">
-                                <h5 class="text-grey title-aside container-fluid">Sin calificación (0)</h5>
-                                <a class="text-second icon-estrella tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy malo" href=""><i class="icon-star"></i></a>
-                                <a class="text-second icon-estrella tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href=""><i class="icon-star"></i></a>
-                                <a class="text-second icon-estrella tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href=""><i class="icon-star"></i></a>
-                                <a class="text-second icon-estrella tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href=""><i class="icon-star"></i></a>
-                                <a class="text-second icon-estrella tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href=""><i class="icon-star"></i></a>
-                            </div>
-                            <div class="col s12 box-aside valign-wrapper">
-                                <h5 class="text-grey title-aside container-fluid">Garantía Extendida</h5>
-                                <a class="icon" href="" target="_blank">Válida por 6 Meses</a>
-                            </div>
-                            <div class="col s12 box-aside valign-wrapper">
-                                <h5 class="text-grey title-aside container-fluid">Catálogo Online</h5>
-                                <a class="icon" href="" target="_blank">Descargar Catálogo</a>
-                            </div>
+                        <aside class="hide-on-med-and-up col s12 l2 cont-box-aside">
                             <div class="col s12 box-aside valign-wrapper">
                                 <h5 class="text-grey title-aside container-fluid">Comparte este producto</h5>
                                 <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
@@ -689,14 +698,18 @@
                             </div>
                             <div class="col s12 box-aside valign-wrapper">
                                 <h5 class="text-grey title-aside container-fluid">Medios de Pago</h5>
-                                <img class="responsive-img" src="img/ficha-productos/pagos.svg" alt="Medio de Pago" width="200">
+                                <img class="responsive-img medios-pago-img" src="img/ficha-productos/pagos.svg" alt="Medio de Pago">
                             </div>
                             <div class="col s12 box-aside valign-wrapper">
                                 <h5 class="text-grey title-aside container-fluid">Etiquetas</h5>
-                                <a class="" href="">Split</a>
-                                <a class="" href="">BTU</a>
-                                <a class="" href="">Portatiles</a>
-                                <a class="" href="">Ecologico</a>
+                                <a class="tags" href="">Split</a>
+                                <a class="tags" href="">BTU</a>
+                                <a class="tags" href="">Portatiles</a>
+                                <a class="tags" href="">Ecologico</a>
+                                <a class="tags" href="">Split</a>
+                                <a class="tags" href="">BTU</a>
+                                <a class="tags" href="">Portatiles</a>
+                                <a class="tags" href="">Ecologico</a>
                             </div>
                         </aside>
                     </div>
@@ -704,7 +717,6 @@
             </div>
         </div>
         <!-- Fin Ficha Producto -->
-
     </main>
 
     <!-- FOOTER -->
