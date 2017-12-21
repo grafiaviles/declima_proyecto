@@ -474,6 +474,7 @@
                 & .item-tabs-datos {
                     padding-top: 2rem;
                     height: auto;
+                    flex-wrap: wrap;
                     & .column-description {
                         //column-count: 2;
                         //column-rule: 1px solid $greysoftColor;
@@ -529,12 +530,6 @@
                         & .column-item:hover h5 {
                             color: $secondColor;
                         }
-                    }
-                }
-                & .carousel {
-                    min-height: 440px!important;
-                    @media screen and (max-width: 480px) {
-                        min-height: 1050px !important;
                     }
                 }
             }

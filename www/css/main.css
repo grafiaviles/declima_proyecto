@@ -2002,29 +2002,29 @@ small { font-size: 75%; }
 
 @media only screen and (max-width: 600px) { .toast { width: 100%; border-radius: 0; } }
 
-.tabs { position: relative; overflow-x: auto; overflow-y: hidden; height: 48px; width: 100%; background-color: #fff; margin: 0 auto; white-space: nowrap; }
+.tabs, .tabs-ficha { position: relative; overflow-x: auto; overflow-y: hidden; height: 48px; width: 100%; background-color: #fff; margin: 0 auto; white-space: nowrap; }
 
-.tabs.tabs-transparent { background-color: transparent; }
+.tabs.tabs-transparent, .tabs-ficha.tabs-transparent { background-color: transparent; }
 
-.tabs.tabs-transparent .tab a, .tabs.tabs-transparent .tab.disabled a, .tabs.tabs-transparent .tab.disabled a:hover { color: rgba(255, 255, 255, 0.7); }
+.tabs.tabs-transparent .tab a, .tabs.tabs-transparent .tab.disabled a, .tabs.tabs-transparent .tab.disabled a:hover, .tabs-ficha.tabs-transparent .tab a, .tabs-ficha.tabs-transparent .tab.disabled a, .tabs-ficha.tabs-transparent .tab.disabled a:hover { color: rgba(255, 255, 255, 0.7); }
 
-.tabs.tabs-transparent .tab a:hover, .tabs.tabs-transparent .tab a.active { color: #fff; }
+.tabs.tabs-transparent .tab a:hover, .tabs.tabs-transparent .tab a.active, .tabs-ficha.tabs-transparent .tab a:hover, .tabs-ficha.tabs-transparent .tab a.active { color: #fff; }
 
-.tabs.tabs-transparent .indicator { background-color: #fff; }
+.tabs.tabs-transparent .indicator, .tabs-ficha.tabs-transparent .indicator { background-color: #fff; }
 
-.tabs.tabs-fixed-width { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.tabs.tabs-fixed-width, .tabs-ficha.tabs-fixed-width { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.tabs.tabs-fixed-width .tab { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+.tabs.tabs-fixed-width .tab, .tabs-ficha.tabs-fixed-width .tab { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
 
-.tabs .tab { display: inline-block; text-align: center; line-height: 48px; height: 48px; padding: 0; margin: 0; text-transform: uppercase; }
+.tabs .tab, .tabs-ficha .tab { display: inline-block; text-align: center; line-height: 48px; height: 48px; padding: 0; margin: 0; text-transform: uppercase; }
 
-.tabs .tab a { color: rgba(238, 110, 115, 0.7); display: block; width: 100%; height: 100%; padding: 0 24px; font-size: 14px; text-overflow: ellipsis; overflow: hidden; -webkit-transition: color .28s ease; transition: color .28s ease; }
+.tabs .tab a, .tabs-ficha .tab a { color: rgba(238, 110, 115, 0.7); display: block; width: 100%; height: 100%; padding: 0 24px; font-size: 14px; text-overflow: ellipsis; overflow: hidden; -webkit-transition: color .28s ease; transition: color .28s ease; }
 
-.tabs .tab a:hover, .tabs .tab a.active { background-color: transparent; color: #ee6e73; }
+.tabs .tab a:hover, .tabs .tab a.active, .tabs-ficha .tab a:hover, .tabs-ficha .tab a.active { background-color: transparent; color: #ee6e73; }
 
-.tabs .tab.disabled a, .tabs .tab.disabled a:hover { color: rgba(238, 110, 115, 0.7); cursor: default; }
+.tabs .tab.disabled a, .tabs .tab.disabled a:hover, .tabs-ficha .tab.disabled a, .tabs-ficha .tab.disabled a:hover { color: rgba(238, 110, 115, 0.7); cursor: default; }
 
-.tabs .indicator { position: absolute; bottom: 0; height: 2px; background-color: black; will-change: left, right; }
+.tabs .indicator, .tabs-ficha .indicator { position: absolute; bottom: 0; height: 2px; background-color: black; will-change: left, right; }
 
 @media only screen and (max-width: 992px) { .tabs { display: -webkit-box; display: -ms-flexbox; display: flex; }
   .tabs .tab { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
@@ -4669,7 +4669,7 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos .indicator { height: 3px; background-color: #3fa7f3; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos { padding-top: 2rem; height: auto; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos { padding-top: 2rem; height: auto; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .column-description { padding: 0; margin-bottom: 20px; }
 
@@ -4692,10 +4692,6 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .datos-item .column-item p { font-size: .9rem; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .datos-item .column-item:hover h5 { color: #3fa7f3; }
-
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .carousel { min-height: 440px !important; }
-
-@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .carousel { min-height: 1050px !important; } }
 
 table.bordered > thead > tr, table.bordered > tbody > tr { border-bottom: 1px solid #f0f0f0; }
 

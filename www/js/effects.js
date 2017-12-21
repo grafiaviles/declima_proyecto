@@ -22,6 +22,14 @@ $(document).ready(function() {
         swipeable: true
     });
 });
+// Tabs Ficha Producto Slider
+$(document).ready(function() {
+    $('ul.tabs-ficha').tabs({
+        swipeable: true,
+        responsiveThreshold: true
+    });
+});
+
 //Modal buscador
 $('.modal').modal();
 // Navegacion Ancla
