@@ -92,7 +92,11 @@
             & .row-main-ficha {
                 background: $whiteColor;
                 margin: 0;
-                margin-bottom: 2.5rem;
+                margin-top: 2.5rem;
+                @media screen and (max-width: 480px) {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
                 //Descripción Completa producto
                 & .cont-description-producto {
                     position: relative;
@@ -454,8 +458,8 @@
                             font-weight: 600;
                             text-transform: uppercase;
                             font-size: 1rem;
-                            color: $secondColor;
-                            opacity: .5;
+                            color: $greyColor;
+                            opacity: .3;
                         }
                         & .active {
                             opacity: 1;
@@ -486,7 +490,7 @@
                             column-count: 1;
                         }
                         & h1 {
-                            font-size: 1.2rem;
+                            font-size: 1rem;
                             font-weight: 600;
                             text-transform: uppercase;
                             margin: 0;
@@ -531,6 +535,19 @@
                             color: $secondColor;
                         }
                     }
+                }
+                //Calificaciones
+                & .item-tabs-datos:nth-of-type(4) .column-description:first-child {
+                    border-right: 1px solid $greysoftColor;
+                    padding: 0;
+                    padding-right: 2rem;
+                    & form {
+                        padding: 0;
+                    }
+                }
+                //Reseñas
+                & .item-tabs-datos:nth-of-type(4) .column-description:last-child {
+                    padding-left: 2rem;
                 }
             }
         }
@@ -599,20 +616,20 @@ th {
         justify-content: flex-start;
         align-items: center;
         padding: 0;
-        margin-top: 1rem;
+        margin-top: 2.5rem;
         & .title-share {
             font-size: .8rem;
             margin-right: .5rem;
         }
         & .icon-redes {
-            border: 1px solid $primaryColor;
-            color: $primaryColor;
+            //border: 1px solid $greyColor;
+            color: $secondColor;
             display: inline-block;
             text-align: center;
             width: 35px;
             height: 35px;
             line-height: 35px;
-            margin-right: 10px;
+            //margin-right: 10px;
             border-radius: 50px;
         }
         & .icon-redes:nth-of-type(3) {
@@ -622,9 +639,9 @@ th {
             font-size: 1.1rem;
         }
         & .icon-redes:hover {
-            border: 1px solid $primaryColor;
+            //border: 1px solid $primaryColor;
             color: $whiteColor;
-            background: $primaryColor;
+            background: $secondColor;
         }
     }
 }

@@ -4511,7 +4511,9 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha { padding-top: 0; padding-bottom: 30px; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha { background: #fff; margin: 0; margin-bottom: 2.5rem; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha { background: #fff; margin: 0; margin-top: 2.5rem; }
+
+@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha { margin-top: 1rem; margin-bottom: 1rem; } }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto { position: relative; }
 
@@ -4661,7 +4663,7 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos { height: auto; }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos li .nombre-datos { font-weight: 600; text-transform: uppercase; font-size: 1rem; color: #3fa7f3; opacity: .5; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos li .nombre-datos { font-weight: 600; text-transform: uppercase; font-size: 1rem; color: #777; opacity: .3; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos li .active { opacity: 1; color: #3fa7f3; }
 
@@ -4675,7 +4677,7 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .column-description { margin-bottom: 10px; -webkit-column-count: 1; column-count: 1; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .column-description h1 { font-size: 1.2rem; font-weight: 600; text-transform: uppercase; margin: 0; -webkit-column-span: all; column-span: all; margin-bottom: 1.5rem; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .column-description h1 { font-size: 1rem; font-weight: 600; text-transform: uppercase; margin: 0; -webkit-column-span: all; column-span: all; margin-bottom: 1.5rem; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .column-description p { font-size: .9rem; margin-bottom: 1rem; }
 
@@ -4692,6 +4694,12 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .datos-item .column-item p { font-size: .9rem; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .datos-item .column-item:hover h5 { color: #3fa7f3; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos:nth-of-type(4) .column-description:first-child { border-right: 1px solid #f0f0f0; padding: 0; padding-right: 2rem; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos:nth-of-type(4) .column-description:first-child form { padding: 0; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos:nth-of-type(4) .column-description:last-child { padding-left: 2rem; }
 
 table.bordered > thead > tr, table.bordered > tbody > tr { border-bottom: 1px solid #f0f0f0; }
 
@@ -4715,17 +4723,17 @@ td, th { color: #777; font-size: .9rem; }
 
 .cont-swiper-slider .swiper-button-prev.swiper-button-white, .cont-swiper-slider .swiper-container-rtl .swiper-button-next.swiper-button-white { background-image: url(../img/ficha-productos/next-arrow.svg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
-.cont-swiper-slider .box-share { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0; margin-top: 1rem; }
+.cont-swiper-slider .box-share { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0; margin-top: 2.5rem; }
 
 .cont-swiper-slider .box-share .title-share { font-size: .8rem; margin-right: .5rem; }
 
-.cont-swiper-slider .box-share .icon-redes { border: 1px solid #00587a; color: #00587a; display: inline-block; text-align: center; width: 35px; height: 35px; line-height: 35px; margin-right: 10px; border-radius: 50px; }
+.cont-swiper-slider .box-share .icon-redes { color: #3fa7f3; display: inline-block; text-align: center; width: 35px; height: 35px; line-height: 35px; border-radius: 50px; }
 
 .cont-swiper-slider .box-share .icon-redes:nth-of-type(3) { font-size: 1.25rem; }
 
 .cont-swiper-slider .box-share .icon-redes:nth-of-type(4) { font-size: 1.1rem; }
 
-.cont-swiper-slider .box-share .icon-redes:hover { border: 1px solid #00587a; color: #fff; background: #00587a; }
+.cont-swiper-slider .box-share .icon-redes:hover { color: #fff; background: #3fa7f3; }
 
 /** Swiper 4.0.7 Most modern mobile touch slider and framework with hardware accelerated transitions http://www.idangero.us/swiper/ Copyright 2014-2017 Vladimir Kharlampidi Released under the MIT License Released on: November 28, 2017 */
 .swiper-container { margin: 0 auto; position: relative; overflow: hidden; list-style: none; padding: 0; /* Fix of Webkit flickering */ z-index: 1; }
