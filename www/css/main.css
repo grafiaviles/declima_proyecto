@@ -4511,7 +4511,7 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha { padding-top: 0; padding-bottom: 30px; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha { background: #fff; margin: 0; margin-bottom: 5rem; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha { background: #fff; margin: 0; margin-bottom: 2.5rem; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto { position: relative; }
 
@@ -4585,7 +4585,7 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) p { font-size: 1rem; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-internet, .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-total { font-weight: 600; font-size: 1.1rem; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-internet, .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-total { font-weight: 600; text-transform: uppercase; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-total { font-size: 1.3rem; margin-bottom: 0; }
 
@@ -4659,7 +4659,9 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-box-aside .box-aside .icon-redes { border: 1px solid #3fa7f3; display: inline-block; text-align: center; width: 40px; height: 40px; line-height: 40px; margin-right: 10px; border-radius: 50px; color: #3fa7f3; font-size: 1.2rem; }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos li .nombre-datos { font-weight: 500; text-transform: uppercase; font-size: 1rem; color: #3fa7f3; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; opacity: .5; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos { height: auto; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos li .nombre-datos { font-weight: 600; text-transform: uppercase; font-size: 1rem; color: #3fa7f3; opacity: .5; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos li .active { opacity: 1; color: #3fa7f3; }
 
@@ -4667,7 +4669,31 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-datos .indicator { height: 3px; background-color: #3fa7f3; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .carousel { min-height: auto !important; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos { padding-top: 2rem; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .column-description { -webkit-column-count: 3; column-count: 3; -webkit-column-rule: 1px solid #f0f0f0; column-rule: 1px solid #f0f0f0; -webkit-column-gap: 40px; column-gap: 40px; margin-bottom: 30px; }
+
+@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .column-description { margin-bottom: 10px; -webkit-column-count: 1; column-count: 1; } }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .column-description h1 { font-size: 1.2rem; font-weight: 600; text-transform: uppercase; margin: 0; -webkit-column-span: all; column-span: all; margin-bottom: 1.5rem; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .column-description p { font-size: .9rem; margin-bottom: 1rem; }
+
+@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .column-description p { font-size: 1rem; line-height: 25px; } }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .datos-item { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-bottom: 20px; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .datos-item .column-item { min-height: 100%; padding: 0; padding-right: 1.5rem; margin-left: 0; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .datos-item .column-item h5 { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; font-size: 1rem; font-weight: 600; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .datos-item .column-item p { font-size: .9rem; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .item-tabs-datos .datos-item .column-item:hover h5 { color: #3fa7f3; }
+
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-content { min-height: 440px !important; }
+
+@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-datos .tabs-content { min-height: 550px !important; } }
 
 table.bordered > thead > tr, table.bordered > tbody > tr { border-bottom: 1px solid #f0f0f0; }
 

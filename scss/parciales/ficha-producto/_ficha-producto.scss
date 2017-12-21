@@ -92,7 +92,7 @@
             & .row-main-ficha {
                 background: $whiteColor;
                 margin: 0;
-                margin-bottom: 5rem;
+                margin-bottom: 2.5rem;
                 //Descripción Completa producto
                 & .cont-description-producto {
                     position: relative;
@@ -257,7 +257,8 @@
                         }
                         & .precio-internet {
                             font-weight: 600;
-                            font-size: 1.1rem;
+                            //font-size: 1.1rem;
+                            text-transform: uppercase;
                         }
                         & .precio-total {
                             @extend .precio-internet;
@@ -430,7 +431,7 @@
                             width: 100%;
                         }
                         & .icon-redes {
-                            border: 1px solid #3fa7f3;
+                            border: 1px solid $secondColor;
                             display: inline-block;
                             text-align: center;
                             width: 40px;
@@ -438,7 +439,7 @@
                             line-height: 40px;
                             margin-right: 10px;
                             border-radius: 50px;
-                            color: #3fa7f3;
+                            color: $secondColor;
                             font-size: 1.2rem;
                         }
                     }
@@ -446,17 +447,14 @@
             }
             //ESPECIFICACIONES PRODUCTO
             .row-main-datos {
-                //margin-bottom: 0;
+                height: auto;
                 & .tabs-datos {
                     & li {
                         & .nombre-datos {
-                            font-weight: 500;
+                            font-weight: 600;
                             text-transform: uppercase;
                             font-size: 1rem;
                             color: $secondColor;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
                             opacity: .5;
                         }
                         & .active {
@@ -473,8 +471,65 @@
                         }
                     }
                 }
-                & .carousel {
-                    min-height: auto!important;
+                & .item-tabs-datos {
+                    padding-top: 2rem;
+                    & .column-description {
+                        column-count: 3;
+                        column-rule: 1px solid $greysoftColor;
+                        column-gap: 40px;
+                        margin-bottom: 30px;
+                        @media screen and (max-width: 480px) {
+                            margin-bottom: 10px;
+                            column-count: 1;
+                        }
+                        & h1 {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            margin: 0;
+                            column-span: all;
+                            margin-bottom: 1.5rem;
+                        }
+                        & p {
+                            font-size: .9rem;
+                            margin-bottom: 1rem;
+                            @media screen and (max-width: 480px) {
+                                font-size: 1rem;
+                                line-height: 25px;
+                            }
+                        }
+                    }
+                    & .datos-item {
+                        position: relative;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+                        margin-bottom: 20px;
+                        & .column-item {
+                            min-height: 100%;
+                            padding: 0;
+                            padding-right: 1.5rem;
+                            margin-left: 0;
+                            & h5 {
+                                transition: $transition1;
+                                font-size: 1rem;
+                                font-weight: 600;
+                            }
+                            & p {
+                                font-size: .9rem;
+                            }
+                        }
+                        & .column-item:hover h5 {
+                            color: $secondColor;
+                        }
+                    }
+                }
+                & .tabs-content {
+                    min-height: 440px!important;
+                    @media screen and (max-width: 480px) {
+                        min-height: 550px !important;
+                    }
                 }
             }
         }
