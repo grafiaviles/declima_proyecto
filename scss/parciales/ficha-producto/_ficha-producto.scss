@@ -224,7 +224,7 @@
                                     & p {
                                         font-size: .9rem;
                                         & .precio {
-                                            font-weight: 600;
+                                            font-weight: 500;
                                             font-size: .9rem;
                                             @media screen and (max-width: 480px) {
                                                 font-size: 1rem;
@@ -473,11 +473,13 @@
                 }
                 & .item-tabs-datos {
                     padding-top: 2rem;
+                    height: auto;
                     & .column-description {
-                        column-count: 2;
-                        column-rule: 1px solid $greysoftColor;
-                        column-gap: 40px;
-                        margin-bottom: 30px;
+                        //column-count: 2;
+                        //column-rule: 1px solid $greysoftColor;
+                        //column-gap: 40px;
+                        padding: 0;
+                        margin-bottom: 20px;
                         @media screen and (max-width: 480px) {
                             margin-bottom: 10px;
                             column-count: 1;
@@ -506,11 +508,12 @@
                         justify-content: flex-start;
                         flex-wrap: wrap;
                         margin-bottom: 30px;
+                        width: 100%;
                         @media screen and (max-width: 480px) {
                             margin-bottom: 0;
                         }
                         & .column-item {
-                            min-height: 100%;
+                            min-height: 100px;
                             padding: 0;
                             padding-right: 1.5rem;
                             margin-left: 0;
@@ -528,16 +531,10 @@
                         }
                     }
                 }
-                & .tabs-content {
+                & .carousel {
                     min-height: 440px!important;
                     @media screen and (max-width: 480px) {
-                        min-height: 550px !important;
-                    }
-                }
-                & .tabs-content:nth-of-type(1) {
-                    min-height: 440px!important;
-                    @media screen and (max-width: 480px) {
-                        min-height: 900px !important;
+                        min-height: 1050px !important;
                     }
                 }
             }
