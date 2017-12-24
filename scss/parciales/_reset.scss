@@ -119,3 +119,44 @@ a {
     cursor: default;
     pointer-events: none;
 }
+
+//FORMULARIOS
+.btn-submit {
+    position: relative;
+    background: transparent;
+    margin: 0;
+    color: $secondColor;
+    box-shadow: none;
+    font-weight: 600;
+    border: 2px solid $secondColor;
+    line-height: normal;
+    border-radius: 3px;
+    height: 50px;
+    width: 100%;
+    transition: $transition1;
+}
+
+.btn-submit:hover {
+    background-color: $secondColor;
+    color: $whiteColor;
+}
+
+[type="checkbox"]+label {
+    font-size: .9rem;
+}
+
+[type="checkbox"]+label:before,
+[type="checkbox"]:not(.filled-in)+label:after {
+    border: 2px solid #ccc;
+}
+
+.btn-help-form {
+    font-size: .9rem;
+    text-align: center;
+    display: block;
+    color: $secondColor;
+    margin-top: 1rem;
+    & span {
+        font-weight: 600;
+    }
+}

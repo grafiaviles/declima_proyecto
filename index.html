@@ -873,17 +873,115 @@
                             <div id="datos-4" class="col s12 item-tabs-datos">
                                 <!-- Registro Comentarios -->
                                 <div class="column-description col s12 l6">
-                                    <h1 class="text-second">Regístrate rápido y cálifica este producto</h1>
-                                    <p class="text-grey"><b>Todos los campos son obligatorios.</b></p>
-                                    <form class="col s12">
+                                    <h1 class="text-second">Cálifica este producto</h1>
+                                    <!-- Form 1 Usuario Nuevo -->
+                                    <form id="" class="hide form-calificar col s12">
                                         <div class="row">
-                                            <div class="input-field col s6">
-                                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                                                <label for="first_name">First Name</label>
+                                            <!-- Input -->
+                                            <div class="input-field inline col s12 l6">
+                                                <input id="name" type="text" class="validate">
+                                                <label for="name" data-error="Error" data-success="Correcto">Nombre o Nick</label>
                                             </div>
-                                            <div class="input-field col s6">
-                                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                                                <label for="first_name">First Name</label>
+                                            <div class="input-field inline col s12 l6">
+                                                <input id="email" type="email" class="validate">
+                                                <label for="email" data-error="Error" data-success="Correcto">Email</label>
+                                            </div>
+                                            <!-- Buttom Input -->
+                                            <div class="input-field inline col s12">
+                                                <button class="my-disabled btn-submit waves-effect waves-light" type="submit" name="action">CALIFICAR PRODUCTO</button>
+                                                <a class="btn-help-form" href="#">Ya estoy registrado(a). <span>Ingresar con mi cuenta</span></a>
+                                            </div>
+                                            <div class="divisor valign-wrapper col s12">
+                                                <div class="line-divisor col s5"></div>
+                                                <p class="icon-divisor col s2 center-align text-grey">o</p>
+                                                <div class="line-divisor col s5"></div>
+                                            </div>
+                                            <div class="login-redes valign-wrapper col s12">
+                                                <p class="hide text-grey center-block">Ingresa con tu Red Social</p>
+                                                <div class="cont-login-btn col s12">
+                                                    <span class="login-btn-redes col s12 l6 text-white waves-effect waves-light"><i class="icon-facebook"></i>Facebook</span>
+                                                    <span class="login-btn-redes col s12 l6 text-white waves-effect waves-light"><i class="icon-google-plus"></i>Google</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- Form 2 Usuario Existente -->
+                                    <form id="form-calificar" class="hide form-calificar col s12">
+                                        <div class="row">
+                                            <!-- Input -->
+                                            <div class="input-field inline col s12 l6">
+                                                <input id="rut" type="text" class="validate">
+                                                <label for="rut" data-error="Error" data-success="Correcto">RUT</label>
+                                            </div>
+                                            <div class="input-field inline col s12 l6">
+                                                <input id="password" type="password" class="validate">
+                                                <label for="password" data-error="Error" data-success="Correcto">Contraseña</label>
+                                            </div>
+                                            <div class="col s12 l6 right">
+                                                <p>
+                                                    <input type="checkbox" id="passwordView" />
+                                                    <label for="passwordView">Mostrar Contraseña</label>
+                                                </p>
+                                            </div>
+                                            <!-- Buttom Input -->
+                                            <div class="input-field inline col s12">
+                                                <button class="my-disabled btn-submit waves-effect waves-light" type="submit" name="action">CALIFICAR PRODUCTO</button>
+                                                <a class="btn-help-form" href="#">¿Olvídaste tu contraseña?. <span>Recuperar</span></a>
+                                            </div>
+                                            <div class="divisor valign-wrapper col s12">
+                                                <div class="line-divisor col s5"></div>
+                                                <p class="icon-divisor col s2 center-align text-grey">o</p>
+                                                <div class="line-divisor col s5"></div>
+                                            </div>
+                                            <div class="login-redes valign-wrapper col s12">
+                                                <p class="hide text-grey center-block">Ingresa con tu Red Social</p>
+                                                <div class="cont-login-btn col s12">
+                                                    <span class="login-btn-redes col s12 l6 text-white waves-effect waves-light"><i class="icon-facebook"></i>Facebook</span>
+                                                    <span class="login-btn-redes col s12 l6 text-white waves-effect waves-light"><i class="icon-google-plus"></i>Google</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- Form 3 Calificador -->
+                                    <form id="form-calificar" class="form-calificar col s12">
+                                        <div class="row">
+                                            <div class="col s12 producto-calificador valign-wrapper">
+                                                <h5 class="text-grey">1 - ¿Cómo cálificas este producto?</h5>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                                            </div>
+                                            <div class="col s12 producto-calificador valign-wrapper">
+                                                <div class="input-field col s12">
+                                                    <textarea id="commit-producto" class="materialize-textarea"></textarea>
+                                                    <label for="commit-producto">2 - ¿Qué opinas de este producto?</label>
+                                                </div>
+                                            </div>
+                                            <div class="col s12 producto-calificador valign-wrapper">
+                                                <h5 class="text-grey">3 - ¿Qúe tal tu experiencia de compra?</h5>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                                            </div>
+                                            <div class="col s12 producto-calificador valign-wrapper">
+                                                <p class="text-grey">4 - ¿Recomiendas este producto?</p>
+                                                <div class="switch">
+                                                    <label class="text-grey">
+                                                              No
+                                                              <input type="checkbox">
+                                                              <span class="lever"></span>
+                                                              Si
+                                                            </label>
+                                                </div>
+                                            </div>
+                                            <!-- Buttom Input -->
+                                            <div class="input-field inline col s12">
+                                                <button class="my-disabled btn-submit waves-effect waves-light" type="submit" name="action">ENVIAR CALIFICACIÓN</button>
+                                                <h6 class="text-grey note-importante"><i class="icon-alert-triangle red-text"></i> Si incluyes información personal o utilizas lenguaje inapropiado, tu comentario no será publicado.</h6>
                                             </div>
                                         </div>
                                     </form>
@@ -933,9 +1031,6 @@
                         <a class="number-footer" href="tel:+56226051140"><b>(+562) 2605 1140</b></a>
                     </div>
                     <div class="section maps-desktop">
-                        <!-- <a href="https://goo.gl/maps/PYqX8FnaCFp" target="_blank">
-                                    <img src="img/footer/maps-desktop.png" alt="Maps">
-                                </a> -->
                         <iframe class="section_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.5964753483413!2d-70.63931634956197!3d-33.45981818067696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c56ed1ef9fd9%3A0x608ba36da8d8fe95!2sArtemio+Guti%C3%A9rrez+1268%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1507455161209"
                             width="100%" height="140" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
