@@ -56,3 +56,6 @@ $(window).on('scroll', function() {
 
 //Selectores
 $('select').material_select();
+
+//Media boxed
+$('.materialboxed').materialbox();
