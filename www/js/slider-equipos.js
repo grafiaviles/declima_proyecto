@@ -81,12 +81,12 @@ var swiper = new Swiper('.swiper-productos-relacionados', {
             spaceBetween: 30,
         },
         640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 1,
+            spaceBetween: 0,
         },
         320: {
             slidesPerView: 1,
-            spaceBetween: 10,
+            spaceBetween: 0,
         }
     }
 });

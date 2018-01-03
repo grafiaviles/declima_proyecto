@@ -904,14 +904,178 @@ th {
         }
         .swiper-slide {
             text-align: center;
-            font-size: 18px;
-            border: 1px solid #f0f0f0;
-            /* Center slide text vertically */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 300px;
             border-radius: 3px;
+            & .box-equipos-relacionados {
+                border: 1px $greysoftColor solid;
+                height: auto;
+                padding: 0;
+                margin-bottom: 2rem;
+                outline: none;
+                //margin-right: 1rem;
+                border-radius: 5px;
+                overflow: hidden;
+                position: relative;
+                & .imagen-equipo {
+                    width: 100%;
+                    position: relative;
+                    & .mega-tag {
+                        background-color: $secondColor;
+                        width: 100%;
+                        padding: 0 1rem;
+                        height: 25px;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: absolute;
+                        bottom: 0px;
+                        & .instalacion {
+                            text-align: center;
+                            bottom: 0;
+                            color: $whiteColor;
+                            font-weight: 500;
+                            font-size: .8rem;
+                            line-height: normal;
+                        }
+                    }
+                    & .cont-icon-equipos {
+                        background-color: transparent;
+                        width: 100%;
+                        height: 35px;
+                        justify-content: space-around;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                        & .icon-equipos {
+                            font-size: 17px;
+                            line-height: 50px;
+                            margin: 0;
+                            color: $whiteColor;
+                            display: flex;
+                            opacity: 1;
+                            transition: $transition1;
+                            z-index: 10;
+                        }
+                        & .icon-feather {
+                            font-size: 15.5px;
+                            margin: 0;
+                            color: $whiteColor;
+                        }
+                        & .icon-equipos:hover {
+                            opacity: .5;
+                        }
+                    }
+                    & .img-product {
+                        margin: auto;
+                        width: 100%;
+                        height: auto;
+                    }
+                    & img {
+                        height: 130px;
+                        width: 130px;
+                        margin: auto;
+                    }
+                    & .descuento-tag {
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        color: $whiteColor;
+                        background-color: $secondColor;
+                        border-radius: 0 5px 5px 0;
+                        font-weight: 600;
+                        width: 45px;
+                        height: 45px;
+                        top: 10px;
+                        left: 0;
+                        & p:first-child {
+                            font-size: 1.1rem;
+                            margin: 0;
+                            line-height: 1rem;
+                            & sup {
+                                position: relative;
+                                top: -2px;
+                                margin: 0;
+                            }
+                        }
+                        & p:last-child {
+                            line-height: 1rem;
+                            font-size: .85rem;
+                            margin: 0;
+                            text-align: center;
+                        }
+                    }
+                    & .instalacion-tag {
+                        @extend .descuento-tag;
+                        color: $secondColor;
+                        background: $whiteColor;
+                        width: 80px;
+                        height: 40px;
+                        top: 60px;
+                        & p {
+                            line-height: 1rem;
+                            font-size: .85rem;
+                            margin: 0;
+                            text-align: left!important;
+                            padding-left: .5rem;
+                        }
+                    }
+                }
+                & .descripcion-equipo {
+                    padding: 1rem 1rem 0 1rem;
+                    color: $whiteColor;
+                    text-align: center;
+                    font-weight: 500;
+                    & .name-equipo,
+                    & .atributo-equipo,
+                    & .precio-oferta,
+                    & .atributo-parrafo,
+                    & .precio-normal,
+                    & .stock {
+                        font-weight: 500;
+                        margin: 0;
+                        margin-bottom: .3rem;
+                    }
+                    & .name-equipo,
+                    & .atributo-equipo {
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                    }
+                    & .atributo-parrafo {
+                        font-size: .95rem;
+                    }
+                    & .precio-oferta {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        & sup {
+                            font-size: 15px;
+                            vertical-align: middle;
+                            top: -2px;
+                        }
+                    }
+                    & .precio-normal {
+                        font-size: 1rem;
+                        text-decoration: line-through;
+                    }
+                }
+                & .btn-box-equipos {
+                    margin-top: 1rem;
+                    width: 100%;
+                    text-align: center;
+                    & a {
+                        border-top: 1px solid $greysoftColor;
+                        color: $secondColor;
+                        font-weight: 600;
+                        padding: .8rem;
+                        display: block;
+                        outline: none;
+                    }
+                    & a:hover {
+                        background-color: $whiteColor;
+                        color: $primaryColor;
+                    }
+                }
+            }
         }
         & .swiper-pagination {
             position: relative;
