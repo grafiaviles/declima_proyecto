@@ -136,7 +136,9 @@ a {
     transition: $transition1;
 }
 
-.btn-submit:hover {
+.btn-submit:hover,
+.btn-submit:active,
+.btn-submit:focus {
     background-color: $secondColor;
     color: $whiteColor;
 }
@@ -158,5 +160,13 @@ a {
     margin-top: 1rem;
     & span {
         font-weight: 600;
+    }
+}
+
+//BARRA DE PROGRESOS
+.progress {
+    background-color: $secondColor;
+    & .indeterminate {
+        background-color: $primaryColor;
     }
 }

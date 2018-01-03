@@ -92,7 +92,7 @@
             & .row-main-ficha {
                 background: $whiteColor;
                 margin: 0;
-                margin-top: 2.5rem;
+                margin-top: 3.5rem;
                 @media screen and (max-width: 480px) {
                     margin-top: 1rem;
                     margin-bottom: 1rem;
@@ -383,7 +383,7 @@
                                 background-color: $primaryColor;
                                 color: $whiteColor;
                                 position: relative;
-                                @media screen and (max-width: 321px) {
+                                @media screen and (max-width: 425px) {
                                     width: 100%;
                                 }
                                 & a {
@@ -475,13 +475,10 @@
                     }
                 }
                 & .item-tabs-datos {
-                    padding-top: 2rem;
+                    padding-top: 3rem;
                     height: auto;
                     flex-wrap: wrap;
                     & .column-description {
-                        //column-count: 2;
-                        //column-rule: 1px solid $greysoftColor;
-                        //column-gap: 40px;
                         padding: 0;
                         margin-bottom: 20px;
                         @media screen and (max-width: 480px) {
@@ -491,10 +488,16 @@
                         & h1 {
                             font-size: 1rem;
                             font-weight: 600;
-                            text-transform: uppercase;
+                            color: $greyColor!important;
                             margin: 0;
                             column-span: all;
-                            margin-bottom: 1.5rem;
+                            margin-bottom: 3rem;
+                            display: inline-block;
+                            text-transform: uppercase;
+                            padding: 0;
+                            @media screen and (max-width: 480px) {
+                                text-transform: uppercase;
+                            }
                         }
                         & p {
                             font-size: .9rem;
@@ -502,6 +505,23 @@
                             @media screen and (max-width: 480px) {
                                 font-size: 1rem;
                                 line-height: 25px;
+                            }
+                        }
+                        & .btn-ordenar {
+                            background: transparent;
+                            text-align: right;
+                            color: $greyColor;
+                            padding: 0;
+                            font-size: .9rem;
+                            & i {
+                                vertical-align: middle;
+                                padding-left: .3rem;
+                            }
+                        }
+                        & .order-commit {
+                            & a {
+                                color: $greyColor;
+                                font-size: .9rem;
                             }
                         }
                     }
@@ -672,10 +692,14 @@
                         justify-content: space-between;
                         padding: 1rem 0;
                         margin-bottom: 1.5rem;
+                        transition: $transition1;
                         & .cont-avatar {
                             margin: 0;
                             padding: 0;
                             align-self: flex-start;
+                            @media screen and (max-width: 480px) {
+                                margin-right: 1rem;
+                            }
                             & img {
                                 background: $greysoftColor;
                                 margin-right: 1rem;
@@ -710,8 +734,14 @@
                                         margin-bottom: 1rem;
                                     }
                                 }
-                                & i {
-                                    color: $secondColor;
+                                & span.cont-stars {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    & .icon-star {
+                                        color: $secondColor;
+                                        margin-right: .3rem;
+                                    }
                                 }
                             }
                             & .recomendacion {
@@ -721,13 +751,12 @@
                                     background: $secondColor;
                                     border-radius: 30px;
                                     display: flex;
-                                    padding: .5rem;
                                     align-items: center;
                                     justify-content: center;
                                     text-align: center;
                                     font-weight: 600;
-                                    width: 30px;
-                                    height: 30px;
+                                    width: 25px;
+                                    height: 25px;
                                     margin-right: .3rem;
                                 }
                                 & .text-afirmacion {
@@ -750,6 +779,10 @@
                                 }
                             }
                         }
+                    }
+                    & .cont-commit:hover {
+                        padding-left: 1.1rem;
+                        cursor: pointer;
                     }
                 }
             }
@@ -852,6 +885,37 @@ th {
             //border: 1px solid $primaryColor;
             color: $whiteColor;
             background: $secondColor;
+        }
+    }
+}
+
+//Slider Productos Relacionados
+.row-slider-relacionados {
+    .swiper-productos-relacionados {
+        margin: 2rem 0;
+        & .title-prodcutos-realcionados {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #f0f0f0;
+            /* Center slide text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            border-radius: 3px;
+        }
+        & .swiper-pagination {
+            position: relative;
+            padding-top: 2rem;
+            & .swiper-pagination-bullet-active {
+                background: $primaryColor;
+            }
         }
     }
 }
