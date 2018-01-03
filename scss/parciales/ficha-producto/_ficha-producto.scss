@@ -693,12 +693,15 @@
                         padding: 1rem 0;
                         margin-bottom: 1.5rem;
                         transition: $transition1;
+                        @media screen and (max-width: 480px) {
+                            flex-direction: column;
+                        }
                         & .cont-avatar {
                             margin: 0;
                             padding: 0;
                             align-self: flex-start;
                             @media screen and (max-width: 480px) {
-                                margin-right: 1rem;
+                                margin-bottom: 1.5rem;
                             }
                             & img {
                                 background: $greysoftColor;

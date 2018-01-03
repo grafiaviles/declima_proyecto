@@ -1,24 +1,25 @@
 //DEPENDENCIAS
-var gulp = require('gulp');
-browserSync = require('browser-sync').create();
-sass = require('gulp-sass');
-autoprefixer = require('gulp-autoprefixer');
-sourcemaps = require('gulp-sourcemaps');
-concat = require('gulp-concat');
-uglify = require('gulp-uglify');
-pump = require('pump');
-htmlmin = require('gulp-htmlmin');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
+const pump = require('pump');
+const htmlmin = require('gulp-htmlmin');
+const concat = require('gulp-concat');
+const browserSync = require('browser-sync').create();
 
 // Static Server + watching scss/html files
-gulp.task('default', ['htmlminify', 'sass', 'javascript'], function() {
+gulp.task('default', ['sass'], function() {
 
     browserSync.init({
         server: "./www"
     });
 
     gulp.watch('./scss/**/*.scss', ['sass']); //OBS SASS FILES
-    gulp.watch('./*.html', ['htmlminify']).on('change', browserSync.reload); //OBS HTML FILES
     gulp.watch('./www/js/*.js', ['javascript']).on('change', browserSync.reload); //OBS JAVASCRIPT FILES
+    gulp.watch("./www/*.html").on('change', browserSync.reload); //OBS HTML FILES
+    gulp.watch('./*.html', ['htmlminify']);
 });
 
 //Minify HTML
