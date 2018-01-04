@@ -895,9 +895,9 @@ th {
 //Slider Productos Relacionados
 .row-slider-relacionados {
     .swiper-productos-relacionados {
-        margin: 2rem 0;
+        margin: 2rem 0 0 0;
         & .title-prodcutos-realcionados {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             text-transform: uppercase;
             font-weight: 600;
             margin-bottom: 2rem;
@@ -924,7 +924,6 @@ th {
                     & .mega-tag {
                         background-color: $secondColor;
                         width: 100%;
-                        padding: 0 1rem;
                         height: 25px;
                         justify-content: space-between;
                         align-items: center;
@@ -934,7 +933,7 @@ th {
                             text-align: center;
                             bottom: 0;
                             color: $whiteColor;
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: .8rem;
                             line-height: normal;
                         }
@@ -968,6 +967,9 @@ th {
                         margin: auto;
                         width: 100%;
                         height: auto;
+                        @media screen and (max-width: 321px) {
+                            max-width: 250px;
+                        }
                     }
                     & img {
                         height: 130px;
@@ -988,6 +990,10 @@ th {
                         height: 45px;
                         top: 10px;
                         left: 0;
+                        @media screen and (max-width: 480px) {
+                            height: 40px;
+                            width: 40px;
+                        }
                         & p:first-child {
                             font-size: 1.1rem;
                             margin: 0;
@@ -1038,15 +1044,18 @@ th {
                     }
                     & .name-equipo,
                     & .atributo-equipo {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         font-weight: 600;
                     }
                     & .atributo-parrafo {
-                        font-size: .95rem;
+                        font-size: .9rem;
                     }
                     & .precio-oferta {
-                        font-size: 1.5rem;
+                        font-size: 1.3rem;
                         font-weight: 600;
+                        @media screen and (max-width: 480px) {
+                            font-size: 1.1rem;
+                        }
                         & sup {
                             font-size: 15px;
                             vertical-align: middle;
@@ -1054,7 +1063,7 @@ th {
                         }
                     }
                     & .precio-normal {
-                        font-size: 1rem;
+                        font-size: .9rem;
                         text-decoration: line-through;
                     }
                 }
@@ -1069,6 +1078,7 @@ th {
                         padding: .8rem;
                         display: block;
                         outline: none;
+                        font-size: 1rem;
                     }
                     & a:hover {
                         background-color: $whiteColor;
@@ -1079,7 +1089,7 @@ th {
         }
         & .swiper-pagination {
             position: relative;
-            padding-top: 2rem;
+            padding-top: 1rem;
             & .swiper-pagination-bullet-active {
                 background: $primaryColor;
             }
