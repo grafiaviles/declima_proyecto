@@ -255,6 +255,13 @@
                             background-color: $whiteColor;
                             color: $primaryColor;
                         }
+                        & .icon-btn-action {
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                        }
+                        & .icon-btn-action:first-child {
+                            border-right: 1px solid $greysoftColor;
+                        }
                     }
                 }
             }

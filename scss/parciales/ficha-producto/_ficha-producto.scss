@@ -112,6 +112,9 @@
                     //INFORMACION PRODUCTO
                     & .box-description:nth-of-type(1) {
                         padding-top: 0;
+                        @media screen and (max-width: 480px) {
+                            padding-bottom: 3rem;
+                        }
                         & .box-title-star {
                             justify-content: space-between;
                             align-items: flex-start;
@@ -189,6 +192,10 @@
                         align-items: flex-start;
                         flex-wrap: wrap;
                         padding-bottom: 1.5rem;
+                        @media screen and (max-width: 480px) {
+                            border-bottom: 1px solid $greysoftColor;
+                            padding: 3rem 0;
+                        }
                         & .anexos-productos {
                             position: relative;
                             flex-wrap: wrap;
@@ -249,6 +256,10 @@
                             font-size: .9rem;
                             position: relative;
                             text-align: left;
+                            @media screen and (max-width: 480px) {
+                                border-bottom: 1px solid $greysoftColor;
+                                padding: 1rem 0;
+                            }
                             & .precio {
                                 position: relative;
                                 & .signo {
@@ -257,6 +268,12 @@
                             }
                             @media screen and (max-width: 480px) {
                                 font-size: 1rem;
+                            }
+                        }
+                        & p:last-child {
+                            @media screen and (max-width: 480px) {
+                                border-bottom: none;
+                                padding-bottom: 0;
                             }
                         }
                         & .precio-internet {
@@ -293,6 +310,8 @@
                         border-bottom: none;
                         @media screen and (max-width: 480px) {
                             justify-content: space-between;
+                            padding-top: 3rem;
+                            padding-bottom: 2rem;
                         }
                         & .disponible {
                             display: flex;
@@ -784,7 +803,6 @@
                         }
                     }
                     & .cont-commit:hover {
-                        padding-left: 1.1rem;
                         cursor: pointer;
                     }
                 }
@@ -894,14 +912,14 @@ th {
 
 //Slider Productos Relacionados
 .row-slider-relacionados {
+    & .title-prodcutos-realcionados {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 3rem;
+    }
     .swiper-productos-relacionados {
         margin: 2rem 0 0 0;
-        & .title-prodcutos-realcionados {
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin-bottom: 2rem;
-        }
         .swiper-slide {
             text-align: center;
             display: flex;
@@ -991,13 +1009,17 @@ th {
                         top: 10px;
                         left: 0;
                         @media screen and (max-width: 480px) {
-                            height: 40px;
-                            width: 40px;
+                            height: 35px;
+                            width: 35px;
                         }
                         & p:first-child {
                             font-size: 1.1rem;
                             margin: 0;
                             line-height: 1rem;
+                            @media screen and (max-width: 480px) {
+                                line-height: .9rem;
+                                font-size: 1rem;
+                            }
                             & sup {
                                 position: relative;
                                 top: -2px;
@@ -1009,6 +1031,10 @@ th {
                             font-size: .85rem;
                             margin: 0;
                             text-align: center;
+                            @media screen and (max-width: 480px) {
+                                line-height: .9rem;
+                                font-size: .8rem;
+                            }
                         }
                     }
                     & .instalacion-tag {
@@ -1046,6 +1072,9 @@ th {
                     & .atributo-equipo {
                         font-size: 1rem;
                         font-weight: 600;
+                        @media screen and (max-width: 480px) {
+                            font-size: .9rem;
+                        }
                     }
                     & .atributo-parrafo {
                         font-size: .9rem;
@@ -1060,6 +1089,10 @@ th {
                             font-size: 15px;
                             vertical-align: middle;
                             top: -2px;
+                            @media screen and (max-width: 480px) {
+                                font-size: 12px;
+                                top: -1px;
+                            }
                         }
                     }
                     & .precio-normal {
@@ -1083,6 +1116,19 @@ th {
                     & a:hover {
                         background-color: $whiteColor;
                         color: $primaryColor;
+                    }
+                    & .icon-btn-action {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        @media screen and (max-width: 480px) {
+                            font-size: 1rem;
+                        }
+                        @media screen and (max-width: 321px) {
+                            font-size: 1.2rem;
+                        }
+                    }
+                    & .icon-btn-action:first-child {
+                        border-right: 1px solid $greysoftColor;
                     }
                 }
             }

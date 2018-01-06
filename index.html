@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Declim | Servicios y Suministros para Sistemas de Climatización</title>
+    <title>Declima | Servicios y Suministros para Sistemas de Climatización</title>
     <meta name="description" content="Somos una empresa con experiencia en proyectos para sistemas de climatización como también en venta residencial, distribución comercial, 
     instalación y mantenciones preventivas para equipos de aire acondicionado. | Declima * Buenas experiencias">
     <!-- Styles -->
@@ -338,7 +338,7 @@
                 <a href="#slide-carro-mobile" data-activates="slide-carro-mobile" class="icon-collapse-mobile right button-collapse"><i class="icon-shopping-cart"></i></a>
                 <!-- Menu Desktop -->
                 <ul class="right hide-on-med-and-down menu-desktop">
-                    <li class="list-category"><a href="" class="link-category">Home</a></li>
+                    <li class="hide list-category"><a href="" class="link-category">Home</a></li>
                     <li class="list-category"><a class="waves-effect waves-dark dropdown-button link-category" data-activates='submenu1'>Aire Acondicionado<i class="icon-chevron-down"></i>
                     </a>
                     </li>
@@ -542,10 +542,10 @@
                             <!-- Swiper -->
                             <div class="swiper-container gallery-top">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide" style="background-image:url(../img/ficha-productos/producto-prueba.jpg)"></div>
-                                    <div class="swiper-slide" style="background-image:url(../img/ficha-productos/producto-prueba2.jpg)"></div>
-                                    <div class="swiper-slide" style="background-image:url(../img/ficha-productos/producto-prueba.jpg)"></div>
-                                    <div class="swiper-slide" style="background-image:url(../img/ficha-productos/producto-prueba2.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
                                 </div>
                                 <!-- Add Arrows -->
                                 <div class="swiper-button-next swiper-button-white"></div>
@@ -553,10 +553,10 @@
                             </div>
                             <div class="swiper-container gallery-thumbs">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide" style="background-image:url(../img/ficha-productos/producto-prueba.jpg)"></div>
-                                    <div class="swiper-slide" style="background-image:url(../img/ficha-productos/producto-prueba2.jpg)"></div>
-                                    <div class="swiper-slide" style="background-image:url(../img/ficha-productos/producto-prueba.jpg)"></div>
-                                    <div class="swiper-slide" style="background-image:url(../img/ficha-productos/producto-prueba2.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
                                 </div>
                             </div>
                             <div class="hide-on-small-only col s12 box-share valign-wrapper">
@@ -1082,22 +1082,22 @@
                         </div>
                     </div>
 
-                    <!-- PRODUCTOS RELACIONADOS -->
+                    <!-- SLIDER PRODUCTOS RELACIONADOS -->
                     <div class="row row-main-ficha row-slider-relacionados">
+                        <h5 class="title-prodcutos-realcionados text-primary center-align">Productos Relacionados</h5>
                         <!-- Swiper Relacionados -->
                         <div class="swiper-container swiper-productos-relacionados">
-                            <h5 class="title-prodcutos-realcionados text-primary center-align">Productos Relacionados</h5>
                             <div class="swiper-wrapper">
                                 <!-- Equipo 1 -->
                                 <div class="swiper-slide">
                                     <div class="box-equipos-relacionados">
                                         <div class="imagen-equipo">
                                             <img class="img-product responsive-img" src="img/equipos/prueba-2.jpg">
-                                            <div class="mega-tag valign-wrapper">
+                                            <div class="hide mega-tag valign-wrapper">
                                                 <p class="center-block instalacion">Incluye Instalación Básica</p>
                                             </div>
                                             <span class="descuento-tag">
-                                                <p>50<sup>%</sup></p>
+                                                <p>15<sup>%</sup></p>
                                                 <p>Dcto.</p>
                                             </span>
                                         </div>
@@ -1110,7 +1110,8 @@
                                         </div>
 
                                         <div class="btn-box-equipos">
-                                            <a class="waves-effect waves-dark" href="#">VER EQUIPO</a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-search" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"></a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro', 4000)"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1122,8 +1123,8 @@
                                             <div class="mega-tag valign-wrapper">
                                                 <p class="center-block instalacion">Incluye Instalación Básica</p>
                                             </div>
-                                            <span class="descuento-tag">
-                                                <p>50<sup>%</sup></p>
+                                            <span class="hide descuento-tag">
+                                                <p>20<sup>%</sup></p>
                                                 <p>Dcto.</p>
                                             </span>
                                         </div>
@@ -1136,7 +1137,8 @@
                                         </div>
 
                                         <div class="btn-box-equipos">
-                                            <a class="waves-effect waves-dark" href="#">VER EQUIPO</a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-search" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"></a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro', 4000)"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1162,7 +1164,8 @@
                                         </div>
 
                                         <div class="btn-box-equipos">
-                                            <a class="waves-effect waves-dark" href="#">VER EQUIPO</a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-search" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"></a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro', 4000)"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1188,33 +1191,8 @@
                                         </div>
 
                                         <div class="btn-box-equipos">
-                                            <a class="waves-effect waves-dark" href="#">VER EQUIPO</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Equipo 5 -->
-                                <div class="swiper-slide">
-                                    <div class="box-equipos-relacionados">
-                                        <div class="imagen-equipo">
-                                            <img class="img-product responsive-img" src="img/equipos/prueba-2.jpg">
-                                            <div class="mega-tag valign-wrapper">
-                                                <p class="center-block instalacion">Incluye Instalación Básica</p>
-                                            </div>
-                                            <span class="descuento-tag">
-                                                <p>50<sup>%</sup></p>
-                                                <p>Dcto.</p>
-                                            </span>
-                                        </div>
-
-                                        <div class="descripcion-equipo">
-                                            <h3 class="name-equipo text-primary">Split Muro 24000 BTU</h3>
-                                            <p class="atributo-parrafo text-primary">Midea - Alcance 15<sup>M2</sup></p>
-                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
-                                            <p class="precio-normal text-grey">Antes: $229.000</p>
-                                        </div>
-
-                                        <div class="btn-box-equipos">
-                                            <a class="waves-effect waves-dark" href="#">VER EQUIPO</a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-search" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"></a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro', 4000)"></a>
                                         </div>
                                     </div>
                                 </div>
