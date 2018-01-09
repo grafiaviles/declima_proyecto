@@ -3283,6 +3283,8 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .btn-help-form span { font-weight: 600; }
 
+.divider { background-color: #f0f0f0; }
+
 .progress { background-color: #3fa7f3; }
 
 .progress .indeterminate { background-color: #00587a; }
@@ -5151,9 +5153,17 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .acordion-filtros { -webkit-box-shadow: none; box-shadow: none; border-color: transparent; }
 
+.row-main-category .acordion-filtros .title-filtro { position: relative; }
+
+.row-main-category .acordion-filtros .title-filtro h5 { font-size: 1rem; text-transform: uppercase; font-weight: 600; margin: 0; margin-bottom: 1rem; display: block; }
+
+.row-main-category .acordion-filtros .title-filtro h5 i { font-size: 1.25rem; text-align: right; float: right; }
+
 .row-main-category .acordion-filtros .collapsible-header { border-bottom: 1px solid #f0f0f0; color: #777; padding-left: 0; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .row-main-category .acordion-filtros .collapsible-header i { font-size: 1rem; margin-right: 1rem; padding-top: 3px; width: 1rem; }
+
+.row-main-category .acordion-filtros .collapsible-header sub { bottom: -.5rem; }
 
 .row-main-category .acordion-filtros .collapsible-header:hover, .row-main-category .acordion-filtros .collapsible-header:active, .row-main-category .acordion-filtros .collapsible-header:focus { color: #3fa7f3; }
 
@@ -5161,10 +5171,8 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .acordion-filtros .collapsible-body { padding: 2rem 0; color: #777; font-size: .9rem; }
 
-.row-main-category .title-filtro { position: relative; }
+.row-main-category .filtro-btu .chip-filtro { background: transparent; cursor: pointer; border: 1px solid #3fa7f3; color: #3fa7f3; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
-.row-main-category .title-filtro h5 { font-size: 1rem; text-transform: uppercase; font-weight: 600; margin: 0; margin-bottom: 1rem; display: block; }
+.row-main-category .filtro-btu .chip-filtro:hover { border: 1px solid #3fa7f3; color: #fff; background: #3fa7f3; }
 
-.row-main-category .title-filtro h5 i { font-size: 1.25rem; text-align: right; float: right; }
-
-.divider { background-color: #f0f0f0; }
+.row-main-category .filtro-btu .chip-filtro:focus { border: 1px solid #00587a; color: #00587a; }

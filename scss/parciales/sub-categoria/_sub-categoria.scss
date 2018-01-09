@@ -10,6 +10,24 @@
     & .acordion-filtros {
         box-shadow: none;
         border-color: transparent;
+        //Title Filtros
+        & .title-filtro {
+            position: relative;
+            & h5 {
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin: 0;
+                margin-bottom: 1rem;
+                display: block;
+                & i {
+                    font-size: 1.25rem;
+                    text-align: right;
+                    float: right;
+                }
+            }
+        }
+        //Style Acordeon Generico
         & .collapsible-header {
             border-bottom: 1px solid $greysoftColor;
             color: $greyColor;
@@ -20,6 +38,9 @@
                 margin-right: 1rem;
                 padding-top: 3px;
                 width: 1rem;
+            }
+            & sub {
+                bottom: -.5rem;
             }
         }
         & .collapsible-header:hover,
@@ -36,24 +57,23 @@
             font-size: .9rem;
         }
     }
-    & .title-filtro {
-        position: relative;
-        & h5 {
-            font-size: 1rem;
-            text-transform: uppercase;
-            font-weight: 600;
-            margin: 0;
-            margin-bottom: 1rem;
-            display: block;
-            & i {
-                font-size: 1.25rem;
-                text-align: right;
-                float: right;
-            }
+    // FILTRO 1 BTU
+    & .filtro-btu {
+        & .chip-filtro {
+            background: transparent;
+            cursor: pointer;
+            border: 1px solid $secondColor;
+            color: $secondColor;
+            transition: $transition1;
+        }
+        & .chip-filtro:hover{
+            border: 1px solid $secondColor;
+            color: $whiteColor;
+            background: $secondColor;
+        }
+        & .chip-filtro:focus {
+            border: 1px solid $primaryColor;
+            color: $primaryColor;
         }
     }
-}
-
-.divider {
-    background-color: $greysoftColor;
 }
