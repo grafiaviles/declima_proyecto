@@ -535,10 +535,54 @@
             <!-- Open Sub categoria -->
             <div class="container-fluid fluid-ficha-producto">
                 <div class="container container-box container-ficha">
-                    <div class="row row-main-ficha">
+                    <div class="row row-main-category">
 
-
-
+                        <!-- Sidebar -->
+                        <aside class="col s3">
+                            <div class="title-filtro">
+                                <h5 class="text-primary">Filtra tus búsquedas</h5>
+                            </div>
+                            <div class="divider"></div>
+                            <!-- Acordion Filtros -->
+                            <ul class="collapsible acordion-filtros" data-collapsible="accordion">
+                                <!-- Filtro 1 -->
+                                <li>
+                                    <div class="collapsible-header active"><i class="icon-chevron-down"></i>Cantidad BTU</div>
+                                    <div class="collapsible-body"><span>
+                                            <form action="#">
+                                                <p class="range-field">
+                                                    <input type="range" id="test1" min="9000" max="24000" />
+                                                </p>
+                                            </form>
+                                    </span>
+                                    </div>
+                                </li>
+                                <!-- Filtro 2 -->
+                                <li>
+                                    <div class="collapsible-header"><i class="icon-chevron-down"></i>Alcance</div>
+                                    <div class="collapsible-body"><span>
+                                            <form action="#">
+                                                <p class="range-field">
+                                                    <input type="range" id="test1" min="9000" max="24000" />
+                                                </p>
+                                            </form>
+                                    </span>
+                                    </div>
+                                </li>
+                                <!-- Filtro 3 -->
+                                <li>
+                                    <div class="collapsible-header"><i class="icon-chevron-down"></i>Rango de precios</div>
+                                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                </li>
+                                <!-- Filtro 4 -->
+                                <li>
+                                    <div class="collapsible-header"><i class="icon-chevron-down"></i>Modalidad</div>
+                                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                </li>
+                            </ul>
+                        </aside>
+                        <!-- Productos -->
+                        <div class="col s9 blue">Contenido</div>
 
 
                     </div>
