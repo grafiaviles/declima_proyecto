@@ -525,26 +525,688 @@
                             <div class="col s12 cont-bradcrumb">
                                 <a href="#!" class="breadcrumb">Home</a>
                                 <a href="#!" class="breadcrumb">Main Category</a>
-                                <a href="#!" class="breadcrumb breadcrumb-active">Sub Category</a>
+                                <a href="#!" class="breadcrumb">Sub Category</a>
+                                <a href="#!" class="breadcrumb breadcrumb-active">Producto</a>
                                 <a href="#!" class="hide-on-small-only calc right">Cálcula tu Aire Acondicionado<img class="img-calc" src="img/ficha-productos/calc-grafica.svg" width="60"></a>
                             </div>
                         </div>
                     </nav>
                 </div>
             </div>
-            <!-- Open Sub categoria -->
+            <!-- Ficha Producto -->
             <div class="container-fluid fluid-ficha-producto">
                 <div class="container container-box container-ficha">
                     <div class="row row-main-ficha">
-
-
-
-
-
+                        <!-- Slider Producto -->
+                        <div class="col s12 l5 cont-swiper-slider">
+                            <!-- Swiper -->
+                            <div class="swiper-container gallery-top">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next swiper-button-white"></div>
+                                <div class="swiper-button-prev swiper-button-white"></div>
+                            </div>
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                </div>
+                            </div>
+                            <div class="hide-on-small-only col s12 box-share valign-wrapper">
+                                <p class="text-grey title-share">Compartir:</p>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-twitter"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-google-plus"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <!-- Descripcion Producto -->
+                        <div class="col s12 l7 cont-description-producto">
+                            <!-- INFORMACION PRODUCTO -->
+                            <article id="info-producto" class="col s12 box-description">
+                                <div class="box-title-star valign-wrapper">
+                                    <div class="title-producto s12 m6">
+                                        <h2 class="marca-producto text-grey"><b></b><img class="logo-marca" src="img/ficha-productos/marca-logo.svg"></h2>
+                                        <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
+                                        <p class="sku-producto text-second">SKU: 123456</p>
+                                    </div>
+                                    <div class="col s12 m6 star-producto valign-wrapper">
+                                        <h5 class="text-grey right-align">Sin calificación (0)</h5>
+                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                                    </div>
+                                </div>
+                                <p class="semantica-producto text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                            </article>
+                            <!-- ANEXOS -->
+                            <article id="anexo-instalacion" class="col s12 box-description">
+                                <!-- Anexo 1 -->
+                                <div class="anexos-productos valign-wrapper">
+                                    <i class="text-second icon-anexos icon-settings"></i>
+                                    <div class="description-anexos">
+                                        <p class="text-grey nombre-anexo">Incluir instalación básica <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
+                                        <!-- Switch 1 -->
+                                        <div class="switch switch-anexos">
+                                            <label>
+                                            No
+                                            <input type="checkbox">
+                                            <span class="lever"></span>
+                                            Si
+                                            </label>
+                                            <!-- Precio instalacion -->
+                                            <div class="precio-anexos">
+                                                <p class="text-grey"><span class="precio">$ 0</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Anexo 2 -->
+                                <div id="anexo-smarkit" class="anexos-productos valign-wrapper">
+                                    <i class="text-second icon-anexos icon-wifi"></i>
+                                    <div class="description-anexos">
+                                        <p class="text-grey nombre-anexo">Incluir Smart kit Wifi <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
+                                        <!-- Switch 1 -->
+                                        <div class="switch switch-anexos">
+                                            <label>
+                                                No
+                                                <input type="checkbox">
+                                                <span class="lever"></span>
+                                                Si
+                                                </label>
+                                            <!-- Precio instalacion -->
+                                            <div class="precio-anexos">
+                                                <p class="text-grey"><span class="precio">$ 100.000</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PRECIOS -->
+                            <article id="precios-productos" class="col s12 box-description">
+                                <p class="text-second precio-internet">Internet:<span class="precio right"><span class="signo">$</span>150.000</span>
+                                </p>
+                                <p class="text-grey precio-instalacion">Intalación básica:<span class="precio right"><span class="signo">$</span>100.000</span>
+                                </p>
+                                <p class="text-grey precio-normal">Normal:<span class="precio right"><span class="signo">$</span>200.000</span>
+                                </p>
+                                <p class="text-grey precio-descuento">Descuento:<span class="precio right"><span class="signo">$</span>-50.000</span>
+                                </p>
+                                <p class="text-primary precio-total">TOTAL:<span class="precio right"><span class="signo">$</span>250.000</span>
+                                </p>
+                            </article>
+                            <!-- DISPONIBILIDAD -->
+                            <article class="col s12 box-description">
+                                <div class="hide disponible">
+                                    <i class="text-second icon-calendar"></i>
+                                    <div>
+                                        <p class="text-grey">Instalación básica</p>
+                                        <a class="text-second" href="#" class="text-grey">AGENDAR</a>
+                                    </div>
+                                </div>
+                                <div class="disponible">
+                                    <i class="text-second icon-map-pin"></i>
+                                    <div>
+                                        <p class="text-grey">Retiro Sala de Ventas</p>
+                                        <a class="modal-trigger text-second" href="#maps-info" class="text-grey">¿CÓMO LLEGAR?</a>
+                                    </div>
+                                </div>
+                                <div class="disponible">
+                                    <i class="text-second icon-award"></i>
+                                    <div>
+                                        <p class="text-grey">Garantía del Producto</p>
+                                        <a class="modal-trigger text-second" class="text-grey">3 MESES</a>
+                                    </div>
+                                </div>
+                                <div class="disponible">
+                                    <i class="text-second icon-file"></i>
+                                    <div>
+                                        <p class="text-grey">Catálogo PDF</p>
+                                        <a class="modal-trigger text-second" href="#" target="_blank" class="text-grey">VER CATÁLOGO</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- BOTONES DE COMPRA -->
+                            <article class="col s12 box-description">
+                                <div class="col s12 cont-call-to-accion valign-wrapper">
+                                    <div class="box-accion col s5 m4 valign-wrapper">
+                                        <span class="waves-effect waves-dark col s4 center-align text-primary restar"><i class="icon-minus"></i></span>
+                                        <span class="col s4 center-align text-primary numero"><p>1</p></span>
+                                        <span class="waves-effect waves-dark col s4 center-align text-primary sumar"><i class="icon-plus"></i></span>
+                                    </div>
+                                    <div class="box-accion col s7 m8 valign-wrapper">
+                                        <a class="waves-effect waves-dark text-white" href="#!">COMPRAR<i class="icon-arrow-right right"></i></a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Sidebar Producto -->
+                        <aside class="hide-on-med-and-up col s12 l2 cont-box-aside">
+                            <div class="col s12 box-aside valign-wrapper">
+                                <h5 class="text-grey title-aside container-fluid">Comparte este producto</h5>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-twitter"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-google-plus"></i></a>
+                                <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
+                            </div>
+                            <div class="col s12 box-aside valign-wrapper">
+                                <h5 class="text-grey title-aside container-fluid">Medios de Pago</h5>
+                                <img class="responsive-img medios-pago-img" src="img/ficha-productos/pagos.svg" alt="Medio de Pago">
+                            </div>
+                        </aside>
                     </div>
+
+
+                    <!-- ESPECIFICACIONES PRODUCTO -->
+                    <div class="row row-main-ficha row-main-datos">
+                        <!-- Tabs -->
+                        <div class="cont-tabs-datos">
+                            <ul id="tabs-swipe-datos" class="tabs-ficha tabs-datos">
+                                <li class="tab col s3"><a class="active nombre-datos" href="#datos-1"><b>Descripción</b></a></li>
+                                <li class="tab col s3"><a class="nombre-datos" href="#datos-2"><b>Unidad Interior</b></a></li>
+                                <li class="tab col s3"><a class="nombre-datos" href="#datos-3"><b>Unidad Exterior</b></a></li>
+                                <li class="tab col s3"><a class="nombre-datos" href="#datos-4"><b>Calificaciones</b></a></li>
+                            </ul>
+                            <div id="datos-1" class="col s12 item-tabs-datos valign-wrapper">
+                                <div class="column-description col s12">
+                                    <h1 class="text-second">Nombre Producto</h1>
+                                    <p class="text-grey">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa lorem ipsum dolor sit amet Lorem ipsum dolor sit amet ipsum dolor sit amet, consectetuer adipiscing. Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+                                        ipsum dolor sit amet Lorem ipsum dolor sit.
+                                    </p>
+                                </div>
+                                <div class="datos-item">
+                                    <div class="column-item col s12 l3 left-block">
+                                        <h5 class="text-grey">Sweet Dreams:</h5>
+                                        <p class="text-grey">
+                                            Trabaja silenciosamente durante el sueño ajustando gradualmente la temperatura, posibilitando el ahorro de energía.
+                                        </p>
+                                    </div>
+                                    <div class="column-item col s12 l3 left-block">
+                                        <h5 class="text-grey">Ecological Cooling:</h5>
+                                        <p class="text-grey">
+                                            Mejora la eficiencia y disminuir el impacto ambiental, cuenta con refrigerante R410A que no daña la capa de ozono.
+                                        </p>
+                                    </div>
+                                    <div class="column-item col s12 l3 left-block">
+                                        <h5 class="text-grey">Incluye Kit de Tuberías:</h5>
+                                        <p class="text-grey">
+                                            kit de tuberías y cables de conexión (4m y 4,5m respectivamente).
+                                        </p>
+                                    </div>
+                                    <div class="column-item col s12 l3 left-block">
+                                        <h5 class="text-grey">Follow Me:</h5>
+                                        <p class="text-grey">
+                                            Alcanza la temperatura requerida donde se encuentra el control remoto.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="datos-item">
+                                    <div class="column-item col s12 l3 left-block">
+                                        <h5 class="text-grey">Pump Technology:</h5>
+                                        <p class="text-grey">
+                                            Sistema que además de enfriar permite calefaccionar efectivamente.
+                                        </p>
+                                    </div>
+                                    <div class="column-item col s12 l3 left-block">
+                                        <h5 class="text-grey">Control Remoto:</h5>
+                                        <p class="text-grey">
+                                            Para una cómoda operación del equipo y usuabilidad para el usuario.
+                                        </p>
+                                    </div>
+                                    <div class="column-item col s12 l3 left-block">
+                                        <h5 class="text-grey">Smart Kit (opcional):</h5>
+                                        <p class="text-grey">
+                                            Puedes manejar el equipo de forma fácil e intuitiva a través de tu Smartphone (se vende por separado).
+                                        </p>
+                                    </div>
+                                    <div class="column-item col s12 l3 left-block">
+                                        <h5 class="text-grey">Soporte Mural (opcional):</h5>
+                                        <p class="text-grey">
+                                            Soporte mural para condensadora exterior (se vende por separado).
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="datos-2" class="col s12 item-tabs-datos">
+                                <table class="bordered highlight responsive-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Modelo Producto</th>
+                                            <th>Alcance Máximo</th>
+                                            <th>Capacidad Frío</th>
+                                            <th>Capacidad Calor</th>
+                                            <th>Potencia Máxima</th>
+                                            <th>Refrigerante</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>MSMAA-09HRN1</td>
+                                            <td>15 m <sup>2</sup></td>
+                                            <td>9500 BTU / h</td>
+                                            <td>1.150 w.</td>
+                                            <td>R410 - 590 g.</td>
+                                            <td>R410 - 590 g.</td>
+                                        </tr>
+                                    </tbody>
+
+                                    <thead>
+                                        <tr>
+                                            <th>Control Remoto</th>
+                                            <th>Peso Neto</th>
+                                            <th>Ancho</th>
+                                            <th>Profundidad</th>
+                                            <th>Profundidad</th>
+                                            <th>Alto</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Sí</td>
+                                            <td>8,5 kg.</td>
+                                            <td>715 mm</td>
+                                            <td>205 mm</td>
+                                            <td>285 mm</td>
+                                            <td>285 mm</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div id="datos-3" class="col s12 item-tabs-datos">
+                                <table class="bordered highlight responsive-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Modelo</th>
+                                            <th>Capacidad Frío</th>
+                                            <th>Capacidad Calor</th>
+                                            <th>Potencia Máxima</th>
+                                            <th>Refrigerante</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>MSMAA-09HRN1</td>
+                                            <td>9000 BTU / h</td>
+                                            <td>9500 BTU / h</td>
+                                            <td>1.150 w.</td>
+                                            <td>R410 - 590 g.</td>
+                                        </tr>
+                                    </tbody>
+
+                                    <thead>
+                                        <tr>
+                                            <th>Control Remoto</th>
+                                            <th>Peso Neto</th>
+                                            <th>Ancho</th>
+                                            <th>Profundidad</th>
+                                            <th>Alto</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Sí</td>
+                                            <td>8,5 kg.</td>
+                                            <td>715 mm</td>
+                                            <td>205 mm</td>
+                                            <td>285 mm</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div id="datos-4" class="col s12 item-tabs-datos">
+                                <!-- Registro Comentarios -->
+                                <div class="column-description col s12 l6">
+                                    <h1 class="text-second">Escribe una calificación</h1>
+                                    <!-- Form 1 Usuario Nuevo -->
+                                    <form id="form-new-user" class="hide form-calificar col s12">
+                                        <div class="row">
+                                            <!-- Input -->
+                                            <div class="input-field inline col s12 l6">
+                                                <input id="name" type="text" class="validate">
+                                                <label for="name" data-error="Error" data-success="Correcto">Nombre o Nick</label>
+                                            </div>
+                                            <div class="input-field inline col s12 l6">
+                                                <input id="email" type="email" class="validate">
+                                                <label for="email" data-error="Error" data-success="Correcto">Email</label>
+                                            </div>
+                                            <!-- Buttom Input -->
+                                            <div class="input-field inline col s12">
+                                                <button class="my-disabled btn-submit waves-effect waves-light" type="submit" name="action">CALIFICAR PRODUCTO</button>
+                                                <a class="btn-help-form" href="#">Ya estoy registrado(a). <span>Ingresar con mi cuenta</span></a>
+                                            </div>
+                                            <div class="divisor valign-wrapper col s12">
+                                                <div class="line-divisor col s5"></div>
+                                                <p class="icon-divisor col s2 center-align text-grey">o</p>
+                                                <div class="line-divisor col s5"></div>
+                                            </div>
+                                            <div class="login-redes valign-wrapper col s12">
+                                                <p class="hide text-grey center-block">Ingresa con tu Red Social</p>
+                                                <div class="cont-login-btn col s12">
+                                                    <span class="login-btn-redes col s12 l6 text-white waves-effect waves-light"><i class="icon-facebook"></i>Facebook</span>
+                                                    <span class="login-btn-redes col s12 l6 text-white waves-effect waves-light"><i class="icon-google-plus"></i>Google</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- Form 2 Usuario Existente -->
+                                    <form id="form-user" class="hide form-calificar col s12">
+                                        <div class="row">
+                                            <!-- Input -->
+                                            <div class="input-field inline col s12 l6">
+                                                <input id="rut" type="text" class="validate">
+                                                <label for="rut" data-error="Error" data-success="Correcto">RUT</label>
+                                            </div>
+                                            <div class="input-field inline col s12 l6">
+                                                <input id="password" type="password" class="validate">
+                                                <label for="password" data-error="Error" data-success="Correcto">Contraseña</label>
+                                            </div>
+                                            <div class="col s12 l6 right">
+                                                <p>
+                                                    <input type="checkbox" id="passwordView" />
+                                                    <label for="passwordView">Mostrar Contraseña</label>
+                                                </p>
+                                            </div>
+                                            <!-- Buttom Input -->
+                                            <div class="input-field inline col s12">
+                                                <button class="my-disabled btn-submit waves-effect waves-light" type="submit" name="action">CALIFICAR PRODUCTO</button>
+                                                <a class="btn-help-form" href="#">¿Olvídaste tu contraseña?. <span>Recuperar</span></a>
+                                            </div>
+                                            <div class="divisor valign-wrapper col s12">
+                                                <div class="line-divisor col s5"></div>
+                                                <p class="icon-divisor col s2 center-align text-grey">o</p>
+                                                <div class="line-divisor col s5"></div>
+                                            </div>
+                                            <div class="login-redes valign-wrapper col s12">
+                                                <p class="hide text-grey center-block">Ingresa con tu Red Social</p>
+                                                <div class="cont-login-btn col s12">
+                                                    <span class="login-btn-redes col s12 l6 text-white waves-effect waves-light"><i class="icon-facebook"></i>Facebook</span>
+                                                    <span class="login-btn-redes col s12 l6 text-white waves-effect waves-light"><i class="icon-google-plus"></i>Google</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- Form 3 Calificador -->
+                                    <form id="form-calificar" class="form-calificar col s12">
+                                        <div class="row">
+                                            <div class="col s12 producto-calificador valign-wrapper">
+                                                <h5 class="text-grey">1 - ¿Cómo cálificas este producto?</h5>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                                            </div>
+                                            <div class="col s12 producto-calificador valign-wrapper">
+                                                <div class="input-field col s12">
+                                                    <textarea id="commit-producto" class="materialize-textarea"></textarea>
+                                                    <label for="commit-producto">2 - ¿Qué opinas de este producto...?</label>
+                                                </div>
+                                            </div>
+                                            <div class="col s12 producto-calificador valign-wrapper">
+                                                <h5 class="text-grey">3 - ¿Qúe tal tu experiencia de compra?</h5>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                                            </div>
+                                            <div class="col s12 producto-calificador valign-wrapper">
+                                                <p class="text-grey">4 - ¿Recomiendas este producto?</p>
+                                                <div class="switch">
+                                                    <label class="text-grey">
+                                                              No
+                                                              <input type="checkbox">
+                                                              <span class="lever"></span>
+                                                              Si
+                                                            </label>
+                                                </div>
+                                            </div>
+                                            <!-- Buttom Input -->
+                                            <div class="input-field inline col s12">
+                                                <button class="my-disabled btn-submit waves-effect waves-light" type="submit" name="action">ENVIAR CALIFICACIÓN</button>
+                                                <h6 class="text-grey note-importante"><i class="icon-alert-triangle red-text"></i> Si incluyes información personal o utilizas lenguaje inapropiado, tu comentario no será publicado.</h6>
+                                            </div>
+                                            <!-- Barra de progreso -->
+                                            <div class="progress">
+                                                <div class="indeterminate"></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Reseña Clientes -->
+                                <div class="column-description col s12 l6">
+                                    <h1 class="text-second col s8">Reseñas de Clientes (3)</h1>
+                                    <!-- Dropdown Trigger -->
+                                    <a class='dropdown-button btn-ordenar col s4' href='#orderCommit' data-activates='orderCommit'>Ordenar por<i class="icon-chevron-down"></i></a>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='orderCommit' class='dropdown-content order-commit'>
+                                        <li><a href="#!">El más nuevo</a></li>
+                                        <li><a href="#!">El más antiguo</a></li>
+                                        <li><a href="#!">Mayor calificación</a></li>
+                                        <li><a href="#!">Menor calificación</a></li>
+                                        <li><a href="#!">Todos</a></li>
+                                    </ul>
+                                    <!-- Commit 1 -->
+                                    <div class="col s12 cont-commit valign-wrapper">
+                                        <figure class="cont-avatar col s2 m2">
+                                            <img class="materialboxed circle" src="img/ficha-productos/icon-user.svg">
+                                        </figure>
+                                        <article class="commit col s12 m10">
+                                            <div class="title-calificacion valign-wrapper">
+                                                <h3 class="text-grey">Alexis Texas</h3>
+                                                <span class="cont-stars">
+                                                    <i class="icon-star"></i>
+                                                    <i class="icon-star"></i>
+                                                    <i class="icon-star"></i>
+                                                    <i class="icon-star"></i>
+                                                    <i class="icon-star"></i>
+                                                </span>
+                                                <p class="date-commit text-grey">15 DIC, 2017</p>
+                                            </div>
+                                            <span class="recomendacion valign-wrapper">
+                                                <p class="icon-check afirmacion text-white"></p>
+                                                <p class="text-afirmacion text-grey">Recomiendo este producto</p>
+                                            </span>
+                                            <p class="commit-user text-grey">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                            </p>
+                                        </article>
+                                    </div>
+                                    <!-- Commit 2 -->
+                                    <div class="col s12 cont-commit valign-wrapper">
+                                        <figure class="cont-avatar col s2 m2">
+                                            <img class="materialboxed circle" src="img/ficha-productos/icon-user.svg">
+                                        </figure>
+                                        <article class="commit col s12 m10">
+                                            <div class="title-calificacion valign-wrapper">
+                                                <h3 class="text-grey">César Avilés Cuevas</h3>
+                                                <span class="cont-stars">
+                                                    <i class="icon-star"></i>
+                                                </span>
+                                                <p class="date-commit text-grey">15 DIC, 2017</p>
+                                            </div>
+                                            <span class="recomendacion valign-wrapper">
+                                                <p class="icon-x afirmacion text-white red"></p>
+                                                <p class="text-afirmacion text-grey">No recomiendo este producto</p>
+                                            </span>
+                                            <p class="commit-user text-grey">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                            </p>
+                                        </article>
+                                    </div>
+                                    <!-- Commit 3 -->
+                                    <div class="col s12 cont-commit valign-wrapper">
+                                        <figure class="cont-avatar col s2 m2">
+                                            <img class="materialboxed circle" src="img/ficha-productos/icon-user.svg">
+                                        </figure>
+                                        <article class="commit col s12 m10">
+                                            <div class="title-calificacion valign-wrapper">
+                                                <h3 class="text-grey">Cristian Nores</h3>
+                                                <span class="cont-stars">
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                        <i class="icon-star"></i>
+                                                    </span>
+                                                <p class="date-commit text-grey">15 DIC, 2017</p>
+                                            </div>
+                                            <span class="recomendacion valign-wrapper">
+                                                    <p class="icon-check afirmacion text-white"></p>
+                                                    <p class="text-afirmacion text-grey">Recomiendo este producto</p>
+                                                </span>
+                                            <p class="commit-user text-grey">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                            </p>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDER PRODUCTOS RELACIONADOS -->
+                    <div class="row row-main-ficha row-slider-relacionados">
+                        <h5 class="title-prodcutos-realcionados text-primary center-align">Productos Relacionados</h5>
+                        <!-- Swiper Relacionados -->
+                        <div class="swiper-container swiper-productos-relacionados">
+                            <div class="swiper-wrapper">
+                                <!-- Equipo 1 -->
+                                <div class="swiper-slide">
+                                    <div class="box-equipos-relacionados">
+                                        <div class="imagen-equipo">
+                                            <img class="img-product responsive-img" src="img/equipos/prueba-2.jpg">
+                                            <div class="hide mega-tag valign-wrapper">
+                                                <p class="center-block instalacion">Incluye Instalación Básica</p>
+                                            </div>
+                                            <span class="descuento-tag">
+                                                <p>15<sup>%</sup></p>
+                                                <p>Dcto.</p>
+                                            </span>
+                                        </div>
+
+                                        <div class="descripcion-equipo">
+                                            <h3 class="name-equipo text-primary">Split Muro 9000 BTU</h3>
+                                            <p class="atributo-parrafo text-primary">Midea - Alcance 15<sup>M2</sup></p>
+                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
+                                            <p class="precio-normal text-grey">Antes: $229.000</p>
+                                        </div>
+
+                                        <div class="btn-box-equipos">
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-search" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"></a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro', 4000)"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Equipo 2 -->
+                                <div class="swiper-slide">
+                                    <div class="box-equipos-relacionados">
+                                        <div class="imagen-equipo">
+                                            <img class="img-product responsive-img" src="img/equipos/prueba-2.jpg">
+                                            <div class="mega-tag valign-wrapper">
+                                                <p class="center-block instalacion">Incluye Instalación Básica</p>
+                                            </div>
+                                            <span class="hide descuento-tag">
+                                                <p>20<sup>%</sup></p>
+                                                <p>Dcto.</p>
+                                            </span>
+                                        </div>
+
+                                        <div class="descripcion-equipo">
+                                            <h3 class="name-equipo text-primary">Split Muro 9000 BTU</h3>
+                                            <p class="atributo-parrafo text-primary">Midea - Alcance 15<sup>M2</sup></p>
+                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
+                                            <p class="precio-normal text-grey">Antes: $229.000</p>
+                                        </div>
+
+                                        <div class="btn-box-equipos">
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-search" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"></a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro', 4000)"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Equipo 3 -->
+                                <div class="swiper-slide">
+                                    <div class="box-equipos-relacionados">
+                                        <div class="imagen-equipo">
+                                            <img class="img-product responsive-img" src="img/equipos/prueba-2.jpg">
+                                            <div class="mega-tag valign-wrapper">
+                                                <p class="center-block instalacion">Incluye Instalación Básica</p>
+                                            </div>
+                                            <span class="descuento-tag">
+                                                <p>50<sup>%</sup></p>
+                                                <p>Dcto.</p>
+                                            </span>
+                                        </div>
+
+                                        <div class="descripcion-equipo">
+                                            <h3 class="name-equipo text-primary">Split Muro 12000 BTU</h3>
+                                            <p class="atributo-parrafo text-primary">Midea - Alcance 15<sup>M2</sup></p>
+                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
+                                            <p class="precio-normal text-grey">Antes: $229.000</p>
+                                        </div>
+
+                                        <div class="btn-box-equipos">
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-search" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"></a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro', 4000)"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Equipo 4 -->
+                                <div class="swiper-slide">
+                                    <div class="box-equipos-relacionados">
+                                        <div class="imagen-equipo">
+                                            <img class="img-product responsive-img" src="img/equipos/prueba-2.jpg">
+                                            <div class="mega-tag valign-wrapper">
+                                                <p class="center-block instalacion">Incluye Instalación Básica</p>
+                                            </div>
+                                            <span class="descuento-tag">
+                                                <p>50<sup>%</sup></p>
+                                                <p>Dcto.</p>
+                                            </span>
+                                        </div>
+
+                                        <div class="descripcion-equipo">
+                                            <h3 class="name-equipo text-primary">Split Muro 18000 BTU</h3>
+                                            <p class="atributo-parrafo text-primary">Midea - Alcance 15<sup>M2</sup></p>
+                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
+                                            <p class="precio-normal text-grey">Antes: $229.000</p>
+                                        </div>
+
+                                        <div class="btn-box-equipos">
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-search" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"></a>
+                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s6 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro', 4000)"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-            <!-- Fin Sub categoria -->
+        </div>
+        <!-- Fin Ficha Producto -->
     </main>
 
     <!-- FOOTER -->
