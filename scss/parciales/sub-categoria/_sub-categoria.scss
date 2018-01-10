@@ -2,14 +2,18 @@
     background: $whiteColor;
     margin: 0;
     margin-top: 3.5rem;
+    overflow: hidden;
     @media screen and (max-width: 480px) {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
     //Init Sidebar
-    & .acordion-filtros {
-        box-shadow: none;
-        border-color: transparent;
+    & .aside-cat {
+        position: relative;
+        & .fixed-aside {
+            position: fixed;
+            background: $whiteColor;
+        }
         //Title Filtros
         & .title-filtro {
             position: relative;
@@ -17,8 +21,8 @@
                 font-size: 1rem;
                 text-transform: uppercase;
                 font-weight: 600;
-                margin: 0;
-                margin-bottom: 1rem;
+                margin: 0!important;
+                margin-bottom: 1rem!important;
                 display: block;
                 & i {
                     font-size: 1.25rem;
@@ -27,53 +31,76 @@
                 }
             }
         }
-        //Style Acordeon Generico
-        & .collapsible-header {
-            border-bottom: 1px solid $greysoftColor;
-            color: $greyColor;
-            padding-left: 0;
-            transition: $transition1;
-            i {
-                font-size: 1rem;
-                margin-right: 1rem;
-                padding-top: 3px;
-                width: 1rem;
+        & .acordion-filtros {
+            box-shadow: none;
+            border-color: transparent;
+            margin-top: 0; 
+            //Style Acordeon Generico
+            & .collapsible-header {
+                border-bottom: 1px solid $greysoftColor;
+                color: $greyColor;
+                padding-left: 0;
+                transition: $transition1;
+                font-size: .9rem;
+                background: transparent;
+                i {
+                    font-size: 1rem;
+                    margin-right: 1rem;
+                    padding-top: 3px;
+                    width: 1rem;
+                }
+                & sub {
+                    bottom: -.5rem;
+                }
             }
-            & sub {
-                bottom: -.5rem;
+            & .collapsible-header:hover,
+            .collapsible-header:active,
+            .collapsible-header:focus {
+                color: $secondColor;
+            }
+            & .active {
+                font-weight: 600;
+                color: $secondColor;
+            }
+            & .collapsible-body {
+                padding: 1.5rem 2rem;
+                color: $greyColor;
+                font-size: .9rem;
+                font-weight: 500;
+                border-bottom: 1px solid $greysoftColor;
+                display: flex;
+                flex-wrap: wrap;
+                & a {
+                    color: $greyColor;
+                    margin-bottom: 5px;
+                }
+                & a:last-child {
+                    margin-bottom: 0;
+                }
+                & a:hover {
+                    color: $secondColor;
+                }
             }
         }
-        & .collapsible-header:hover,
-        .collapsible-header:active,
-        .collapsible-header:focus {
-            color: $secondColor;
-        }
-        & .active {
-            color: $secondColor;
-        }
-        & .collapsible-body {
-            padding: 2rem 0;
-            color: $greyColor;
-            font-size: .9rem;
-        }
-    }
-    // FILTRO 1 BTU
-    & .filtro-btu {
-        & .chip-filtro {
-            background: transparent;
-            cursor: pointer;
-            border: 1px solid $secondColor;
-            color: $secondColor;
-            transition: $transition1;
-        }
-        & .chip-filtro:hover{
-            border: 1px solid $secondColor;
-            color: $whiteColor;
-            background: $secondColor;
-        }
-        & .chip-filtro:focus {
-            border: 1px solid $primaryColor;
-            color: $primaryColor;
+        // FILTRO 1 BTU
+        & .filtro-btu {
+            & .chip-filtro {
+                background: transparent;
+                cursor: pointer;
+                border: 1px solid $secondColor;
+                color: $secondColor!important;
+                transition: $transition1;
+                padding: 0 10px;
+                margin-bottom: .5rem;
+            }
+            & .chip-filtro:nth-child(4), & .chip-filtro:nth-child(5), & .chip-filtro:nth-child(6) {
+                margin-bottom: 0;
+            }
+            & .chip-filtro:hover, & .chip-filtro:focus, & .chip-filtro:active {
+                border: 1px solid $secondColor;
+                color: $whiteColor!important;
+                background: $secondColor;
+            }
         }
     }
 }

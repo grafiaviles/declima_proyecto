@@ -77,8 +77,8 @@
         border-top: none!important;
         background-color: transparent!important;
         height: auto;
+        position: relative;
         @media screen and (max-width: 480px) {
-            position: relative;
             width: 100%;
             padding: 0 2rem;
             display: flex;

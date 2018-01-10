@@ -497,17 +497,17 @@
                     <li class="list-category"><a href="#cotizador" class="modal-trigger waves-effect waves-dark active-link link-category" data-target="cotizador">Cotizar</a></li>
                     <li class="list-category"><a href="" class="waves-effect waves-dark link-category">Servicio al Cliente</a></li>
                     <li class="list-category"><a href="#buscador-desktop" data-target="buscador-desktop" class="modal-trigger link-icon-category tooltipped" data-delay="50" data-tooltip="¿Qué buscas?"><i class="icon-search"></i></a></li>
-                    <li class="list-category"><a class="dropdown-button link-icon-category" data-activates='micuenta'><i class="icon-user"></i></a></li>
-                    <!-- Dropdown Mi Cuenta -->
+                    <li class="list-category"><a href="#" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i>
+                        <span class="notification">3</span>
+                    </a></li>
+                    <!-- Mi Cuenta -->
+                    <li class="list-category hide"><a class="dropdown-button link-icon-category" data-activates='micuenta'><i class="icon-user"></i></a></li>
                     <ul id='micuenta' class='dropdown-content-menu-icon dropdown-content'>
                         <li><a href="#"><i class="icon-user-check"></i>Iniciar Sesión</a></li>
                         <li class="divider"></li>
                         <li><a href="#"><i class="icon-user-plus"></i>Regístrate</a></li>
                     </ul>
-                    <li class="list-category"><a href="#" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i>
-                        <span class="notification">3</span>
-                    </a></li>
-                    <li class="list-category"> <a href="http://" class="dropdown-button" data-activates='micuenta'><div class="chip"><img src="img/user/avatar.jpg" alt="Contact Person">César A.</div></a></li>
+                    <li class="list-category"> <a class="dropdown-button user-active" data-activates='micuenta'><div class="chip chip-user"><img src="img/user/avatar.jpg" alt="Contact Person">César A.</div></a></li>
                 </ul>
             </div>
         </nav>
@@ -524,8 +524,7 @@
                         <div class="nav-wrapper">
                             <div class="col s12 cont-bradcrumb">
                                 <a href="#!" class="breadcrumb">Home</a>
-                                <a href="#!" class="breadcrumb">Main Category</a>
-                                <a href="#!" class="breadcrumb breadcrumb-active">Sub Category</a>
+                                <a href="#!" class="breadcrumb breadcrumb-active">Equipos Residenciales</a>
                                 <a href="#!" class="hide-on-small-only calc right">Cálcula tu Aire Acondicionado<img class="img-calc" src="img/ficha-productos/calc-grafica.svg" width="60"></a>
                             </div>
                         </div>
@@ -538,26 +537,26 @@
                     <div class="row row-main-category">
 
                         <!-- Sidebar -->
-                        <aside class="col s3">
+                        <aside class="hide-on-med-and-down col l3 aside-cat">
+                            <div class="fixed-aside">
                             <div class="title-filtro">
-                                <h5 class="text-primary">Filtra tus búsquedas</h5>
+                                <h5 class="text-primary">Equipos Residenciales</h5>
                             </div>
-                            <div class="divider"></div>
                             <!-- Acordion Filtros -->
                             <ul class="collapsible acordion-filtros" data-collapsible="accordion">
                                 <!-- Filtro 1 -->
-                                <li class="filtro-btu">
-                                    <div class="collapsible-header active"><i class="icon-chevron-down"></i>Cantidad BTU</div>
+                                <li id="filtro-alcance">
+                                    <div class="collapsible-header active"><i class="icon-chevron-down"></i>Aire Acondicionado</div>
                                     <div class="collapsible-body"><span>
-                                        <a href="" class="chip chip-filtro">9.000</a>
-                                        <a href="" class="chip chip-filtro">12.000</a>
-                                        <a href="" class="chip chip-filtro">18.000</a>
-                                        <a href="" class="chip chip-filtro">24.000</a>
+                                        <a class="valign-wrapper" href="">Split Muro Blanc</a>
+                                        <a class="valign-wrapper" href="">Split Muro Inverter</a>
+                                        <a class="valign-wrapper" href="">Ventana</a>
+                                        <a class="valign-wrapper" href="">Portátiles</a>
                                     </span>
                                     </div>
                                 </li>
                                 <!-- Filtro 2 -->
-                                <li>
+                                <li id="filtro-alcance">
                                     <div class="collapsible-header"><i class="icon-chevron-down"></i>Alcance m<sub>2</sub> </div>
                                     <div class="collapsible-body"><span>
                                             <form action="#">
@@ -569,19 +568,43 @@
                                     </div>
                                 </li>
                                 <!-- Filtro 3 -->
-                                <li>
-                                    <div class="collapsible-header"><i class="icon-chevron-down"></i>Rango de precios</div>
-                                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                                <li class="filtro-btu">
+                                    <div class="collapsible-header"><i class="icon-chevron-down"></i>Capacidad BTU/H</div>
+                                    <div class="collapsible-body"><span>
+                                        <a class="chip chip-filtro">9.000</a>
+                                        <a class="chip chip-filtro">12.000</a>
+                                        <a class="chip chip-filtro">18.000</a>
+                                        <a class="chip chip-filtro">24.000</a>
+                                        <a class="chip chip-filtro">36.000</a>
+                                        <a class="chip chip-filtro">48.000</a>
+                                    </span>
+                                    </div>
                                 </li>
                                 <!-- Filtro 4 -->
                                 <li>
-                                    <div class="collapsible-header"><i class="icon-chevron-down"></i>Marca</div>
+                                    <div class="collapsible-header"><i class="icon-chevron-down"></i>Precios</div>
+                                    <div class="collapsible-body"><span>
+                                        <form action="#">
+                                            <p class="range-field">
+                                                <input type="range" id="test1" min="9000" max="24000"/>
+                                            </p>
+                                        </form> 
+                                    </span></div>
+                                </li>
+                                <!-- Filtro 6 -->
+                                <li>
+                                    <div class="collapsible-header"><i class="icon-chevron-down"></i>Fabricante</div>
                                     <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                                 </li>
+                                <!-- Filtro 7 -->
+                                <li>
+                                    <div class="collapsible-header"><i class="icon-chevron-right"></i><a class="text-grey" href="#!">Cálcula tu Aire Acondicionado</a></div>
+                                </li>
                             </ul>
+                        </div>
                         </aside>
                         <!-- Productos -->
-                        <div class="col s9 blue">Contenido</div>
+                        <div class="col s12 l9 blue" style="min-height:100vh;">Contenido</div>
 
 
                     </div>

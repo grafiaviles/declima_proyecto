@@ -4,6 +4,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
+    z-index: 10;
     @media screen and (max-width: 480px) {
         background: $primaryColor;
     }
