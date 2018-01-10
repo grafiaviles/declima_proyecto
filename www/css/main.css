@@ -5157,7 +5157,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .aside-cat { position: relative; }
 
-.row-main-category .aside-cat .fixed-aside { position: fixed; background: #fff; }
+.row-main-category .aside-cat .fixed-aside { background: #fff; }
 
 .row-main-category .aside-cat .title-filtro { position: relative; }
 
@@ -5177,7 +5177,9 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .aside-cat .acordion-filtros .active { font-weight: 600; color: #3fa7f3; }
 
-.row-main-category .aside-cat .acordion-filtros .collapsible-body { padding: 1.5rem 2rem; color: #777; font-size: .9rem; font-weight: 500; border-bottom: 1px solid #f0f0f0; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.row-main-category .aside-cat .acordion-filtros .collapsible-body { padding: 1.5rem 2rem; color: #777; font-size: .9rem; font-weight: 500; border-bottom: 1px solid #f0f0f0; width: 100%; }
+
+.row-main-category .aside-cat .acordion-filtros .collapsible-body span { width: 100%; }
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-body a { color: #777; margin-bottom: 5px; }
 
@@ -5186,7 +5188,5 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .row-main-category .aside-cat .acordion-filtros .collapsible-body a:hover { color: #3fa7f3; }
 
 .row-main-category .aside-cat .filtro-btu .chip-filtro { background: transparent; cursor: pointer; border: 1px solid #3fa7f3; color: #3fa7f3 !important; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; padding: 0 10px; margin-bottom: .5rem; }
-
-.row-main-category .aside-cat .filtro-btu .chip-filtro:nth-child(4), .row-main-category .aside-cat .filtro-btu .chip-filtro:nth-child(5), .row-main-category .aside-cat .filtro-btu .chip-filtro:nth-child(6) { margin-bottom: 0; }
 
 .row-main-category .aside-cat .filtro-btu .chip-filtro:hover, .row-main-category .aside-cat .filtro-btu .chip-filtro:focus, .row-main-category .aside-cat .filtro-btu .chip-filtro:active { border: 1px solid #3fa7f3; color: #fff !important; background: #3fa7f3; }

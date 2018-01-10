@@ -11,7 +11,7 @@
     & .aside-cat {
         position: relative;
         & .fixed-aside {
-            position: fixed;
+            //position: fixed;
             background: $whiteColor;
         }
         //Title Filtros
@@ -68,8 +68,10 @@
                 font-size: .9rem;
                 font-weight: 500;
                 border-bottom: 1px solid $greysoftColor;
-                display: flex;
-                flex-wrap: wrap;
+                width: 100%;
+                & span {
+                    width: 100%;
+                }
                 & a {
                     color: $greyColor;
                     margin-bottom: 5px;
@@ -92,9 +94,6 @@
                 transition: $transition1;
                 padding: 0 10px;
                 margin-bottom: .5rem;
-            }
-            & .chip-filtro:nth-child(4), & .chip-filtro:nth-child(5), & .chip-filtro:nth-child(6) {
-                margin-bottom: 0;
             }
             & .chip-filtro:hover, & .chip-filtro:focus, & .chip-filtro:active {
                 border: 1px solid $secondColor;
