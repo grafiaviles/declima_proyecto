@@ -3454,7 +3454,7 @@ header .main-menu .nav-wrapper .icon-collapse-mobile .icon-menu { font-size: 23p
 
 header .main-menu .nav-wrapper .menu-desktop { height: 64px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-header .main-menu .nav-wrapper .menu-desktop .list-category .link-category { font-weight: 600; font-size: 1rem; position: relative; padding: 0 .8rem; color: #fff; -webkit-box-shadow: 0 3px 0 transparent inset; box-shadow: 0 3px 0 transparent inset; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; line-height: 64px; height: 64px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; opacity: .8; }
+header .main-menu .nav-wrapper .menu-desktop .list-category .link-category { font-weight: 600; font-size: 1rem; position: relative; padding: 0 .8rem; color: #fff; -webkit-box-shadow: 0 3px 0 transparent inset; box-shadow: 0 3px 0 transparent inset; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; line-height: 64px; height: 64px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; opacity: .7; }
 
 header .main-menu .nav-wrapper .menu-desktop .list-category .link-category .icon-chevron-down { font-size: 1rem; padding-left: .3rem; position: relative; top: 1px; }
 
@@ -5151,13 +5151,13 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .swiper-container-coverflow .swiper-wrapper { /* Windows 8 IE 10 fix */ -ms-perspective: 1200px; }
 
-.row-main-category { background: #fff; margin: 0; margin-top: 3.5rem; overflow: hidden; }
+.row-main-category { background: #fff; margin: 0; margin-top: 3.5rem; overflow: hidden; position: relative; }
 
 @media screen and (max-width: 480px) { .row-main-category { margin-top: 1rem; margin-bottom: 1rem; } }
 
 .row-main-category .aside-cat { position: relative; }
 
-.row-main-category .aside-cat .fixed-aside { background: #fff; }
+.row-main-category .aside-cat .menu-fixed { max-width: 270px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; position: fixed; -webkit-transform: translateY(-90px); transform: translateY(-90px); }
 
 .row-main-category .aside-cat .title-filtro { position: relative; }
 
@@ -5167,7 +5167,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .aside-cat .acordion-filtros { -webkit-box-shadow: none; box-shadow: none; border-color: transparent; margin-top: 0; }
 
-.row-main-category .aside-cat .acordion-filtros .collapsible-header { border-bottom: 1px solid #f0f0f0; color: #777; padding-left: 0; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; font-size: .9rem; background: transparent; }
+.row-main-category .aside-cat .acordion-filtros .collapsible-header { border-bottom: 1px solid #f0f0f0; color: #777; padding-left: 0; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; font-size: .95rem; background: transparent; }
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-header i { font-size: 1rem; margin-right: 1rem; padding-top: 3px; width: 1rem; }
 
@@ -5175,9 +5175,9 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-header:hover, .row-main-category .aside-cat .acordion-filtros .collapsible-header:active, .row-main-category .aside-cat .acordion-filtros .collapsible-header:focus { color: #3fa7f3; }
 
-.row-main-category .aside-cat .acordion-filtros .active { font-weight: 600; color: #3fa7f3; }
+.row-main-category .aside-cat .acordion-filtros .active { color: #3fa7f3; }
 
-.row-main-category .aside-cat .acordion-filtros .collapsible-body { padding: 1.5rem 2rem; color: #777; font-size: .9rem; font-weight: 500; border-bottom: 1px solid #f0f0f0; width: 100%; }
+.row-main-category .aside-cat .acordion-filtros .collapsible-body { padding: 1.5rem 0 2rem 1.5rem; color: #777; font-size: .95rem; font-weight: 500; border-bottom: 1px solid #f0f0f0; width: 100%; }
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-body span { width: 100%; }
 

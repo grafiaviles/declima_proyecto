@@ -59,3 +59,22 @@ $('select').material_select();
 
 //Media boxed
 $('.materialboxed').materialbox();
+
+//Scroll Aside
+/* var $aside = $('#aside');
+var $asideTop = $aside.offset().top;
+var pegarAside = function() {
+    var $scrollTop = $(window).scrollTop();
+    if ($scrollTop >= $asideTop) {
+        $aside.addClass('fixed-effect')
+    } else {
+        $aside.removeClass('fixed-effect')
+    }
+}
+$(window).on('scroll', pegarAside); */
+
+//Ver px del scroll en vivo
+/* $(window).on('scroll', function() {
+    var $scrollTop = $(window).scrollTop();
+    $('nav').text('El scroll es ' + $scrollTop + 'px');
+}); */

@@ -3,6 +3,7 @@
     margin: 0;
     margin-top: 3.5rem;
     overflow: hidden;
+    position: relative;
     @media screen and (max-width: 480px) {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -10,9 +11,11 @@
     //Init Sidebar
     & .aside-cat {
         position: relative;
-        & .fixed-aside {
-            //position: fixed;
-            background: $whiteColor;
+        & .menu-fixed {
+            max-width: 270px;
+            transition: $transition1;
+            position: fixed;
+            transform: translateY(-90px);
         }
         //Title Filtros
         & .title-filtro {
@@ -34,14 +37,14 @@
         & .acordion-filtros {
             box-shadow: none;
             border-color: transparent;
-            margin-top: 0; 
+            margin-top: 0;
             //Style Acordeon Generico
             & .collapsible-header {
                 border-bottom: 1px solid $greysoftColor;
                 color: $greyColor;
                 padding-left: 0;
                 transition: $transition1;
-                font-size: .9rem;
+                font-size: .95rem;
                 background: transparent;
                 i {
                     font-size: 1rem;
@@ -59,13 +62,12 @@
                 color: $secondColor;
             }
             & .active {
-                font-weight: 600;
                 color: $secondColor;
             }
             & .collapsible-body {
-                padding: 1.5rem 2rem;
+                padding: 1.5rem 0 2rem 1.5rem;
                 color: $greyColor;
-                font-size: .9rem;
+                font-size: .95rem;
                 font-weight: 500;
                 border-bottom: 1px solid $greysoftColor;
                 width: 100%;
@@ -95,7 +97,9 @@
                 padding: 0 10px;
                 margin-bottom: .5rem;
             }
-            & .chip-filtro:hover, & .chip-filtro:focus, & .chip-filtro:active {
+            & .chip-filtro:hover,
+            & .chip-filtro:focus,
+            & .chip-filtro:active {
                 border: 1px solid $secondColor;
                 color: $whiteColor!important;
                 background: $secondColor;
