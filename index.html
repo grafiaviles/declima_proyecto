@@ -559,58 +559,81 @@
                                     <li id="filtro-alcance">
                                         <div class="collapsible-header active"><i class="icon-chevron-down"></i>Aire Acondicionado</div>
                                         <div class="collapsible-body"><span>
-                                        <a class="valign-wrapper" href="">Split Muro Blanc</a>
-                                        <a class="valign-wrapper" href="">Split Muro Inverter</a>
-                                        <a class="valign-wrapper" href="">Ventana</a>
-                                        <a class="valign-wrapper" href="">Portátiles</a>
+                                        <a class="valign-wrapper tipo-de-equipo" href="">Split Muro Blanc <span class="number-contenido">(4)</span></a>
+                                        <a class="valign-wrapper tipo-de-equipo" href="">Split Muro Inverter <span class="number-contenido">(3)</span></a>
+                                        <a class="valign-wrapper tipo-de-equipo" href="">Ventana <span class="number-contenido">(3)</span></a>
+                                        <a class="valign-wrapper tipo-de-equipo" href="">Portátiles <span class="number-contenido">(6)</span></a>
                                     </span>
                                         </div>
                                     </li>
                                     <!-- Filtro 2 -->
-                                    <li>
+                                    <li id="filtro-marca">
                                         <div class="collapsible-header"><i class="icon-chevron-down"></i>Marca</div>
                                         <div class="collapsible-body">
                                             <span>
-                                                <form action="#">
-                                                        <p>
-                                                            <input type="checkbox" id="midea" />
-                                                            <label for="midea">Midea (10)</label>
-                                                        </p>
-                                                        <p>
-                                                            <input type="checkbox" id="carrier" />
-                                                            <label for="carrier">Carrier (3)</label>
-                                                        </p>
-                                                        <p>
-                                                            <input type="checkbox" id="otra" />
-                                                            <label for="otra">Otra (6)</label>
-                                                        </p>
-                                                    </form>
+                                                <form class="form-check-box form-marca" action="#">
+                                                    <p>
+                                                        <input type="checkbox" id="midea" />
+                                                        <label for="midea">Midea (10)</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="checkbox" id="carrier" />
+                                                        <label for="carrier">Carrier (3)</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="checkbox" id="otra" />
+                                                        <label for="otra">Otra (6)</label>
+                                                    </p>
+                                                </form>
                                             </span>
                                         </div>
                                     </li>
                                     <!-- Filtro 3 -->
                                     <li class="filtro-btu">
                                         <div class="collapsible-header"><i class="icon-chevron-down"></i>Capacidad BTU/H</div>
-                                        <div class="collapsible-body"><span>
-                                        <a class="chip chip-filtro">9.000</a>
-                                        <a class="chip chip-filtro">12.000</a>
-                                        <a class="chip chip-filtro">18.000</a>
-                                        <a class="chip chip-filtro">24.000</a>
-                                        <a class="chip chip-filtro">36.000</a>
-                                        <a class="chip chip-filtro">48.000</a>
-                                    </span>
+                                        <div class="collapsible-body">
+                                            <span>
+                                                    <form class="form-check-box form-btu" action="#">
+                                                        <p>
+                                                            <input type="checkbox" id="9000" />
+                                                            <label for="9000">9.000 (10)</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="checkbox" id="12000" />
+                                                            <label for="12000">12.000 (2)</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="checkbox" id="18000" />
+                                                            <label for="18000">18.000 (2)</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="checkbox" id="24000" />
+                                                            <label for="24000">24.000 (4)</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="checkbox" id="48000" />
+                                                            <label for="48000">48.000 (2)</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="checkbox" id="72000" />
+                                                            <label for="72000">72.000 (6)</label>
+                                                        </p>
+                                                    </form>
+                                            </span>
                                         </div>
                                     </li>
                                     <!-- Filtro 4 -->
                                     <li>
                                         <div class="collapsible-header"><i class="icon-chevron-down"></i>Precios</div>
-                                        <div class="collapsible-body"><span>
-                                        <form action="#">
-                                            <p class="range-field">
-                                                <input type="range" id="test1" min="9000" max="24000"/>
-                                            </p>
-                                        </form> 
-                                    </span></div>
+                                        <div class="collapsible-body">
+                                            <span>
+                                                <form action="#">
+                                                    <p class="range-field">
+                                                        <input type="range" id="test1" min="9000" max="24000"/>
+                                                    </p>
+                                                </form>
+                                            </span>
+                                        </div>
                                     </li>
                                     <!-- Filtro 6 -->
                                     <li id="filtro-alcance">
@@ -622,7 +645,7 @@
                                                         <input type="range" id="test1" min="9000" max="24000"/>
                                                     </p>
                                                 </form>
-                                        </span>
+                                            </span>
                                         </div>
                                     </li>
                                     <!-- Filtro 7 -->
@@ -630,6 +653,23 @@
                                         <div class="collapsible-header"><i class="icon-chevron-right"></i><a class="text-grey" href="#!">Cálcula tu Aire Acondicionado</a></div>
                                     </li>
                                 </ul>
+                                <div class="title-filtro">
+                                    <h5 class="text-primary">Ofertas</h5>
+                                </div>
+                                <!-- Swiper -->
+                                <div class="swiper-ofertas">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
+                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
+                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
+                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
+                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
+                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
+                                    </div>
+                                
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
                             </div>
                         </aside>
                         <!-- Productos -->
@@ -908,6 +948,15 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/dist/slider-equipos.js"></script>
     <script type="text/javascript" src="js/dist/chat-drift.js"></script>
+    <script>
+            var swiper = new Swiper('.swiper-ofertas', {
+              effect: 'flip',
+              grabCursor: true,
+              pagination: {
+                el: '.swiper-pagination',
+              },
+            });
+          </script>
 </body>
 
 </html>

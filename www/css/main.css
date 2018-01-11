@@ -2557,9 +2557,9 @@ input[type=range] { position: relative; background-color: transparent; border: n
 
 input[type=range]:focus { outline: none; }
 
-input[type=range] + .thumb { position: absolute; top: 10px; left: 0; border: none; height: 0; width: 0; border-radius: 50%; background-color: #26a69a; margin-left: 7px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+input[type=range] + .thumb { position: absolute; top: 10px; left: 0; border: none; height: 0; width: 0; border-radius: 50%; background-color: #3fa7f3; margin-left: 7px; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 
-input[type=range] + .thumb .value { display: block; width: 30px; text-align: center; color: #26a69a; font-size: 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+input[type=range] + .thumb .value { display: block; width: 30px; text-align: center; color: #3fa7f3; font-size: 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 
 input[type=range] + .thumb.active { border-radius: 50% 50% 50% 0; }
 
@@ -2569,7 +2569,7 @@ input[type=range] { -webkit-appearance: none; }
 
 input[type=range]::-webkit-slider-runnable-track { height: 3px; background: #c2c0c2; border: none; }
 
-input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; border: none; height: 14px; width: 14px; border-radius: 50%; background-color: #26a69a; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; margin: -5px 0 0 0; -webkit-transition: .3s; transition: .3s; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; border: none; height: 14px; width: 14px; border-radius: 50%; background-color: #3fa7f3; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; margin: -5px 0 0 0; -webkit-transition: .3s; transition: .3s; }
 
 input[type=range]:focus::-webkit-slider-runnable-track { background: #ccc; }
 
@@ -2577,7 +2577,7 @@ input[type=range] { /* fix for FF unable to apply focus style bug  */ border: 1p
 
 input[type=range]::-moz-range-track { height: 3px; background: #ddd; border: none; }
 
-input[type=range]::-moz-range-thumb { border: none; height: 14px; width: 14px; border-radius: 50%; background: #26a69a; margin-top: -5px; }
+input[type=range]::-moz-range-thumb { border: none; height: 14px; width: 14px; border-radius: 50%; background: #3fa7f3; margin-top: -5px; }
 
 input[type=range]:-moz-focusring { outline: 1px solid #fff; outline-offset: -1px; }
 
@@ -2589,7 +2589,7 @@ input[type=range]::-ms-fill-lower { background: #777; }
 
 input[type=range]::-ms-fill-upper { background: #ddd; }
 
-input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-radius: 50%; background: #26a69a; }
+input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-radius: 50%; background: #3fa7f3; }
 
 input[type=range]:focus::-ms-fill-lower { background: #888; }
 
@@ -5165,11 +5165,11 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .aside-cat .title-filtro h5 i { font-size: 1.25rem; text-align: right; float: right; }
 
-.row-main-category .aside-cat .acordion-filtros { -webkit-box-shadow: none; box-shadow: none; border-color: transparent; margin-top: 0; }
+.row-main-category .aside-cat .acordion-filtros { -webkit-box-shadow: none; box-shadow: none; border-color: transparent; margin-top: 0; margin-bottom: 2rem; }
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-header { border-bottom: 1px solid #f0f0f0; color: #777; padding-left: 0; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; font-size: .95rem; background: transparent; }
 
-.row-main-category .aside-cat .acordion-filtros .collapsible-header i { font-size: 1rem; margin-right: 1rem; padding-top: 3px; width: 1rem; }
+.row-main-category .aside-cat .acordion-filtros .collapsible-header i { font-size: 1rem; margin-right: 1rem; padding-top: 3px; width: 1rem; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-header sub { bottom: -.5rem; }
 
@@ -5177,15 +5177,23 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .aside-cat .acordion-filtros .active { color: #3fa7f3; }
 
-.row-main-category .aside-cat .acordion-filtros .collapsible-body { padding: 1.5rem 0 2rem 1.5rem; color: #777; font-size: .95rem; font-weight: 500; border-bottom: 1px solid #f0f0f0; width: 100%; }
+.row-main-category .aside-cat .acordion-filtros .active .icon-chevron-down { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.row-main-category .aside-cat .acordion-filtros .collapsible-body { padding: 1.5rem 0 1.5rem 2rem; color: #777; font-size: .95rem; font-weight: 500; border-bottom: 1px solid #f0f0f0; width: 100%; }
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-body span { width: 100%; }
 
-.row-main-category .aside-cat .acordion-filtros .collapsible-body a { color: #777; margin-bottom: 5px; }
+.row-main-category .aside-cat .acordion-filtros .collapsible-body .tipo-de-equipo { color: #777; margin-bottom: 5px; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+.row-main-category .aside-cat .acordion-filtros .collapsible-body .tipo-de-equipo .number-contenido { padding-left: .5rem; width: auto; }
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-body a:last-child { margin-bottom: 0; }
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-body a:hover { color: #3fa7f3; }
+
+.row-main-category .aside-cat .acordion-filtros .collapsible-body .form-check-box label { color: #777; font-size: .95rem; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
+
+.row-main-category .aside-cat .acordion-filtros .collapsible-body .form-check-box label:hover, .row-main-category .aside-cat .acordion-filtros .collapsible-body .form-check-box label:active { color: #3fa7f3; }
 
 .row-main-category .aside-cat .filtro-btu .chip-filtro { background: transparent; cursor: pointer; border: 1px solid #3fa7f3; color: #3fa7f3 !important; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; padding: 0 10px; margin-bottom: .5rem; }
 
