@@ -273,7 +273,7 @@
                 <a class="btn-comprar waves-effect waves-dark center-align" href="">VER OFERTAS<i class="icon-arrow-right right"></i></a>
             </div>
         </div>
-        <!-- Prodcutos Agregados -->
+        <!-- Productos Agregados -->
         <div class="container-bag-product">
             <div class="section side-nav-bag waves-effect waves-dark chip chip-product">
                 <i class="close close-product-bag icon-x"></i>
@@ -546,24 +546,30 @@
             <div class="container-fluid fluid-ficha-producto">
                 <div class="container container-box container-ficha">
                     <div class="row row-main-category">
-
-                        <!-- Sidebar -->
+                        <!-- ASIDE MAIN -->
                         <aside class="col s12 m3 l3 aside-cat">
-                            <div id="aside" class="col s12 efecto-menu">
+                            <div id="aside" class="col s12">
+                                <!-- ASIDE 1 FILTROS -->
                                 <div class="title-filtro">
-                                    <h5 class="text-primary">Equipos Residenciales</h5>
+                                    <h5 class="text-primary">
+                                        <a href="#!" class="hide icon-arrow-left text-primary"></a> Equipos Residenciales
+                                    </h5>
                                 </div>
                                 <!-- Acordion Filtros -->
                                 <ul class="collapsible acordion-filtros" data-collapsible="accordion">
                                     <!-- Filtro 1 -->
                                     <li id="filtro-alcance">
                                         <div class="collapsible-header active"><i class="icon-chevron-down"></i>Aire Acondicionado</div>
-                                        <div class="collapsible-body"><span>
-                                        <a class="valign-wrapper tipo-de-equipo" href="">Split Muro Blanc <span class="number-contenido">(4)</span></a>
-                                        <a class="valign-wrapper tipo-de-equipo" href="">Split Muro Inverter <span class="number-contenido">(3)</span></a>
-                                        <a class="valign-wrapper tipo-de-equipo" href="">Ventana <span class="number-contenido">(3)</span></a>
-                                        <a class="valign-wrapper tipo-de-equipo" href="">Portátiles <span class="number-contenido">(6)</span></a>
-                                    </span>
+                                        <div class="collapsible-body">
+                                            <span id="botones">
+                                            <a class="active-filtro valign-wrapper tipo-de-equipo" href="#!">Ofertas Destacadas <span class="number-contenido">(3)</span></a>
+                                            <a class="valign-wrapper tipo-de-equipo" href="#!">Split Muro Blanc <span class="number-contenido">(4)</span></a>
+                                            <a class="valign-wrapper tipo-de-equipo" href="#!">Split Muro Inverter <span class="number-contenido">(3)</span></a>
+                                            <a class="valign-wrapper tipo-de-equipo" href="#!">Ventana <span class="number-contenido">(3)</span></a>
+                                            <a class="valign-wrapper tipo-de-equipo" href="#!">Portátiles <span class="number-contenido">(6)</span></a>
+                                            <a class="valign-wrapper tipo-de-equipo" href="#!">Con Instalación <span class="number-contenido">(10)</span></a>
+                                            <a class="valign-wrapper tipo-de-equipo" href="#!">Sin Instalación <span class="number-contenido">(12)</span></a>
+                                            </span>
                                         </div>
                                     </li>
                                     <!-- Filtro 2 -->
@@ -571,7 +577,7 @@
                                         <div class="collapsible-header"><i class="icon-chevron-down"></i>Marca</div>
                                         <div class="collapsible-body">
                                             <span>
-                                                <form class="form-check-box form-marca" action="#">
+                                                <form id="botones" class="form-check-box form-marca" action="#">
                                                     <p>
                                                         <input type="checkbox" id="midea" />
                                                         <label for="midea">Midea (10)</label>
@@ -582,7 +588,7 @@
                                                     </p>
                                                     <p>
                                                         <input type="checkbox" id="otra" />
-                                                        <label for="otra">Otra (6)</label>
+                                                        <label  for="otra">Otra (6)</label>
                                                     </p>
                                                 </form>
                                             </span>
@@ -653,27 +659,86 @@
                                         <div class="collapsible-header"><i class="icon-chevron-right"></i><a class="text-grey" href="#!">Cálcula tu Aire Acondicionado</a></div>
                                     </li>
                                 </ul>
+                                <!-- ASIDE 2 OFERTAS -->
                                 <div class="title-filtro">
-                                    <h5 class="text-primary">Ofertas</h5>
+                                    <h5 class="text-primary">Ofertas Destacadas</h5>
                                 </div>
                                 <!-- Swiper -->
                                 <div class="swiper-ofertas">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
-                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
-                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
-                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
-                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
-                                        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/g/600/600/1)"></div>
+                                        <!-- Slider 1 -->
+                                        <div class="swiper-slide waves-effect waves-dark chip-product">
+                                            <a class="row cont-bag-product" href="">
+                                                <img src="img/menu/carro/product-001.jpg" alt="">
+                                                <div class="">
+                                                    <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
+                                                    <h3 class="left-align">$166.990</h3>
+                                                    <p class="left-align">Antes: $210.000</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Slider 2 -->
+                                        <div class="swiper-slide waves-effect waves-dark chip-product">
+                                            <a class="row cont-bag-product" href="">
+                                                <img src="img/menu/carro/product-001.jpg" alt="">
+                                                <div class="">
+                                                    <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
+                                                    <h3 class="left-align">$166.990</h3>
+                                                    <p class="left-align">Antes: $210.000</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Slider 3 -->
+                                        <div class="swiper-slide waves-effect waves-dark chip-product">
+                                            <a class="row cont-bag-product" href="">
+                                                <img src="img/menu/carro/product-001.jpg" alt="">
+                                                <div class="">
+                                                    <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
+                                                    <h3 class="left-align">$166.990</h3>
+                                                    <p class="left-align">Antes: $210.000</p>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                
                                     <!-- Add Pagination -->
                                     <div class="swiper-pagination"></div>
                                 </div>
                             </div>
                         </aside>
-                        <!-- Productos -->
-                        <div class="col s12 l9" style="min-height:100vh;">Contenido</div>
+                        <!-- Filtros y Productos -->
+                        <div class="col s12 l9 section-productos">
+                            <div class="col s12 filtros-productos valign-wrapper">
+                                <!-- Filtros Edit -->
+                                <div class="col s12 m10 filtros-edit valign-wrapper" id="tabs-swipe-demo">
+                                    <p class="text-filtro text-grey">Filtros Aplicados:</p>
+                                    <div class="chip">
+                                        Filtro 1
+                                        <i class="close icon-x"></i>
+                                    </div>
+                                    <div class="chip">
+                                        Filtro 2
+                                        <i class="close icon-x"></i>
+                                    </div>
+                                    <div class="chip">
+                                        Filtro 3
+                                        <i class="close icon-x"></i>
+                                    </div>
+                                    <div class="chip">
+                                        Filtro 4
+                                        <i class="close icon-x"></i>
+                                    </div>
+                                </div>
+                                <!-- Filtros Layout -->
+                                <div class="col s12 m2 filtros-layout valign-wrapper">
+                                    <a href="#!" class="tooltipped icon-filtro-layout" data-position="bottom" data-delay="50" data-tooltip="Lista"><i class="icon-list"></i></a>
+                                    <a href="#!" class="tooltipped icon-filtro-layout" data-position="bottom" data-delay="50" data-tooltip="Grilla"><i class="icon-grid"></i></a>
+                                </div>
+                            </div>
+                            <!-- Productos por categorias -->
+                            <div class="col s12 filtros-close valign-wrapper">
+                                hola
+                            </div>
+                        </div>
 
 
                     </div>
@@ -949,14 +1014,25 @@
     <script type="text/javascript" src="js/dist/slider-equipos.js"></script>
     <script type="text/javascript" src="js/dist/chat-drift.js"></script>
     <script>
-            var swiper = new Swiper('.swiper-ofertas', {
-              effect: 'flip',
-              grabCursor: true,
-              pagination: {
+        var swiper = new Swiper('.swiper-ofertas', {
+            spaceBetween: 30,
+            pagination: {
                 el: '.swiper-pagination',
-              },
-            });
-          </script>
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+        var $botones = $('#botones');
+        $botones.on('click', 'a', function() {
+            $(this).addClass('active-filtro');
+            $(this).siblings().removeClass('active-filtro');
+        });
+    </script>
 </body>
 
 </html>
