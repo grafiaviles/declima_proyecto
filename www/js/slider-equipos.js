@@ -39,7 +39,20 @@ $('.slider-single').slick({
 });
 
 
-// Slider Ficha Producto Swiper
+//SWIPER Slider Categoria Main
+var swiper = new Swiper('.swiper-ofertas', {
+    spaceBetween: 30,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
+
+// SWIPER Slider Ficha Producto Swiper
 var galleryTop = new Swiper('.gallery-top', {
     spaceBetween: 10,
     effect: 'fade',
@@ -58,7 +71,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 galleryTop.controller.control = galleryThumbs;
 galleryThumbs.controller.control = galleryTop;
 
-// Slider Productos Relacionados
+// SWIPER Slider Productos Relacionados
 var swiper = new Swiper('.swiper-productos-relacionados', {
     slidesPerView: 4,
     spaceBetween: 30,

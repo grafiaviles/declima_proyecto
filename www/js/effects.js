@@ -60,6 +60,13 @@ $('select').material_select();
 //Media boxed
 $('.materialboxed').materialbox();
 
+//Click Categorias main
+var $botones = $('#botones');
+$botones.on('click', 'a', function() {
+    $(this).addClass('active-filtro');
+    $(this).siblings().removeClass('active-filtro');
+});
+
 //Scroll Aside
 /* var $aside = $('#aside');
 var $asideTop = $aside.offset().top;

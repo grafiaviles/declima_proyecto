@@ -238,5 +238,245 @@
                 }
             }
         }
+        & .productos-categoria {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0;
+            & .box-equipos-categoria {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 3px;
+                flex-wrap: wrap;
+                & .box-equipos-relacionados {
+                    border: 1px $greysoftColor solid;
+                    height: auto;
+                    padding: 0;
+                    margin-bottom: 2rem;
+                    outline: none;
+                    //margin-right: 1rem;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    position: relative;
+                }
+                & .imagen-equipo {
+                    width: 100%;
+                    position: relative;
+                    & .preview-product {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        background: $primaryColor;
+                        & .icon-preview {
+                            font-size: 2rem;
+                            color: white;
+                            text-align: center;
+                            position: absolute;
+                            z-index: 1;
+                            transform: translateY(30px);
+                            opacity: 0;
+                            transition: $transition1;
+                        }
+                        & .img-product {
+                            margin: auto;
+                            width: 100%;
+                            height: auto;
+                            transition: $transition1;
+                            @media screen and (max-width: 321px) {
+                                max-width: 250px;
+                            }
+                        }
+                    }
+                    & .preview-product:hover .img-product {
+                        transform: scale(1.1);
+                        opacity: .4;
+                    }
+                    & .preview-product:hover .icon-preview {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                    & .mega-tag {
+                        background-color: $secondColor;
+                        width: 100%;
+                        height: 25px;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: absolute;
+                        bottom: 35px;
+                        @media screen and (max-width: 480px) {
+                            bottom: 0;
+                        }
+                        & .instalacion {
+                            text-align: center;
+                            bottom: 0;
+                            color: $whiteColor;
+                            font-weight: 600;
+                            font-size: .8rem;
+                            line-height: normal;
+                        }
+                    }
+                    & .cont-icon-equipos {
+                        background-color: $whiteColor;
+                        width: 100%;
+                        height: 35px;
+                        justify-content: space-around;
+                        border-bottom: 1px solid $greysoftColor;
+                        & .icon-equipos {
+                            font-size: 17px;
+                            line-height: 50px;
+                            margin: 0;
+                            color: #ccc;
+                            opacity: 1;
+                            display: flex;
+                            transition: $transition1;
+                            z-index: 10;
+                            @media screen and (max-width: 480px) {
+                                font-size: .9rem;
+                            }
+                        }
+                        & .icon-feather {
+                            font-size: 15.5px;
+                            margin: 0;
+                            @media screen and (max-width: 480px) {
+                                font-size: .85rem;
+                            }
+                        }
+                        & .icon-equipos:hover {
+                            color: $primaryColor;
+                            opacity: 1;
+                        }
+                    }
+                    & .descuento-tag {
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        color: $whiteColor;
+                        background-color: $secondColor;
+                        border-radius: 0 3px 3px 0;
+                        font-weight: 600;
+                        top: 10px;
+                        left: 0;
+                        width: 45px;
+                        height: 25px;
+                        & p {
+                            font-size: 1rem;
+                            margin: 0;
+                            line-height: 1rem;
+                            @media screen and (max-width: 480px) {
+                                line-height: .9rem;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                    & .instalacion-tag {
+                        @extend .descuento-tag;
+                        color: $secondColor;
+                        background: $whiteColor;
+                        width: 80px;
+                        height: 40px;
+                        top: 60px;
+                        & p {
+                            line-height: 1rem;
+                            font-size: .85rem;
+                            margin: 0;
+                            text-align: left!important;
+                            padding-left: .5rem;
+                        }
+                    }
+                }
+                & .descripcion-equipo {
+                    padding: 1rem 1rem 0 1rem;
+                    color: $whiteColor;
+                    text-align: center;
+                    font-weight: 500;
+                    & .name-equipo,
+                    & .atributo-equipo,
+                    & .precio-oferta,
+                    & .atributo-parrafo,
+                    & .precio-normal,
+                    & .stock {
+                        font-weight: 500;
+                        margin: 0;
+                        margin-bottom: .3rem;
+                    }
+                    & .name-equipo,
+                    & .atributo-equipo {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        line-height: normal;
+                        @media screen and (max-width: 480px) {
+                            font-size: .9rem;
+                        }
+                    }
+                    & .atributo-parrafo {
+                        font-size: .9rem;
+                        & sup {
+                            font-size: .6rem;
+                        }
+                    }
+                    & .precio-oferta {
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        @media screen and (max-width: 480px) {
+                            font-size: 1.1rem;
+                        }
+                        & sup {
+                            font-size: 15px;
+                            vertical-align: middle;
+                            top: -2px;
+                            @media screen and (max-width: 480px) {
+                                font-size: 12px;
+                                top: -1px;
+                            }
+                        }
+                    }
+                    & .precio-normal {
+                        font-size: .9rem;
+                        text-decoration: line-through;
+                    }
+                }
+                & .btn-box-equipos {
+                    margin-top: 1rem;
+                    width: 100%;
+                    text-align: center;
+                    & a {
+                        border-top: 1px solid $greysoftColor;
+                        color: $secondColor;
+                        font-weight: 600;
+                        padding: .8rem;
+                        line-height: normal;
+                        display: block;
+                        outline: none;
+                        font-size: 1rem;
+                        height: 100%;
+                        font-family: 'Nunito', sans-serif;
+                    }
+                    & a:hover {
+                        background-color: $whiteColor;
+                        color: $primaryColor;
+                    }
+                    & .icon-btn-action {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        height: 100%;
+                        display: block;
+                        @media screen and (max-width: 480px) {
+                            //font-size: 1rem;
+                        }
+                        @media screen and (max-width: 321px) {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
