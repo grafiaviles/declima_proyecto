@@ -5251,7 +5251,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .section-productos .filtros-productos .filtros-layout .icon-filtro-layout:last-child { margin-right: 0; }
 
-.row-main-category .section-productos .productos-categoria { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0; }
+.row-main-category .section-productos .productos-categoria { padding: 0; }
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria { text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 3px; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
@@ -5263,11 +5263,11 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .preview-product .icon-preview { font-size: 2rem; color: white; text-align: center; position: absolute; z-index: 1; -webkit-transform: translateY(30px); transform: translateY(30px); opacity: 0; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
-.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .preview-product .img-product { margin: auto; width: 100%; height: auto; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
+.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .preview-product .img-product { margin: auto; width: 100%; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 @media screen and (max-width: 321px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .preview-product .img-product { max-width: 250px; } }
 
-.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .preview-product:hover .img-product { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: .4; }
+.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .preview-product:hover .img-product { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: .5; }
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .preview-product:hover .icon-preview { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
 
@@ -5277,7 +5277,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .mega-tag .instalacion { text-align: center; bottom: 0; color: #fff; font-weight: 600; font-size: .8rem; line-height: normal; }
 
-.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .cont-icon-equipos { background-color: #fff; width: 100%; height: 35px; -ms-flex-pack: distribute; justify-content: space-around; border-bottom: 1px solid #f0f0f0; }
+.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .cont-icon-equipos { background-color: #fff; width: 100%; height: 35px; -ms-flex-pack: distribute; justify-content: space-around; border-bottom: 1px solid #f0f0f0; border-top: 1px solid #f0f0f0; }
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .cont-icon-equipos .icon-equipos { font-size: 17px; line-height: 50px; margin: 0; color: #ccc; opacity: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; z-index: 10; }
 
@@ -5288,6 +5288,12 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 @media screen and (max-width: 480px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .cont-icon-equipos .icon-feather { font-size: .85rem; } }
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .cont-icon-equipos .icon-equipos:hover { color: #00587a; opacity: 1; }
+
+.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .modal-compartir { width: 300px; padding: 2rem 0; }
+
+.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .modal-compartir a { padding: 1rem; border: 1px solid #3fa7f3; color: #3fa7f3; font-size: 1.2rem; border-radius: 50%; }
+
+.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .modal-compartir a:hover { background: #3fa7f3; color: white; }
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .descuento-tag, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .imagen-equipo .instalacion-tag, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .instalacion-tag, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .instalacion-tag { position: absolute; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #fff; background-color: #3fa7f3; border-radius: 0 3px 3px 0; font-weight: 600; top: 10px; left: 0; width: 45px; height: 25px; }
 

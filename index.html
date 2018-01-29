@@ -740,130 +740,205 @@
                                 <div class="box-equipos-categoria col s12 m6 l4">
                                     <div class="box-equipos-relacionados">
                                         <div class="imagen-equipo">
-                                            <a href="#modal-vista-previa" class="modal-tigger preview-product">
+                                            <a href="#modalPreview" class="modal-tigger preview-product">
                                                 <i class="icon-preview icon-zoom-in"></i>
-                                                <img class="img-product responsive-img" src="img/equipos/prueba-2.jpg">
+                                                <img class="img-product responsive-img" src="img/ficha-productos/img-test1.jpg">
                                             </a>
+                                            <!-- Modal Preview -->
+                                            <div id="modalPreview" class="modal modal-preview">
+                                                <div class="modal-content">
+                                                    <div class="row row-main-ficha">
+                                                        <!-- Slider Producto -->
+                                                        <div class="col s12 l5 cont-swiper-slider">
+                                                            <!-- Swiper -->
+                                                            <div class="swiper-container gallery-top">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                                                </div>
+                                                                <!-- Add Arrows -->
+                                                                <div class="swiper-button-next swiper-button-white"></div>
+                                                                <div class="swiper-button-prev swiper-button-white"></div>
+                                                            </div>
+                                                            <div class="swiper-container gallery-thumbs">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="hide-on-small-only col s12 box-share valign-wrapper">
+                                                                <p class="text-grey title-share">Compartir:</p>
+                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
+                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-twitter"></i></a>
+                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-google-plus"></i></a>
+                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Descripcion Producto -->
+                                                        <div class="col s12 l7 cont-description-producto">
+                                                            <!-- INFORMACION PRODUCTO -->
+                                                            <article id="info-producto" class="col s12 box-description">
+                                                                <div class="box-title-star valign-wrapper">
+                                                                    <div class="title-producto s12 m6">
+                                                                        <h2 class="marca-producto text-grey"><b></b><img class="logo-marca" src="img/ficha-productos/marca-logo.svg"></h2>
+                                                                        <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
+                                                                        <p class="sku-producto text-second">SKU: 123456</p>
+                                                                    </div>
+                                                                    <div class="col s12 m6 star-producto valign-wrapper">
+                                                                        <h5 class="text-grey right-align">Sin calificación (0)</h5>
+                                                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
+                                                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
+                                                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
+                                                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
+                                                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="semantica-producto text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                                                            </article>
+                                                            <!-- ANEXOS -->
+                                                            <article id="anexo-instalacion" class="col s12 box-description">
+                                                                <!-- Anexo 1 -->
+                                                                <div class="anexos-productos valign-wrapper">
+                                                                    <i class="text-second icon-anexos icon-settings"></i>
+                                                                    <div class="description-anexos">
+                                                                        <p class="text-grey nombre-anexo">Incluir instalación básica <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
+                                                                        <!-- Switch 1 -->
+                                                                        <div class="switch switch-anexos">
+                                                                            <label>
+                                                                                No
+                                                                                <input type="checkbox">
+                                                                                <span class="lever"></span>
+                                                                                Si
+                                                                                </label>
+                                                                            <!-- Precio instalacion -->
+                                                                            <div class="precio-anexos">
+                                                                                <p class="text-grey"><span class="precio">$ 0</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Anexo 2 -->
+                                                                <div id="anexo-smarkit" class="anexos-productos valign-wrapper">
+                                                                    <i class="text-second icon-anexos icon-wifi"></i>
+                                                                    <div class="description-anexos">
+                                                                        <p class="text-grey nombre-anexo">Incluir Smart kit Wifi <i class="tooltipped icon-info" data-position="bottom" data-delay="50" data-tooltip="Todo lo que incluye la instalación básica del producto"></i></p>
+                                                                        <!-- Switch 1 -->
+                                                                        <div class="switch switch-anexos">
+                                                                            <label>
+                                                                                    No
+                                                                                    <input type="checkbox">
+                                                                                    <span class="lever"></span>
+                                                                                    Si
+                                                                                    </label>
+                                                                            <!-- Precio instalacion -->
+                                                                            <div class="precio-anexos">
+                                                                                <p class="text-grey"><span class="precio">$ 100.000</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                            <!-- PRECIOS -->
+                                                            <article id="precios-productos" class="col s12 box-description">
+                                                                <p class="text-second precio-internet">Internet:<span class="precio right"><span class="signo">$</span>150.000</span>
+                                                                </p>
+                                                                <p class="text-grey precio-instalacion">Intalación básica:<span class="precio right"><span class="signo">$</span>100.000</span>
+                                                                </p>
+                                                                <p class="text-grey precio-normal">Normal:<span class="precio right"><span class="signo">$</span>200.000</span>
+                                                                </p>
+                                                                <p class="text-grey precio-descuento">Descuento:<span class="precio right"><span class="signo">$</span>-50.000</span>
+                                                                </p>
+                                                                <p class="text-primary precio-total">TOTAL:<span class="precio right"><span class="signo">$</span>250.000</span>
+                                                                </p>
+                                                            </article>
+                                                            <!-- DISPONIBILIDAD -->
+                                                            <article class="col s12 box-description">
+                                                                <div class="hide disponible">
+                                                                    <i class="text-second icon-calendar"></i>
+                                                                    <div>
+                                                                        <p class="text-grey">Instalación básica</p>
+                                                                        <a class="text-second" href="#" class="text-grey">AGENDAR</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="disponible">
+                                                                    <i class="text-second icon-map-pin"></i>
+                                                                    <div>
+                                                                        <p class="text-grey">Retiro Sala de Ventas</p>
+                                                                        <a class="modal-trigger text-second" href="#maps-info" class="text-grey">¿CÓMO LLEGAR?</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="disponible">
+                                                                    <i class="text-second icon-award"></i>
+                                                                    <div>
+                                                                        <p class="text-grey">Garantía del Producto</p>
+                                                                        <a class="modal-trigger text-second" class="text-grey">3 MESES</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="disponible">
+                                                                    <i class="text-second icon-file"></i>
+                                                                    <div>
+                                                                        <p class="text-grey">Catálogo PDF</p>
+                                                                        <a class="modal-trigger text-second" href="#" target="_blank" class="text-grey">VER CATÁLOGO</a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                            <!-- BOTONES DE COMPRA -->
+                                                            <article class="col s12 box-description">
+                                                                <div class="col s12 cont-call-to-accion valign-wrapper">
+                                                                    <div class="box-accion col s5 m4 valign-wrapper">
+                                                                        <span class="waves-effect waves-dark col s4 center-align text-primary restar"><i class="icon-minus"></i></span>
+                                                                        <span class="col s4 center-align text-primary numero"><p>1</p></span>
+                                                                        <span class="waves-effect waves-dark col s4 center-align text-primary sumar"><i class="icon-plus"></i></span>
+                                                                    </div>
+                                                                    <div class="box-accion col s7 m8 valign-wrapper">
+                                                                        <a class="waves-effect waves-dark text-white" href="#!">COMPRAR<i class="icon-arrow-right right"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+                                                        <!-- Sidebar Producto -->
+                                                        <aside class="hide-on-med-and-up col s12 l2 cont-box-aside">
+                                                            <div class="col s12 box-aside valign-wrapper">
+                                                                <h5 class="text-grey title-aside container-fluid">Comparte este producto</h5>
+                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
+                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-twitter"></i></a>
+                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-google-plus"></i></a>
+                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
+                                                            </div>
+                                                            <div class="col s12 box-aside valign-wrapper">
+                                                                <h5 class="text-grey title-aside container-fluid">Medios de Pago</h5>
+                                                                <img class="responsive-img medios-pago-img" src="img/ficha-productos/pagos.svg" alt="Medio de Pago">
+                                                            </div>
+                                                        </aside>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="cont-icon-equipos valign-wrapper hide-on-small-only">
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Enfriamiento Ecológico"><i class="icon-feather icon-equipos"></i></a>
+                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Refrigerante R410"><i class="icon-feather icon-equipos"></i></a>
+                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Frío - Calor"><i class="icon-wind icon-equipos"></i></a>
                                                 <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Sistema Wifi"><i class="icon-wifi icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modo Calefacción"><i class="icon-sun icon-equipos"></i></a>
                                                 <a href="#modal-compartir" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Compartir"><i class="icon-share-2 icon-equipos"></i></a>
                                             </div>
+                                            <!-- Modal Redes -->
+                                            <div id="modal-compartir" class="modal modal-compartir hide-on-small-only">
+                                                <div class="modal-content">
+                                                    <a href="http://" class="icon-facebook"></a>
+                                                    <a href="http://" class="icon-twitter"></a>
+                                                    <a href="http://" class="icon-whatsapp"></a>
+                                                    <a href="http://" class="icon-brand8"></a>
+                                                </div>
+                                            </div>
+
                                             <div class="mega-tag valign-wrapper">
                                                 <p class="center-block instalacion">Incluye Instalación Básica</p>
                                             </div>
                                             <span class="descuento-tag">
                                                     <p>-50%</p>
                                             </span>
-                                        </div>
-
-                                        <div class="descripcion-equipo">
-                                            <h3 class="name-equipo text-primary">Split Muro Blanc 18000 BTU</h3>
-                                            <p class="atributo-parrafo text-primary">Carrier - Alcance 15<sup>M2</sup></p>
-                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
-                                            <p class="precio-normal text-grey">Antes: $229.000</p>
-                                        </div>
-
-                                        <div class="btn-box-equipos">
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-heart" data-position="bottom" data-delay="50" data-tooltip="Guardar en favoritos" onclick="Materialize.toast('Se añadio a mi lista de favoritos', 4000)"></a>
-                                            <a href="#" class="btn-ver-mas waves-effect waves-dark col s6">VER MÁS</a>
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro de compras', 4000)"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Equipo 2 -->
-                                <div class="box-equipos-categoria col s12 m6 l4">
-                                    <div class="box-equipos-relacionados">
-                                        <div class="imagen-equipo">
-                                            <a href="#modal-vista-previa" class="modal-tigger preview-product">
-                                                <i class="icon-preview icon-zoom-in"></i>
-                                                <img class="img-product responsive-img" src="img/equipos/prueba-2.jpg">
-                                            </a>
-                                            <div class="cont-icon-equipos valign-wrapper hide-on-small-only">
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Enfriamiento Ecológico"><i class="icon-feather icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Sistema Wifi"><i class="icon-wifi icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modo Calefacción"><i class="icon-sun icon-equipos"></i></a>
-                                                <a href="#modal-compartir" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Compartir"><i class="icon-share-2 icon-equipos"></i></a>
-                                            </div>
-                                            <div class="hide mega-tag valign-wrapper">
-                                                <p class="center-block instalacion">Incluye Instalación Básica</p>
-                                            </div>
-                                            <span class="descuento-tag">
-                                                        <p>-50%</p>
-                                                </span>
-                                        </div>
-
-                                        <div class="descripcion-equipo">
-                                            <h3 class="name-equipo text-primary">Split Muro Blanc 18000 BTU</h3>
-                                            <p class="atributo-parrafo text-primary">Carrier - Alcance 15<sup>M2</sup></p>
-                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
-                                            <p class="precio-normal text-grey">Antes: $229.000</p>
-                                        </div>
-
-                                        <div class="btn-box-equipos">
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-heart" data-position="bottom" data-delay="50" data-tooltip="Guardar en favoritos" onclick="Materialize.toast('Se añadio a mi lista de favoritos', 4000)"></a>
-                                            <a href="#" class="btn-ver-mas waves-effect waves-dark col s6">VER MÁS</a>
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro de compras', 4000)"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Equipo 3 -->
-                                <div class="box-equipos-categoria col s12 m6 l4">
-                                    <div class="box-equipos-relacionados">
-                                        <div class="imagen-equipo">
-                                            <a href="#modal-vista-previa" class="modal-tigger preview-product">
-                                                <i class="icon-preview icon-zoom-in"></i>
-                                                <img class="img-product responsive-img" src="img/equipos/prueba-2.jpg">
-                                            </a>
-                                            <div class="cont-icon-equipos valign-wrapper hide-on-small-only">
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Enfriamiento Ecológico"><i class="icon-feather icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Sistema Wifi"><i class="icon-wifi icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modo Calefacción"><i class="icon-sun icon-equipos"></i></a>
-                                                <a href="#modal-compartir" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Compartir"><i class="icon-share-2 icon-equipos"></i></a>
-                                            </div>
-                                            <div class="hide mega-tag valign-wrapper">
-                                                <p class="center-block instalacion">Incluye Instalación Básica</p>
-                                            </div>
-                                            <span class="descuento-tag">
-                                                        <p>-50%</p>
-                                                </span>
-                                        </div>
-
-                                        <div class="descripcion-equipo">
-                                            <h3 class="name-equipo text-primary">Split Muro Blanc 18000 BTU</h3>
-                                            <p class="atributo-parrafo text-primary">Carrier - Alcance 15<sup>M2</sup></p>
-                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
-                                            <p class="precio-normal text-grey">Antes: $229.000</p>
-                                        </div>
-
-                                        <div class="btn-box-equipos">
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-heart" data-position="bottom" data-delay="50" data-tooltip="Guardar en favoritos" onclick="Materialize.toast('Se añadio a mi lista de favoritos', 4000)"></a>
-                                            <a href="#" class="btn-ver-mas waves-effect waves-dark col s6">VER MÁS</a>
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro de compras', 4000)"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Equipo 4 -->
-                                <div class="box-equipos-categoria col s12 m6 l4">
-                                    <div class="box-equipos-relacionados">
-                                        <div class="imagen-equipo">
-                                            <a href="#modal-vista-previa" class="modal-tigger preview-product">
-                                                <i class="icon-preview icon-zoom-in"></i>
-                                                <img class="img-product responsive-img" src="img/equipos/prueba-2.jpg">
-                                            </a>
-                                            <div class="cont-icon-equipos valign-wrapper hide-on-small-only">
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Enfriamiento Ecológico"><i class="icon-feather icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Sistema Wifi"><i class="icon-wifi icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Modo Calefacción"><i class="icon-sun icon-equipos"></i></a>
-                                                <a href="#modal-compartir" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Compartir"><i class="icon-share-2 icon-equipos"></i></a>
-                                            </div>
-                                            <div class="mega-tag valign-wrapper">
-                                                <p class="center-block instalacion">Incluye Instalación Básica</p>
-                                            </div>
-                                            <span class="descuento-tag">
-                                                        <p>-50%</p>
-                                                </span>
                                         </div>
 
                                         <div class="descripcion-equipo">

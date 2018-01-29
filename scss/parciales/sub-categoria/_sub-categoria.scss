@@ -239,10 +239,6 @@
             }
         }
         & .productos-categoria {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            flex-wrap: wrap;
             padding: 0;
             & .box-equipos-categoria {
                 text-align: center;
@@ -286,7 +282,7 @@
                         & .img-product {
                             margin: auto;
                             width: 100%;
-                            height: auto;
+                            //height: 180px;
                             transition: $transition1;
                             @media screen and (max-width: 321px) {
                                 max-width: 250px;
@@ -295,7 +291,7 @@
                     }
                     & .preview-product:hover .img-product {
                         transform: scale(1.1);
-                        opacity: .4;
+                        opacity: .5;
                     }
                     & .preview-product:hover .icon-preview {
                         transform: translateY(0);
@@ -327,6 +323,7 @@
                         height: 35px;
                         justify-content: space-around;
                         border-bottom: 1px solid $greysoftColor;
+                        border-top: 1px solid $greysoftColor;
                         & .icon-equipos {
                             font-size: 17px;
                             line-height: 50px;
@@ -350,6 +347,22 @@
                         & .icon-equipos:hover {
                             color: $primaryColor;
                             opacity: 1;
+                        }
+                    }
+                    & .modal-compartir {
+                        //display: block;
+                        width: 300px;
+                        padding: 2rem 0;
+                        & a {
+                            padding: 1rem;
+                            border: 1px solid $secondColor;
+                            color: $secondColor;
+                            font-size: 1.2rem;
+                            border-radius: 50%;
+                        }
+                        & a:hover {
+                            background: $secondColor;
+                            color: white;
                         }
                     }
                     & .descuento-tag {
