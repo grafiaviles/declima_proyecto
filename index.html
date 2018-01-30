@@ -500,30 +500,7 @@
                     </ul>
                     <li class="list-category"><a href="" class="waves-effect waves-dark link-category">Cálcula fácil tu Equipo</a></li>
                     <li class="list-category"><a href="#cotizador" class="modal-trigger waves-effect waves-dark active-link link-category" data-target="cotizador">Cotizar</a></li>
-                    <li class="list-category"><a class="waves-effect waves-dark dropdown-button link-category" data-activates='submenu3'>Servicio al Cliente<i class="icon-chevron-down"></i></a></li>
-                    <!--Submenu Servicio al Cliente-->
-                    <ul id='submenu3' class='dropdown-content-menu dropdown-content'>
-                        <div class="row container-sub-menu">
-                            <!-- Box Category 1 -->
-                            <div class="col s6 box-submenu">
-                                <h5 class="text-primary title-category-submenu">Información de Servicios<i class="right icon-4 icon-settings"></i> </h5>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Preguntas Frecuntes<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Cambios o Deoluciones<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Garantías de Productos<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Compra Segura<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Sala de Ventas<i class="icon-chevron-right"></i></a>
-                            </div>
-                            <!-- Box Category 2 -->
-                            <div class="col s6 box-submenu">
-                                <h5 class="text-primary title-category-submenu">Información para Usuarios<i class="right icon-4 icon-user"></i> </h5>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Mi Cuenta<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Regístrate<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Mis Productos Favoritos<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Post Venta<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Sugerencias y Reclamos<i class="icon-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </ul>
+                    <li class="list-category"><a class="waves-effect waves-dark link-category">Sala de Ventas</a></li>
                     <li class="list-category"><a href="#buscador-desktop" data-target="buscador-desktop" class="modal-trigger link-icon-category tooltipped" data-delay="50" data-tooltip="¿Qué buscas?"><i class="icon-search"></i></a></li>
                     <li class="list-category"><a href="#" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i>
                         <span class="notification">3</span>
@@ -627,6 +604,19 @@
                                         </div>
                                     </li>
                                     <!-- Filtro 2 -->
+                                    <li>
+                                            <div class="collapsible-header"><i class="icon-chevron-down"></i>Precios</div>
+                                            <div class="collapsible-body">
+                                                <span>
+                                                    <form action="#">
+                                                        <p class="range-field">
+                                                            <input type="range" id="test1" min="9000" max="24000"/>
+                                                        </p>
+                                                    </form>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    <!-- Filtro 3 -->
                                     <li id="filtro-marca">
                                         <div class="collapsible-header"><i class="icon-chevron-down"></i>Marca</div>
                                         <div class="collapsible-body">
@@ -648,7 +638,7 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <!-- Filtro 3 -->
+                                    <!-- Filtro 4 -->
                                     <li class="filtro-btu">
                                         <div class="collapsible-header"><i class="icon-chevron-down"></i>Capacidad BTU/H</div>
                                         <div class="collapsible-body">
@@ -682,20 +672,7 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <!-- Filtro 4 -->
-                                    <li>
-                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Precios</div>
-                                        <div class="collapsible-body">
-                                            <span>
-                                                <form action="#">
-                                                    <p class="range-field">
-                                                        <input type="range" id="test1" min="9000" max="24000"/>
-                                                    </p>
-                                                </form>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <!-- Filtro 6 -->
+                                    <!-- Filtro 5 -->
                                     <li id="filtro-alcance">
                                         <div class="collapsible-header"><i class="icon-chevron-down"></i>Alcance m<sub>2</sub> </div>
                                         <div class="collapsible-body">
@@ -707,10 +684,6 @@
                                                 </form>
                                             </span>
                                         </div>
-                                    </li>
-                                    <!-- Filtro 7 -->
-                                    <li>
-                                        <div class="hide collapsible-header"><i class="icon-chevron-right"></i><a class="text-grey" href="#!">Cálcula fácil tu equipo</a></div>
                                     </li>
                                 </ul>
                                 <!-- ASIDE 2 OFERTAS -->
@@ -926,7 +899,7 @@
                                                                         <a class="modal-trigger text-second" href="#maps-info" class="text-grey">¿CÓMO LLEGAR?</a>
                                                                     </div>
                                                                 </div>
-                                                                <div class="disponible">
+                                                                <div class="disponible hide">
                                                                     <i class="text-second icon-award"></i>
                                                                     <div>
                                                                         <p class="text-grey">Garantía del Producto</p>

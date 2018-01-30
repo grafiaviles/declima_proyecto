@@ -5291,7 +5291,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 @media screen and (max-width: 321px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .preview-product .img-product { max-width: 250px; } }
 
-.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .modal-preview { padding: 0; text-align: left; background: #fff; min-height: 80vh; width: 85%; }
+.row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .modal-preview { padding: 0; text-align: left; background: #fff; min-height: 80vh; width: 60%; }
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .imagen-equipo .modal-preview .row-main-ficha { margin-top: .5rem; }
 
