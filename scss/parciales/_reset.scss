@@ -92,8 +92,16 @@ a {
     color: $primaryColor;
 }
 
+.primary {
+    background: $primaryColor!important;
+}
+
 .text-second {
     color: $secondColor;
+}
+
+.second {
+    background: $secondColor!important;
 }
 
 .text-third {

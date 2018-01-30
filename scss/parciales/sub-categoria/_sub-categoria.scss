@@ -85,7 +85,7 @@
                 & span {
                     width: 100%;
                 }
-                //Filtro Equipos
+                //Filtro Equipos Modelos
                 & .tipo-de-equipo {
                     color: $greyColor;
                     margin-bottom: 10px;
@@ -103,6 +103,16 @@
                 }
                 & .active-filtro {
                     color: $secondColor;
+                }
+                & .form-modelos {
+                    & label {
+                        color: $greyColor;
+                        font-size: .95rem;
+                    }
+                    & label:hover,
+                    & label:focus {
+                        color: $secondColor;
+                    }
                 }
                 //Filtro Form-check-box
                 & .form-check-box {
@@ -286,6 +296,32 @@
                             transition: $transition1;
                             @media screen and (max-width: 321px) {
                                 max-width: 250px;
+                            }
+                        }
+                    }
+                    //Preview
+                    & .modal-preview {
+                        padding: 0;
+                        text-align: left;
+                        background: $whiteColor;
+                        min-height: 80vh;
+                        width: 85%;
+                        & .row-main-ficha {
+                            margin-top: .5rem;
+                            & .box-description:nth-child(1) {
+                                padding-bottom: 0;
+                                & .logo-marca {
+                                    max-width: 90px!important;
+                                }
+                                & .nombre-producto {
+                                    font-size: 1.3rem;
+                                    margin-bottom: .5rem;
+                                }
+                                & .star-producto {
+                                    justify-content: flex-start;
+                                    padding-left: 0;
+                                    margin-top: .5rem;
+                                }
                             }
                         }
                     }
