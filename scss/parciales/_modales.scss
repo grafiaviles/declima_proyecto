@@ -1,3 +1,82 @@
+//Modal Preview
+#modal-preview {
+    padding: 0;
+    text-align: left;
+    background: $whiteColor;
+    width: 60%;
+    @media only screen and (max-width: 992px){
+        width: 80%;
+    }
+    @media only screen and (max-width: 992px){
+        min-height: 80vh;
+    }
+    & .modal-content {
+        @media only screen and (max-width: 425px){
+            padding: 14px!important;
+        }
+        & .text-preview {
+            margin-top: 0;
+            color: $greyColor;
+            font-size: .9rem;
+            & i {
+                font-size: 1.5rem;
+                opacity: .5;
+                transition: $transition1;
+            }
+            & i:hover {
+                opacity: 1;
+            }
+        }
+    }
+    & .row-main-ficha {
+        margin-top: .5rem;
+        & .box-share {
+            margin-top: .5rem;
+        }
+        & .box-description:nth-child(1) {
+            padding-bottom: 0;
+            & .logo-marca {
+                max-width: 90px!important;
+            }
+            & .nombre-producto {
+                font-size: 1.2rem;
+                margin-bottom: .5rem;
+            }
+            & .star-producto {
+                justify-content: flex-start;
+                padding-left: 0;
+                margin-top: .5rem;
+            }
+        }
+        & .precio-total {
+            font-size: 1rem;                
+        }
+        & .disponible {
+            @media only screen and (max-width: 425px){
+                width: 100%!important;
+            }
+        }
+        & .box-aside {
+            margin-bottom: 0;
+            @media only screen and (max-width: 425px){
+                margin-bottom: 1rem;
+            }
+            & .title-aside {
+                margin-bottom: 10px;
+                font-size: 11px;
+                color: $greyColor;
+            }
+            & .icon-redes {
+                width: auto;
+                height: auto;
+                line-height: 30px;
+                border: none;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
 //Modal Buscador
 .modal-buscador {
     background: $whiteColor;

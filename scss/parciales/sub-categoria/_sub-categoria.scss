@@ -299,32 +299,6 @@
                             }
                         }
                     }
-                    //Preview
-                    & .modal-preview {
-                        padding: 0;
-                        text-align: left;
-                        background: $whiteColor;
-                        min-height: 80vh;
-                        width: 60%;
-                        & .row-main-ficha {
-                            margin-top: .5rem;
-                            & .box-description:nth-child(1) {
-                                padding-bottom: 0;
-                                & .logo-marca {
-                                    max-width: 90px!important;
-                                }
-                                & .nombre-producto {
-                                    font-size: 1.3rem;
-                                    margin-bottom: .5rem;
-                                }
-                                & .star-producto {
-                                    justify-content: flex-start;
-                                    padding-left: 0;
-                                    margin-top: .5rem;
-                                }
-                            }
-                        }
-                    }
                     & .preview-product:hover .img-product {
                         transform: scale(1.1);
                         opacity: .5;
@@ -364,7 +338,7 @@
                             font-size: 17px;
                             line-height: 50px;
                             margin: 0;
-                            color: #ccc;
+                            color: rgba(63, 166, 243, 0.35);
                             opacity: 1;
                             display: flex;
                             transition: $transition1;

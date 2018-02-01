@@ -501,10 +501,6 @@
                     <li class="list-category"><a href="" class="waves-effect waves-dark link-category">Cálcula fácil tu Equipo</a></li>
                     <li class="list-category"><a href="#cotizador" class="modal-trigger waves-effect waves-dark active-link link-category" data-target="cotizador">Cotizar</a></li>
                     <li class="list-category"><a class="waves-effect waves-dark link-category">Sala de Ventas</a></li>
-                    <li class="list-category"><a href="#buscador-desktop" data-target="buscador-desktop" class="modal-trigger link-icon-category tooltipped" data-delay="50" data-tooltip="¿Qué buscas?"><i class="icon-search"></i></a></li>
-                    <li class="list-category"><a href="#" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i>
-                        <span class="notification">3</span>
-                    </a></li>
                     <!-- Login -->
                     <li class="list-category"><a class="dropdown-button link-icon-category" data-activates='login'><i class="icon-user"></i></a></li>
                     <ul id='login' class='dropdown-content-menu-icon dropdown-content'>
@@ -523,6 +519,10 @@
                         <li class="divider"></li>
                         <li><a href="#"><i class="icon-user-plus"></i>Regístrate</a></li>
                     </ul>
+                    <li class="list-category"><a href="#buscador-desktop" data-target="buscador-desktop" class="modal-trigger link-icon-category tooltipped" data-delay="50" data-tooltip="¿Qué buscas?"><i class="icon-search"></i></a></li>
+                    <li class="list-category"><a href="#" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i>
+                        <span class="notification">3</span>
+                    </a></li>
                     <!-- Mis Favoritos -->
                     <li class="list-category"><a data-target="modal-favoritos" class="link-icon-category modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Productos Favoritos" data-activates="slide-carro"><i class="icon-heart"></i>
                         <span class="notification second">3</span>
@@ -543,6 +543,7 @@
                         <div class="nav-wrapper">
                             <div class="col s12 cont-bradcrumb">
                                 <a href="#!" class="breadcrumb">Home</a>
+                                <a href="#!" class="breadcrumb">Aire Acondicionado</a>
                                 <a href="#!" class="breadcrumb breadcrumb-active">Equipos Residenciales</a>
                                 <a href="#!" class="hide-on-small-only calc right">Cálcula fácil tu Equipo<img class="img-calc" src="img/ficha-productos/calc-grafica.svg" width="60"></a>
                             </div>
@@ -560,14 +561,14 @@
                                 <!-- ASIDE 1 FILTROS -->
                                 <div class="title-filtro">
                                     <h5 class="text-primary">
-                                        <a href="#!" class="hide icon-arrow-left text-primary"></a> Equipos Residenciales
+                                        <a href="#!" class="hide icon-arrow-left text-primary"></a> Aire Acondicionado
                                     </h5>
                                 </div>
                                 <!-- Acordion Filtros -->
                                 <ul class="collapsible acordion-filtros" data-collapsible="accordion">
                                     <!-- Filtro 1 -->
                                     <li id="filtro-alcance">
-                                        <div class="collapsible-header active"><i class="icon-chevron-down"></i>Aire Acondicionado</div>
+                                        <div class="collapsible-header active"><i class="icon-chevron-down"></i>Equipos Residenciales </div>
                                         <div class="collapsible-body">
                                             <span>
                                             <form action="#" class="form-modelos">
@@ -775,16 +776,17 @@
                                             <!-- Modal Preview -->
                                             <div id="modal-preview" class="modal modal-preview">
                                                 <div class="modal-content">
+                                                    <h6 class="text-preview">Vista Previa <i class="icon-x right modal-action modal-close"></i></h6>
                                                     <div class="row row-main-ficha">
                                                         <!-- Slider Producto -->
-                                                        <div class="col s12 l5 cont-swiper-slider">
+                                                        <div class="col s12 m12 l5 cont-swiper-slider">
                                                             <!-- Swiper -->
                                                             <div class="swiper-container gallery-top">
                                                                 <div class="swiper-wrapper">
                                                                     <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
                                                                     <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
                                                                     <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>   
                                                                 </div>
                                                                 <!-- Add Arrows -->
                                                                 <div class="swiper-button-next swiper-button-white"></div>
@@ -798,16 +800,9 @@
                                                                     <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
                                                                 </div>
                                                             </div>
-                                                            <div class="hide-on-small-only col s12 box-share valign-wrapper">
-                                                                <p class="text-grey title-share">Compartir:</p>
-                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
-                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-twitter"></i></a>
-                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-google-plus"></i></a>
-                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
-                                                            </div>
                                                         </div>
                                                         <!-- Descripcion Producto -->
-                                                        <div class="col s12 l7 cont-description-producto">
+                                                        <div class="col s12 m12 l7 cont-description-producto">
                                                             <!-- INFORMACION PRODUCTO -->
                                                             <article id="info-producto" class="col s12 box-description">
                                                                 <div class="box-title-star valign-wrapper">
@@ -874,13 +869,11 @@
                                                             <article id="precios-productos" class="col s12 box-description">
                                                                 <p class="text-second precio-internet">Internet:<span class="precio right"><span class="signo">$</span>150.000</span>
                                                                 </p>
-                                                                <p class="text-grey precio-instalacion">Intalación básica:<span class="precio right"><span class="signo">$</span>100.000</span>
-                                                                </p>
                                                                 <p class="text-grey precio-normal">Normal:<span class="precio right"><span class="signo">$</span>200.000</span>
                                                                 </p>
                                                                 <p class="text-grey precio-descuento">Descuento:<span class="precio right"><span class="signo">$</span>-50.000</span>
                                                                 </p>
-                                                                <p class="text-primary precio-total">TOTAL:<span class="precio right"><span class="signo">$</span>250.000</span>
+                                                                <p class="text-primary precio-total">TOTAL A PAGAR:<span class="precio right"><span class="signo">$</span>250.000</span>
                                                                 </p>
                                                             </article>
                                                             <!-- DISPONIBILIDAD -->
@@ -892,18 +885,12 @@
                                                                         <a class="text-second" href="#" class="text-grey">AGENDAR</a>
                                                                     </div>
                                                                 </div>
+                                                                
                                                                 <div class="disponible">
                                                                     <i class="text-second icon-map-pin"></i>
                                                                     <div>
                                                                         <p class="text-grey">Retiro Sala de Ventas</p>
                                                                         <a class="modal-trigger text-second" href="#maps-info" class="text-grey">¿CÓMO LLEGAR?</a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="disponible hide">
-                                                                    <i class="text-second icon-award"></i>
-                                                                    <div>
-                                                                        <p class="text-grey">Garantía del Producto</p>
-                                                                        <a class="modal-trigger text-second" class="text-grey">3 MESES</a>
                                                                     </div>
                                                                 </div>
                                                                 <div class="disponible">
@@ -917,31 +904,31 @@
                                                             <!-- BOTONES DE COMPRA -->
                                                             <article class="col s12 box-description">
                                                                 <div class="col s12 cont-call-to-accion valign-wrapper">
-                                                                    <div class="box-accion col s5 m4 valign-wrapper">
+                                                                    <div class="box-accion col s12 m4 valign-wrapper">
                                                                         <span class="waves-effect waves-dark col s4 center-align text-primary restar"><i class="icon-minus"></i></span>
                                                                         <span class="col s4 center-align text-primary numero"><p>1</p></span>
                                                                         <span class="waves-effect waves-dark col s4 center-align text-primary sumar"><i class="icon-plus"></i></span>
                                                                     </div>
-                                                                    <div class="box-accion col s7 m8 valign-wrapper">
+                                                                    <div class="box-accion col s12 m8 valign-wrapper">
                                                                         <a class="waves-effect waves-dark text-white" href="#!">COMPRAR<i class="icon-arrow-right right"></i></a>
                                                                     </div>
                                                                 </div>
                                                             </article>
+                                                            <!-- Sidebar Producto -->
+                                                            <aside class="col s12 cont-box-aside">
+                                                                <div class="col s12 m7 box-aside valign-wrapper">
+                                                                    <h5 class="text-grey title-aside container-fluid">Compartir</h5>
+                                                                    <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
+                                                                    <a class="icon-redes" href="" target="_blank"><i class="icon-twitter"></i></a>
+                                                                    <a class="icon-redes" href="" target="_blank"><i class="icon-google-plus"></i></a>
+                                                                    <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
+                                                                </div>
+                                                                <div class="col s12 m5 box-aside valign-wrapper">
+                                                                    <h5 class="text-grey title-aside container-fluid">Medios de Pago</h5>
+                                                                    <img class="responsive-img medios-pago-img" src="img/ficha-productos/pagos.svg" alt="Medio de Pago">
+                                                                </div>
+                                                            </aside>
                                                         </div>
-                                                        <!-- Sidebar Producto -->
-                                                        <aside class="hide-on-med-and-up col s12 l2 cont-box-aside">
-                                                            <div class="col s12 box-aside valign-wrapper">
-                                                                <h5 class="text-grey title-aside container-fluid">Comparte este producto</h5>
-                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
-                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-twitter"></i></a>
-                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-google-plus"></i></a>
-                                                                <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
-                                                            </div>
-                                                            <div class="col s12 box-aside valign-wrapper">
-                                                                <h5 class="text-grey title-aside container-fluid">Medios de Pago</h5>
-                                                                <img class="responsive-img medios-pago-img" src="img/ficha-productos/pagos.svg" alt="Medio de Pago">
-                                                            </div>
-                                                        </aside>
                                                     </div>
                                                 </div>
                                             </div>
