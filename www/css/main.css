@@ -3618,6 +3618,8 @@ header .menu-secciones { background: #00587a !important; }
 
 #modal-preview .row-main-ficha .box-aside .icon-redes { width: auto; height: auto; line-height: 30px; border: none; margin-right: 1rem; }
 
+#modal-preview .row-main-ficha .box-aside .icon-redes:nth-of-type(1) { font-size: 1.1rem; }
+
 .modal-buscador { background: #fff; height: 64px; border-radius: 5px; }
 
 .modal-buscador .buscador-container { width: 100%; overflow-y: hidden; background: #fff; }
@@ -4588,6 +4590,8 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-Breadcrumbs .cont-Breadcrumbs .nav-breadcrumbs-producto .cont-bradcrumb { overflow-x: auto; overflow-y: hidden; white-space: nowrap; padding-bottom: 10px; width: 100%; } }
 
 .cont-ficha-producto .fluid-Breadcrumbs .cont-Breadcrumbs .nav-breadcrumbs-producto .cont-bradcrumb .breadcrumb { color: #777; font-size: .95rem; opacity: .5; }
+
+@media screen and (max-width: 480px) { .cont-ficha-producto .fluid-Breadcrumbs .cont-Breadcrumbs .nav-breadcrumbs-producto .cont-bradcrumb .breadcrumb { font-size: .95rem; } }
 
 .cont-ficha-producto .fluid-Breadcrumbs .cont-Breadcrumbs .nav-breadcrumbs-producto .cont-bradcrumb .breadcrumb:hover { color: #3fa7f3 !important; opacity: 1; }
 

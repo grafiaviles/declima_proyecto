@@ -4,14 +4,14 @@
     text-align: left;
     background: $whiteColor;
     width: 60%;
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 992px) {
         width: 80%;
     }
-    @media only screen and (max-width: 992px){
+    @media only screen and (max-width: 992px) {
         min-height: 80vh;
     }
     & .modal-content {
-        @media only screen and (max-width: 425px){
+        @media only screen and (max-width: 425px) {
             padding: 14px!important;
         }
         & .text-preview {
@@ -49,16 +49,16 @@
             }
         }
         & .precio-total {
-            font-size: 1rem;                
+            font-size: 1rem;
         }
         & .disponible {
-            @media only screen and (max-width: 425px){
+            @media only screen and (max-width: 425px) {
                 width: 100%!important;
             }
         }
         & .box-aside {
             margin-bottom: 0;
-            @media only screen and (max-width: 425px){
+            @media only screen and (max-width: 425px) {
                 margin-bottom: 1rem;
             }
             & .title-aside {
@@ -72,6 +72,9 @@
                 line-height: 30px;
                 border: none;
                 margin-right: 1rem;
+            }
+            & .icon-redes:nth-of-type(1) {
+                font-size: 1.1rem;
             }
         }
     }
