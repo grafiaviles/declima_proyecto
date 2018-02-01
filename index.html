@@ -543,6 +543,7 @@
                         <div class="nav-wrapper">
                             <div class="col s12 cont-bradcrumb">
                                 <a href="#!" class="breadcrumb">Home</a>
+                                <a href="#!" class="breadcrumb">Aire Acondicionado</a>
                                 <a href="#!" class="breadcrumb breadcrumb-active">Equipos Residenciales</a>
                                 <a href="#!" class="hide-on-small-only calc right">Cálcula fácil tu Equipo<img class="img-calc" src="img/ficha-productos/calc-grafica.svg" width="60"></a>
                             </div>
@@ -605,17 +606,17 @@
                                     </li>
                                     <!-- Filtro 2 -->
                                     <li>
-                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Precios</div>
-                                        <div class="collapsible-body">
-                                            <span>
+                                            <div class="collapsible-header"><i class="icon-chevron-down"></i>Precios</div>
+                                            <div class="collapsible-body">
+                                                <span>
                                                     <form action="#">
                                                         <p class="range-field">
                                                             <input type="range" id="test1" min="9000" max="24000"/>
                                                         </p>
                                                     </form>
                                                 </span>
-                                        </div>
-                                    </li>
+                                            </div>
+                                        </li>
                                     <!-- Filtro 3 -->
                                     <li id="filtro-marca">
                                         <div class="collapsible-header"><i class="icon-chevron-down"></i>Marca</div>
@@ -780,24 +781,33 @@
                                                         <!-- Slider Producto -->
                                                         <div class="col s12 m12 l5 cont-swiper-slider">
                                                             <!-- Swiper -->
-                                                            <div class="swiper-container gallery-top">
+                                                            <div class="hide swiper-container swiper-container-edit gallery-top">
                                                                 <div class="swiper-wrapper">
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/img-test1.jpg)"></div>
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/img-test2.jpg)"></div>  
+                                                                </div>
+                                                            </div>
+                                                            <div class="hide swiper-container swiper-container-edit gallery-thumbs">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/img-test1.jpg)"></div>
+                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/img-test2.jpg)"></div>
                                                                 </div>
                                                                 <!-- Add Arrows -->
-                                                                <div class="swiper-button-next swiper-button-white"></div>
-                                                                <div class="swiper-button-prev swiper-button-white"></div>
+                                                                <div class="swiper-button-next button-next-edit swiper-button-white"></div>
+                                                                <div class="swiper-button-prev button-prev-edit swiper-button-white"></div>
                                                             </div>
-                                                            <div class="swiper-container gallery-thumbs">
+                                                            <!-- Swiper NEW -->
+                                                            <div class="swiper-container swiper-lazy">
                                                                 <div class="swiper-wrapper">
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba.jpg)"></div>
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/producto-prueba2.jpg)"></div>
+                                                                <div class="swiper-slide"><img src="img/ficha-productos/img-test1.jpg" class="responsive-img"></div>
+                                                                <div class="swiper-slide"><img src="img/ficha-productos/img-test2.jpg" class="responsive-img"></div>
+                                                                <div class="swiper-slide"><img src="img/ficha-productos/img-test1.jpg" class="responsive-img"></div>
                                                                 </div>
+                                                                <!-- Add Pagination -->
+                                                                <div class="swiper-pagination"></div>
+                                                                <!-- Add Arrows -->
+                                                                <div class="swiper-button-next hide-on-small-only"></div>
+                                                                <div class="swiper-button-prev hide-on-small-only"></div>
                                                             </div>
                                                         </div>
                                                         <!-- Descripcion Producto -->
@@ -810,8 +820,7 @@
                                                                         <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
                                                                         <p class="sku-producto text-second">SKU: 123456</p>
                                                                     </div>
-                                                                    <div class="col s12 star-producto valign-wrapper">
-                                                                        <h5 class="text-grey left-align">Sin calificación (0)</h5>
+                                                                    <div class="col s12 m6 star-producto right valign-wrapper">
                                                                         <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
                                                                         <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
                                                                         <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
@@ -884,31 +893,31 @@
                                                                         <a class="text-second" href="#" class="text-grey">AGENDAR</a>
                                                                     </div>
                                                                 </div>
-
+                                                                
                                                                 <div class="disponible">
                                                                     <i class="text-second icon-plus-circle"></i>
                                                                     <div>
-                                                                        <p class="text-grey">Ficha de Producto</p>
-                                                                        <a class="modal-trigger text-second" href="" class="text-grey">VER DETALLE</a>
+                                                                        <p class="text-grey">Detalle del Producto</p>
+                                                                        <a class="modal-trigger text-second" href="#maps-info" class="text-grey">VER MÁS</a>
                                                                     </div>
                                                                 </div>
                                                                 <div class="disponible">
-                                                                    <i class="text-second icon-file"></i>
+                                                                    <i class="text-second icon-download-cloud"></i>
                                                                     <div>
-                                                                        <p class="text-grey">Catálogo PDF</p>
-                                                                        <a class="modal-trigger text-second" href="#" target="_blank" class="text-grey">VER CATÁLOGO</a>
+                                                                        <p class="text-grey">Ficha Técnica</p>
+                                                                        <a class="modal-trigger text-second" href="#" target="_blank" class="text-grey">DESCARGAR (PDF)</a>
                                                                     </div>
                                                                 </div>
                                                             </article>
                                                             <!-- BOTONES DE COMPRA -->
                                                             <article class="col s12 box-description">
                                                                 <div class="col s12 cont-call-to-accion valign-wrapper">
-                                                                    <div class="box-accion col s12 m5 valign-wrapper">
-                                                                        <span class="waves-effect waves-dark col s4 center-align text-primary restar" onclick="Materialize.toast('Se elimino del carro de compras', 4000)"><i class="icon-minus"></i></span>
+                                                                    <div class="box-accion col s12 m4 valign-wrapper">
+                                                                        <span class="waves-effect waves-dark col s4 center-align text-primary restar"><i class="icon-minus"></i></span>
                                                                         <span class="col s4 center-align text-primary numero"><p>1</p></span>
-                                                                        <span class="waves-effect waves-dark col s4 center-align text-primary sumar" onclick="Materialize.toast('Se añadio al carro de compras', 4000)"><i class="icon-plus"></i></span>
+                                                                        <span class="waves-effect waves-dark col s4 center-align text-primary sumar"><i class="icon-plus"></i></span>
                                                                     </div>
-                                                                    <div class="box-accion col s12 m7 valign-wrapper">
+                                                                    <div class="box-accion col s12 m8 valign-wrapper">
                                                                         <a class="waves-effect waves-dark text-white" href="#!">COMPRAR<i class="icon-arrow-right right"></i></a>
                                                                     </div>
                                                                 </div>
@@ -957,8 +966,8 @@
                                         </div>
 
                                         <div class="descripcion-equipo">
-                                            <h3 class="name-equipo text-primary">Split Muro Blanc - Midea</h3>
-                                            <p class="atributo-parrafo text-primary"><span>18000 BTU</span> - <span>Alcance 15<sup>M2</sup></span></p>
+                                            <h3 class="name-equipo text-primary">Split Muro Blanc 18000 BTU</h3>
+                                            <p class="atributo-parrafo text-primary">Carrier - Alcance 15<sup>M2</sup></p>
                                             <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
                                             <p class="precio-normal text-grey">Antes: $229.000</p>
                                         </div>

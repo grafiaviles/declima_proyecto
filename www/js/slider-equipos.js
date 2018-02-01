@@ -54,11 +54,14 @@ var swiper = new Swiper('.swiper-ofertas', {
 
 // SWIPER Slider Ficha Producto Swiper
 var galleryTop = new Swiper('.gallery-top', {
-    spaceBetween: 10,
     effect: 'fade',
+    centeredSlides: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
     },
 });
 var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -103,3 +106,21 @@ var swiper = new Swiper('.swiper-productos-relacionados', {
         }
     }
 });
+
+//SWIPER Preview Modal Lazy
+var swiper = new Swiper('.swiper-lazy', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

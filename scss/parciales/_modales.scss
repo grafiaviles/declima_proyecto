@@ -3,7 +3,26 @@
     padding: 0;
     text-align: left;
     background: $whiteColor;
-    width: 60%;
+    width: 65%;
+    //Edit Slider Lazy Preview
+    .swiper-lazy {
+        @media only screen and (max-width: 480px) {
+            height: 300px !important;
+        }
+    .swiper-slide {
+        text-align: center;
+            img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            }
+        }
+    }
     @media only screen and (max-width: 992px) {
         width: 80%;
     }
@@ -46,6 +65,10 @@
                 justify-content: flex-start;
                 padding-left: 0;
                 margin-top: .5rem;
+            }
+            & .star-producto {
+                justify-content: flex-end;
+                padding-right: 0;
             }
         }
         & .precio-total {

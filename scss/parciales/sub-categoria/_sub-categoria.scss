@@ -374,6 +374,9 @@
                             background: $secondColor;
                             color: white;
                         }
+                        & .star-producto {
+                            justify-content: flex-end;
+                        }
                     }
                     & .descuento-tag {
                         position: absolute;
