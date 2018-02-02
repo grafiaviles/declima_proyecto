@@ -3580,13 +3580,15 @@ header .menu-fixed { background-color: #00587a; -webkit-box-shadow: 0 5px 30px -
 
 header .menu-secciones { background: #00587a !important; }
 
-#modal-preview { padding: 0; text-align: left; background: #fff; width: 65%; }
+#modal-preview { padding: 0; text-align: left; background: #fff; width: 70%; }
 
 @media only screen and (max-width: 480px) { #modal-preview .swiper-lazy { height: 300px !important; } }
 
 #modal-preview .swiper-lazy .swiper-slide { text-align: center; }
 
 #modal-preview .swiper-lazy .swiper-slide img { width: auto; height: auto; max-width: 100%; max-height: 100%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); position: absolute; left: 50%; top: 50%; }
+
+#modal-preview .swiper-lazy .swiper-button-prev, #modal-preview .swiper-lazy .swiper-button-next { width: 20px; height: 30px; background-size: 20px 30px; }
 
 @media only screen and (max-width: 992px) { #modal-preview { width: 80%; } }
 

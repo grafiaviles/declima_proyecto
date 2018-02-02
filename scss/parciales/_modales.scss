@@ -3,24 +3,30 @@
     padding: 0;
     text-align: left;
     background: $whiteColor;
-    width: 65%;
+    width: 70%;
     //Edit Slider Lazy Preview
     .swiper-lazy {
         @media only screen and (max-width: 480px) {
             height: 300px !important;
         }
-    .swiper-slide {
-        text-align: center;
+        .swiper-slide {
+            text-align: center;
             img {
-            width: auto;
-            height: auto;
-            max-width: 100%;
-            max-height: 100%;
-            transform: translate(-50%, -50%);
-            position: absolute;
-            left: 50%;
-            top: 50%;
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 100%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                left: 50%;
+                top: 50%;
             }
+        }
+        & .swiper-button-prev,
+        & .swiper-button-next {
+            width: 20px;
+            height: 30px;
+            background-size: 20px 30px;
         }
     }
     @media only screen and (max-width: 992px) {
