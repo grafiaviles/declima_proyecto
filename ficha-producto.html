@@ -60,273 +60,10 @@
 </head>
 
 <body>
-    <!-- Modal Buscador -->
-    <div id="buscador-desktop" class="modal modal-buscador">
-        <nav class="buscador-container">
-            <div class="nav-wrapper">
-                <form>
-                    <div class="input-field">
-                        <input id="search" placeholder="Buscar..." type="search" autofocus required>
-                        <label class="label-icon" for="search"><i class="icon-search"></i></label>
-                    </div>
-                </form>
-            </div>
-        </nav>
-    </div>
-    <!-- Modal Cotizador -->
-    <div id="cotizador" class="cotizador-cantainer modal">
-        <div class="modal-content">
-            <h4 class="text-primary">¿Qué desea cotizar?</h4>
-            <i class="icon-x right white-text modal-action modal-close"></i>
-        </div>
-        <div class="row">
-            <form action="" class="form-cotizador col s12">
-                <div class="row">
-                    <div class="input-field col s12 m6">
-                        <input id="first_name" type="text" class="validate" required>
-                        <label for="first_name" data-error="Error" data-success="Correcto">Nombre y Apellido</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input id="email" type="email" class="validate" required>
-                        <label for="email" data-error="Error" data-success="Correcto">Email</label>
-                    </div>
-                </div>
-                <div class="row select-box">
-                    <div class="input-field col s12 m6">
-                        <select data-error="Error" data-success="Correcto">
-                            <option value="" disabled selected>Región Metropolitana</option>
-                            <option value="">I Tarapacá</option>
-                            <option value="">II Antofagasta</option>
-                            <option value="">III Atacama</option>
-                            <option value="">IV Coquimbo</option>
-                            <option value="">V Valaparaíso</option>
-                            <option value="">Metropolitana de Santiago</option>
-                            <option value="">VI Del Libertador Bernardo O'Higgins</option>
-                            <option value="">VII Del Maule</option>
-                            <option value="">VIII Del Bío Bío</option>
-                            <option value="">IX La Araucanía</option>
-                            <option value="">X Los Lagos</option>
-                            <option value="">XI Aisén del General Carlos Ibañez del Campo</option>
-                            <option value="">XII Magallanes y Antártica Chilena</option>
-                            <option value="">XIV De Los Ríos</option>
-                            <option value="">XV Arica y Parinacota</option>
-                        </select>
-                        <label>Selecciona tu región</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <select>
-                              <optgroup label="Aire Acondicionado Residencial">
-                                <option value="">Portátiles</option>
-                                <option value="">Split Muro Inverter</option>
-                                <option value="">Split Muro Blanc Smartkit</option>
-                                <option value="">Split Muro Blanc</option>
-                                <option value="">Ventana</option>
-                              </optgroup>
-                              <optgroup label="Aire Acondicionado Comercial">
-                                <option value="">Baja Silueta o Ducto</option>
-                                <option value="">Fan Coil</option>
-                                <option value="">Compactos</option>
-                                <option value="">VRV</option>
-                                <option value="">Split Piso Cielo</option>
-                                <option value="">Cassette</option>
-                              </optgroup>
-                              <optgroup label="Proyectos">
-                                <option value="">Proyectos e Ingeniería</option>
-                              </optgroup>
-                              <optgroup label="Suministros">
-                                <option value="">Bases Murales</option>
-                                <option value="">Bases de Techo</option>
-                                <option value="">Bombas Condensadas</option>
-                                <option value="">Aislación</option>
-                                <option value="">Molduras</option>
-                                <option value="">Tuberías</option>
-                              </optgroup>
-                              <optgroup label="Soporte Técnico">
-                                  <option value="">Instalación</option>
-                                  <option value="">Mantención</option>
-                                  <option value="">Reparación</option>
-                              </optgroup>
-                        </select>
-                        <label>Selecciona un servicio o producto</label>
-                    </div>
-                </div>
-                <div class="row comentarios">
-                    <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea" required data-error="Error" data-success="Correcto"></textarea>
-                        <label for="textarea1">Coméntanos...</label>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <form action="" class="checkbox-condiciones">
-                <p class="left">
-                    <input type="checkbox" id="test6" checked="checked" />
-                    <label for="test6">Acepto recibir novedades y oportunidades de los productos y servicios que Declima ofrece en su sitio web.</label>
-                </p>
-            </form>
-            <button class="my-disabled btn waves-effect waves-light" type="submit" name="action">ENVIAR</button>
-        </div>
-    </div>
-    <!-- Modal Mapa Sala de Ventas -->
-    <div id="maps-info" class="cotizador-cantainer modal">
-        <div class="modal-content">
-            <h4 class="text-primary">Sala de ventas</h4>
-            <i class="icon-x right white-text modal-action modal-close"></i>
-        </div>
-        <div class="row container-fluid">
-            <iframe class="section_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.5964753483413!2d-70.63931634956197!3d-33.45981818067696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c56ed1ef9fd9%3A0x608ba36da8d8fe95!2sArtemio+Guti%C3%A9rrez+1268%2C+Santiago%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses-419!2scl!4v1507455161209"
-                width="100%" height="280" frameborder="0" style="border:0" allowfullscreen>
-            </iframe>
-            <div class="contenido-modal">
-                <div class="col s12 m4">
-                    <p class="container-fluid text-second"><b>Horarios de Atención</b></p>
-                    <p class="container-fluid text-grey">Lunes a Viernes</p>
-                    <p class="container-fluid text-grey">09:00am - 18:30pm hrs.</p>
-                </div>
-                <div class="col s12 m4">
-                    <p class="container-fluid text-second"><b>Fono Consultas</b></p>
-                    <a href="tel:+56229046383" class="container-fluid text-grey">(+562) 2904 6383</a><br>
-                    <a href="tel:+56226051140" class="container-fluid text-grey">(+562) 2605 1140</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Slider Carro de Compras Desktop-->
-    <ul id="slide-carro" class="side-nav">
-        <!-- Carro Vacio -->
-        <div class="carro-vacio">
-            <div class="cont-icon-carro">
-                <i class="icon-shopping-cart"><i class="icon-alert-circle"></i></i>
-            </div>
-            <p class="center-align">¡UPS!</p>
-            <p class="center-align">Tu carro está vacio, revisa nuestras ofertas</p>
-            <a href="" class="hide">VER OFERTAS</a>
-        </div>
-        <!-- Botones Carro Vacio -->
-        <div class="container-total">
-            <div class="section btn-nav-comprar">
-                <a class="btn-comprar waves-effect waves-dark center-align" href="#!">VER OFERTAS<i class="icon-arrow-right right"></i></a>
-            </div>
-        </div>
-        <!-- Prodcutos Agregados -->
-        <div class="hide container-bag-product">
-            <div class="section side-nav-bag waves-effect waves-dark chip chip-product">
-                <i class="close close-product-bag icon-x"></i>
-                <a class="row cont-bag-product" href="">
-                    <img src="img/menu/carro/product-001.jpg" alt="">
-                    <div class="">
-                        <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
-                        <p class="left-align">Cantidad: (4)</p>
-                        <p class="left-align">Dcto: -22%</p>
-                        <h3 class="left-align">$166.990</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="section side-nav-bag waves-effect waves-dark chip chip-product">
-                <i class="close close-product-bag icon-x"></i>
-                <a class="row cont-bag-product" href="">
-                    <img src="img/menu/carro/product-001.jpg" alt="">
-                    <div class="">
-                        <h5 class="left-align">Portátil - Midea</h5>
-                        <p class="left-align">Cantidad: (2)</p>
-                        <h3 class="left-align">$166.990</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="section side-nav-bag waves-effect waves-dark chip chip-product">
-                <i class="close close-product-bag icon-x"></i>
-                <a class="row cont-bag-product" href="">
-                    <img src="img/menu/carro/product-001.jpg" alt="">
-                    <div class="">
-                        <h5 class="left-align">Split Muro Inverter - 12.000 BTU - Carrier</h5>
-                        <p class="left-align">Cantidad: (2)</p>
-                        <h3 class="left-align">$166.990</h3>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <!-- TOTAL -->
-        <div class="hide container-total">
-            <div class="section btn-nav-comprar ">
-                <h3 class="left-align total-compra">Cantidad total: (8) <span class="right">Dcto. total: -22%</span></h3>
-                <h3 class="left-align total-compra">TOTAL A PAGAR: <span class="right"><sup class="signo-peso">$</sup> 810.997</span></h3>
-                <a class="btn-comprar waves-effect waves-dark center-align" href="#!">IR A COMPRAR<i class="icon-arrow-right right"></i></a>
-            </div>
-        </div>
-    </ul>
-    <!-- Slider Carro de Compras Mobile-->
-    <ul id="slide-carro-mobile" class="side-nav">
-        <!-- Carro Vacio -->
-        <div class="hide carro-vacio">
-            <div class="cont-icon-carro">
-                <i class="icon-shopping-cart"><i class="icon-alert-circle"></i></i>
-            </div>
-            <p class="center-align">¡UPS!</p>
-            <p class="center-align">Tu carro está vacio, revisa nuestras ofertas</p>
-            <a href="" class="hide">VER OFERTAS</a>
-        </div>
-        <!-- Botones Carro Vacio -->
-        <div class="hide container-total">
-            <div class="section btn-nav-comprar">
-                <a class="btn-comprar waves-effect waves-dark center-align" href="">VER OFERTAS<i class="icon-arrow-right right"></i></a>
-            </div>
-        </div>
-        <!-- Prodcutos Agregados -->
-        <div class="container-bag-product">
-            <div class="section side-nav-bag waves-effect waves-dark chip chip-product">
-                <i class="close close-product-bag icon-x"></i>
-                <a class="row cont-bag-product" href="">
-                    <img src="img/menu/carro/product-001.jpg" alt="">
-                    <div class="">
-                        <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
-                        <p class="left-align">Cantidad: (4)</p>
-                        <p class="left-align">Dcto: -22%</p>
-                        <h3 class="left-align">$166.990</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="section side-nav-bag waves-effect waves-dark chip chip-product">
-                <i class="close close-product-bag icon-x"></i>
-                <a class="row cont-bag-product" href="">
-                    <img src="img/menu/carro/product-001.jpg" alt="">
-                    <div class="">
-                        <h5 class="left-align">Portátil - Midea</h5>
-                        <p class="left-align">Cantidad: (2)</p>
-                        <h3 class="left-align">$166.990</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="section side-nav-bag waves-effect waves-dark chip chip-product">
-                <i class="close close-product-bag icon-x"></i>
-                <a class="row cont-bag-product" href="">
-                    <img src="img/menu/carro/product-001.jpg" alt="">
-                    <div class="">
-                        <h5 class="left-align">Split Muro Inverter - 12.000 BTU - Carrier</h5>
-                        <p class="left-align">Cantidad: (2)</p>
-                        <h3 class="left-align">$166.990</h3>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <!-- TOTAL -->
-        <div class="container-total">
-            <div class="section btn-nav-comprar ">
-                <h3 class="left-align total-compra">Cantidad total: (8) <span class="right">Dcto. total: -22%</span></h3>
-                <h3 class="left-align total-compra">TOTAL A PAGAR: <span class="right"><sup class="signo-peso">$</sup> 810.997</span></h3>
-                <a class="btn-comprar waves-effect waves-dark center-align" href="#!">IR A COMPRAR<i class="icon-arrow-right right"></i></a>
-            </div>
-        </div>
-    </ul>
-
-
-    <!-- Menu Mobile -->
-    <ul class="side-nav menu-mobile" id="mobile-menu">
-        <li><a class="modal-trigger" href="#maps-info">Maps</a></li>
-        <li><a class="modal-trigger" href="#cotizador">Cotizar</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+    <li><a class="modal-trigger" href="#maps-info">Maps</a></li>
+    <li><a class="modal-trigger" href="#cotizador">Cotizar</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
     </ul>
 
     <!-- HEADER -->
@@ -340,9 +77,9 @@
                 <ul class="right hide-on-med-and-down menu-desktop">
                     <li class="hide list-category"><a href="" class="link-category">Home</a></li>
                     <li class="list-category"><a class="waves-effect waves-dark dropdown-button link-category" data-activates='submenu1'>Aire Acondicionado<i class="icon-chevron-down"></i>
-                    </a>
+                </a>
                     </li>
-                    <!--Submenu 1 -->
+                    <!--Submenu Aire Acondicionado -->
                     <ul id='submenu1' class='dropdown-content-menu dropdown-content'>
                         <div class="row container-sub-menu">
                             <!-- Box Category 1 -->
@@ -377,23 +114,23 @@
                             </div>
                             <!-- Box Category 4 -->
                             <div class="col s3 box-submenu">
-                                <h5 class="text-primary title-category-submenu"><i class="icon-grid icon-4 hide"></i>Cálcula y Cotiza tu Equipo<i class="right icon-check-circle"></i> </h5>
+                                <h5 class="text-primary title-category-submenu"><i class="icon-grid icon-4 hide"></i>Cálcula fácil tu Equipo<i class="right icon-check-circle"></i> </h5>
                                 <div class="box-calc-app">
                                     <div class="img-calc-app center-align" href="">
                                         <img class="responsive-img img-proyecto" src="img/menu/calc-app.jpg">
                                     </div>
                                     <div class="description-calc-app center-align" href="">
                                         <p>
-                                            Cálcula de forma fácil tu equipo de Aire Acondicionado y obtén la cotización más adecuada.
+                                            Cálcula fácil el total de <b class="text-primary tooltipped" data-position="bottom" data-delay="50" data-tooltip="BTU (British Thermal Units). Es la capacidad de extraer el calor del aire en una hora.">BTU</b>                                            que realmente necesitas y compra el equipo de aire acondicionado más adecuado para tu espacio.
                                         </p>
                                     </div>
-                                    <a href="#" class="link-calc-app">QUIERO CÁLCULAR <i class="icon-arrow-right right"></i></a>
+                                    <a href="#" class="link-calc-app">VER MÁS<i class="icon-arrow-right right"></i></a>
                                 </div>
                             </div>
                         </div>
                     </ul>
-                    <li class="list-category"><a class="waves-effect waves-dark link-category dropdown-button" data-activates='submenu2'>Suministros<i class="icon-chevron-down"></i></a></li>
-                    <!--Submenu 2 -->
+                    <li class="list-category hide"><a class="waves-effect waves-dark link-category dropdown-button" data-activates='submenu2'>Accesorios<i class="icon-chevron-down"></i></a></li>
+                    <!--Submenu Suministros -->
                     <ul id='submenu2' class='dropdown-content-menu dropdown-content'>
                         <div class="row container-sub-menu">
                             <!-- Box Category 1 -->
@@ -416,37 +153,8 @@
                             </div>
                         </div>
                     </ul>
-                    <li class="list-category"><a class="waves-effect waves-dark dropdown-button link-category" data-activates='submenu3'>Servicios<i class="icon-chevron-down"></i></a></li>
-                    <!--Submenu 3 -->
-                    <ul id='submenu3' class='dropdown-content-menu dropdown-content'>
-                        <div class="row container-sub-menu">
-                            <!-- Box Category 1 -->
-                            <div class="col s4 box-submenu">
-                                <h5 class="text-primary title-category-submenu">Venta y Distribución<i class="right icon-4 icon-smartphone"></i> </h5>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Ofertas de Aire Acondicionado<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Aire Acondicionado Residencial<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Aire Acondicionado Comercial<i class="icon-chevron-right"></i></a>
-                            </div>
-                            <!-- Box Category 2 -->
-                            <div class="col s4 box-submenu">
-                                <h5 class="text-primary title-category-submenu">Proyectos e Ingienería<i class="right icon-2 icon-briefcase"></i> </h5>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Proyectos 1<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Proyecto 2<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Proyecto 3<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Proyecto 4<i class="icon-chevron-right"></i></a>
-                            </div>
-                            <!-- Box Category 3 -->
-                            <div class="col s4 box-submenu">
-                                <h5 class="text-primary title-category-submenu">Soporte Técnico<i class="right icon-1 icon-settings"></i> </h5>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Instalaciones<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Mantenciones Preventivas<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Reparaciones<i class="icon-chevron-right"></i></a>
-                                <a href="" class="text-grey"><img class="circle producto-submenu" src="img/mas-buscado/product-1.jpg" alt="">Conoce a Nuestro Equipo Técnico<i class="icon-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </ul>
-                    <li class="list-category"><a class="waves-effect waves-dark dropdown-button link-category" data-activates='submenu4'>Proyectos<i class="icon-chevron-down"></i></a></li>
-                    <!--Submenu 4 -->
+                    <li class="list-category hide"><a class="waves-effect waves-dark dropdown-button link-category" data-activates='submenu4'>Proyectos<i class="icon-chevron-down"></i></a></li>
+                    <!--Submenu Proyectos -->
                     <ul id='submenu4' class='dropdown-content-menu dropdown-content'>
                         <div class="row container-sub-menu">
                             <!-- Box proyecto 1 -->
@@ -494,19 +202,35 @@
                             <a href="#" class="link-ver-todo">VER TODOS LOS PROYECTOS <i class="icon-arrow-right right"></i></a>
                         </div>
                     </ul>
+                    <li class="list-category"><a href="" class="waves-effect waves-dark link-category">Cálcula fácil tu Equipo</a></li>
                     <li class="list-category"><a href="#cotizador" class="modal-trigger waves-effect waves-dark active-link link-category" data-target="cotizador">Cotizar</a></li>
-                    <li class="list-category"><a href="" class="waves-effect waves-dark link-category">Servicio al Cliente</a></li>
-                    <li class="list-category"><a href="#buscador-desktop" data-target="buscador-desktop" class="modal-trigger link-icon-category tooltipped" data-delay="50" data-tooltip="¿Qué buscas?"><i class="icon-search"></i></a></li>
-                    <li class="list-category"><a href="#" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i>
-                        <span class="notification">3</span>
-                    </a></li>
-                    <!-- Dropdown Mi Cuenta -->
-                    <li class="list-category"><a class="dropdown-button link-icon-category" data-activates='micuenta'><i class="icon-user"></i></a></li>
+                    <li class="list-category"><a class="waves-effect waves-dark link-category">Sala de Ventas</a></li>
+                    <!-- Login -->
+                    <li class="list-category"><a class="dropdown-button link-icon-category" data-activates='login'><i class="icon-user"></i></a></li>
+                    <ul id='login' class='dropdown-content-menu-icon dropdown-content'>
+                        <li><a href="#"><i class="icon-user-check"></i>Iniciar Sesión</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="icon-user-plus"></i>Regístrate</a></li>
+                    </ul>
+                    <!-- Mi Cuenta -->
+                    <li class="list-category hide">
+                        <a class="dropdown-button user-active" data-activates='micuenta'>
+                            <div class="chip chip-user"><img src="img/user/avatar.jpg" alt="Contact Person">César A.</div>
+                        </a>
+                    </li>
                     <ul id='micuenta' class='dropdown-content-menu-icon dropdown-content'>
                         <li><a href="#"><i class="icon-user-check"></i>Iniciar Sesión</a></li>
                         <li class="divider"></li>
                         <li><a href="#"><i class="icon-user-plus"></i>Regístrate</a></li>
                     </ul>
+                    <li class="list-category"><a href="#buscador-desktop" data-target="buscador-desktop" class="modal-trigger link-icon-category tooltipped" data-delay="50" data-tooltip="¿Qué buscas?"><i class="icon-search"></i></a></li>
+                    <li class="list-category"><a href="#" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i>
+                    <span class="notification">3</span>
+                </a></li>
+                    <!-- Mis Favoritos -->
+                    <li class="list-category"><a data-target="modal-favoritos" class="link-icon-category modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Productos Favoritos" data-activates="slide-carro"><i class="icon-heart"></i>
+                    <span class="notification second">3</span>
+                </a></li>
                 </ul>
             </div>
         </nav>
