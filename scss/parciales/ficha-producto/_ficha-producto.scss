@@ -1006,38 +1006,19 @@ th {
                         align-items: center;
                         color: $whiteColor;
                         background-color: $secondColor;
-                        border-radius: 0 5px 5px 0;
+                        border-radius: 0 3px 3px 0;
                         font-weight: 600;
-                        width: 45px;
-                        height: 45px;
                         top: 10px;
                         left: 0;
-                        @media screen and (max-width: 480px) {
-                            height: 35px;
-                            width: 35px;
-                        }
-                        & p:first-child {
-                            font-size: 1.1rem;
+                        width: 45px;
+                        height: 25px;
+                        & p {
+                            font-size: 1rem;
                             margin: 0;
                             line-height: 1rem;
                             @media screen and (max-width: 480px) {
                                 line-height: .9rem;
                                 font-size: 1rem;
-                            }
-                            & sup {
-                                position: relative;
-                                top: -2px;
-                                margin: 0;
-                            }
-                        }
-                        & p:last-child {
-                            line-height: 1rem;
-                            font-size: .85rem;
-                            margin: 0;
-                            text-align: center;
-                            @media screen and (max-width: 480px) {
-                                line-height: .9rem;
-                                font-size: .8rem;
                             }
                         }
                     }
@@ -1113,9 +1094,12 @@ th {
                         color: $secondColor;
                         font-weight: 600;
                         padding: .8rem;
+                        line-height: normal;
                         display: block;
                         outline: none;
                         font-size: 1rem;
+                        height: 100%;
+                        font-family: 'Nunito', sans-serif;
                     }
                     & a:hover {
                         background-color: $whiteColor;
@@ -1124,21 +1108,19 @@ th {
                     & .icon-btn-action {
                         font-size: 1.2rem;
                         font-weight: 500;
+                        height: 100%;
+                        display: block;
                         @media screen and (max-width: 480px) {
-                            font-size: 1rem;
+                            //font-size: 1rem;
                         }
                         @media screen and (max-width: 321px) {
                             font-size: 1.2rem;
                         }
                     }
-                    & .icon-btn-action:first-child {
-                        border-right: 1px solid $greysoftColor;
-                    }
                 }
             }
         }
-        & 
-        & .swiper-pagination {
+        & & .swiper-pagination {
             position: relative;
             padding-top: 1rem;
             & .swiper-pagination-bullet-active {
