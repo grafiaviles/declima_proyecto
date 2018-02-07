@@ -38,13 +38,15 @@ $('.slider-single').slick({
     cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
 });
 
-
-//SWIPER Slider Categoria Main
+//SWIPER Slider Accesorios
 var swiper = new Swiper('.swiper-ofertas', {
     spaceBetween: 30,
     pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+        el: '.swiper-pagination-1',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     autoplay: {
         delay: 2500,
@@ -61,7 +63,7 @@ var galleryTop = new Swiper('.gallery-top', {
         prevEl: '.swiper-button-prev',
     },
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-1',
     },
 });
 var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -112,15 +114,15 @@ var swiper = new Swiper('.swiper-lazy', {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+        delay: 2500,
+        disableOnInteraction: false,
     },
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        el: '.swiper-pagination',
+        clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-  });
+});

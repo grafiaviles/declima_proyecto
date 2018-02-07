@@ -556,16 +556,155 @@
                 <div class="container container-box container-ficha">
                     <div class="row row-main-category">
                         <!-- ASIDE MAIN -->
-                        <aside class="col s12 m6 l3 aside-cat hide-on-med-and-down">
+                        <aside class="col s12 m6 l3 aside-cat">
                             <div id="aside" class="col s12">
+                                <!-- Filtros Edit Mobile -->
+                                <div class="hide-on-large-only col s12 filtros-edit-mobile valign-wrapper" id="tabs-swipe-demo">
+                                    <div class="col s3 btn-filtros-mobile valign-wrapper">
+                                        <a href="#" data-activates="filtros-mobile" class="button-collapse"><i class="icon-sliders text-second"></i> Filtros</a>
+                                    </div>
+                                    <div class="col s9 filtros-mobile valign-wrapper">
+                                        <div class="chip">
+                                            Filtro 1
+                                            <i class="close icon-x"></i>
+                                        </div>
+                                        <div class="chip">
+                                            Filtro 2
+                                            <i class="close icon-x"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Acordion Filtros Mobile -->
+                                <ul id="filtros-mobile" class="side-nav collapsible acordion-filtros acordion-filtros-mobile" data-collapsible="accordion">
+                                    <!-- Filtro 1 -->
+                                    <li id="filtro-alcance">
+                                        <div class="collapsible-header collapsible-header-mobile active"><i class="icon-chevron-down"></i><b>Equipos Residenciales</b> </div>
+                                        <div class="collapsible-body">
+                                            <span>
+                                                <form action="#" class="form-modelos">
+                                                    <p>
+                                                        <input class="with-gap" name="group1" type="radio" id="test1" checked/>
+                                                        <label for="test1">Ofertas Destacadas</label>
+                                                    </p>
+                                                    <p>
+                                                        <input class="with-gap" name="group1" type="radio" id="test2" />
+                                                        <label for="test2">Split Muro Blanc</label>
+                                                    </p>
+                                                    <p>
+                                                        <input class="with-gap" name="group1" type="radio" id="test3" />
+                                                        <label for="test3">Split Muro Inverter</label>
+                                                    </p>
+                                                    <p>
+                                                        <input class="with-gap" name="group1" type="radio" id="test4" />
+                                                        <label for="test4">Ventana</label>
+                                                    </p>
+                                                    <p>
+                                                        <input class="with-gap" name="group1" type="radio" id="test5" />
+                                                        <label for="test5">Portátiles</label>
+                                                    </p>
+                                                    <p>
+                                                        <input class="with-gap" name="group1" type="radio" id="testing6" />
+                                                        <label for="testing6">Con Instalación</label>
+                                                    </p>
+                                                    <p>
+                                                        <input class="with-gap" name="group1" type="radio" id="testing7" />
+                                                        <label for="testing7">Sin Instalación</label>
+                                                    </p>
+                                                </form>
+                                                </span>
+                                        </div>
+                                    </li>
+                                    <!-- Filtro 2 -->
+                                    <li>
+                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Precios</b></div>
+                                        <div class="collapsible-body">
+                                            <span>
+                                                        <form action="#">
+                                                            <p class="range-field">
+                                                                <input type="range" id="test1" min="9000" max="24000"/>
+                                                            </p>
+                                                        </form>
+                                                    </span>
+                                        </div>
+                                    </li>
+                                    <!-- Filtro 3 -->
+                                    <li id="filtro-marca">
+                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Marca</b></div>
+                                        <div class="collapsible-body">
+                                            <span>
+                                                    <form class="form-check-box form-marca" action="#">
+                                                        <p>
+                                                            <input type="checkbox" id="midea" />
+                                                            <label for="midea">Midea (10)</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="checkbox" id="carrier" />
+                                                            <label for="carrier">Carrier (3)</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="checkbox" id="otra" />
+                                                            <label  for="otra">Otra (6)</label>
+                                                        </p>
+                                                    </form>
+                                                </span>
+                                        </div>
+                                    </li>
+                                    <!-- Filtro 4 -->
+                                    <li class="filtro-btu">
+                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Capacidad BTU/H</b></div>
+                                        <div class="collapsible-body">
+                                            <span>
+                                                        <form class="form-check-box form-btu" action="#">
+                                                            <p>
+                                                                <input type="checkbox" id="9000" />
+                                                                <label for="9000">9.000 (10)</label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="checkbox" id="12000" />
+                                                                <label for="12000">12.000 (2)</label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="checkbox" id="18000" />
+                                                                <label for="18000">18.000 (2)</label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="checkbox" id="24000" />
+                                                                <label for="24000">24.000 (4)</label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="checkbox" id="48000" />
+                                                                <label for="48000">48.000 (2)</label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="checkbox" id="72000" />
+                                                                <label for="72000">72.000 (6)</label>
+                                                            </p>
+                                                        </form>
+                                                </span>
+                                        </div>
+                                    </li>
+                                    <!-- Filtro 5 -->
+                                    <li id="filtro-alcance">
+                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Alcance m2</b> </div>
+                                        <div class="collapsible-body">
+                                            <span>
+                                                    <form action="#">
+                                                        <p class="range-field">
+                                                            <input type="range" id="test1" min="9000" max="24000"/>
+                                                        </p>
+                                                    </form>
+                                                </span>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <!-- ASIDE 1 FILTROS -->
-                                <div class="title-filtro">
+                                <div class="title-filtro hide-on-med-and-down">
                                     <h5 class="text-primary">
                                         <a href="#!" class="hide icon-arrow-left text-primary"></a> Aire Acondicionado
                                     </h5>
                                 </div>
-                                <!-- Acordion Filtros -->
-                                <ul class="collapsible acordion-filtros" data-collapsible="accordion">
+                                <!-- Acordion Filtros Desktop -->
+                                <ul class="collapsible acordion-filtros hide-on-med-and-down" data-collapsible="accordion">
                                     <!-- Filtro 1 -->
                                     <li id="filtro-alcance">
                                         <div class="collapsible-header active"><i class="icon-chevron-down"></i>Equipos Residenciales </div>
@@ -688,16 +827,16 @@
                                     </li>
                                 </ul>
                                 <!-- ASIDE 2 OFERTAS -->
-                                <div class="title-filtro">
+                                <div class="title-filtro hide-on-med-and-down">
                                     <h5 class="text-primary">ACCESORIOS Y MÁS</h5>
                                 </div>
                                 <!-- Swiper -->
-                                <div class="swiper-ofertas">
+                                <div class="swiper-ofertas hide-on-med-and-down">
                                     <div class="swiper-wrapper">
                                         <!-- Slider 1 -->
-                                        <div class="swiper-slide waves-effect waves-dark chip-product">
-                                            <a class="row cont-bag-product" href="">
-                                                <img src="img/menu/carro/product-001.jpg" alt="">
+                                        <div class="swiper-slide">
+                                            <a class="row cont-bag-product waves-effect waves-dark" href="">
+                                                <img class="circle responsive-img" src="img/menu/carro/product-001.jpg" alt="">
                                                 <div class="">
                                                     <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
                                                     <h3 class="left-align">$166.990</h3>
@@ -706,8 +845,8 @@
                                             </a>
                                         </div>
                                         <!-- Slider 2 -->
-                                        <div class="swiper-slide waves-effect waves-dark chip-product">
-                                            <a class="row cont-bag-product" href="">
+                                        <div class="swiper-slide">
+                                            <a class="row cont-bag-product waves-effect waves-dark" href="">
                                                 <img src="img/menu/carro/product-001.jpg" alt="">
                                                 <div class="">
                                                     <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
@@ -717,8 +856,8 @@
                                             </a>
                                         </div>
                                         <!-- Slider 3 -->
-                                        <div class="swiper-slide waves-effect waves-dark chip-product">
-                                            <a class="row cont-bag-product" href="">
+                                        <div class="swiper-slide">
+                                            <a class="row cont-bag-product waves-effect waves-dark" href="">
                                                 <img src="img/menu/carro/product-001.jpg" alt="">
                                                 <div class="">
                                                     <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
@@ -730,6 +869,9 @@
                                     </div>
                                     <!-- Add Pagination -->
                                     <div class="swiper-pagination"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
                                 </div>
                             </div>
                         </aside>
@@ -737,8 +879,8 @@
                         <div class="col s12 l9 section-productos">
                             <div class="col s12 filtros-productos valign-wrapper">
                                 <!-- Filtros Edit -->
-                                <div class="col s12 m10 filtros-edit valign-wrapper" id="tabs-swipe-demo">
-                                    <p class="text-filtro text-grey">Filtros Aplicados:</p>
+                                <div class="col s12 m10 filtros-edit valign-wrapper hide-on-med-and-down" id="tabs-swipe-demo">
+                                    <p class="text-filtro text-second">Filtros:</p>
                                     <div class="chip">
                                         Filtro 1
                                         <i class="close icon-x"></i>
@@ -757,7 +899,7 @@
                                     </div>
                                 </div>
                                 <!-- Filtros Layout -->
-                                <div class="col s12 m2 filtros-layout valign-wrapper">
+                                <div class="col s12 m2 filtros-layout valign-wrapper hide-on-med-and-down">
                                     <a href="#!" class="hide tooltipped icon-filtro-layout" data-position="bottom" data-delay="50" data-tooltip="Lista"><i class="icon-list"></i></a>
                                     <a href="#!" class="hide tooltipped icon-filtro-layout" data-position="bottom" data-delay="50" data-tooltip="Grilla"><i class="icon-grid"></i></a>
                                     <a href="#!" class="tooltipped icon-filtro-layout" data-position="bottom" data-delay="50" data-tooltip="Siguiente Categoría"><i class="icon-arrow-right"></i></a>

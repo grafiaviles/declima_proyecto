@@ -37,7 +37,8 @@
                         font-size: .95rem;
                         opacity: .5;
                         @media screen and (max-width: 480px) {
-                            font-size: .95rem;
+                            font-size: .8rem;
+                            text-transform: uppercase;
                         }
                     }
                     & .breadcrumb:hover {

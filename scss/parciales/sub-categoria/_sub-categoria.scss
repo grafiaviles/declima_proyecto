@@ -41,7 +41,7 @@
         }
         & .acordion-filtros {
             box-shadow: none;
-            border-color: transparent;
+            border-color: $whiteColor;
             margin-top: 0;
             margin-bottom: 2rem;
             //Style Acordeon Generico
@@ -67,6 +67,7 @@
             .collapsible-header:active,
             .collapsible-header:focus {
                 color: $secondColor;
+                font-weight: 600;
             }
             & .active {
                 color: $secondColor;
@@ -128,15 +129,26 @@
                 }
             }
         }
+        //Collapsible Header Mobile
+        & .acordion-filtros-mobile {
+            & .collapsible-header-mobile {
+                padding: 0 20px!important;
+                border-bottom: none!important;
+            }
+            & .range-field {
+                width: 90%;
+            }
+        }
         & .swiper-ofertas {
             overflow: hidden;
-            width: 100%;
+            position: relative;
+            height: 150px;
             & .swiper-slide {
                 background-color: $whiteColor;
                 transition: all .4s ease;
                 width: 100%;
-                height: 130px;
-                padding: 20px 0;
+                height: 120px;
+                padding-top: 20px;
                 & .cont-bag-product {
                     padding: 0;
                     position: relative;
@@ -145,10 +157,9 @@
                     align-items: center;
                     margin: 0;
                     & img {
-                        width: 100%;
-                        max-width: 100px;
+                        width: 90%;
+                        max-width: 90px;
                         margin-right: 10px;
-                        border-radius: 3px;
                     }
                     & h5 {
                         margin: 0;
@@ -184,6 +195,12 @@
                 & .swiper-pagination-bullet-active {
                     background: $primaryColor;
                 }
+            }
+            & .swiper-button-prev,
+            & .swiper-button-next {
+                background-size: 15px 25px;
+                width: 15px;
+                height: 25px;
             }
         }
     }
@@ -502,6 +519,49 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+//FILTROS MOBILE
+.filtros-edit-mobile {
+    margin: 0;
+    padding: 0!important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    & .btn-filtros-mobile {
+        padding: 0;
+        align-items: center;
+        cursor: pointer;
+        & a {
+            text-align: left;
+        }
+    }
+    & .filtros-mobile {
+        align-items: center;
+        padding: 0;
+        & .chip {
+            box-shadow: 0 0 0 1px $secondColor inset;
+            background: transparent;
+            color: $secondColor;
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: .9rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & .icon-x {
+                transition: $transition1;
+            }
+            & .icon-x:hover {
+                transform: scale(.90);
+                opacity: .7;
             }
         }
     }

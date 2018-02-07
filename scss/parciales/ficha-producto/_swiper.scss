@@ -711,17 +711,19 @@ button.swiper-pagination-bullet {
 .swiper-container-coverflow .swiper-wrapper {
     /* Windows 8 IE 10 fix */
     -ms-perspective: 1200px;
-    
 }
 
 //Edit Arrow Slider Preview - Declima
 .button-next-edit {
     right: 0px;
 }
+
 .button-prev-edit {
     left: 0px;
 }
-.button-next-edit, .button-prev-edit {
+
+.button-next-edit,
+.button-prev-edit {
     background-size: 20px 30px;
     width: 20px;
     height: 30px;
