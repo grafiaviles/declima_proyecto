@@ -826,7 +826,7 @@
 //Edit border color table
 table.bordered>thead>tr,
 table.bordered>tbody>tr {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid $greysoftColor;
 }
 
 td,
@@ -925,208 +925,102 @@ th {
     }
     .swiper-productos-relacionados {
         margin: 2rem 0 0 0;
+        padding: 0;
         .swiper-slide {
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 3px;
-            & .box-equipos-relacionados {
-                border: 1px $greysoftColor solid;
-                height: auto;
-                padding: 0;
-                margin-bottom: 2rem;
-                outline: none;
-                //margin-right: 1rem;
-                border-radius: 5px;
-                overflow: hidden;
-                position: relative;
-                & .imagen-equipo {
-                    width: 100%;
-                    position: relative;
-                    & .mega-tag {
-                        background-color: $secondColor;
-                        width: 100%;
-                        height: 25px;
-                        justify-content: space-between;
-                        align-items: center;
-                        position: absolute;
-                        bottom: 0px;
-                        & .instalacion {
-                            text-align: center;
-                            bottom: 0;
-                            color: $whiteColor;
-                            font-weight: 600;
-                            font-size: .8rem;
-                            line-height: normal;
-                        }
-                    }
-                    & .cont-icon-equipos {
-                        background-color: transparent;
-                        width: 100%;
-                        height: 35px;
-                        justify-content: space-around;
-                        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-                        & .icon-equipos {
-                            font-size: 17px;
-                            line-height: 50px;
-                            margin: 0;
-                            color: $whiteColor;
-                            display: flex;
-                            opacity: 1;
-                            transition: $transition1;
-                            z-index: 10;
-                        }
-                        & .icon-feather {
-                            font-size: 15.5px;
-                            margin: 0;
-                            color: $whiteColor;
-                        }
-                        & .icon-equipos:hover {
-                            opacity: .5;
-                        }
-                    }
-                    & .img-product {
-                        margin: auto;
-                        width: 100%;
-                        height: auto;
-                        @media screen and (max-width: 321px) {
-                            max-width: 250px;
-                        }
-                    }
-                    & img {
-                        height: 130px;
-                        width: 130px;
-                        margin: auto;
-                    }
-                    & .descuento-tag {
-                        position: absolute;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        color: $whiteColor;
-                        background-color: $secondColor;
-                        border-radius: 0 3px 3px 0;
-                        font-weight: 600;
-                        top: 10px;
-                        left: 0;
-                        width: 45px;
-                        height: 25px;
-                        & p {
-                            font-size: 1rem;
-                            margin: 0;
-                            line-height: 1rem;
-                            @media screen and (max-width: 480px) {
-                                line-height: .9rem;
-                                font-size: 1rem;
-                            }
-                        }
-                    }
-                    & .instalacion-tag {
-                        @extend .descuento-tag;
-                        color: $secondColor;
-                        background: $whiteColor;
-                        width: 80px;
-                        height: 40px;
-                        top: 60px;
-                        & p {
-                            line-height: 1rem;
-                            font-size: .85rem;
-                            margin: 0;
-                            text-align: left!important;
-                            padding-left: .5rem;
-                        }
-                    }
-                }
-                & .descripcion-equipo {
-                    padding: 1rem 1rem 0 1rem;
-                    color: $whiteColor;
-                    text-align: center;
+            flex-wrap: wrap;
+            & .descripcion-equipo {
+                padding: 1rem 1rem 0 1rem;
+                color: $whiteColor;
+                text-align: center;
+                font-weight: 500;
+                & .name-equipo,
+                & .atributo-equipo,
+                & .precio-oferta,
+                & .atributo-parrafo,
+                & .precio-normal,
+                & .stock {
                     font-weight: 500;
-                    & .name-equipo,
-                    & .atributo-equipo,
-                    & .precio-oferta,
-                    & .atributo-parrafo,
-                    & .precio-normal,
-                    & .stock {
-                        font-weight: 500;
-                        margin: 0;
-                        margin-bottom: .3rem;
-                    }
-                    & .name-equipo,
-                    & .atributo-equipo {
-                        font-size: 1rem;
-                        font-weight: 600;
-                        @media screen and (max-width: 480px) {
-                            font-size: .9rem;
-                        }
-                    }
-                    & .atributo-parrafo {
+                    margin: 0;
+                    margin-bottom: .3rem;
+                }
+                & .name-equipo,
+                & .atributo-equipo {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    @media screen and (max-width: 480px) {
                         font-size: .9rem;
-                    }
-                    & .precio-oferta {
-                        font-size: 1.3rem;
-                        font-weight: 600;
-                        @media screen and (max-width: 480px) {
-                            font-size: 1.1rem;
-                        }
-                        & sup {
-                            font-size: 15px;
-                            vertical-align: middle;
-                            top: -2px;
-                            @media screen and (max-width: 480px) {
-                                font-size: 12px;
-                                top: -1px;
-                            }
-                        }
-                    }
-                    & .precio-normal {
-                        font-size: .9rem;
-                        text-decoration: line-through;
                     }
                 }
-                & .btn-box-equipos {
-                    margin-top: 1rem;
-                    width: 100%;
-                    text-align: center;
-                    & a {
-                        border-top: 1px solid $greysoftColor;
-                        color: $secondColor;
-                        font-weight: 600;
-                        padding: .8rem;
-                        line-height: normal;
-                        display: block;
-                        outline: none;
-                        font-size: 1rem;
-                        height: 100%;
-                        font-family: 'Nunito', sans-serif;
+                & .atributo-parrafo {
+                    font-size: .9rem;
+                }
+                & .precio-oferta {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    @media screen and (max-width: 480px) {
+                        font-size: 1.1rem;
                     }
-                    & a:hover {
-                        background-color: $whiteColor;
-                        color: $primaryColor;
-                    }
-                    & .icon-btn-action {
-                        font-size: 1.2rem;
-                        font-weight: 500;
-                        height: 100%;
-                        display: block;
+                    & sup {
+                        font-size: 15px;
+                        vertical-align: middle;
+                        top: -2px;
                         @media screen and (max-width: 480px) {
-                            //font-size: 1rem;
+                            font-size: 12px;
+                            top: -1px;
                         }
-                        @media screen and (max-width: 321px) {
-                            font-size: 1.2rem;
-                        }
+                    }
+                }
+                & .precio-normal {
+                    font-size: .9rem;
+                    text-decoration: line-through;
+                }
+            }
+            & .btn-box-equipos {
+                margin-top: 1rem;
+                width: 100%;
+                text-align: center;
+                & a {
+                    border-top: 1px solid $greysoftColor;
+                    color: $secondColor;
+                    font-weight: 600;
+                    padding: .8rem;
+                    line-height: normal;
+                    display: block;
+                    outline: none;
+                    font-size: 1rem;
+                    height: 100%;
+                    font-family: 'Nunito', sans-serif;
+                }
+                & a:hover {
+                    background-color: $whiteColor;
+                    color: $primaryColor;
+                }
+                & .icon-btn-action {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    height: 100%;
+                    display: block;
+                    @media screen and (max-width: 480px) {
+                        //font-size: 1rem;
+                    }
+                    @media screen and (max-width: 321px) {
+                        font-size: 1.2rem;
                     }
                 }
             }
         }
-        & & .swiper-pagination {
-            position: relative;
-            padding-top: 1rem;
-            & .swiper-pagination-bullet-active {
-                background: $primaryColor;
-            }
+    }
+    & .swiper-pagination {
+        position: relative!important;
+        padding-top: 1rem;
+        top: 0;
+        & .swiper-pagination-bullet-active {
+            background: $primaryColor;
         }
     }
 }

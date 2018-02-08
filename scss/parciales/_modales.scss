@@ -1,292 +1,309 @@
-//Modal Preview
-#modal-preview {
-    padding: 0;
-    text-align: left;
-    background: $whiteColor;
-    width: 70%;
-    //Edit Slider Lazy Preview
-    .swiper-lazy {
-        @media only screen and (max-width: 480px) {
-            height: 300px !important;
-        }
-        .swiper-slide {
-            text-align: center;
-            img {
-                width: auto;
-                height: auto;
-                max-width: 100%;
-                max-height: 100%;
-                transform: translate(-50%, -50%);
-                position: absolute;
-                left: 50%;
-                top: 50%;
+        //Modal Preview
+        #modal-preview {
+            padding: 0;
+            text-align: left;
+            background: $whiteColor;
+            width: 70%;
+            //Edit Slider Lazy Preview
+            .swiper-slide {
+                text-align: center;
+                img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                }
             }
-        }
-        & .swiper-button-prev,
-        & .swiper-button-next {
-            width: 20px;
-            height: 30px;
-            background-size: 20px 30px;
-        }
-    }
-    @media only screen and (max-width: 992px) {
-        width: 80%;
-    }
-    @media only screen and (max-width: 992px) {
-        min-height: 80vh;
-    }
-    & .modal-content {
-        @media only screen and (max-width: 425px) {
-            padding: 14px!important;
-        }
-        & .text-preview {
-            margin-top: 0;
-            color: $greyColor;
-            font-size: .9rem;
-            & i {
-                font-size: 1.5rem;
-                opacity: .5;
-                transition: $transition1;
+            & .swiper-button-prev,
+            & .swiper-button-next {
+                width: 20px;
+                height: 30px;
+                background-size: 20px 30px;
             }
-            & i:hover {
-                opacity: 1;
+            @media only screen and (max-width: 992px) {
+                width: 80%;
             }
-        }
-    }
-    & .row-main-ficha {
-        margin-top: .5rem;
-        & .box-share {
-            margin-top: .5rem;
-        }
-        & .box-description:nth-child(1) {
-            padding-bottom: 0;
-            & .logo-marca {
-                max-width: 90px!important;
+            @media only screen and (max-width: 992px) {
+                min-height: 80vh;
             }
-            & .nombre-producto {
-                font-size: 1.2rem;
-                margin-bottom: .5rem;
+            & .modal-content {
+                @media only screen and (max-width: 425px) {
+                    padding: 14px!important;
+                }
+                & .text-preview {
+                    margin-top: 0;
+                    color: $greyColor;
+                    font-size: .9rem;
+                    & i {
+                        font-size: 1.5rem;
+                        opacity: .5;
+                        transition: $transition1;
+                    }
+                    & i:hover {
+                        opacity: 1;
+                    }
+                }
             }
-            & .star-producto {
-                justify-content: flex-start;
-                padding-left: 0;
+            & .row-main-ficha {
                 margin-top: .5rem;
-            }
-            & .star-producto {
-                justify-content: flex-end;
-                padding-right: 0;
-            }
-        }
-        & .precio-total {
-            font-size: 1rem;
-        }
-        & .disponible {
-            @media only screen and (max-width: 425px) {
-                width: 100%!important;
-            }
-        }
-        & .box-aside {
-            margin-bottom: 0;
-            @media only screen and (max-width: 425px) {
-                margin-bottom: 1rem;
-            }
-            & .title-aside {
-                margin-bottom: 10px;
-                font-size: 11px;
-                color: $greyColor;
-            }
-            & .icon-redes {
-                width: auto;
-                height: auto;
-                line-height: 30px;
-                border: none;
-                margin-right: 1rem;
-            }
-            & .icon-redes:nth-of-type(1) {
-                font-size: 1.1rem;
-            }
-        }
-    }
-}
-
-//Modal Buscador
-.modal-buscador {
-    background: $whiteColor;
-    height: 64px;
-    border-radius: 5px;
-    .buscador-container {
-        width: 100%;
-        overflow-y: hidden;
-        background: $whiteColor;
-        & input#search {
-            font-weight: 600;
-            font-size: 1.2rem;
-            color: $greyColor;
-        }
-        & .icon-search {
-            position: absolute;
-            top: -11px;
-            color: $secondColor!important;
-        }
-    }
-}
-
-//Modal Cotizador
-.cotizador-cantainer {
-    border-radius: 5px;
-    background: $whiteColor;
-    padding: 0;
-    & .modal-content {
-        position: relative!important;
-        height: auto!important;
-        background: $secondColor;
-        padding: 1.5rem;
-        @media screen and (max-width: 480px) {
-            padding: 1rem;
-        }
-        & h4 {
-            margin-bottom: 0;
-            color: $whiteColor;
-            font-size: 1.5rem;
-            font-weight: 600;
-            display: inline-block;
-            @media screen and (max-width: 480px) {
-                font-size: 1.3rem;
-            }
-        }
-        & i {
-            font-size: 1.4rem;
-            position: absolute;
-            top: 50%;
-            cursor: pointer;
-            opacity: .8;
-            right: 15px;
-            margin-top: -10px;
-        }
-    }
-    & .form-cotizador {
-        padding: 0 1.5rem;
-        margin-top: .5rem;
-        & .select-box {
-            margin-bottom: 0;
-        }
-        & .comentarios {
-            margin-bottom: 10px;
-            @media screen and (max-width: 480px) {
-                margin-bottom: 5px;
-            }
-        }
-    }
-    //Contenedor para otras modales
-    & .contenido-modal {
-        padding: 1rem 1.5rem;
-        & div {
-            margin-bottom: 1.5rem;
-        }
-    }
-    & .modal-footer {
-        border-top: none!important;
-        background-color: transparent!important;
-        height: auto;
-        position: relative;
-        @media screen and (max-width: 480px) {
-            width: 100%;
-            padding: 0 2rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-        & .checkbox-condiciones {
-            width: 60%;
-            position: relative;
-            left: 35px;
-            bottom: 25px;
-            @media screen and (max-width: 480px) {
-                left: 0;
-                width: 100%;
-            }
-            & label {
-                line-height: normal;
-                font-size: 13px;
-                width: 90%;
-                @media screen and (max-width: 480px) {
-                    width: 100%;
-                    font-size: 11px;
+                & .box-share {
+                    margin-top: .5rem;
+                }
+                & .box-description:nth-child(1) {
+                    padding-bottom: 0;
+                    & .logo-marca {
+                        max-width: 90px!important;
+                    }
+                    & .nombre-producto {
+                        font-size: 1.2rem;
+                        margin-bottom: .5rem;
+                    }
+                    & .star-producto {
+                        justify-content: flex-end;
+                        padding: 0;
+                        margin-top: .5rem;
+                        @media only screen and (max-width: 480px) {
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+                & .precio-total {
+                    font-size: 1rem;
+                }
+                & .disponible {
+                    @media only screen and (max-width: 425px) {
+                        width: 100%!important;
+                    }
+                    & p,
+                    & a {
+                        font-size: .8rem;
+                    }
+                }
+                & .box-aside {
+                    margin-bottom: 0;
+                    @media only screen and (max-width: 425px) {
+                        margin-bottom: 1rem;
+                    }
+                    & .title-aside {
+                        margin-bottom: 10px;
+                        font-size: 11px;
+                        color: $greyColor;
+                    }
+                    & .icon-redes {
+                        width: auto;
+                        height: auto;
+                        line-height: 30px;
+                        border: none;
+                        margin-right: 1rem;
+                    }
+                    & .icon-redes:nth-of-type(1) {
+                        font-size: 1.1rem;
+                    }
                 }
             }
         }
-        & .btn {
-            position: relative;
-            background: transparent;
-            margin: 0;
-            color: $secondColor;
-            right: 35px;
-            bottom: 25px;
-            box-shadow: none;
-            font-weight: 600;
-            border: 2px solid $secondColor;
-            line-height: normal;
-            border-radius: 3px;
-            height: 45px;
-            width: 30%;
-            transition: $transition1;
-            @media screen and (max-width: 480px) {
+        
+        //Modal Buscador
+        .modal-buscador {
+            background: $whiteColor;
+            height: 64px;
+            border-radius: 5px;
+            .buscador-container {
                 width: 100%;
-                bottom: 0;
-                right: 0;
+                overflow-y: hidden;
+                background: $whiteColor;
+                & input#search {
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    color: $greyColor;
+                }
+                & .icon-search {
+                    position: absolute;
+                    top: -11px;
+                    color: $secondColor!important;
+                }
             }
         }
-        & .btn:hover {
-            background-color: $secondColor;
-            color: $whiteColor;
+        
+        //Modal Cotizador
+        .cotizador-cantainer {
+            border-radius: 5px;
+            background: $whiteColor;
+            padding: 0;
+            & .modal-content {
+                position: relative!important;
+                height: auto!important;
+                background: $secondColor;
+                padding: 1.5rem;
+                @media screen and (max-width: 480px) {
+                    padding: 1rem;
+                }
+                & h4 {
+                    margin-bottom: 0;
+                    color: $whiteColor;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    display: inline-block;
+                    @media screen and (max-width: 480px) {
+                        font-size: 1.3rem;
+                    }
+                }
+                & i {
+                    font-size: 1.4rem;
+                    position: absolute;
+                    top: 50%;
+                    cursor: pointer;
+                    opacity: .8;
+                    right: 15px;
+                    margin-top: -10px;
+                }
+            }
+            & .form-cotizador {
+                padding: 0 1.5rem;
+                margin-top: .5rem;
+                & .select-box {
+                    margin-bottom: 0;
+                }
+                & .comentarios {
+                    margin-bottom: 10px;
+                    @media screen and (max-width: 480px) {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            //Contenedor para otras modales
+            & .contenido-modal {
+                padding: 1rem 1.5rem;
+                & div {
+                    margin-bottom: 1.5rem;
+                }
+            }
+            & .modal-footer {
+                border-top: none!important;
+                background-color: transparent!important;
+                height: auto;
+                position: relative;
+                @media screen and (max-width: 480px) {
+                    width: 100%;
+                    padding: 0 2rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 2rem;
+                }
+                & .checkbox-condiciones {
+                    width: 60%;
+                    position: relative;
+                    left: 35px;
+                    bottom: 25px;
+                    @media screen and (max-width: 480px) {
+                        left: 0;
+                        width: 100%;
+                    }
+                    & label {
+                        line-height: normal;
+                        font-size: 13px;
+                        width: 90%;
+                        @media screen and (max-width: 480px) {
+                            width: 100%;
+                            font-size: 11px;
+                        }
+                    }
+                }
+                & .btn {
+                    position: relative;
+                    background: transparent;
+                    margin: 0;
+                    color: $secondColor;
+                    right: 35px;
+                    bottom: 25px;
+                    box-shadow: none;
+                    font-weight: 600;
+                    border: 2px solid $secondColor;
+                    line-height: normal;
+                    border-radius: 3px;
+                    height: 45px;
+                    width: 30%;
+                    transition: $transition1;
+                    @media screen and (max-width: 480px) {
+                        width: 100%;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+                & .btn:hover {
+                    background-color: $secondColor;
+                    color: $whiteColor;
+                }
+            }
         }
-    }
-}
-
-.dropdown-content li>span {
-    color: $secondColor;
-}
-
-.select-wrapper input.select-dropdown {
-    color: $greyColor;
-    border-bottom: 1px solid #ccc;
-}
-
-//Modal Favoritos
-.modal-favoritos {
-    background: white;
-    & h5 {
-        margin-bottom: 1.5rem;
-        font-size: 1.5rem;
-        & i {
-            top: 1px;
-            font-size: 1.4rem;
-            position: relative;
+        
+        .dropdown-content li>span {
+            color: $secondColor;
         }
-    }
-    & .modal-close {
-        position: absolute;
-        top: 2.4rem;
-        right: 0;
-        text-transform: inherit;
-    }
-    & .collection {
-        border-radius: 3px;
-    }
-    & .chip {
-        border-radius: 0px;
-        width: 100%;
-        min-height: 70px!important;
-        transition: $transition1;
-    }
-    & .link-favorito {
-        min-height: 70px;
-        width: 100%;
-        display: inline-block;
-    }
-    & .chip:hover {
-        background: $greysoftColor;
-    }
-}
+        
+        .select-wrapper input.select-dropdown {
+            color: $greyColor;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        //Modal Favoritos
+        .modal-favoritos {
+            background: white;
+            & h5 {
+                margin-bottom: 1.5rem;
+                font-size: 1.5rem;
+                & i {
+                    top: 1px;
+                    font-size: 1.4rem;
+                    position: relative;
+                }
+            }
+            & .modal-close {
+                position: absolute;
+                top: 2.4rem;
+                right: 0;
+                text-transform: inherit;
+            }
+            & .collection {
+                border-radius: 3px;
+            }
+            & .chip {
+                border-radius: 0px;
+                width: 100%;
+                min-height: 70px!important;
+                transition: $transition1;
+            }
+            & .link-favorito {
+                min-height: 70px;
+                width: 100%;
+                display: inline-block;
+            }
+            & .chip:hover {
+                background: $greysoftColor;
+            }
+        }
+        
+        //MODAL COMPARTIR
+        .modal-compartir {
+            margin: auto;
+            width: 300px;
+            padding: 2rem 0;
+            text-align: center;
+            & a {
+                padding: 1rem;
+                border: 1px solid $secondColor;
+                color: $secondColor;
+                font-size: 1.2rem;
+                border-radius: 50%;
+            }
+            & a:hover {
+                background: $secondColor;
+                color: $whiteColor;
+            }
+        }

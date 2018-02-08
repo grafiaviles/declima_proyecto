@@ -99,7 +99,7 @@ var swiper = new Swiper('.swiper-productos-relacionados', {
             spaceBetween: 30,
         },
         640: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 10,
         },
         320: {
@@ -109,8 +109,8 @@ var swiper = new Swiper('.swiper-productos-relacionados', {
     }
 });
 
-//SWIPER Preview Modal Lazy
-var swiper = new Swiper('.swiper-lazy', {
+//SWIPER Preview Modal Preview
+var swiper = new Swiper('.swiper-preview', {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {

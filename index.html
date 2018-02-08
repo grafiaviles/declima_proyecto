@@ -226,6 +226,16 @@
         </div>
     </div>
 
+    <!-- Modal Compartir -->
+    <div id="modal-compartir" class="modal modal-compartir hide-on-small-only">
+        <div class="modal-content">
+            <a href="http://" class="icon-facebook"></a>
+            <a href="http://" class="icon-twitter"></a>
+            <a href="http://" class="icon-whatsapp"></a>
+            <a href="http://" class="icon-brand8"></a>
+        </div>
+    </div>
+
     <!-- Slider Carro de Compras Desktop-->
     <ul id="slide-carro" class="side-nav">
         <!-- Carro Vacio -->
@@ -410,17 +420,17 @@
                             </div>
                             <!-- Box Category 4 -->
                             <div class="col s3 box-submenu">
-                                <h5 class="text-primary title-category-submenu"><i class="icon-grid icon-4 hide"></i>Cálcula fácil tu Equipo<i class="right icon-check-circle"></i> </h5>
+                                <h5 class="text-primary title-category-submenu"><i class="icon-grid icon-4 hide"></i>Simulador Virtual<i class="right icon-check-circle"></i> </h5>
                                 <div class="box-calc-app">
                                     <div class="img-calc-app center-align" href="">
                                         <img class="responsive-img img-proyecto" src="img/menu/calc-app.jpg">
                                     </div>
                                     <div class="description-calc-app center-align" href="">
                                         <p>
-                                            Cálcula fácil el total de <b class="text-primary tooltipped" data-position="bottom" data-delay="50" data-tooltip="BTU (British Thermal Units). Es la capacidad de extraer el calor del aire en una hora.">BTU</b>                                            que realmente necesitas y compra el equipo de aire acondicionado más adecuado para tu espacio.
+                                            Usa nuestro simulador virtual y encuentra productos que se adaptan a tus necesidades.
                                         </p>
                                     </div>
-                                    <a href="#" class="link-calc-app">VER MÁS<i class="icon-arrow-right right"></i></a>
+                                    <a href="#" class="link-calc-app">SIMULAR<i class="icon-arrow-right right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -498,9 +508,9 @@
                             <a href="#" class="link-ver-todo">VER TODOS LOS PROYECTOS <i class="icon-arrow-right right"></i></a>
                         </div>
                     </ul>
-                    <li class="list-category"><a href="" class="waves-effect waves-dark link-category">Cálcula fácil tu Equipo</a></li>
+                    <li class="list-category"><a href="" class="waves-effect waves-dark link-category">Simulador Virtual</a></li>
                     <li class="list-category"><a href="#cotizador" class="modal-trigger waves-effect waves-dark active-link link-category" data-target="cotizador">Cotizar</a></li>
-                    <li class="list-category"><a class="waves-effect waves-dark link-category">Sala de Ventas</a></li>
+                    <li class="list-category"><a class="waves-effect waves-dark link-category">Contacto</a></li>
                     <!-- Login -->
                     <li class="list-category"><a class="dropdown-button link-icon-category" data-activates='login'><i class="icon-user"></i></a></li>
                     <ul id='login' class='dropdown-content-menu-icon dropdown-content'>
@@ -545,7 +555,7 @@
                                 <a href="#!" class="breadcrumb">Home</a>
                                 <a href="#!" class="breadcrumb">Aire Acondicionado</a>
                                 <a href="#!" class="breadcrumb breadcrumb-active">Equipos Residenciales</a>
-                                <a href="#!" class="hide-on-small-only calc right">Cálcula fácil tu Equipo<img class="img-calc" src="img/ficha-productos/calc-grafica.svg" width="60"></a>
+                                <a href="#!" class="hide-on-small-only calc right">Simulador Virtual<img class="img-calc" src="img/ficha-productos/calc-grafica.svg" width="60"></a>
                             </div>
                         </div>
                     </nav>
@@ -912,34 +922,18 @@
                                     <div class="box-equipos-relacionados">
                                         <div class="imagen-equipo">
                                             <a href="#modal-preview" class="modal-trigger preview-product">
-                                                <i class="icon-preview icon-zoom-in"></i>
+                                                <i class="icon-preview icon-maximize-2"></i>
                                                 <img class="img-product responsive-img" src="img/ficha-productos/img-test1.jpg">
                                             </a>
                                             <!-- Modal Preview -->
-                                            <div id="modal-preview" class="modal modal-preview">
+                                            <div id="modal-preview" class="modal swiper-productos-relacionados">
                                                 <div class="modal-content">
                                                     <h6 class="text-preview">Vista Previa <i class="icon-x right modal-action modal-close"></i></h6>
                                                     <div class="row row-main-ficha">
                                                         <!-- Slider Producto -->
                                                         <div class="col s12 m12 l5 cont-swiper-slider">
-                                                            <!-- Swiper -->
-                                                            <div class="hide swiper-container swiper-container-edit gallery-top">
-                                                                <div class="swiper-wrapper">
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/img-test1.jpg)"></div>
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/img-test2.jpg)"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="hide swiper-container swiper-container-edit gallery-thumbs">
-                                                                <div class="swiper-wrapper">
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/img-test1.jpg)"></div>
-                                                                    <div class="swiper-slide" style="background-image:url(./img/ficha-productos/img-test2.jpg)"></div>
-                                                                </div>
-                                                                <!-- Add Arrows -->
-                                                                <div class="swiper-button-next button-next-edit swiper-button-white"></div>
-                                                                <div class="swiper-button-prev button-prev-edit swiper-button-white"></div>
-                                                            </div>
                                                             <!-- Swiper NEW -->
-                                                            <div class="swiper-container swiper-lazy">
+                                                            <div class="swiper-container swiper-preview">
                                                                 <div class="swiper-wrapper">
                                                                     <div class="swiper-slide"><img src="img/ficha-productos/img-test1.jpg" class="responsive-img"></div>
                                                                     <div class="swiper-slide"><img src="img/ficha-productos/img-test2.jpg" class="responsive-img"></div>
@@ -1028,26 +1022,25 @@
                                                             </article>
                                                             <!-- DISPONIBILIDAD -->
                                                             <article class="col s12 box-description">
-                                                                <div class="hide disponible">
-                                                                    <i class="text-second icon-calendar"></i>
+                                                                <div class="disponible">
+                                                                    <i class="text-second icon-clipboard"></i>
                                                                     <div>
-                                                                        <p class="text-grey">Instalación básica</p>
-                                                                        <a class="text-second" href="#" class="text-grey">AGENDAR</a>
+                                                                        <p class="text-grey">Detalle Producto</p>
+                                                                        <a href="#!" class="text-second">VER MÁS</a>
                                                                     </div>
                                                                 </div>
-
                                                                 <div class="disponible">
-                                                                    <i class="text-second icon-plus-circle"></i>
+                                                                    <i class="text-second icon-map-pin"></i>
                                                                     <div>
-                                                                        <p class="text-grey">Detalle del Producto</p>
-                                                                        <a class="modal-trigger text-second" href="#maps-info" class="text-grey">VER MÁS</a>
+                                                                        <p class="text-grey">Sala de Ventas</p>
+                                                                        <a class="text-second" href="https://www.google.com/maps?ll=-33.459848,-70.637093&z=16&t=m&hl=es-ES&gl=CL&mapclient=embed&q=Artemio+Guti%C3%A9rrez+1268+Santiago+Regi%C3%B3n+Metropolitana" target="_blank">¿CÓMO LLEGAR?</a>
                                                                     </div>
                                                                 </div>
                                                                 <div class="disponible">
                                                                     <i class="text-second icon-download-cloud"></i>
                                                                     <div>
-                                                                        <p class="text-grey">Ficha Técnica</p>
-                                                                        <a class="modal-trigger text-second" href="#" target="_blank" class="text-grey">DESCARGAR (PDF)</a>
+                                                                        <p class="text-grey">Ficha Comercial</p>
+                                                                        <a class="modal-trigger text-second" href="#" target="_blank">VER FICHA</a>
                                                                     </div>
                                                                 </div>
                                                             </article>
@@ -1082,38 +1075,26 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <!-- Atributos -->
                                             <div class="cont-icon-equipos valign-wrapper hide-on-small-only">
                                                 <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Refrigerante R410"><i class="icon-feather icon-equipos"></i></a>
                                                 <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Frío - Calor"><i class="icon-wind icon-equipos"></i></a>
                                                 <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Control Remoto"><i class="icon-smartphone icon-equipos"></i></a>
                                                 <a href="#modal-compartir" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Compartir"><i class="icon-share-2 icon-equipos"></i></a>
                                             </div>
-                                            <!-- Modal Redes -->
-                                            <div id="modal-compartir" class="modal modal-compartir hide-on-small-only">
-                                                <div class="modal-content">
-                                                    <a href="http://" class="icon-facebook"></a>
-                                                    <a href="http://" class="icon-twitter"></a>
-                                                    <a href="http://" class="icon-whatsapp"></a>
-                                                    <a href="http://" class="icon-brand8"></a>
-                                                </div>
-                                            </div>
-
-                                            <div class="mega-tag valign-wrapper">
-                                                <p class="center-block instalacion">Incluye Instalación Básica</p>
-                                            </div>
+                                            <!-- Descuento -->
                                             <span class="descuento-tag">
                                                     <p>-50%</p>
                                             </span>
                                         </div>
-
+                                        <!-- Descripcion Comercial -->
                                         <div class="descripcion-equipo">
                                             <h3 class="name-equipo text-primary">Split Muro Blanc 18000 BTU</h3>
                                             <p class="atributo-parrafo text-primary">Carrier - Alcance 15<sup>M2</sup></p>
                                             <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
                                             <p class="precio-normal text-grey">Antes: $229.000</p>
                                         </div>
-
+                                        <!-- Botones de Conversion -->
                                         <div class="btn-box-equipos">
                                             <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-heart" data-position="bottom" data-delay="50" data-tooltip="Guardar en favoritos" onclick="Materialize.toast('Se añadio a mi lista de favoritos', 4000)"></a>
                                             <a href="#" class="btn-ver-mas waves-effect waves-dark col s6">VER MÁS</a>
@@ -1121,6 +1102,9 @@
                                         </div>
                                     </div>
                                 </div>
+
+
+
                             </div>
                         </div>
 
