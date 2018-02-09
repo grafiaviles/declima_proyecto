@@ -329,6 +329,9 @@
                                 margin-bottom: 1.5rem;
                                 width: 50%;
                             }
+                            @media screen and (max-width: 321px) {
+                                width: 100%;
+                            }
                             & i {
                                 font-size: 1.3rem;
                                 margin-top: 3px;
@@ -953,7 +956,7 @@ th {
                     font-size: 1rem;
                     font-weight: 600;
                     @media screen and (max-width: 480px) {
-                        font-size: .9rem;
+                        font-size: 1rem;
                     }
                 }
                 & .atributo-parrafo {
@@ -962,9 +965,6 @@ th {
                 & .precio-oferta {
                     font-size: 1.3rem;
                     font-weight: 600;
-                    @media screen and (max-width: 480px) {
-                        font-size: 1.1rem;
-                    }
                     & sup {
                         font-size: 15px;
                         vertical-align: middle;
