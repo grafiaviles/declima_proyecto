@@ -171,7 +171,7 @@
     <!-- Modal Favoritos -->
     <div id="modal-favoritos" class="modal modal-favoritos bottom-sheet">
         <div class="modal-content">
-            <h5 class="text-primary"><i class="icon-heart text-second"></i> Mis productos favoritos</h5>
+            <h5 class="text-primary"><i class="icon-heart text-second"></i> Lista de favoritos</h5>
             <a href="#!" class="modal-action modal-close waves-effect right waves-dark btn-flat text-second">Cerrar</a>
             <ul class="collection">
                 <li class="chip collection-item avatar">
@@ -534,7 +534,7 @@
                         <span class="notification">3</span>
                     </a></li>
                     <!-- Mis Favoritos -->
-                    <li class="list-category"><a data-target="modal-favoritos" class="link-icon-category modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Productos Favoritos" data-activates="slide-carro"><i class="icon-heart"></i>
+                    <li class="list-category"><a data-target="modal-favoritos" class="link-icon-category modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Lista de Favoritos" data-activates="slide-carro"><i class="icon-heart"></i>
                         <span class="notification second">3</span>
                     </a></li>
                 </ul>
@@ -585,12 +585,13 @@
                                     </div>
                                 </div>
                                 <!-- Acordion Filtros Mobile -->
-                                <ul id="filtros-mobile" class="side-nav collapsible acordion-filtros acordion-filtros-mobile" data-collapsible="accordion">
-                                    <!-- Filtro 1 -->
-                                    <li id="filtro-alcance">
-                                        <div class="collapsible-header collapsible-header-mobile active"><i class="icon-chevron-down"></i><b>Equipos Residenciales</b> </div>
-                                        <div class="collapsible-body">
-                                            <span>
+                                <div id="filtros-mobile" class="side-nav side-filtros-mobile valign-wrapper">
+                                    <ul class="collapsible acordion-filtros acordion-filtros-mobile" data-collapsible="accordion">
+                                        <!-- Filtro 1 -->
+                                        <li id="filtro-alcance">
+                                            <div class="collapsible-header collapsible-header-mobile active"><i class="icon-chevron-down"></i><b>Equipos Residenciales</b> </div>
+                                            <div class="collapsible-body">
+                                                <span>
                                                 <form action="#" class="form-modelos">
                                                     <p>
                                                         <input class="with-gap" name="group1" type="radio" id="test1" checked />
@@ -622,26 +623,26 @@
                                                     </p>
                                                 </form>
                                                 </span>
-                                        </div>
-                                    </li>
-                                    <!-- Filtro 2 -->
-                                    <li>
-                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Precios</b></div>
-                                        <div class="collapsible-body">
-                                            <span>
+                                            </div>
+                                        </li>
+                                        <!-- Filtro 2 -->
+                                        <li>
+                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Precios</b></div>
+                                            <div class="collapsible-body">
+                                                <span>
                                                         <form action="#">
                                                             <p class="range-field">
                                                                 <input type="range" id="test1" min="9000" max="24000"/>
                                                             </p>
                                                         </form>
                                                     </span>
-                                        </div>
-                                    </li>
-                                    <!-- Filtro 3 -->
-                                    <li id="filtro-marca">
-                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Marca</b></div>
-                                        <div class="collapsible-body">
-                                            <span>
+                                            </div>
+                                        </li>
+                                        <!-- Filtro 3 -->
+                                        <li id="filtro-marca">
+                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Marca</b></div>
+                                            <div class="collapsible-body">
+                                                <span>
                                                     <form class="form-check-box form-marca" action="#">
                                                         <p>
                                                             <input type="checkbox" id="midea" />
@@ -657,13 +658,13 @@
                                                         </p>
                                                     </form>
                                                 </span>
-                                        </div>
-                                    </li>
-                                    <!-- Filtro 4 -->
-                                    <li class="filtro-btu">
-                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Capacidad BTU/H</b></div>
-                                        <div class="collapsible-body">
-                                            <span>
+                                            </div>
+                                        </li>
+                                        <!-- Filtro 4 -->
+                                        <li class="filtro-btu">
+                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Capacidad BTU/H</b></div>
+                                            <div class="collapsible-body">
+                                                <span>
                                                         <form class="form-check-box form-btu" action="#">
                                                             <p>
                                                                 <input type="checkbox" id="9000" />
@@ -691,27 +692,28 @@
                                                             </p>
                                                         </form>
                                                 </span>
-                                        </div>
-                                    </li>
-                                    <!-- Filtro 5 -->
-                                    <li id="filtro-alcance">
-                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Alcance m2</b> </div>
-                                        <div class="collapsible-body">
-                                            <span>
+                                            </div>
+                                        </li>
+                                        <!-- Filtro 5 -->
+                                        <li id="filtro-alcance">
+                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Alcance m2</b> </div>
+                                            <div class="collapsible-body">
+                                                <span>
                                                     <form action="#">
                                                         <p class="range-field">
                                                             <input type="range" id="test1" min="9000" max="24000"/>
                                                         </p>
                                                     </form>
                                                 </span>
-                                        </div>
-                                    </li>
+                                            </div>
+                                        </li>
+                                    </ul>
                                     <!-- APLICAR FILTROS -->
-                                    <div class="action-filtro ">
+                                    <div class="action-filtro">
                                         <li><a class="col s6 waves-effect primary white-text center-align btn-action-filtro" href="#!">APLICAR</a></li>
                                         <li><a class="col s6 waves-effect second white-text center-align btn-action-filtro" href="#!">RESET</a></li>
                                     </div>
-                                </ul>
+                                </div>
 
 
                                 <!-- ASIDE 1 FILTROS -->

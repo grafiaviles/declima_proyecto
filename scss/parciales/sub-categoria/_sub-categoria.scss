@@ -130,24 +130,35 @@
             }
         }
         //Collapsible Header Mobile
-        & .acordion-filtros-mobile {
-            border: none;
-            & .collapsible-header-mobile {
-                position: relative;
-                padding: 0 20px!important;
-                border-bottom: none!important;
-            }
-            & .range-field {
-                width: 90%;
+        .side-filtros-mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            & .acordion-filtros-mobile {
+                border: none;
+                width: 100%;
+                align-self: flex-start;
+                & .collapsible-header-mobile {
+                    position: relative;
+                    padding: 0 20px!important;
+                    border-bottom: none!important;
+                }
+                & .range-field {
+                    width: 90%;
+                }
             }
             & .action-filtro {
-                position: fixed;
-                bottom: 60px;
+                background: darkblue;
+                position: relative;
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
-                & .btn-action-filtro {
-                    font-weight: 600;
+                align-self: flex-end;
+                & li {
+                    list-style: none;
+                    & .btn-action-filtro {
+                        font-weight: 600;
+                    }
                 }
             }
         }

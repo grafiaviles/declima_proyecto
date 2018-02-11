@@ -171,7 +171,7 @@
     <!-- Modal Favoritos -->
     <div id="modal-favoritos" class="modal modal-favoritos bottom-sheet">
         <div class="modal-content">
-            <h5 class="text-primary"><i class="icon-heart text-second"></i> Mis productos favoritos</h5>
+            <h5 class="text-primary"><i class="icon-heart text-second"></i> Lista de favoritos</h5>
             <a href="#!" class="modal-action modal-close waves-effect right waves-dark btn-flat text-second">Cerrar</a>
             <ul class="collection">
                 <li class="chip collection-item avatar">
@@ -534,7 +534,7 @@
                             <span class="notification">3</span>
                         </a></li>
                     <!-- Mis Favoritos -->
-                    <li class="list-category"><a data-target="modal-favoritos" class="link-icon-category modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Productos Favoritos" data-activates="slide-carro"><i class="icon-heart"></i>
+                    <li class="list-category"><a data-target="modal-favoritos" class="link-icon-category modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Lista de Favoritos" data-activates="slide-carro"><i class="icon-heart"></i>
                             <span class="notification second">3</span>
                     </a></li>
                 </ul>
@@ -568,6 +568,24 @@
                     <div class="row row-main-ficha">
                         <!-- Slider Producto -->
                         <div class="col s12 l5 cont-swiper-slider">
+                            <!-- Nombre Producto Mobile -->
+                            <article id="info-producto-mobile" class="hide-on-med-and-up col s12 box-description">
+                                <div class="box-title-star valign-wrapper">
+                                    <div class="title-producto s12">
+                                        <h2 class="marca-producto text-grey"><b></b><img class="logo-marca" src="img/ficha-productos/marca-logo.svg"></h2>
+                                        <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
+                                        <p class="sku-producto text-second">SKU: 123456</p>
+                                    </div>
+                                    <div class="col s12 star-producto valign-wrapper">
+                                        <a href="#calificacion" class="tab btn-calificar text-grey left-align">Calificación</a>
+                                        <a class="text-second" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second" href="#!"><i class="icon-star"></i></a>
+                                    </div>
+                                </div>
+                            </article>
                             <!-- Swiper -->
                             <div class="swiper-container gallery-top">
                                 <div class="swiper-wrapper">
@@ -600,19 +618,19 @@
                         <div class="col s12 l7 cont-description-producto">
                             <!-- INFORMACION PRODUCTO -->
                             <article id="info-producto" class="col s12 box-description">
-                                <div class="box-title-star valign-wrapper">
+                                <div class="box-title-star valign-wrapper hide-on-small-only">
                                     <div class="title-producto s12 m6">
                                         <h2 class="marca-producto text-grey"><b></b><img class="logo-marca" src="img/ficha-productos/marca-logo.svg"></h2>
                                         <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
                                         <p class="sku-producto text-second">SKU: 123456</p>
                                     </div>
                                     <div class="col s12 m6 star-producto valign-wrapper">
-                                        <h5 class="text-grey right-align">Calificación (5)</h5>
-                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
-                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
-                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
-                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
-                                        <a class="text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                                        <a href="#calificacion" class="tab btn-calificar text-grey right-align">Califica este producto</a>
+                                        <a class="text-second" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second" href="#!"><i class="icon-star"></i></a>
+                                        <a class="text-second" href="#!"><i class="icon-star"></i></a>
                                     </div>
                                 </div>
                                 <p class="semantica-producto text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
@@ -708,13 +726,19 @@
                             <article class="col s12 box-description">
                                 <div class="col s12 cont-call-to-accion valign-wrapper">
                                     <div class="box-accion col s12 m4 valign-wrapper">
-                                        <span class="waves-effect waves-dark col s4 center-align text-primary restar"><i class="icon-minus"></i></span>
+                                        <span class="waves-effect waves-dark col s4 center-align text-primary restar" onclick="Materialize.toast('Se ELIMINO del carro de compras', 4000)"><i class="icon-minus"></i></span>
                                         <span class="col s4 center-align text-primary numero"><p>1</p></span>
-                                        <span class="waves-effect waves-dark col s4 center-align text-primary sumar"><i class="icon-plus"></i></span>
+                                        <span class="waves-effect waves-dark col s4 center-align text-primary sumar" onclick="Materialize.toast('Se AÑADIO al carro de compras', 4000)"><i class="icon-plus"></i></span>
                                     </div>
-                                    <div class="box-accion col s12 m8 valign-wrapper">
-                                        <a class="waves-effect waves-dark text-white" href="#!">COMPRAR<i class="icon-arrow-right right"></i></a>
+                                    <div id="btn-fixed-comprar" class="box-accion col s12 m8 valign-wrapper">
+                                        <a class="text-white btn-box-action" href="#!">
+                                            <img src="img/menu/carro/product-001.jpg" data-caption="Nombre del Producto - $250.000" alt="" width="80" class="materialboxed circle img-product-fixed">COMPRAR<i class="icon-arrow-right right"></i>
+                                        </a>
                                     </div>
+                                </div>
+                                <div class="col s12 box-pagos valign-wrapper hide-on-small-only">
+                                    <h5 class="text-grey">Medios de Pago: </h5>
+                                    <img class="responsive-img medios-pago-img" src="img/ficha-productos/pagos.svg" width="200" alt="Medio de Pago">
                                 </div>
                             </article>
                         </div>
@@ -728,7 +752,7 @@
                                 <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
                             </div>
                             <div class="col s12 box-aside valign-wrapper">
-                                <h5 class="text-grey title-aside container-fluid">Medios de Pago</h5>
+                                <h5 class="text-grey title-aside container-fluid">Medios de Pago:</h5>
                                 <img class="responsive-img medios-pago-img" src="img/ficha-productos/pagos.svg" alt="Medio de Pago">
                             </div>
                         </aside>
@@ -740,12 +764,11 @@
                         <!-- Tabs -->
                         <div class="cont-tabs-datos">
                             <ul id="tabs-swipe-datos" class="tabs-ficha tabs-datos">
-                                <li class="tab col s3"><a class="active nombre-datos" href="#datos-1"><b>Descripción</b></a></li>
-                                <li class="tab col s3"><a class="nombre-datos" href="#datos-2"><b>Unidad Interior</b></a></li>
-                                <li class="tab col s3"><a class="nombre-datos" href="#datos-3"><b>Unidad Exterior</b></a></li>
-                                <li class="tab col s3"><a class="nombre-datos" href="#datos-4"><b>Calificaciones</b></a></li>
+                                <li class="tab col s4"><a class="active nombre-datos" href="#descripcion"><b>Descripción</b></a></li>
+                                <li class="tab col s4"><a class="nombre-datos" href="#especificacion"><b>Especificaciones</b></a></li>
+                                <li class="tab col s4"><a class="nombre-datos" href="#calificacion"><b>Calificaciones</b></a></li>
                             </ul>
-                            <div id="datos-1" class="col s12 item-tabs-datos valign-wrapper">
+                            <div id="descripcion" class="col s12 item-tabs-datos valign-wrapper">
                                 <div class="column-description col s12">
                                     <h1 class="text-second">Nombre Producto</h1>
                                     <p class="text-grey">
@@ -807,8 +830,9 @@
                                 </div>
 
                             </div>
-                            <div id="datos-2" class="col s12 item-tabs-datos">
+                            <div id="especificacion" class="col s12 item-tabs-datos">
                                 <table class="bordered highlight responsive-table">
+                                    <h1 class="text-grey">Unidad Interior</h1>
                                     <thead>
                                         <tr>
                                             <th>Modelo Producto</th>
@@ -854,9 +878,9 @@
                                     </tbody>
 
                                 </table>
-                            </div>
-                            <div id="datos-3" class="col s12 item-tabs-datos">
+
                                 <table class="bordered highlight responsive-table">
+                                    <h1 class="text-grey">Unidad Exterior</h1>
                                     <thead>
                                         <tr>
                                             <th>Modelo</th>
@@ -899,7 +923,7 @@
 
                                 </table>
                             </div>
-                            <div id="datos-4" class="col s12 item-tabs-datos">
+                            <div id="calificacion" class="col s12 item-tabs-datos">
                                 <!-- Registro Comentarios -->
                                 <div class="column-description col s12 l6">
                                     <h1 class="text-second">Escribe una calificación</h1>
@@ -976,11 +1000,11 @@
                                         <div class="row">
                                             <div class="col s12 producto-calificador valign-wrapper">
                                                 <h5 class="text-grey">1 - ¿Cómo cálificas este producto?</h5>
-                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
-                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
-                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
-                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
-                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
                                             </div>
                                             <div class="col s12 producto-calificador valign-wrapper">
                                                 <div class="input-field col s12">
@@ -990,11 +1014,11 @@
                                             </div>
                                             <div class="col s12 producto-calificador valign-wrapper">
                                                 <h5 class="text-grey">3 - ¿Qúe tal tu experiencia de compra?</h5>
-                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
-                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
-                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
-                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
-                                                <a class="star-icon-value text-second tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
+                                                <a class="star-icon-value text-grey tooltipped" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
                                             </div>
                                             <div class="col s12 producto-calificador valign-wrapper">
                                                 <p class="text-grey">4 - ¿Recomiendas este producto?</p>
@@ -1113,7 +1137,7 @@
 
                     <!-- SLIDER PRODUCTOS RELACIONADOS -->
                     <div class="row row-main-ficha row-slider-relacionados">
-                        <h5 class="title-prodcutos-realcionados text-primary center-align">Productos Relacionados</h5>
+                        <h5 class="title-prodcutos-realcionados text-primary center-align">Recomendados para ti</h5>
                         <!-- Swiper Relacionados -->
                         <div class="swiper-container swiper-productos-relacionados">
                             <div class="swiper-wrapper">
