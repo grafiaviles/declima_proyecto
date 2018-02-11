@@ -3602,6 +3602,12 @@ header .menu-secciones { background: #00587a !important; }
 
 #modal-preview .row-main-ficha { margin-top: .5rem; }
 
+#modal-preview .row-main-ficha .cont-swiper-slider { margin-bottom: 0; }
+
+@media only screen and (max-width: 480px) { #modal-preview .row-main-ficha .cont-swiper-slider .swiper-container { height: 300px !important; } }
+
+@media only screen and (max-width: 320px) { #modal-preview .row-main-ficha .cont-swiper-slider .swiper-container { height: 250px !important; } }
+
 #modal-preview .row-main-ficha .box-share { margin-top: .5rem; }
 
 #modal-preview .row-main-ficha .box-description:nth-child(1) { padding-bottom: 0; }
@@ -4771,13 +4777,13 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 @media screen and (max-width: 425px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child { width: 100%; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child .btn-box-action { font-weight: 600; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; line-height: 48px; height: 48px; text-align: center; -webkit-transition: all .8s ease; transition: all .8s ease; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child a, .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child .btn-box-action { font-weight: 600; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; line-height: 48px; height: 48px; text-align: center; -webkit-transition: all .8s ease; transition: all .8s ease; }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child .btn-box-action .img-product-fixed { position: absolute; left: 3%; top: 50%; -webkit-transform: translateY(-60px); transform: translateY(-60px); z-index: 100; opacity: 0; visibility: hidden; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child a .img-product-fixed, .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child .btn-box-action .img-product-fixed { position: absolute; left: 3%; top: 50%; -webkit-transform: translateY(-60px); transform: translateY(-60px); z-index: 100; opacity: 0; visibility: hidden; }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child .btn-box-action .materialboxed:hover:not(.active) { opacity: 1; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child a .materialboxed:hover:not(.active), .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child .btn-box-action .materialboxed:hover:not(.active) { opacity: 1; }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child .btn-box-action i { position: absolute; top: 50%; margin-top: -8.5px; right: 10px; font-size: 1.2rem; color: #fff; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child a i, .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child .btn-box-action i { position: absolute; top: 50%; margin-top: -8.5px; right: 10px; font-size: 1.2rem; color: #fff; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(5) .cont-call-to-accion .box-accion:last-child .btn-box-action:hover .icon-arrow-right { right: 7px; }
 

@@ -67,7 +67,7 @@ $botones.on('click', 'a', function() {
     $(this).siblings().removeClass('active-filtro');
 });
 
-//Scroll Aside
+//Efecto Fixed Boton Comprar
 var $comprar = $('#btn-fixed-comprar');
 var $comprarTop = $comprar.offset().top;
 var fixedComprar = function() {

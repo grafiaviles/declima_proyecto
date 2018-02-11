@@ -49,6 +49,17 @@
                 }
             }
             & .row-main-ficha {
+                & .cont-swiper-slider {
+                    margin-bottom: 0;
+                    & .swiper-container {
+                        @media only screen and (max-width: 480px) {
+                            height: 300px!important;
+                        }
+                        @media only screen and (max-width: 320px) {
+                            height: 250px!important;
+                        }
+                    }
+                }
                 margin-top: .5rem;
                 & .box-share {
                     margin-top: .5rem;
