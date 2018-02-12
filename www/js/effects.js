@@ -67,18 +67,18 @@ $botones.on('click', 'a', function() {
     $(this).siblings().removeClass('active-filtro');
 });
 
-//Scroll Aside
-/* var $aside = $('#aside');
-var $asideTop = $aside.offset().top;
-var pegarAside = function() {
+//Efecto Fixed Boton Comprar
+var $comprar = $('#btn-fixed-comprar');
+var $comprarTop = $comprar.offset().top;
+var fixedComprar = function() {
     var $scrollTop = $(window).scrollTop();
-    if ($scrollTop >= $asideTop) {
-        $aside.addClass('fixed-effect')
+    if ($scrollTop >= $comprarTop) {
+        $comprar.addClass('fixed-effect')
     } else {
-        $aside.removeClass('fixed-effect')
+        $comprar.removeClass('fixed-effect')
     }
 }
-$(window).on('scroll', pegarAside); */
+$(window).on('scroll', fixedComprar);
 
 //Ver px del scroll en vivo
 /* $(window).on('scroll', function() {
