@@ -67,7 +67,7 @@
             .collapsible-header:active,
             .collapsible-header:focus {
                 color: $secondColor;
-                //font-weight: 600;
+                font-weight: 600;
             }
             & .active {
                 color: $secondColor;
@@ -130,36 +130,13 @@
             }
         }
         //Collapsible Header Mobile
-        .side-filtros-mobile {
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            & .acordion-filtros-mobile {
-                border: none;
-                width: 100%;
-                align-self: flex-start;
-                & .collapsible-header-mobile {
-                    position: relative;
-                    padding: 0 20px!important;
-                    border-bottom: none!important;
-                }
-                & .range-field {
-                    width: 90%;
-                }
+        & .acordion-filtros-mobile {
+            & .collapsible-header-mobile {
+                padding: 0 20px!important;
+                border-bottom: none!important;
             }
-            & .action-filtro {
-                background: darkblue;
-                position: relative;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                align-self: flex-end;
-                & li {
-                    list-style: none;
-                    & .btn-action-filtro {
-                        font-weight: 600;
-                    }
-                }
+            & .range-field {
+                width: 90%;
             }
         }
         & .swiper-ofertas {
