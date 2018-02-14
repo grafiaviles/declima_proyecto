@@ -523,6 +523,7 @@
                 display: flex;
                 transition: $transition1;
                 z-index: 10;
+                outline: none;
                 @media screen and (max-width: 480px) {
                     font-size: .9rem;
                 }

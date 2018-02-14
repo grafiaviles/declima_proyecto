@@ -60,6 +60,112 @@
 </head>
 
 <body>
+    <!-- Modal Preview -->
+    <div id="modal-preview" class="modal swiper-productos-relacionados">
+        <div class="modal-content">
+            <h6 class="text-preview">Vista Previa <i class="icon-x right modal-action modal-close"></i></h6>
+            <div class="row row-main-ficha">
+                <!-- Slider Producto -->
+                <div class="col s12 m12 l5 cont-swiper-slider">
+                    <!-- Swiper NEW -->
+                    <div class="swiper-container swiper-preview">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/ficha-productos/img-test1.jpg" class="responsive-img"></div>
+                            <div class="swiper-slide"><img src="img/ficha-productos/img-test2.jpg" class="responsive-img"></div>
+                            <div class="swiper-slide"><img src="img/ficha-productos/img-test1.jpg" class="responsive-img"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next hide-on-small-only"></div>
+                        <div class="swiper-button-prev hide-on-small-only"></div>
+                    </div>
+                </div>
+                <!-- Descripcion Producto -->
+                <div class="col s12 m12 l7 cont-description-producto">
+                    <!-- INFORMACION PRODUCTO -->
+                    <article id="info-producto" class="col s12 box-description">
+                        <div class="box-title-star valign-wrapper">
+                            <div class="title-producto s12 m6">
+                                <h2 class="marca-producto text-grey"><b></b><img class="logo-marca" src="img/ficha-productos/marca-logo.svg"></h2>
+                                <h1 class="nombre-producto text-primary">Nombre del Producto</h1>
+                                <p class="sku-producto text-second">SKU: 123456</p>
+                            </div>
+                            <div class="col s12 m3 star-producto right valign-wrapper">
+                                <a class="text-second" data-position="bottom" data-delay="50" data-tooltip="Muy Malo" href="#!"><i class="icon-star"></i></a>
+                                <a class="text-second" data-position="bottom" data-delay="50" data-tooltip="Malo" href="#!"><i class="icon-star"></i></a>
+                                <a class="text-second" data-position="bottom" data-delay="50" data-tooltip="Bueno" href="#!"><i class="icon-star"></i></a>
+                                <a class="text-second" data-position="bottom" data-delay="50" data-tooltip="Muy Bueno" href="#!"><i class="icon-star"></i></a>
+                                <a class="text-second" data-position="bottom" data-delay="50" data-tooltip="Excelente" href="#!"><i class="icon-star"></i></a>
+                            </div>
+                        </div>
+                        <p class="semantica-producto text-grey hide">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+                    </article>
+                    <!-- PRECIOS -->
+                    <article id="precios-productos" class="col s12 box-description">
+                        <p class="text-second precio-internet">Internet:<span class="precio right"><span class="signo">$</span>150.000</span>
+                        </p>
+                        <p class="text-grey precio-normal">Normal:<span class="precio right"><span class="signo">$</span>200.000</span>
+                        </p>
+                        <p class="text-grey precio-descuento">Descuento:<span class="precio right"><span class="signo">$</span>-50.000</span>
+                        </p>
+                        <p class="text-primary precio-total">TOTAL A PAGAR:<span class="precio right"><span class="signo">$</span>250.000</span>
+                        </p>
+                    </article>
+                    <!-- DISPONIBILIDAD -->
+                    <article class="col s12 box-description">
+                        <div class="disponible">
+                            <i class="text-second icon-clipboard"></i>
+                            <div>
+                                <p class="text-grey">Detalle Producto</p>
+                                <a href="#!" class="text-second">VER MÁS</a>
+                            </div>
+                        </div>
+                        <div class="disponible">
+                            <i class="text-second icon-map-pin"></i>
+                            <div>
+                                <p class="text-grey">Sala de Ventas</p>
+                                <a class="text-second" href="https://www.google.com/maps?ll=-33.459848,-70.637093&z=16&t=m&hl=es-ES&gl=CL&mapclient=embed&q=Artemio+Guti%C3%A9rrez+1268+Santiago+Regi%C3%B3n+Metropolitana" target="_blank">¿CÓMO LLEGAR?</a>
+                            </div>
+                        </div>
+                        <div class="disponible">
+                            <i class="text-second icon-download-cloud"></i>
+                            <div>
+                                <p class="text-grey">Ficha Comercial</p>
+                                <a class="modal-trigger text-second" href="#" target="_blank">VER FICHA</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- BOTONES DE COMPRA -->
+                    <article class="col s12 box-description">
+                        <div class="col s12 cont-call-to-accion valign-wrapper">
+                            <div class="box-accion col s12 m4 valign-wrapper">
+                                <span class="waves-effect waves-dark col s4 center-align text-primary restar"><i class="icon-minus"></i></span>
+                                <span class="col s4 center-align text-primary numero"><p>1</p></span>
+                                <span class="waves-effect waves-dark col s4 center-align text-primary sumar"><i class="icon-plus"></i></span>
+                            </div>
+                            <div class="box-accion col s12 m8 valign-wrapper">
+                                <a class="waves-effect waves-dark text-white" href="#!">COMPRAR<i class="icon-arrow-right right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Sidebar Producto -->
+                    <aside class="col s12 cont-box-aside valign-wrapper box-description ">
+                        <div class="col s12 m5 box-aside valign-wrapper">
+                            <h5 class="text-grey title-aside">Compartir</h5>
+                            <a class="icon-redes" href="" target="_blank"><i class="icon-facebook"></i></a>
+                            <a class="icon-redes" href="" target="_blank"><i class="icon-twitter"></i></a>
+                            <a class="icon-redes" href="" target="_blank"><i class="icon-google-plus"></i></a>
+                            <a class="icon-redes" href="" target="_blank"><i class="icon-whatsapp"></i></a>
+                        </div>
+                        <div class="col s12 m7 box-aside valign-wrapper">
+                            <img class="responsive-img medios-pago-img" src="img/ficha-productos/pagos.svg" alt="Medio de Pago">
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal Buscador -->
     <div id="buscador-desktop" class="modal modal-buscador">
         <nav class="buscador-container">
@@ -1145,8 +1251,8 @@
                                 <div class="swiper-slide">
                                     <div class="box-equipos-relacionados">
                                         <div class="imagen-equipo">
-                                            <a href="" class="preview-product">
-                                                <i class="waves-effect waves-light icon-preview icon-zoom-in"></i>
+                                            <a href="#modal-preview" class="modal-trigger preview-product">
+                                                <i class="waves-effect waves-light icon-preview icon-maximize-2"></i>
                                                 <img class="img-product responsive-img" src="img/ficha-productos/img-test1.jpg">
                                             </a>
                                             <!-- Atributos -->
@@ -1180,8 +1286,8 @@
                                 <div class="swiper-slide">
                                     <div class="box-equipos-relacionados">
                                         <div class="imagen-equipo">
-                                            <a href="" class="preview-product">
-                                                <i class="waves-effect waves-light icon-preview icon-zoom-in"></i>
+                                            <a href="#modal-preview" class="modal-trigger preview-product">
+                                                <i class="waves-effect waves-light icon-preview icon-maximize-2"></i>
                                                 <img class="img-product responsive-img" src="img/ficha-productos/img-test1.jpg">
                                             </a>
                                             <!-- Atributos -->
@@ -1215,8 +1321,8 @@
                                 <div class="swiper-slide">
                                     <div class="box-equipos-relacionados">
                                         <div class="imagen-equipo">
-                                            <a href="" class="preview-product">
-                                                <i class="waves-effect waves-light icon-preview icon-zoom-in"></i>
+                                            <a href="#modal-preview" class="modal-trigger preview-product">
+                                                <i class="waves-effect waves-light icon-preview icon-maximize-2"></i>
                                                 <img class="img-product responsive-img" src="img/ficha-productos/img-test1.jpg">
                                             </a>
                                             <!-- Atributos -->
@@ -1250,8 +1356,8 @@
                                 <div class="swiper-slide">
                                     <div class="box-equipos-relacionados">
                                         <div class="imagen-equipo">
-                                            <a href="" class="preview-product">
-                                                <i class="waves-effect waves-light icon-preview icon-zoom-in"></i>
+                                            <a href="#modal-preview" class="modal-trigger preview-product">
+                                                <i class="waves-effect waves-light icon-preview icon-maximize-2"></i>
                                                 <img class="img-product responsive-img" src="img/ficha-productos/img-test1.jpg">
                                             </a>
                                             <!-- Atributos -->
