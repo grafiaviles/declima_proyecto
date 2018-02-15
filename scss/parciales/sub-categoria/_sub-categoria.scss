@@ -130,13 +130,32 @@
             }
         }
         //Collapsible Header Mobile
-        & .acordion-filtros-mobile {
-            & .collapsible-header-mobile {
-                padding: 0 20px!important;
-                border-bottom: none!important;
+        & .cont-filtros-mobile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            & .acordion-filtros-mobile {
+                align-self: flex-start;
+                width: 100%;
+                & .collapsible-header-mobile {
+                    padding: 0 20px!important;
+                    border-bottom: none!important;
+                    display: flex;
+                    align-items: center;
+                }
+                & .range-field {
+                    width: 90%;
+                }
             }
-            & .range-field {
-                width: 90%;
+            & .cont-btn-filtros {
+                align-self: flex-end;
+                & .row-btn-filtros {
+                    margin-bottom: 0;
+                    & .btn-filtros {
+                        line-height: 48px;
+                    }
+                }
             }
         }
         & .swiper-ofertas {
@@ -168,6 +187,7 @@
                         color: $greyColor;
                         line-height: 20px;
                         font-weight: 400;
+                        width: 90%;
                     }
                     & h3 {
                         margin: 0;

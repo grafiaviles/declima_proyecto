@@ -289,20 +289,13 @@
                         & .precio-total {
                             @extend .precio-internet;
                             font-size: 1.3rem;
-                            margin-bottom: 0;
+                            margin-bottom: .5rem;
                         }
                         & p.precio-normal {
                             text-decoration: none;
                             & .precio {
                                 text-decoration: line-through;
                             }
-                        }
-                        & p.precio-instalacion {
-                            font-weight: 600;
-                            & .precio {}
-                        }
-                        & p.precio-descuento {
-                            & .precio {}
                         }
                     }
                     //DISPONIBILIDAD

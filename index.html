@@ -691,129 +691,139 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Acordion Filtros Mobile -->
-                                <ul id="filtros-mobile" class="side-nav collapsible acordion-filtros acordion-filtros-mobile" data-collapsible="accordion">
-                                    <!-- Filtro 1 -->
-                                    <li id="filtro-alcance">
-                                        <div class="collapsible-header collapsible-header-mobile active"><i class="icon-chevron-down"></i><b>Equipos Residenciales</b> </div>
-                                        <div class="collapsible-body">
-                                            <span>
-                                                <form action="#" class="form-modelos">
-                                                    <p>
-                                                        <input class="with-gap" name="group1" type="radio" id="test1" checked/>
-                                                        <label for="test1">Ofertas Destacadas</label>
-                                                    </p>
-                                                    <p>
-                                                        <input class="with-gap" name="group1" type="radio" id="test2" />
-                                                        <label for="test2">Split Muro Blanc</label>
-                                                    </p>
-                                                    <p>
-                                                        <input class="with-gap" name="group1" type="radio" id="test3" />
-                                                        <label for="test3">Split Muro Inverter</label>
-                                                    </p>
-                                                    <p>
-                                                        <input class="with-gap" name="group1" type="radio" id="test4" />
-                                                        <label for="test4">Ventana</label>
-                                                    </p>
-                                                    <p>
-                                                        <input class="with-gap" name="group1" type="radio" id="test5" />
-                                                        <label for="test5">Portátiles</label>
-                                                    </p>
-                                                    <p>
-                                                        <input class="with-gap" name="group1" type="radio" id="testing6" />
-                                                        <label for="testing6">Con Instalación</label>
-                                                    </p>
-                                                    <p>
-                                                        <input class="with-gap" name="group1" type="radio" id="testing7" />
-                                                        <label for="testing7">Sin Instalación</label>
-                                                    </p>
-                                                </form>
-                                                </span>
-                                        </div>
-                                    </li>
-                                    <!-- Filtro 2 -->
-                                    <li>
-                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Precios</b></div>
-                                        <div class="collapsible-body">
-                                            <span>
+                                <!-- FILTROS MOBILE -->
+                                <div id="filtros-mobile" class="side-nav cont-filtros-mobile">
+                                    <!-- Acordion Filtros Mobile -->
+                                    <ul class="acordion-filtros collapsible acordion-filtros-mobile" data-collapsible="accordion">
+                                        <!-- Filtro 1 -->
+                                        <li id="filtro-alcance">
+                                            <div class="collapsible-header collapsible-header-mobile active"><i class="icon-chevron-down"></i><b>Equipos Residenciales</b> </div>
+                                            <div class="collapsible-body">
+                                                <span>
+                                                    <form action="#" class="form-modelos">
+                                                        <p>
+                                                            <input class="with-gap" name="group1" type="radio" id="test1" checked/>
+                                                            <label for="test1">Ofertas Destacadas</label>
+                                                        </p>
+                                                        <p>
+                                                            <input class="with-gap" name="group1" type="radio" id="test2" />
+                                                            <label for="test2">Split Muro Blanc</label>
+                                                        </p>
+                                                        <p>
+                                                            <input class="with-gap" name="group1" type="radio" id="test3" />
+                                                            <label for="test3">Split Muro Inverter</label>
+                                                        </p>
+                                                        <p>
+                                                            <input class="with-gap" name="group1" type="radio" id="test4" />
+                                                            <label for="test4">Ventana</label>
+                                                        </p>
+                                                        <p>
+                                                            <input class="with-gap" name="group1" type="radio" id="test5" />
+                                                            <label for="test5">Portátiles</label>
+                                                        </p>
+                                                        <p>
+                                                            <input class="with-gap" name="group1" type="radio" id="testing6" />
+                                                            <label for="testing6">Con Instalación</label>
+                                                        </p>
+                                                        <p>
+                                                            <input class="with-gap" name="group1" type="radio" id="testing7" />
+                                                            <label for="testing7">Sin Instalación</label>
+                                                        </p>
+                                                    </form>
+                                                    </span>
+                                            </div>
+                                        </li>
+                                        <!-- Filtro 2 -->
+                                        <li>
+                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Precios</b></div>
+                                            <div class="collapsible-body">
+                                                <span>
+                                                            <form action="#">
+                                                                <p class="range-field">
+                                                                    <input type="range" id="test1" min="9000" max="24000"/>
+                                                                </p>
+                                                            </form>
+                                                        </span>
+                                            </div>
+                                        </li>
+                                        <!-- Filtro 3 -->
+                                        <li id="filtro-marca">
+                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Marca</b></div>
+                                            <div class="collapsible-body">
+                                                <span>
+                                                        <form class="form-check-box form-marca" action="#">
+                                                            <p>
+                                                                <input type="checkbox" id="midea" />
+                                                                <label for="midea">Midea (10)</label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="checkbox" id="carrier" />
+                                                                <label for="carrier">Carrier (3)</label>
+                                                            </p>
+                                                            <p>
+                                                                <input type="checkbox" id="otra" />
+                                                                <label  for="otra">Otra (6)</label>
+                                                            </p>
+                                                        </form>
+                                                    </span>
+                                            </div>
+                                        </li>
+                                        <!-- Filtro 4 -->
+                                        <li class="filtro-btu">
+                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Capacidad BTU/H</b></div>
+                                            <div class="collapsible-body">
+                                                <span>
+                                                            <form class="form-check-box form-btu" action="#">
+                                                                <p>
+                                                                    <input type="checkbox" id="9000" />
+                                                                    <label for="9000">9.000 (10)</label>
+                                                                </p>
+                                                                <p>
+                                                                    <input type="checkbox" id="12000" />
+                                                                    <label for="12000">12.000 (2)</label>
+                                                                </p>
+                                                                <p>
+                                                                    <input type="checkbox" id="18000" />
+                                                                    <label for="18000">18.000 (2)</label>
+                                                                </p>
+                                                                <p>
+                                                                    <input type="checkbox" id="24000" />
+                                                                    <label for="24000">24.000 (4)</label>
+                                                                </p>
+                                                                <p>
+                                                                    <input type="checkbox" id="48000" />
+                                                                    <label for="48000">48.000 (2)</label>
+                                                                </p>
+                                                                <p>
+                                                                    <input type="checkbox" id="72000" />
+                                                                    <label for="72000">72.000 (6)</label>
+                                                                </p>
+                                                            </form>
+                                                    </span>
+                                            </div>
+                                        </li>
+                                        <!-- Filtro 5 -->
+                                        <li id="filtro-alcance">
+                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Alcance m2</b> </div>
+                                            <div class="collapsible-body">
+                                                <span>
                                                         <form action="#">
                                                             <p class="range-field">
                                                                 <input type="range" id="test1" min="9000" max="24000"/>
                                                             </p>
                                                         </form>
                                                     </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- Botones Filtros Mobile -->
+                                    <div class="cont-btn-filtros col s12">
+                                        <div class="row-btn-filtros row">
+                                            <a class="col s6 btn-filtros waves-effect waves-dark center-align second white-text bolder" href="#!">APLICAR</a>
+                                            <a class="col s6 btn-filtros waves-effect waves-dark center-align primary white-text bolder" href="#!">RESET</a>
                                         </div>
-                                    </li>
-                                    <!-- Filtro 3 -->
-                                    <li id="filtro-marca">
-                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Marca</b></div>
-                                        <div class="collapsible-body">
-                                            <span>
-                                                    <form class="form-check-box form-marca" action="#">
-                                                        <p>
-                                                            <input type="checkbox" id="midea" />
-                                                            <label for="midea">Midea (10)</label>
-                                                        </p>
-                                                        <p>
-                                                            <input type="checkbox" id="carrier" />
-                                                            <label for="carrier">Carrier (3)</label>
-                                                        </p>
-                                                        <p>
-                                                            <input type="checkbox" id="otra" />
-                                                            <label  for="otra">Otra (6)</label>
-                                                        </p>
-                                                    </form>
-                                                </span>
-                                        </div>
-                                    </li>
-                                    <!-- Filtro 4 -->
-                                    <li class="filtro-btu">
-                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Capacidad BTU/H</b></div>
-                                        <div class="collapsible-body">
-                                            <span>
-                                                        <form class="form-check-box form-btu" action="#">
-                                                            <p>
-                                                                <input type="checkbox" id="9000" />
-                                                                <label for="9000">9.000 (10)</label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="checkbox" id="12000" />
-                                                                <label for="12000">12.000 (2)</label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="checkbox" id="18000" />
-                                                                <label for="18000">18.000 (2)</label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="checkbox" id="24000" />
-                                                                <label for="24000">24.000 (4)</label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="checkbox" id="48000" />
-                                                                <label for="48000">48.000 (2)</label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="checkbox" id="72000" />
-                                                                <label for="72000">72.000 (6)</label>
-                                                            </p>
-                                                        </form>
-                                                </span>
-                                        </div>
-                                    </li>
-                                    <!-- Filtro 5 -->
-                                    <li id="filtro-alcance">
-                                        <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Alcance m2</b> </div>
-                                        <div class="collapsible-body">
-                                            <span>
-                                                    <form action="#">
-                                                        <p class="range-field">
-                                                            <input type="range" id="test1" min="9000" max="24000"/>
-                                                        </p>
-                                                    </form>
-                                                </span>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                                 <!-- ASIDE 1 FILTROS -->
                                 <div class="title-filtro hide-on-med-and-down">
                                     <h5 class="text-primary">
