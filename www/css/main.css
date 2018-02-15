@@ -4154,6 +4154,10 @@ header .menu-secciones { background: #00587a !important; }
 
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo { padding: 1rem 1rem 0 1rem; color: #fff; text-align: center; font-weight: 500; }
 
+@media screen and (max-width: 480px) { .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo { padding-left: 2rem; text-align: left; } }
+
+@media screen and (max-width: 321px) { .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo { padding-left: 1.5rem; } }
+
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .name-equipo, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .atributo-equipo, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .precio-oferta, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .atributo-parrafo, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .precio-normal, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .stock { font-weight: 500; margin: 0; margin-bottom: .3rem; }
 
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .name-equipo, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .atributo-equipo { font-size: 1rem; font-weight: 600; }
@@ -4799,7 +4803,7 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .star-producto h5 { margin-top: -5px; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .star-producto a { font-size: 1rem; margin-right: 3px; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .star-producto a { font-size: .9rem; margin-right: 3px; }
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .star-producto a { font-size: 1.2rem; } }
 
@@ -5163,6 +5167,10 @@ td, th { color: #777; font-size: .9rem; }
 
 .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo { padding: 1rem 1rem 0 1rem; color: #fff; text-align: center; font-weight: 500; }
 
+@media screen and (max-width: 480px) { .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo { padding-left: 2.5rem; text-align: left; } }
+
+@media screen and (max-width: 321px) { .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo { padding-left: 1.5rem; } }
+
 .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .name-equipo, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .atributo-equipo, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .precio-oferta, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .atributo-parrafo, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .precio-normal, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .stock { font-weight: 500; margin: 0; margin-bottom: .3rem; }
 
 .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .name-equipo, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .atributo-equipo { font-size: 1rem; font-weight: 600; }
@@ -5509,6 +5517,10 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo { padding: 1rem 1rem 0 1rem; color: #fff; text-align: center; font-weight: 500; }
 
+@media screen and (max-width: 480px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo { padding-left: 2.5rem; text-align: left; } }
+
+@media screen and (max-width: 321px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo { padding-left: 1.5rem; } }
+
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .name-equipo, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .atributo-equipo, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-oferta, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .atributo-parrafo, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-normal, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .stock { font-weight: 500; margin: 0; margin-bottom: .3rem; }
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .name-equipo, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .atributo-equipo { font-size: 1rem; font-weight: 600; line-height: normal; }
@@ -5521,7 +5533,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-oferta { font-size: 1.3rem; font-weight: 600; }
 
-@media screen and (max-width: 480px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-oferta { font-size: 1.1rem; } }
+@media screen and (max-width: 480px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-oferta { font-size: 1.5rem; } }
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-oferta sup { font-size: 15px; vertical-align: middle; top: -2px; }
 
@@ -5541,9 +5553,9 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .filtros-edit-mobile { margin: 0; padding: 0 !important; overflow-x: auto; overflow-y: hidden; white-space: nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-bottom: 1rem !important; padding-top: 1rem !important; }
 
-.filtros-edit-mobile .btn-filtros-mobile { padding: 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; cursor: pointer; }
+.filtros-edit-mobile .btn-filtros-mobile { padding: 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 1rem; cursor: pointer; }
 
-.filtros-edit-mobile .btn-filtros-mobile a { text-align: left; }
+.filtros-edit-mobile .btn-filtros-mobile a { text-align: left; text-transform: uppercase; }
 
 .filtros-edit-mobile .filtros-mobile { -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0; }
 

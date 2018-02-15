@@ -299,6 +299,13 @@
                     color: $whiteColor;
                     text-align: center;
                     font-weight: 500;
+                    @media screen and (max-width: 480px) {
+                        padding-left: 2.5rem;
+                        text-align: left;
+                    }
+                    @media screen and (max-width: 321px) {
+                        padding-left: 1.5rem;
+                    }
                     & .name-equipo,
                     & .atributo-equipo,
                     & .precio-oferta,
@@ -328,7 +335,7 @@
                         font-size: 1.3rem;
                         font-weight: 600;
                         @media screen and (max-width: 480px) {
-                            font-size: 1.1rem;
+                            font-size: 1.5rem;
                         }
                         & sup {
                             font-size: 15px;
@@ -397,9 +404,11 @@
     & .btn-filtros-mobile {
         padding: 0;
         align-items: center;
+        margin-right: 1rem;
         cursor: pointer;
         & a {
             text-align: left;
+            text-transform: uppercase;
         }
     }
     & .filtros-mobile {
