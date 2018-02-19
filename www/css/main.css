@@ -3273,6 +3273,8 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .my-disabled { opacity: .4; cursor: default; pointer-events: none; }
 
+.bolder { font-weight: 600; }
+
 .calc-disable { display: none; cursor: default; pointer-events: none; }
 
 .btn-submit { position: relative; background: transparent; margin: 0; color: #3fa7f3; -webkit-box-shadow: none; box-shadow: none; font-weight: 600; border: 2px solid #3fa7f3; line-height: normal; border-radius: 3px; height: 50px; width: 100%; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
@@ -4152,6 +4154,10 @@ header .menu-secciones { background: #00587a !important; }
 
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo { padding: 1rem 1rem 0 1rem; color: #fff; text-align: center; font-weight: 500; }
 
+@media screen and (max-width: 480px) { .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo { padding-left: 2rem; text-align: left; } }
+
+@media screen and (max-width: 321px) { .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo { padding-left: 1.5rem; } }
+
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .name-equipo, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .atributo-equipo, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .precio-oferta, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .atributo-parrafo, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .precio-normal, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .stock { font-weight: 500; margin: 0; margin-bottom: .3rem; }
 
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .name-equipo, .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .atributo-equipo { font-size: 1rem; font-weight: 600; }
@@ -4166,7 +4172,7 @@ header .menu-secciones { background: #00587a !important; }
 
 @media screen and (max-width: 480px) { .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .precio-oferta sup { font-size: 12px; top: -1px; } }
 
-.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .precio-normal { font-size: .9rem; text-decoration: line-through; }
+.fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .descripcion-equipo .precio-normal { font-size: .9rem; text-decoration: line-through; opacity: .5; }
 
 .fluid-equipos .cont-tabs-equipos .cont-slider-slick .slide-slick-equipos .box-equipos .btn-box-equipos { margin-top: 1rem; width: 100%; text-align: center; }
 
@@ -4757,6 +4763,8 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-Breadcrumbs .cont-Breadcrumbs .nav-breadcrumbs-producto .cont-bradcrumb .calc:hover .img-calc { opacity: .7; }
 
+.cont-ficha-producto .fluid-Breadcrumbs .cont-Breadcrumbs .nav-breadcrumbs-producto .cont-bradcrumb .link-login { font-size: .95rem; }
+
 .cont-ficha-producto .fluid-ficha-producto { position: relative; min-height: 100%; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha { padding: 10px 0 50px 0; }
@@ -4797,7 +4805,7 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .star-producto h5 { margin-top: -5px; } }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .star-producto a { font-size: 1rem; margin-right: 3px; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .star-producto a { font-size: .9rem; margin-right: 3px; }
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(1) .box-title-star .star-producto a { font-size: 1.2rem; } }
 
@@ -4849,13 +4857,11 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-internet, .cont-ficha-producto .fluid-ficha-producto .container-ficha #modal-preview .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .box-description:nth-of-type(2) .precio-total, #modal-preview .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .box-description:nth-of-type(2) .precio-total, .cont-ficha-producto .fluid-ficha-producto .container-ficha #modal-preview .row-main-ficha .cont-description-producto .box-description:nth-of-type(2) .box-description:nth-of-type(3) .precio-total, #modal-preview .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(2) .box-description:nth-of-type(3) .precio-total, .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-total { font-weight: 600; text-transform: uppercase; }
 
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-total { font-size: 1.3rem; margin-bottom: 0; }
+.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) .precio-total { font-size: 1.3rem; margin-bottom: .5rem; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) p.precio-normal { text-decoration: none; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) p.precio-normal .precio { text-decoration: line-through; }
-
-.cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(3) p.precio-instalacion { font-weight: 600; }
 
 .cont-ficha-producto .fluid-ficha-producto .container-ficha .row-main-ficha .cont-description-producto .box-description:nth-of-type(4) { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; border-bottom: none; }
 
@@ -5163,6 +5169,10 @@ td, th { color: #777; font-size: .9rem; }
 
 .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo { padding: 1rem 1rem 0 1rem; color: #fff; text-align: center; font-weight: 500; }
 
+@media screen and (max-width: 480px) { .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo { padding-left: 2.5rem; text-align: left; } }
+
+@media screen and (max-width: 321px) { .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo { padding-left: 1.5rem; } }
+
 .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .name-equipo, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .atributo-equipo, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .precio-oferta, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .atributo-parrafo, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .precio-normal, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .stock { font-weight: 500; margin: 0; margin-bottom: .3rem; }
 
 .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .name-equipo, .row-slider-relacionados .swiper-productos-relacionados .swiper-slide .descripcion-equipo .atributo-equipo { font-size: 1rem; font-weight: 600; }
@@ -5421,7 +5431,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-header sub { bottom: -.5rem; }
 
-.row-main-category .aside-cat .acordion-filtros .collapsible-header:hover, .row-main-category .aside-cat .acordion-filtros .collapsible-header:active, .row-main-category .aside-cat .acordion-filtros .collapsible-header:focus { color: #3fa7f3; font-weight: 600; }
+.row-main-category .aside-cat .acordion-filtros .collapsible-header:hover, .row-main-category .aside-cat .acordion-filtros .collapsible-header:active, .row-main-category .aside-cat .acordion-filtros .collapsible-header:focus { color: #3fa7f3; }
 
 .row-main-category .aside-cat .acordion-filtros .active { color: #3fa7f3; }
 
@@ -5449,9 +5459,19 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .aside-cat .acordion-filtros .collapsible-body .form-check-box label:hover, .row-main-category .aside-cat .acordion-filtros .collapsible-body .form-check-box label:active { color: #3fa7f3; }
 
-.row-main-category .aside-cat .acordion-filtros-mobile .collapsible-header-mobile { padding: 0 20px !important; border-bottom: none !important; }
+.row-main-category .aside-cat .cont-filtros-mobile { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
-.row-main-category .aside-cat .acordion-filtros-mobile .range-field { width: 90%; }
+.row-main-category .aside-cat .cont-filtros-mobile .acordion-filtros-mobile { -ms-flex-item-align: start; align-self: flex-start; width: 100%; }
+
+.row-main-category .aside-cat .cont-filtros-mobile .acordion-filtros-mobile .collapsible-header-mobile { padding: 0 20px !important; border-bottom: none !important; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.row-main-category .aside-cat .cont-filtros-mobile .acordion-filtros-mobile .range-field { width: 90%; }
+
+.row-main-category .aside-cat .cont-filtros-mobile .cont-btn-filtros { -ms-flex-item-align: end; align-self: flex-end; }
+
+.row-main-category .aside-cat .cont-filtros-mobile .cont-btn-filtros .row-btn-filtros { margin-bottom: 0; }
+
+.row-main-category .aside-cat .cont-filtros-mobile .cont-btn-filtros .row-btn-filtros .btn-filtros { line-height: 48px; }
 
 .row-main-category .aside-cat .swiper-ofertas { overflow: hidden; position: relative; height: 150px; }
 
@@ -5461,7 +5481,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .aside-cat .swiper-ofertas .swiper-slide .cont-bag-product img { width: 90%; max-width: 90px; margin-right: 10px; }
 
-.row-main-category .aside-cat .swiper-ofertas .swiper-slide .cont-bag-product h5 { margin: 0; margin-bottom: 2px; font-size: .9em; color: #777; line-height: 20px; font-weight: 400; }
+.row-main-category .aside-cat .swiper-ofertas .swiper-slide .cont-bag-product h5 { margin: 0; margin-bottom: 2px; font-size: .9em; color: #777; line-height: 20px; font-weight: 400; width: 90%; }
 
 .row-main-category .aside-cat .swiper-ofertas .swiper-slide .cont-bag-product h3 { margin: 0; margin-top: 5px; font-size: 1.2em; color: #3fa7f3; font-weight: 600; }
 
@@ -5499,6 +5519,10 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo { padding: 1rem 1rem 0 1rem; color: #fff; text-align: center; font-weight: 500; }
 
+@media screen and (max-width: 480px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo { padding-left: 2.5rem; text-align: left; } }
+
+@media screen and (max-width: 321px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo { padding-left: 1.5rem; } }
+
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .name-equipo, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .atributo-equipo, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-oferta, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .atributo-parrafo, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-normal, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .stock { font-weight: 500; margin: 0; margin-bottom: .3rem; }
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .name-equipo, .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .atributo-equipo { font-size: 1rem; font-weight: 600; line-height: normal; }
@@ -5511,7 +5535,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-oferta { font-size: 1.3rem; font-weight: 600; }
 
-@media screen and (max-width: 480px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-oferta { font-size: 1.1rem; } }
+@media screen and (max-width: 480px) { .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-oferta { font-size: 1.5rem; } }
 
 .row-main-category .section-productos .productos-categoria .box-equipos-categoria .descripcion-equipo .precio-oferta sup { font-size: 15px; vertical-align: middle; top: -2px; }
 
@@ -5531,7 +5555,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .filtros-edit-mobile { margin: 0; padding: 0 !important; overflow-x: auto; overflow-y: hidden; white-space: nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-bottom: 1rem !important; padding-top: 1rem !important; }
 
-.filtros-edit-mobile .btn-filtros-mobile { padding: 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; cursor: pointer; }
+.filtros-edit-mobile .btn-filtros-mobile { padding: 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 1rem; cursor: pointer; }
 
 .filtros-edit-mobile .btn-filtros-mobile a { text-align: left; }
 
@@ -5588,3 +5612,49 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .box-equipos-relacionados .imagen-equipo .instalacion-tag { color: #3fa7f3; background: #fff; width: 80px; height: 40px; top: 60px; }
 
 .box-equipos-relacionados .imagen-equipo .instalacion-tag p { line-height: 1rem; font-size: .85rem; margin: 0; text-align: left !important; padding-left: .5rem; }
+
+.row-main-login { background: #fff; margin: 0; margin-top: 3.5rem; overflow: hidden; position: relative; min-height: 100vh; }
+
+@media screen and (max-width: 480px) { .row-main-login { margin-top: 1rem; margin-bottom: 1rem; } }
+
+.row-main-login .title-secction-main { font-size: 2.5rem; margin: 0; margin-bottom: 2rem; }
+
+@media screen and (max-width: 480px) { .row-main-login .title-secction-main { font-size: 2rem; } }
+
+@media screen and (max-width: 320px) { .row-main-login .title-secction-main { font-size: 1.7rem; } }
+
+.row-main-login .form-main-user { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.row-main-login .form-main-user .form-user { margin: auto; }
+
+.row-main-login .form-main-user .form-user .input-field { margin-bottom: 1rem; }
+
+.row-main-login .form-main-user .form-user .input-field .icon-password { right: 10px !important; bottom: 30px; position: absolute; cursor: pointer; color: #9e9e9e; }
+
+.row-main-login .form-main-user .form-user .input-field .icon-eye { opacity: 0; visibility: hidden; }
+
+.row-main-login .form-main-user .divisor { -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 1rem; }
+
+.row-main-login .form-main-user .divisor p { color: #f0f0f0; }
+
+.row-main-login .form-main-user .divisor .line-divisor { height: 1px; background: #f0f0f0; }
+
+.row-main-login .form-main-user .divisor .icon-divisor { font-family: "Nunito", sans-serif !important; font-size: 1.5rem; margin: 0; padding: 0; vertical-align: middle; }
+
+.row-main-login .form-main-user .login-redes { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0; }
+
+.row-main-login .form-main-user .login-redes p { font-size: 1rem; color: #777; }
+
+.row-main-login .form-main-user .login-redes .cont-login-btn .login-btn-redes { line-height: 50px; height: 50px; font-weight: 600; font-size: .9rem; text-transform: uppercase; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; cursor: pointer; }
+
+@media screen and (max-width: 768px) { .row-main-login .form-main-user .login-redes .cont-login-btn .login-btn-redes { margin-bottom: 1rem; border-radius: 3px !important; } }
+
+.row-main-login .form-main-user .login-redes .cont-login-btn .login-btn-redes i { font-size: 1.5rem; margin-right: 1rem; -ms-flex-item-align: center; align-self: center; }
+
+@media screen and (max-width: 480px) { .row-main-login .form-main-user .login-redes .cont-login-btn .login-btn-redes i { position: absolute; left: 15px; } }
+
+.row-main-login .form-main-user .login-redes .cont-login-btn .login-btn-redes:nth-child(1) { background-color: #3b5998; border-radius: 3px 0 0 3px; }
+
+.row-main-login .form-main-user .login-redes .cont-login-btn .login-btn-redes:nth-child(1) i { font-size: 1.2rem; }
+
+.row-main-login .form-main-user .login-redes .cont-login-btn .login-btn-redes:nth-child(2) { background-color: #dd4b39; border-radius: 0 3px 3px 0; }

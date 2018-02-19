@@ -81,6 +81,9 @@
                     & .calc:hover .img-calc {
                         opacity: .7;
                     }
+                    & .link-login {
+                        font-size: .95rem;
+                    }
                 }
             }
         }
@@ -171,7 +174,7 @@
                                     }
                                 }
                                 & a {
-                                    font-size: 1rem;
+                                    font-size: .9rem;
                                     margin-right: 3px;
                                     @media screen and (max-width: 480px) {
                                         font-size: 1.2rem;
@@ -289,20 +292,13 @@
                         & .precio-total {
                             @extend .precio-internet;
                             font-size: 1.3rem;
-                            margin-bottom: 0;
+                            margin-bottom: .5rem;
                         }
                         & p.precio-normal {
                             text-decoration: none;
                             & .precio {
                                 text-decoration: line-through;
                             }
-                        }
-                        & p.precio-instalacion {
-                            font-weight: 600;
-                            & .precio {}
-                        }
-                        & p.precio-descuento {
-                            & .precio {}
                         }
                     }
                     //DISPONIBILIDAD
@@ -1080,6 +1076,13 @@ th {
                 color: $whiteColor;
                 text-align: center;
                 font-weight: 500;
+                @media screen and (max-width: 480px) {
+                    padding-left: 2.5rem;
+                    text-align: left;
+                }
+                @media screen and (max-width: 321px) {
+                    padding-left: 1.5rem;
+                }
                 & .name-equipo,
                 & .atributo-equipo,
                 & .precio-oferta,

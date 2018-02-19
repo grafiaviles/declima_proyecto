@@ -67,7 +67,6 @@
             .collapsible-header:active,
             .collapsible-header:focus {
                 color: $secondColor;
-                font-weight: 600;
             }
             & .active {
                 color: $secondColor;
@@ -130,13 +129,32 @@
             }
         }
         //Collapsible Header Mobile
-        & .acordion-filtros-mobile {
-            & .collapsible-header-mobile {
-                padding: 0 20px!important;
-                border-bottom: none!important;
+        & .cont-filtros-mobile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            & .acordion-filtros-mobile {
+                align-self: flex-start;
+                width: 100%;
+                & .collapsible-header-mobile {
+                    padding: 0 20px!important;
+                    border-bottom: none!important;
+                    display: flex;
+                    align-items: center;
+                }
+                & .range-field {
+                    width: 90%;
+                }
             }
-            & .range-field {
-                width: 90%;
+            & .cont-btn-filtros {
+                align-self: flex-end;
+                & .row-btn-filtros {
+                    margin-bottom: 0;
+                    & .btn-filtros {
+                        line-height: 48px;
+                    }
+                }
             }
         }
         & .swiper-ofertas {
@@ -168,6 +186,7 @@
                         color: $greyColor;
                         line-height: 20px;
                         font-weight: 400;
+                        width: 90%;
                     }
                     & h3 {
                         margin: 0;
@@ -279,6 +298,13 @@
                     color: $whiteColor;
                     text-align: center;
                     font-weight: 500;
+                    @media screen and (max-width: 480px) {
+                        padding-left: 2.5rem;
+                        text-align: left;
+                    }
+                    @media screen and (max-width: 321px) {
+                        padding-left: 1.5rem;
+                    }
                     & .name-equipo,
                     & .atributo-equipo,
                     & .precio-oferta,
@@ -308,7 +334,7 @@
                         font-size: 1.3rem;
                         font-weight: 600;
                         @media screen and (max-width: 480px) {
-                            font-size: 1.1rem;
+                            font-size: 1.5rem;
                         }
                         & sup {
                             font-size: 15px;
@@ -377,6 +403,7 @@
     & .btn-filtros-mobile {
         padding: 0;
         align-items: center;
+        margin-right: 1rem;
         cursor: pointer;
         & a {
             text-align: left;

@@ -1,0 +1,113 @@
+//Inicio Login
+.row-main-login {
+    background: $whiteColor;
+    margin: 0;
+    margin-top: 3.5rem;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    @media screen and (max-width: 480px) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    & .title-secction-main {
+        font-size: 2.5rem;
+        margin: 0;
+        margin-bottom: 2rem;
+        @media screen and (max-width: 480px) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 1.7rem;
+        }
+    }
+    & .form-main-user {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        & .form-user {
+            margin: auto;
+            & .input-field {
+                margin-bottom: 1rem;
+                & .icon-password {
+                    right: 10px!important;
+                    bottom: 30px;
+                    position: absolute;
+                    cursor: pointer;
+                    color: #9e9e9e;
+                }
+                & .icon-eye {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+        //DIVISOR
+        & .divisor {
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            & p {
+                color: $greysoftColor;
+            }
+            & .line-divisor {
+                height: 1px;
+                background: $greysoftColor;
+            }
+            & .icon-divisor {
+                font-family: 'Nunito', sans-serif!important;
+                font-size: 1.5rem;
+                margin: 0;
+                padding: 0;
+                vertical-align: middle;
+            }
+        }
+        //REDES
+        .login-redes {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0;
+            & p {
+                font-size: 1rem;
+                color: $greyColor;
+            }
+            & .cont-login-btn {
+                & .login-btn-redes {
+                    line-height: 50px;
+                    height: 50px;
+                    font-weight: 600;
+                    font-size: .9rem;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    @media screen and (max-width: 768px) {
+                        margin-bottom: 1rem;
+                        border-radius: 3px!important;
+                    }
+                    & i {
+                        font-size: 1.5rem;
+                        margin-right: 1rem;
+                        align-self: center;
+                        @media screen and (max-width: 480px) {
+                            position: absolute;
+                            left: 15px;
+                        }
+                    }
+                }
+                & .login-btn-redes:nth-child(1) {
+                    background-color: #3b5998;
+                    border-radius: 3px 0 0 3px;
+                    & i {
+                        font-size: 1.2rem;
+                    }
+                }
+                & .login-btn-redes:nth-child(2) {
+                    background-color: #dd4b39;
+                    border-radius: 0 3px 3px 0;
+                }
+            }
+        }
+    }
+}
