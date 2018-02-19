@@ -675,23 +675,26 @@
                             <h1 class="title-secction-main text-primary center-align col s12">Iniciar sesión en Declima</h1>
                             <form id="form-user" class="form-user col s12 m6">
                                 <div class="row">
-                                    <!-- Input -->
-                                    <div class="input-field inline col s12 l6">
+                                    <!-- Input Login -->
+                                    <div class="input-field inline col s12 ">
                                         <input id="email" type="email" class="validate">
-                                        <label for="email" data-error="Error" data-success="Correcto">Email</label>
+                                        <label for="email" data-error="Error" data-success="Correcto">Nombre de usuario o correo electrónico</label>
                                     </div>
-                                    <div class="input-field inline col s12 l6">
+                                    <div class="input-field inline col s12 ">
                                         <input id="password" type="password" class="validate">
                                         <label for="password" data-error="Error" data-success="Correcto">Contraseña</label>
                                         <span class="icon-eye-off icon-password right"></span>
                                         <span class="icon-eye icon-password right"></span>
                                     </div>
-                                    <div class="hide col s12 l6 right">
+
+                                    <!-- Mantenerme Conectado -->
+                                    <div class="connect-always col s12 left">
                                         <p>
-                                            <input type="checkbox" id="passwordView" />
-                                            <label for="passwordView">Mostrar Contraseña</label>
+                                            <input type="checkbox" id="connect-always" />
+                                            <label for="connect-always">Mantenerme conectado</label>
                                         </p>
                                     </div>
+                                    
                                     <!-- Buttom Input -->
                                     <div class="input-field inline col s12">
                                         <button class="my-disabled btn-submit waves-effect waves-light" type="submit" name="action">INGRESAR</button>
@@ -699,12 +702,14 @@
                                         <a class="btn-help-form center-block col s12 m6" href="#">¿No tienes cuenta en Declima? <span>Regístrate</span></a>
                                     </div>
 
+                                    <!-- Divisor -->
                                     <div class="divisor valign-wrapper col s12">
                                         <div class="line-divisor col s5"></div>
                                         <p class="icon-divisor col s2 center-align">o</p>
                                         <div class="line-divisor col s5"></div>
                                     </div>
 
+                                    <!-- Login Redes -->
                                     <div class="login-redes valign-wrapper col s12">
                                         <div class="cont-login-btn col s12">
                                             <span class="login-btn-redes col s12 l6 text-white waves-effect waves-light"><i class="icon-facebook"></i>Inicia sesión con Facebook</span>
