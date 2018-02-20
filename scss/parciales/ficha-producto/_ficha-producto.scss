@@ -657,12 +657,36 @@
                     }
                     & .form-calificar {
                         padding: 0;
+                        //CONECTADO SIEMPRE
+                        & .connect-always {
+                            margin-top: .7rem;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            margin-left: 0;
+                            & p.cont-checkbox {
+                                padding: 0;
+                                margin-bottom: .2rem;
+                                @media screen and (max-width: 480px) {
+                                    width: 100%!important;
+                                }
+                            }
+                            & p.cont-checkbox:first-child {
+                                @media screen and (max-width: 480px) {
+                                    margin-bottom: 1rem;
+                                }
+                            }
+                            & label {
+                                padding-left: 30px;
+                            }
+                        }
                         //DIVISOR
                         & .divisor {
                             align-items: center;
                             justify-content: space-between;
                             margin-top: 2rem;
-                            margin-bottom: 1rem;
+                            margin-bottom: 2rem;
                             & .line-divisor {
                                 height: 1px;
                                 background: $greysoftColor;
@@ -697,7 +721,6 @@
                                     cursor: pointer;
                                     @media screen and (max-width: 768px) {
                                         margin-bottom: 1rem;
-                                        border-radius: 3px!important;
                                     }
                                     & i {
                                         font-size: 1.5rem;

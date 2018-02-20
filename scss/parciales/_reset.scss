@@ -170,13 +170,29 @@ a {
     display: block;
     color: $secondColor;
     margin-top: 1rem;
+    padding-left: 0;
     & span {
+        transition: $transition1;
         font-weight: 600;
+    }
+}
+
+.btn-help-form:hover {
+    & span {
+        color: $secondColor;
     }
 }
 
 .divider {
     background-color: $greysoftColor;
+}
+
+.arrow-login {
+    position: absolute;
+    right: 15px;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 //BARRA DE PROGRESOS
