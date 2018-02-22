@@ -3267,6 +3267,8 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 
 .text-third { color: #7ac743; }
 
+.third { background: #7ac743; }
+
 .text-grey { color: #777; }
 
 .text-white { color: #fff; }
@@ -3294,6 +3296,12 @@ a { -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
 .divider { background-color: #f0f0f0; }
 
 .arrow-login { position: absolute; right: 15px; font-size: 1.2rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.arrow-login-left { position: absolute; left: 15px; font-size: 1.2rem; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.token-invalid { border: 2px solid red; color: red; padding: 1rem; border-radius: 3px; padding-left: 1rem !important; padding-right: 1rem !important; }
+
+.token-valid { border: 2px solid #7ac743; color: #7ac743; padding: 1rem; border-radius: 3px; padding-left: 1rem !important; padding-right: 1rem !important; }
 
 .progress { background-color: #3fa7f3; }
 
@@ -5639,13 +5647,15 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .box-equipos-relacionados .imagen-equipo .instalacion-tag p { line-height: 1rem; font-size: .85rem; margin: 0; text-align: left !important; padding-left: .5rem; }
 
-.row-main-login { background: #fff; margin: 0; overflow: hidden; position: relative; padding-top: 1rem; }
+.row-main-login { background: #fff; margin: 0; overflow: hidden; position: relative; padding-top: 2rem; }
 
 @media screen and (max-width: 480px) { .row-main-login { margin-top: 1rem; margin-bottom: 1rem; } }
 
+@media screen and (min-width: 1367px) { .row-main-login { padding-top: 0; } }
+
 .row-main-login .title-secction-main { font-size: 2.5rem; margin: 0; margin-bottom: 1.5rem; }
 
-@media screen and (max-width: 480px) { .row-main-login .title-secction-main { font-size: 2rem; } }
+@media screen and (max-width: 480px) { .row-main-login .title-secction-main { font-size: 2rem; text-align: left; } }
 
 @media screen and (max-width: 320px) { .row-main-login .title-secction-main { font-size: 1.7rem; } }
 
@@ -5696,3 +5706,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .row-main-login .form-main-user .login-redes .cont-login-btn .login-btn-redes:nth-child(2) { background-color: #dd4b39; border-radius: 0 3px 3px 0; }
 
 .row-main-login .pie-login { text-align: center; font-size: .8rem; color: #ccc; padding-bottom: 1rem; -ms-flex-item-align: end; align-self: flex-end; }
+
+.token-invalid { border: 2px solid red; padding: 1rem; border-radius: 3px; }
+
+.row-main-login-add { padding-top: 0; }

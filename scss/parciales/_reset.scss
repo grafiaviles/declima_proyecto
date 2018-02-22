@@ -108,6 +108,10 @@ a {
     color: $thirdColor;
 }
 
+.third {
+    background: $thirdColor;
+}
+
 .text-grey {
     color: $greyColor;
 }
@@ -193,6 +197,32 @@ a {
     font-size: 1.2rem;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.arrow-login-left {
+    position: absolute;
+    left: 15px;
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.token-invalid {
+    border: 2px solid red;
+    color: red;
+    padding: 1rem;
+    border-radius: 3px;
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+}
+
+.token-valid {
+    border: 2px solid $thirdColor;
+    color: $thirdColor;
+    padding: 1rem;
+    border-radius: 3px;
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
 }
 
 //BARRA DE PROGRESOS
