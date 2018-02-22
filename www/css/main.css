@@ -3590,11 +3590,13 @@ header .menu-secciones { background: #00587a !important; }
 
 @media screen and (max-width: 768px) { .nav-login { line-height: 56px; height: 56px; } }
 
-.nav-login .icon-login-menu { margin: 0 18px; }
+.nav-login .main-menu { padding: 0; }
 
-.nav-login .icon-login-menu i { line-height: 64px; height: 64px; }
+.nav-login .main-menu .icon-login-menu { margin: 0 18px; }
 
-@media screen and (max-width: 768px) { .nav-login .icon-login-menu i { line-height: 56px; height: 56px; } }
+.nav-login .main-menu .icon-login-menu i { line-height: 64px; height: 64px; }
+
+@media screen and (max-width: 768px) { .nav-login .main-menu .icon-login-menu i { line-height: 56px; height: 56px; } }
 
 #modal-preview { padding: 0; text-align: left; background: #fff; width: 70%; }
 
@@ -5637,7 +5639,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .box-equipos-relacionados .imagen-equipo .instalacion-tag p { line-height: 1rem; font-size: .85rem; margin: 0; text-align: left !important; padding-left: .5rem; }
 
-.row-main-login { background: #fff; margin: 0; overflow: hidden; position: relative; padding-top: 2rem; }
+.row-main-login { background: #fff; margin: 0; overflow: hidden; position: relative; padding-top: 1rem; }
 
 @media screen and (max-width: 480px) { .row-main-login { margin-top: 1rem; margin-bottom: 1rem; } }
 

@@ -425,15 +425,18 @@
                     line-height: 56px;
                     height: 56px;
                 }
-                & .icon-login-menu {
-                    margin: 0 18px;
-                }
-                & .icon-login-menu i {
-                    line-height: 64px;
-                    height: 64px;
-                    @media screen and (max-width: 768px) {
-                        line-height: 56px;
-                        height: 56px;
+                & .main-menu {
+                    padding: 0;
+                    & .icon-login-menu {
+                        margin: 0 18px;
+                    }
+                    & .icon-login-menu i {
+                        line-height: 64px;
+                        height: 64px;
+                        @media screen and (max-width: 768px) {
+                            line-height: 56px;
+                            height: 56px;
+                        }
                     }
                 }
             }
