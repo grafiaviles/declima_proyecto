@@ -68,6 +68,8 @@
                                 // User Active
                                 & .user-active {
                                     background: transparent;
+                                    padding-right: 0;
+                                    overflow: hidden;
                                     & .chip-user {
                                         background: $whiteColor;
                                         color: $primaryColor;
@@ -359,10 +361,13 @@
                                         & i {
                                             font-size: 1.25rem;
                                             margin-right: 15px;
-                                            color: $thirdColor;
+                                            color: $secondColor;
                                         }
                                         & .icon-user-plus {
                                             color: $secondColor;
+                                        }
+                                        & .icon-user-check {
+                                            color: $thirdColor;
                                         }
                                     }
                                     & a:hover {

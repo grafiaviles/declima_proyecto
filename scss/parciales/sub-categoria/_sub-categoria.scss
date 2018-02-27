@@ -114,6 +114,21 @@
                         color: $secondColor;
                     }
                 }
+                //DATOS MI CUENTA
+                & .container-datos-user {
+                    & a {
+                        margin-bottom: 1rem;
+                        display: block;
+                        & i {
+                            margin-right: 1rem;
+                            font-size: 1.1rem;
+                            font-weight: 400;
+                        }
+                    }
+                    & a:last-child {
+                        margin-bottom: 0;
+                    }
+                }
                 //Filtro Form-check-box
                 & .form-check-box {
                     & label {

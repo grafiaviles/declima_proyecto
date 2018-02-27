@@ -1,0 +1,17 @@
+//BIENVENIDA
+.mis-datos-categoria {
+    & .welcome {
+        align-items: flex-start;
+        justify-content: space-between;
+        @media screen and (max-width: 480px) {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        & .photo-user {
+            margin-right: 1.5rem;
+        }
+        & .text-welcome {
+            h1 {}
+        }
+    }
+}
