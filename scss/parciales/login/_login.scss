@@ -46,6 +46,10 @@
                     display: none;
                 }
                 & .icon-eye {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                & .icon-eye-off {
                     opacity: 0;
                     visibility: hidden;
                 }
@@ -60,14 +64,27 @@
             align-items: center;
             flex-wrap: wrap;
             margin-left: 0;
+            @media screen and (max-width: 480px) {
+                flex-direction: column-reverse;
+            }
             & p.cont-checkbox {
+                & a {
+                    color: #9e9e9e;
+                    border-bottom: 1px solid #ccc;
+                }
+                & a:hover {
+                    color: grey;
+                    border-bottom: 1px solid #777;
+                }
                 @media screen and (max-width: 480px) {
                     width: 100%!important;
                 }
             }
-            & p.cont-checkbox:first-child {
+            & p.cont-checkbox:nth-child(2) {
+                padding-left: .75rem;
                 @media screen and (max-width: 480px) {
                     margin-bottom: 1rem;
+                    padding-left: 0;
                 }
             }
             & label {
@@ -148,6 +165,10 @@
         color: #ccc;
         padding-bottom: 1rem;
         align-self: flex-end;
+        display: none;
+        & a {
+            color: grey;
+        }
     }
 }
 

@@ -686,48 +686,48 @@
                                 <ul class="collapsible acordion-filtros hide-on-med-and-down" data-collapsible="accordion">
                                     <!-- Resumen -->
                                     <li id="filtro-datos">
-                                        <a href="#" class="collapsible-header active"><i class="icon-chevron-right"></i>Bienvenida</a>
+                                        <a href="#" class="collapsible-header active"><i class="icon-chevron-right"></i>Resumen de mi cuenta</a>
                                     </li>
                                     <!-- Filtro 1 -->
                                     <li id="filtro-datos">
-                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Mis Datos </div>
+                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Mi Perfil </div>
                                         <div class="collapsible-body">
                                             <span>
                                             <div class="container-datos-user">
-                                               <a class="text-grey" href=""><i class="icon-settings"></i> Datos de Usuario</a>
-                                               <a class="text-grey" href=""><i class="icon-user"></i> Datos Personales</a>
-                                               <a class="text-grey" href=""><i class="icon-credit-card"></i> Datos de Facturación</a>
-                                               <a class="text-grey" href=""><i class="icon-map"></i> Mis Direcciones</a>
+                                               <a class="text-grey" href=""><i class="icon-user"></i> Datos de usuario</a>
+                                               <a class="text-grey" href=""><i class="icon-map-pin"></i> Mis direcciones</a>
+                                               <a class="text-grey" href=""><i class="icon-credit-card"></i> Datos de facturación</a>
                                             </div>
                                             </span>
                                         </div>
                                     </li>
                                     <!-- Filtro 2 -->
-                                    <li id="filtro-seguridad">
-                                        <div class="collapsible-header active"><i class="icon-chevron-down"></i>Seguridad</div>
+                                    <li id="filtro-compras">
+                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Mis Compras</div>
                                         <div class="collapsible-body">
                                             <span>
-                                                <div class="container-datos-user">
-                                                    <a class="text-grey" href=""><i class="icon-unlock"></i> Claves de Acceso</a>
-                                                    <a class="text-grey" href=""><i class="icon-smartphone"></i> Código Smartphone</a>
-                                                 </div>
-                                            </span>
+                                                    <div class="container-datos-user">
+                                                        <a class="text-grey" href=""><i class="icon-tag"></i> Mis compras</a>
+                                                        <a class="text-grey" href=""><i class="icon-file"></i> Mis boletas</a>
+                                                        <a class="text-grey" href=""><i class="icon-heart"></i> Lista de favoritos</a>
+                                                        <a class="text-grey" href=""><i class="icon-alert-circle"></i> Reclamos y sugerencias</a>
+                                                     </div>
+                                                </span>
                                         </div>
                                     </li>
                                     <!-- Filtro 3 -->
-                                    <li id="filtro-compras">
-                                        <div class="collapsible-header active"><i class="icon-chevron-down"></i>Mis Compras</div>
+                                    <li id="filtro-seguridad">
+                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Seguridad</div>
                                         <div class="collapsible-body">
                                             <span>
-                                                <div class="container-datos-user">
-                                                    <a class="text-grey" href=""><i class="icon-tag"></i> Mis Compras</a>
-                                                    <a class="text-grey" href=""><i class="icon-file"></i> Mis Boletas</a>
-                                                    <a class="text-grey" href=""><i class="icon-heart"></i> Lista de Favoritos</a>
-                                                    <a class="text-grey" href=""><i class="icon-alert-circle"></i> Reclamos y Sugerencias</a>
-                                                 </div>
-                                            </span>
+                                                    <div class="container-datos-user">
+                                                        <a class="text-grey" href=""><i class="icon-unlock"></i> Cambiar contraseña</a>
+                                                        <a class="text-grey" href=""><i class="icon-smartphone"></i> Código smartphone</a>
+                                                     </div>
+                                                </span>
                                         </div>
                                     </li>
+
                                 </ul>
                             </div>
                         </aside>
@@ -764,10 +764,55 @@
                             <!-- Secciones mi cuenta por categorias -->
                             <div class="col s12 productos-categoria mis-datos-categoria">
                                 <div class="col s12 valign-wrapper welcome">
-                                    <img class="photo-user" src="img/user/welcome2.svg" width="80" alt="Contact Person">
+                                    <div class="cont-photo-user">
+                                        <img class="photo-user circle" src="img/user/avatar.jpg" width="100" alt="User Photo">
+                                    </div>
                                     <div class="text-welcome">
-                                        <h1 class="left-align text-primary title-section-user"><b class="text-second">Pandy</b>, bienvenido a Declima</h1>
+                                        <h1 class="left-align text-primary title-section-user"><b class="text-second">Pandy</b> bienvenido a Declima</h1>
                                         <p class="text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                    </div>
+                                </div>
+                                <!-- Datos principales en resumen -->
+                                <div class="col s12 datos-resumen">
+                                    <div class="box-resumen col s12 l6">
+                                        <div class="info-resumen">
+                                            <h3 class="title-box-resumen text-primary no-margin">Datos de usuario</h3>
+                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar o añadir" href="#"><i class="icon-edit-3"></i></a>
+                                            <div class="divider"></div>
+                                            <div class="section">
+                                                <h5>Nombre de usuario</h5>
+                                                <p class="text-grey">Pandy</p>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="section">
+                                                <h5>Email</h5>
+                                                <p class="text-grey">caviles@declima.cl</p>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="section">
+                                                <h5>Ciudad</h5>
+                                                <p class="text-grey">Santiago</p>
+                                            </div>
+                                            <div class="divider"></div>
+                                        </div>
+                                    </div>
+                                    <div class="box-resumen col s12 l6">
+                                        <div class="info-resumen">
+                                            <h3 class="title-box-resumen text-primary no-margin">Mis Compras</h3>
+                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar" href="#"><i class="icon-edit-3"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="box-resumen col s12 l6">
+                                        <div class="info-resumen">
+                                            <h3 class="title-box-resumen text-primary no-margin">Sub título</h3>
+                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar" href="#"><i class="icon-edit-3"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="box-resumen col s12 l6">
+                                        <div class="info-resumen">
+                                            <h3 class="title-box-resumen text-primary no-margin">Sub título</h3>
+                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar" href="#"><i class="icon-edit-3"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

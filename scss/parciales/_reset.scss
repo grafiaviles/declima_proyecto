@@ -23,10 +23,13 @@ a {
 }
 
 .title-section-user {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: left;
     margin: 0;
     margin-bottom: 1rem;
+    @media screen and (max-width: 480px) {
+        font-size: 2rem;
+    }
 }
 
 .no-margin {

@@ -3,15 +3,99 @@
     & .welcome {
         align-items: flex-start;
         justify-content: space-between;
+        margin-bottom: 1.5rem;
         @media screen and (max-width: 480px) {
             flex-wrap: wrap;
             align-items: center;
         }
-        & .photo-user {
+        & .cont-photo-user {
+            width: 100px;
             margin-right: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            & .photo-user {
+                display: block;
+            }
         }
         & .text-welcome {
-            h1 {}
+            h1 {
+                color: $primaryColor;
+            }
+        }
+    }
+    //Datos principales resumen 
+    & .datos-resumen {
+        position: relative;
+        //background: #f8f8f8;
+        //padding: 1rem;
+        border-radius: 5px;
+        & .box-resumen {
+            padding: 0;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            border-radius: 5px;
+            flex-wrap: wrap;
+            & .info-resumen {
+                border: 1px solid #f8f8f8;
+                background: white;
+                box-shadow: 0 0 30px rgba(0, 0, 0, 0.035);
+                margin-right: 1rem;
+                width: 100%;
+                min-height: 400px;
+                padding: 2rem;
+                border-radius: 5px;
+                transition: $transition1;
+                position: relative;
+                overflow: hidden;
+                @media screen and (max-width: 768px) {
+                    margin-right: 0;
+                }
+                & .title-box-resumen {
+                    transition: $transition1;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    margin: 0 !important;
+                    margin-bottom: 1rem !important;
+                    display: block;
+                }
+                & .icon-edit-datos {
+                    position: absolute;
+                    right: 7%;
+                    top: 1.7rem;
+                    font-size: 1.5rem;
+                    transform: translateX(45px);
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                & .section {
+                    & h5 {
+                        font-size: 1rem;
+                        color: $secondColor;
+                    }
+                    & p {
+                        font-weight: 600;
+                        font-size: .95rem;
+                    }
+                }
+            }
+            //Hhover Info Resumen
+            & .info-resumen:hover {
+                border: 1px solid $secondColor;
+            }
+            & .info-resumen:hover .title-box-resumen {
+                color: $secondColor;
+            }
+            & .info-resumen:hover .icon-edit-datos {
+                transform: translateX(0);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        & .box-resumen:nth-child(even) .info-resumen {
+            margin-right: 0;
         }
     }
 }
