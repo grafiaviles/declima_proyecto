@@ -84,6 +84,19 @@
                     & .link-login {
                         font-size: .95rem;
                     }
+                    //Cerrar sesion user
+                    & .close-sesion {
+                        padding-right: 0;
+                        display: flex;
+                        align-items: center;
+                        font-weight: 500;
+                        & i {
+                            display: inline-block;
+                            font-size: 21px;
+                            height: auto;
+                            line-height: inherit;
+                        }
+                    }
                 }
             }
         }
