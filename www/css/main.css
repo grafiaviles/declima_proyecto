@@ -4787,7 +4787,7 @@ footer .cont_pie .box_pie_foot .subir i.icon-chevron-up { font-size: 1rem; paddi
 
 .cont-ficha-producto .fluid-Breadcrumbs .cont-Breadcrumbs .nav-breadcrumbs-producto .cont-bradcrumb .breadcrumb:hover { color: #3fa7f3 !important; opacity: 1; }
 
-.cont-ficha-producto .fluid-Breadcrumbs .cont-Breadcrumbs .nav-breadcrumbs-producto .cont-bradcrumb .breadcrumb:before { content: "\e934"; color: #777; top: 3px; position: relative; font-family: 'grafiaviles'; font-size: .95rem; }
+.cont-ficha-producto .fluid-Breadcrumbs .cont-Breadcrumbs .nav-breadcrumbs-producto .cont-bradcrumb .breadcrumb:before { color: #777; content: "\e92f"; top: 3px; position: relative; font-family: 'icomoon'; font-size: .95rem; }
 
 @media screen and (max-width: 480px) { .cont-ficha-producto .fluid-Breadcrumbs .cont-Breadcrumbs .nav-breadcrumbs-producto .cont-bradcrumb .breadcrumb:before { top: 4px; } }
 
@@ -5772,6 +5772,20 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .mis-datos-categoria .datos-resumen .box-resumen .info-resumen .section h5 { font-size: 1rem; color: #3fa7f3; margin-top: 0; }
 
 .mis-datos-categoria .datos-resumen .box-resumen .info-resumen .section p { font-weight: 600; font-size: .95rem; }
+
+.mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras { border: none; }
+
+.mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras .avatar { padding-left: 60px; }
+
+.mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras .avatar img { left: 0; border-radius: 2px; width: 42px; position: absolute; height: 42px; }
+
+.mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras .collection-item { border-bottom: none; padding-top: 1rem; padding-bottom: 1rem; }
+
+.mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras .collection-item .title { font-size: 1rem; }
+
+.mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras .collection-item p { font-size: .95rem; }
+
+.mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras .collection-item .secondary-content { right: 0; }
 
 .mis-datos-categoria .datos-resumen .box-resumen .info-resumen:hover { border: 1px solid #3fa7f3; }
 

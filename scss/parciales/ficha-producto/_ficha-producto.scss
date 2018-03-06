@@ -47,11 +47,11 @@
                         opacity: 1;
                     }
                     & .breadcrumb:before {
-                        content: "\e934";
                         color: $greyColor;
+                        content: "\e92f";
                         top: 3px;
                         position: relative;
-                        font-family: 'grafiaviles';
+                        font-family: 'icomoon';
                         font-size: .95rem;
                         @media screen and (max-width: 480px) {
                             top: 4px;

@@ -78,6 +78,7 @@
                         visibility: visible;
                     }
                 }
+                //Info 1 Mis Datos
                 & .section {
                     & h5 {
                         font-size: 1rem;
@@ -87,6 +88,34 @@
                     & p {
                         font-weight: 600;
                         font-size: .95rem;
+                    }
+                }
+                //Info 2 Mis Compras
+                .collection-compras {
+                    border: none;
+                    & .avatar {
+                        padding-left: 60px;
+                        & img {
+                            left: 0;
+                            border-radius: 2px;
+                            width: 42px;
+                            position: absolute;
+                            height: 42px;
+                        }
+                    }
+                    & .collection-item {
+                        border-bottom: none;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        & .title {
+                            font-size: 1rem;
+                        }
+                        & p {
+                            font-size: .95rem;
+                        }
+                        & .secondary-content {
+                            right: 0;
+                        }
                     }
                 }
             }
