@@ -5793,7 +5793,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras .collection-item .detail-compra p { font-size: .95rem; }
 
-.mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras .collection-item .icon-detail { right: 0; opacity: 0; visibility: hidden; -webkit-transition: all 0.4s ease-in; transition: all 0.4s ease-in; position: absolute; top: 1rem; font-size: 1.2rem; }
+.mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras .collection-item .icon-detail { right: 1%; opacity: 0; visibility: hidden; -webkit-transition: all 0.4s ease-in; transition: all 0.4s ease-in; position: absolute; top: 1rem; font-size: 1.2rem; }
 
 .mis-datos-categoria .datos-resumen .box-resumen .info-resumen .collection-compras .collection-item .detail-compra:hover .icon-detail { opacity: 1; visibility: visible; }
 
