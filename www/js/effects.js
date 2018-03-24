@@ -42,6 +42,7 @@ $('.dropdown-button').dropdown({
     hover: true, // Activate on hover
     belowOrigin: true, // Displays dropdown below the button
 });
+$('.dropdown-trigger').dropdown();
 
 //Efecto Menu
 var altura = $('.efecto-menu').offset().top;

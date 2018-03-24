@@ -3,16 +3,20 @@
     & .welcome {
         align-items: flex-start;
         justify-content: space-between;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         @media screen and (max-width: 480px) {
             flex-wrap: wrap;
             align-items: center;
+            justify-content: center;
         }
         & .cont-photo-user {
             width: 100px;
             margin-right: 1.5rem;
             margin-bottom: 1.5rem;
             position: relative;
+            @media screen and (max-width: 480px) {
+                margin-right: 0;
+            }
             & .photo-user {
                 display: block;
             }
@@ -20,6 +24,68 @@
         & .text-welcome {
             h1 {
                 color: $primaryColor;
+                @media screen and (max-width: 480px) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    //Banner Descuento 
+    & .banner-dcto {
+        position: relative;
+        margin-bottom: 1.5rem;
+        & .cont-banner-dcto {
+            border-radius: 5px;
+            padding: 0;
+            overflow: hidden;
+            background: $secondColor;
+            height: 100px;
+            @media screen and (max-width: 998px) {
+                background: $whiteColor;
+                text-align: center;
+                height: auto;
+                padding-bottom: 1rem;
+                border: 1px solid #f8f8f8;
+                box-shadow: 0 0 30px rgba(0, 0, 0, 0.035);
+            }
+            & .figure-banner {
+                padding: 0;
+                height: 100px;
+                @media screen and (max-width: 998px) {
+                    height: auto;
+                }
+                & .banner-img {
+                    transform: translateX(-3px);
+                    width: 500px;
+                    @media screen and (max-width: 998px) {
+                        width: 100%;
+                        transform: none;
+                    }
+                }
+            }
+            & .code-dcto {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                @media screen and (max-width: 998px) {
+                    padding-top: .5rem;
+                }
+                span {
+                    font-size: 1.2rem;
+                    padding-left: .5rem;
+                    @media screen and (max-width: 998px) {
+                        color: $secondColor;
+                    }
+                }
+                p {
+                    font-size: .95rem;
+                    text-align: right;
+                    line-height: normal;
+                    @media screen and (max-width: 998px) {
+                        color: $secondColor;
+                    }
+                }
             }
         }
     }
@@ -63,26 +129,29 @@
                 & .icon-edit-datos {
                     position: absolute;
                     right: 7%;
-                    top: 1.7rem;
+                    top: 1.5rem;
                     font-size: 1.5rem;
                     transform: translateX(45px);
                     opacity: 0;
                     visibility: hidden;
                     color: $secondColor;
+                    font-weight: lighter;
                     @media screen and (max-width: 480px) {
-                        top: inherit;
-                        bottom: 1.5rem;
-                        right: 7.5%;
-                        transform: none;
+                        //top: inherit;
+                        //bottom: 1.5rem;
+                        //right: 7.5%;
+                        //transform: none;
                         opacity: 1;
                         visibility: visible;
+                        transform: translateX(0);
                     }
                 }
                 //Info 1 Mis Datos
                 & .section {
                     & h5 {
                         font-size: 1rem;
-                        color: $secondColor;
+                        color: $greyColor;
+                        opacity: .5;
                         margin-top: 0;
                     }
                     & p {
@@ -99,12 +168,21 @@
                         @media screen and (max-width: 480px) {
                             padding-right: 10px;
                         }
-                        & img {
+                        & img,
+                        & .icon-element {
                             left: 0;
                             border-radius: 2px;
                             width: 50px;
                             height: 50px;
                             position: absolute;
+                        }
+                        & .icon-element {
+                            top: 10px;
+                            font-size: 2rem;
+                            text-align: center;
+                            line-height: 50px;
+                            color: $greysoftColor;
+                            //opacity: .5;
                         }
                     }
                     & .consultas-preview {
@@ -124,6 +202,7 @@
                             display: block;
                             & .title {
                                 font-size: 1rem;
+                                transition: $transition1;
                             }
                             & p {
                                 font-size: .95rem;
@@ -142,6 +221,25 @@
                             opacity: 1;
                             visibility: visible;
                         }
+                    }
+                    & .collection-item:hover .title {
+                        color: $secondColor;
+                    }
+                }
+                //Sin Movimientos
+                & .not-mov {
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    height: 100%;
+                    flex-direction: column;
+                    transform: translateY(-20px);
+                    & i {
+                        font-size: 4rem;
+                        margin-bottom: 1rem;
+                    }
+                    @media screen and (max-width: 480px) {
+                        height: 250px;
                     }
                 }
             }
@@ -162,4 +260,9 @@
             margin-right: 0;
         }
     }
+}
+
+//Mi Perfil Collapse para mobile
+.mi-perfil-mobile {
+    box-shadow: none;
 }

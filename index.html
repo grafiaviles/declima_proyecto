@@ -709,6 +709,7 @@
                                             <span>
                                                 <div class="container-datos-user">
                                                     <a class="text-grey" href=""><i class="icon-tag"></i>Mis compras</a>
+                                                    <a class="text-grey" href=""><i class="icon-file"></i>Mis boletas</a>
                                                     <a class="text-grey" href=""><i class="icon-heart"></i>Lista de favoritos</a>
                                                     <a class="text-grey" href=""><i class="icon-alert-circle"></i>Reclamos y sugerencias</a>
                                                 </div>
@@ -728,19 +729,8 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <!-- Filtro 5 Consultas -->
-                                    <li id="filtro-mis-boletas">
-                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Mis boletas</div>
-                                        <div class="collapsible-body">
-                                            <span>
-                                                <div class="container-datos-user">
-                                                    <a class="text-grey" href=""><i class="icon-file"></i>Todas mis boletas</a>
-                                                </div>
-                                            </span>
-                                        </div>
-                                    </li>
 
-                                    <!-- Filtro 6 Consultas -->
+                                    <!-- Filtro 4 Consultas -->
                                     <li id="filtro-consultas">
                                         <div class="collapsible-header"><i class="icon-chevron-down"></i>Consultas</div>
                                         <div class="collapsible-body">
@@ -769,17 +759,49 @@
                                         <p class="hide-on-small-only text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
                                     </div>
                                 </div>
+                                <!-- Banner Descuento en primare compra al Registrarse -->
+                                <div class="banner-dcto col s12">
+                                    <div class="col s12 cont-banner-dcto">
+                                        <div class="col s12 m12 l8 figure-banner">
+                                            <img src="img/user/banner-dcto.svg" class="responsive-img banner-img" alt="">
+                                        </div>
+                                        <div class="col s12 m12 l4 code-dcto">
+                                            <p class="text-white">Copia este código:</p>
+                                            <span class="bolder text-white">12EDFT</span>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- Datos principales en resumen -->
                                 <div class="col s12 datos-resumen">
                                     <div class="box-resumen col s12 l6">
                                         <div class="info-resumen">
                                             <h3 class="title-box-resumen text-primary no-margin">Datos de usuario</h3>
-                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar" href="#"><i class="icon-plus"></i></a>
+                                            <a class="dropdown-button right icon-edit-datos" data-target='more1' href="#"><i class="icon-plus"></i></a>
+                                            <!-- Dropdown Structure -->
+                                            <ul id='more1' class='dropdown-content'>
+                                                <li><a href="#!">one</a></li>
+                                                <li><a href="#!">two</a></li>
+                                                <li class="divider" tabindex="-1"></li>
+                                                <li><a href="#!">three</a></li>
+                                                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                                                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                                            </ul>
+                                            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+                                            <!-- Dropdown Structure -->
+                                            <ul id='dropdown1' class='dropdown-content'>
+                                                <li><a href="#!">one</a></li>
+                                                <li><a href="#!">two</a></li>
+                                                <li class="divider" tabindex="-1"></li>
+                                                <li><a href="#!">three</a></li>
+                                                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                                                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                                            </ul>
                                             <!-- Contenido 1 Datos -->
                                             <div class="divider"></div>
                                             <div class="section">
-                                                <h5>Nombre de usuario</h5>
-                                                <p class="text-grey">Pandy</p>
+                                                <h5>Nombre y Apllido</h5>
+                                                <p class="text-grey">César Avilés</p>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="section">
@@ -793,23 +815,33 @@
                                             </div>
                                             <div class="divider"></div>
                                             <div class="section">
-                                                <h5>Ciudad</h5>
+                                                <h5>Región</h5>
                                                 <p class="text-grey">Santiago</p>
                                             </div>
+                                            <ul class="collapsible mi-perfil-mobile">
+                                                <li>
+                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i>Mi cuenta</div>
+                                                    <div class="collapsible-body">
+                                                        <span><a href="#">Datos de Usuario</a></span><br>
+                                                        <span><a href="#">Mis Direcciones</a></span>
+                                                        <span><a href="#">Cambiar contraseña</a></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="box-resumen col s12 l6">
                                         <div class="info-resumen">
                                             <h3 class="title-box-resumen text-primary no-margin">Mis Compras</h3>
-                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver todo" href="#"><i class="icon-plus"></i></a>
+                                            <a class="right icon-edit-datos tooltipped hide" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
                                             <div class="divider"></div>
                                             <!-- Contenido 2 Mis compras -->
-                                            <ul class="collection collection-compras">
+                                            <ul class="hide collection collection-compras">
                                                 <li class="collection-item avatar">
                                                     <a href="#!" class="detail-compra">
                                                         <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-second">Nombre Producto</span>
-                                                        <p class="text-grey">$ 544.900 x 1 unidad / <span>Redcompra</span> / <span><b class="text-primary">Pendiente</b></span></p>
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey">$ 544.900 x 1 unidad / <span>Redcompra</span></p>
                                                         <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
@@ -817,8 +849,8 @@
                                                 <li class="collection-item avatar">
                                                     <a href="#!" class="detail-compra">
                                                         <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-second">Nombre Producto</span>
-                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span> / <span><b class="text-third">Entregado</b></span></p>
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span></p>
                                                         <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
@@ -826,8 +858,8 @@
                                                 <li class="collection-item avatar">
                                                     <a href="#!" class="detail-compra">
                                                         <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-second">Nombre Producto</span>
-                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span> / <span><b class="text-third">Entregado</b></span></p>
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span></p>
                                                         <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
@@ -835,101 +867,113 @@
                                                 <li class="collection-item avatar">
                                                     <a href="#!" class="detail-compra">
                                                         <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-second">Nombre Producto</span>
-                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span> / <span><b class="text-third">Entregado</b></span></p>
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span></p>
                                                         <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
                                             </ul>
-                                            <!-- Contenido 2 Mis compras -->
+                                            <!-- Sin Movimientos -->
+                                            <div class="not-mov valign-wrapper">
+                                                <i class="icon-bell-off text-grey-soft"></i>
+                                                <p class="text-grey align-center">Sin registro de compras</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="box-resumen col s12 l6">
                                         <div class="info-resumen">
                                             <h3 class="title-box-resumen text-primary no-margin">Mis Boletas</h3>
-                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver todo" href="#"><i class="icon-plus"></i></a>
+                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
                                             <div class="divider"></div>
                                             <!-- Contenido 3 Mis boletas -->
                                             <ul class="collection collection-compras">
                                                 <li class="collection-item avatar">
                                                     <a href="#!" class="detail-compra">
-                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-second">Nombre Producto</span>
+                                                        <i class="icon-element icon-file"></i>
+                                                        <span class="title text-grey">Nombre Producto</span>
                                                         <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
-                                                        <i class="icon-file text-second icon-detail"></i>
+                                                        <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
                                                 <div class="divider"></div>
                                                 <li class="collection-item avatar">
                                                     <a href="#!" class="detail-compra">
-                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-second">Nombre Producto</span>
+                                                        <i class="icon-element icon-file"></i>
+                                                        <span class="title text-grey">Nombre Producto</span>
                                                         <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
-                                                        <i class="icon-file text-second icon-detail"></i>
+                                                        <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
                                                 <div class="divider"></div>
                                                 <li class="collection-item avatar">
                                                     <a href="#!" class="detail-compra">
-                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-second">Nombre Producto</span>
+                                                        <i class="icon-element icon-file"></i>
+                                                        <span class="title text-grey">Nombre Producto</span>
                                                         <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
-                                                        <i class="icon-file text-second icon-detail"></i>
+                                                        <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
                                                 <div class="divider"></div>
                                                 <li class="collection-item avatar">
                                                     <a href="#!" class="detail-compra">
-                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-second">Nombre Producto</span>
+                                                        <i class="icon-element icon-file"></i>
+                                                        <span class="title text-grey">Nombre Producto</span>
                                                         <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
-                                                        <i class="icon-file text-second icon-detail"></i>
+                                                        <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
                                             </ul>
-                                            <!-- Contenido 3 Mis boletas -->
+                                            <!-- Sin Movimientos -->
+                                            <div class="hide not-mov valign-wrapper">
+                                                <i class="icon-bell-off text-grey-soft"></i>
+                                                <p class="text-grey align-center">Sin registro de boletas</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="box-resumen col s12 l6">
                                         <div class="info-resumen">
-                                            <h3 class="title-box-resumen text-primary no-margin">Consultas</h3>
-                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver todo" href="#"><i class="icon-plus"></i></a>
+                                            <h3 class="title-box-resumen text-primary no-margin">Solicitudes</h3>
+                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
                                             <div class="divider"></div>
                                             <!-- Contenido 4 mis consultas -->
                                             <ul class="collection collection-compras">
                                                 <li class="collection-item avatar consultas-preview">
                                                     <a href="#!" class="detail-compra">
-                                                        <span class="title text-second">Nº Solicitud 000123</span>
-                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span><b class="text-primary">Pendiente</b></span></p>
+                                                        <span class="title text-grey">Nº Solicitud 000123</span>
+                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-third">Atendida</span></p>
                                                         <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
                                                 <div class="divider"></div>
                                                 <li class="collection-item avatar consultas-preview">
                                                     <a href="#!" class="detail-compra">
-                                                        <span class="title text-second">Nº Solicitud 000123</span>
-                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span><b class="text-third">Atendida</b></span></p>
+                                                        <span class="title text-grey">Nº Solicitud 000123</span>
+                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-primary">Pendiente</span></p>
                                                         <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
                                                 <div class="divider"></div>
                                                 <li class="collection-item avatar consultas-preview">
                                                     <a href="#!" class="detail-compra">
-                                                        <span class="title text-second">Nº Solicitud 000123</span>
-                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span><b class="text-third">Atendida</b></span></p>
+                                                        <span class="title text-grey">Nº Solicitud 000123</span>
+                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-third">Atendida</span></p>
                                                         <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
                                                 <div class="divider"></div>
                                                 <li class="collection-item avatar consultas-preview">
                                                     <a href="#!" class="detail-compra">
-                                                        <span class="title text-second">Nº Solicitud 000123</span>
-                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span><b class="text-third">Atendida</b></span></p>
+                                                        <span class="title text-grey">Nº Solicitud 000123</span>
+                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-third">Atendida</span></p>
                                                         <i class="icon-search text-second icon-detail"></i>
                                                     </a>
                                                 </li>
                                             </ul>
-                                            <!-- Contenido 4 mis consultas -->
+                                            <!-- Sin Movimientos -->
+                                            <div class="hide not-mov valign-wrapper">
+                                                <i class="icon-bell-off text-grey-soft"></i>
+                                                <p class="text-grey align-center">Sin registro de solicitudes</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1209,7 +1253,6 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/dist/slider-equipos.js"></script>
     <script type="text/javascript" src="js/dist/chat-drift.js"></script>
-
 </body>
 
 </html>
