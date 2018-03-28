@@ -39,10 +39,9 @@ $(function() { $(".anclas").click(function() { if (location.pathname.replace(/^\
 $('.slider').slider();
 
 $('.dropdown-button').dropdown({
-    hover: true, // Activate on hover
+    hover: false, // Activate on hover
     belowOrigin: true, // Displays dropdown below the button
 });
-$('.dropdown-trigger').dropdown();
 
 //Efecto Menu
 var altura = $('.efecto-menu').offset().top;

@@ -57,6 +57,7 @@
     <meta name="organization" content="Declima - Servicios y Suministros para Sistemas de Climatización" />
     <meta name="locality" content="Santiago, Chile" />
 
+
 </head>
 
 <body>
@@ -755,8 +756,9 @@
                                         <img class="photo-user circle" src="img/user/avatar.jpg" width="100" alt="User Photo">
                                     </div>
                                     <div class="text-welcome">
-                                        <h1 class="left-align text-primary title-section-user"><b class="text-second">César Avilés</b> bienvenido a Declima</h1>
-                                        <p class="hide-on-small-only text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                                        <h1 class="left-align text-primary title-section-user">César Avilés Cuevas</h1>
+                                        <span class="mail-section-user">caviles@declima.cl</span>
+                                        <p class="hide-on-small-only text-grey">Bienvenido a Declima, aquí podrás revisar el resumen de tu cuenta, datos personales, compras y más.</p>
                                     </div>
                                 </div>
                                 <!-- Banner Descuento en primare compra al Registrarse -->
@@ -776,32 +778,12 @@
                                     <div class="box-resumen col s12 l6">
                                         <div class="info-resumen">
                                             <h3 class="title-box-resumen text-primary no-margin">Datos de usuario</h3>
-                                            <a class="dropdown-button right icon-edit-datos" data-target='more1' href="#"><i class="icon-plus"></i></a>
-                                            <!-- Dropdown Structure -->
-                                            <ul id='more1' class='dropdown-content'>
-                                                <li><a href="#!">one</a></li>
-                                                <li><a href="#!">two</a></li>
-                                                <li class="divider" tabindex="-1"></li>
-                                                <li><a href="#!">three</a></li>
-                                                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                                                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-                                            </ul>
-                                            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
-
-                                            <!-- Dropdown Structure -->
-                                            <ul id='dropdown1' class='dropdown-content'>
-                                                <li><a href="#!">one</a></li>
-                                                <li><a href="#!">two</a></li>
-                                                <li class="divider" tabindex="-1"></li>
-                                                <li><a href="#!">three</a></li>
-                                                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                                                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-                                            </ul>
+                                            <a class="hide-on-med-and-down right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar" href="#"><i class="icon-plus"></i></a>
                                             <!-- Contenido 1 Datos -->
                                             <div class="divider"></div>
                                             <div class="section">
-                                                <h5>Nombre y Apllido</h5>
-                                                <p class="text-grey">César Avilés</p>
+                                                <h5>Nombre de usuario</h5>
+                                                <p class="text-grey">@pandy</p>
                                             </div>
                                             <div class="divider"></div>
                                             <div class="section">
@@ -814,17 +796,18 @@
                                                 <p class="text-grey">--</p>
                                             </div>
                                             <div class="divider"></div>
-                                            <div class="section">
+                                            <div class="section section-ultimate">
                                                 <h5>Región</h5>
                                                 <p class="text-grey">Santiago</p>
                                             </div>
-                                            <ul class="collapsible mi-perfil-mobile">
+                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
                                                 <li>
-                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i>Mi cuenta</div>
+                                                    <div class="active collapsible-header"><i class="icon-plus text-second"></i></div>
                                                     <div class="collapsible-body">
-                                                        <span><a href="#">Datos de Usuario</a></span><br>
-                                                        <span><a href="#">Mis Direcciones</a></span>
-                                                        <span><a href="#">Cambiar contraseña</a></span>
+                                                        <span class="title-perfil-mobile">Mi perfil</span>
+                                                        <span><a href="#"><i class="icon-user"></i> Datos de usuario</a></span>
+                                                        <span><a href="#"><i class="icon-map-pin"></i> Mis direcciones</a></span>
+                                                        <span><a href="#"><i class="icon-lock"></i> Cambiar contraseña</a></span>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -878,12 +861,25 @@
                                                 <i class="icon-bell-off text-grey-soft"></i>
                                                 <p class="text-grey align-center">Sin registro de compras</p>
                                             </div>
+                                            <!-- Menu mis compras mobile -->
+                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
+                                                <li>
+                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i></div>
+                                                    <div class="collapsible-body">
+                                                        <span class="title-perfil-mobile">Mis compras</span>
+                                                        <span><a href="#"><i class="icon-tag"></i> Mis compras</a></span>
+                                                        <span><a href="#"><i class="icon-file"></i> Mis boletas</a></span>
+                                                        <span><a href="#"><i class="icon-heart"></i> Lista de favoritos</a></span>
+                                                        <span><a href="#"><i class="icon-alert-circle"></i> Reclamos y Sugerencias</a></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="box-resumen col s12 l6">
                                         <div class="info-resumen">
                                             <h3 class="title-box-resumen text-primary no-margin">Mis Boletas</h3>
-                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
+                                            <a class="hide-on-med-and-down right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
                                             <div class="divider"></div>
                                             <!-- Contenido 3 Mis boletas -->
                                             <ul class="collection collection-compras">
@@ -928,12 +924,22 @@
                                                 <i class="icon-bell-off text-grey-soft"></i>
                                                 <p class="text-grey align-center">Sin registro de boletas</p>
                                             </div>
+                                            <!-- Menu mis boletas mobile -->
+                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
+                                                <li>
+                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i></div>
+                                                    <div class="collapsible-body">
+                                                        <span class="title-perfil-mobile">Mis boletas</span>
+                                                        <span><a href="#"><i class="icon-file"></i> Ver todas mis boletas</a></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <div class="box-resumen col s12 l6">
                                         <div class="info-resumen">
                                             <h3 class="title-box-resumen text-primary no-margin">Solicitudes</h3>
-                                            <a class="right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
+                                            <a class="hide-on-med-and-down right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
                                             <div class="divider"></div>
                                             <!-- Contenido 4 mis consultas -->
                                             <ul class="collection collection-compras">
@@ -974,6 +980,17 @@
                                                 <i class="icon-bell-off text-grey-soft"></i>
                                                 <p class="text-grey align-center">Sin registro de solicitudes</p>
                                             </div>
+                                            <!-- Menu mis solicitudes mobile -->
+                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
+                                                <li>
+                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i></div>
+                                                    <div class="collapsible-body">
+                                                        <span class="title-perfil-mobile">Consultas</span>
+                                                        <span><a class="drift-open-chat" href="#"><i class="icon-message-square"></i> Conversemos</a></span>
+                                                        <span><a href="#"><i class="icon-mail"></i> Solicitudes</a></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
