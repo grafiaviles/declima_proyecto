@@ -1,0 +1,9 @@
+.cont-user-form {
+    padding-top: 30px;
+    & .input-field {
+        margin-bottom: 1.5rem;
+    }
+    & .input-field:nth-child(7) {
+        margin-bottom: 0;
+    }
+}

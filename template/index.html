@@ -663,7 +663,8 @@
                         <div class="nav-wrapper">
                             <div class="col s12 cont-bradcrumb">
                                 <a href="#!" class="breadcrumb">Home</a>
-                                <a href="#!" class="breadcrumb breadcrumb-active">Mi cuenta</a>
+                                <a href="#!" class="breadcrumb breadcrumb">Mi cuenta</a>
+                                <a href="#!" class="breadcrumb breadcrumb-active">Datos de usuario</a>
                                 <a href="#!" class="hide close-sesion calc right hide-on-large-only">Hola, <span style="margin-left:4px;" class="bolder"> César Avilés</span></a>
                                 <a href="#!" class="close-sesion calc tooltipped right" data-position="bottom" data-delay="50" data-tooltip="Cerrar sesión"><i class="icon-log-out"></i></a>
                             </div>
@@ -676,8 +677,8 @@
                 <div class="container container-box container-ficha">
                     <div class="row row-main-category">
                         <!-- ASIDE MAIN -->
-                        <aside class="col s12 m6 l3 aside-cat">
-                            <div id="aside" class="col s12">
+                        <aside id="aside-mi-cuenta" class="col s12 m6 l3 aside-cat">
+                            <div class="col s12 efecto-menu">
                                 <!-- ASIDE MI CUENTA -->
                                 <div class="title-filtro hide-on-med-and-down">
                                     <h5 class="text-primary">
@@ -688,15 +689,15 @@
                                 <ul class="collapsible acordion-filtros hide-on-med-and-down" data-collapsible="accordion">
                                     <!-- Resumen -->
                                     <li id="filtro-datos">
-                                        <a href="#" class="collapsible-header active"><i class="icon-chevron-right"></i>Resumen de mi cuenta</a>
+                                        <a href="#" class="collapsible-header"><i class="icon-chevron-right"></i>Resumen de mi cuenta</a>
                                     </li>
                                     <!-- Filtro 1 Mi perfil -->
                                     <li id="filtro-datos">
-                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Mi perfil </div>
+                                        <div class="collapsible-header active"><i class="icon-chevron-down"></i>Mi perfil </div>
                                         <div class="collapsible-body">
                                             <span>
                                             <div class="container-datos-user">
-                                               <a class="text-grey" href=""><i class="icon-user"></i>Datos de usuario</a>
+                                               <a class="text-grey active" href=""><i class="icon-user"></i>Datos de usuario</a>
                                                <a class="text-grey" href=""><i class="icon-map-pin"></i>Direcciones</a>
                                                <a class="text-grey" href=""><i class="icon-lock"></i>Cambiar contraseña</a>
                                             </div>
@@ -758,11 +759,10 @@
                                     <div class="text-welcome">
                                         <h1 class="left-align text-primary title-section-user">César Avilés Cuevas</h1>
                                         <span class="mail-section-user">caviles@declima.cl</span>
-                                        <p class="hide-on-small-only text-grey">Bienvenido a Declima, aquí podrás revisar el resumen de tu cuenta, datos personales, compras y más.</p>
                                     </div>
                                 </div>
                                 <!-- Banner Descuento en primare compra al Registrarse -->
-                                <div class="banner-dcto col s12">
+                                <div class="banner-dcto col s12 hide">
                                     <div class="col s12 cont-banner-dcto">
                                         <div class="col s12 m12 l8 figure-banner">
                                             <img src="img/user/banner-dcto.svg" class="responsive-img banner-img" alt="">
@@ -775,31 +775,74 @@
                                 </div>
                                 <!-- Datos principales en resumen -->
                                 <div class="col s12 datos-resumen">
-                                    <div class="box-resumen col s12 l6">
-                                        <div class="info-resumen">
-                                            <h3 class="title-box-resumen text-primary no-margin">Datos de usuario</h3>
-                                            <a class="hide-on-med-and-down right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar" href="#"><i class="icon-plus"></i></a>
-                                            <!-- Contenido 1 Datos -->
+                                    <div class="box-resumen col s12">
+                                        <div class="info-resumen info-resumen-alone">
+                                            <h3 class="title-box-resumen text-primary no-margin">Mis datos de usuario</h3>
+                                            <a class="hide-on-med-and-down right icon-edit-datos icon-edit-datos-alone tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar" href="#"><i class="icon-plus"></i></a>
                                             <div class="divider"></div>
-                                            <div class="section">
-                                                <h5>Nombre de usuario</h5>
-                                                <p class="text-grey">@pandy</p>
-                                            </div>
-                                            <div class="divider"></div>
-                                            <div class="section">
-                                                <h5>Email</h5>
-                                                <p class="text-grey">caviles@declima.cl</p>
-                                            </div>
-                                            <div class="divider"></div>
-                                            <div class="section">
-                                                <h5>Teléfono</h5>
-                                                <p class="text-grey">--</p>
-                                            </div>
-                                            <div class="divider"></div>
-                                            <div class="section section-ultimate">
-                                                <h5>Región</h5>
-                                                <p class="text-grey">Santiago</p>
-                                            </div>
+                                            <!-- Contenido Formulario -->
+                                            <form action="">
+                                                <div class="row cont-user-form">
+                                                    <!-- Nombre y Apellido -->
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input value="César Avilés Cuevas" id="first_name2" type="text" autofocus>
+                                                        <label class="active" for="first_name2">Nombre y Apellido</label>
+                                                    </div>
+                                                    <!-- Name Usuario -->
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input value="@Pandy" id="first_name2" type="text">
+                                                        <label class="active" for="first_name2">Nombre de usuario</label>
+                                                    </div>
+                                                    <!-- Email -->
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input value="caviles@gmail.com" id="first_name2" type="email">
+                                                        <label class="active" for="first_name2">Email</label>
+                                                    </div>
+                                                    <!-- Region -->
+                                                    <div class="input-field col s12 m6">
+                                                        <select data-error="Error" data-success="Correcto">
+                                                            <option value="" disabled selected>Región Metropolitana</option>
+                                                            <option value="">I Tarapacá</option>
+                                                            <option value="">II Antofagasta</option>
+                                                            <option value="">III Atacama</option>
+                                                            <option value="">IV Coquimbo</option>
+                                                            <option value="">V Valaparaíso</option>
+                                                            <option value="">Metropolitana de Santiago</option>
+                                                            <option value="">VI Del Libertador Bernardo O'Higgins</option>
+                                                            <option value="">VII Del Maule</option>
+                                                            <option value="">VIII Del Bío Bío</option>
+                                                            <option value="">IX La Araucanía</option>
+                                                            <option value="">X Los Lagos</option>
+                                                            <option value="">XI Aisén del General Carlos Ibañez del Campo</option>
+                                                            <option value="">XII Magallanes y Antártica Chilena</option>
+                                                            <option value="">XIV De Los Ríos</option>
+                                                            <option value="">XV Arica y Parinacota</option>
+                                                        </select>
+                                                        <label>Selecciona tu región</label>
+                                                    </div>
+                                                    <!-- Telefono -->
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input value="+56 9 9381 9841" id="first_name2" type="tel">
+                                                        <label class="active" for="first_name2">Teléfono Móvil</label>
+                                                    </div>
+                                                    <!-- Rut -->
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input value="17.374.076-k" id="first_name2" type="tel">
+                                                        <label class="active" for="first_name2">Rut</label>
+                                                    </div>
+                                                    <!-- Rut -->
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input value="02 - 03 - 12" id="first_name2" type="date" class="datepicker">
+                                                        <label class="active" for="first_name2">Fecha de Nacimiento</label>
+                                                    </div>
+                                                    <!-- Terminos y Condiciones -->
+                                                    <div class="input-field col s12">
+                                                        <button class="my-disabled btn waves-effect waves-light" type="submit" name="action">GUARDAR</button>
+                                                        <button class="btn waves-effect waves-light" type="submit" name="action">LIMPIAR</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <!-- Aside Menu Mobile -->
                                             <ul class="hide-on-large-only collapsible menu-perfil-mobile">
                                                 <li>
                                                     <div class="active collapsible-header"><i class="icon-plus text-second"></i></div>
@@ -808,186 +851,6 @@
                                                         <span><a href="#"><i class="icon-user"></i> Datos de usuario</a></span>
                                                         <span><a href="#"><i class="icon-map-pin"></i> Mis direcciones</a></span>
                                                         <span><a href="#"><i class="icon-lock"></i> Cambiar contraseña</a></span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="box-resumen col s12 l6">
-                                        <div class="info-resumen">
-                                            <h3 class="title-box-resumen text-primary no-margin">Mis Compras</h3>
-                                            <a class="right icon-edit-datos tooltipped hide" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
-                                            <div class="divider"></div>
-                                            <!-- Contenido 2 Mis compras -->
-                                            <ul class="hide collection collection-compras">
-                                                <li class="collection-item avatar">
-                                                    <a href="#!" class="detail-compra">
-                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-grey">Nombre Producto</span>
-                                                        <p class="text-grey">$ 544.900 x 1 unidad / <span>Redcompra</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                                <div class="divider"></div>
-                                                <li class="collection-item avatar">
-                                                    <a href="#!" class="detail-compra">
-                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-grey">Nombre Producto</span>
-                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                                <div class="divider"></div>
-                                                <li class="collection-item avatar">
-                                                    <a href="#!" class="detail-compra">
-                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-grey">Nombre Producto</span>
-                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                                <div class="divider"></div>
-                                                <li class="collection-item avatar">
-                                                    <a href="#!" class="detail-compra">
-                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
-                                                        <span class="title text-grey">Nombre Producto</span>
-                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <!-- Sin Movimientos -->
-                                            <div class="not-mov valign-wrapper">
-                                                <i class="icon-bell-off text-grey-soft"></i>
-                                                <p class="text-grey align-center">Sin registro de compras</p>
-                                            </div>
-                                            <!-- Menu mis compras mobile -->
-                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
-                                                <li>
-                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i></div>
-                                                    <div class="collapsible-body">
-                                                        <span class="title-perfil-mobile">Mis compras</span>
-                                                        <span><a href="#"><i class="icon-tag"></i> Mis compras</a></span>
-                                                        <span><a href="#"><i class="icon-file"></i> Mis boletas</a></span>
-                                                        <span><a href="#"><i class="icon-heart"></i> Lista de favoritos</a></span>
-                                                        <span><a href="#"><i class="icon-alert-circle"></i> Reclamos y Sugerencias</a></span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="box-resumen col s12 l6">
-                                        <div class="info-resumen">
-                                            <h3 class="title-box-resumen text-primary no-margin">Mis Boletas</h3>
-                                            <a class="hide-on-med-and-down right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
-                                            <div class="divider"></div>
-                                            <!-- Contenido 3 Mis boletas -->
-                                            <ul class="collection collection-compras">
-                                                <li class="collection-item avatar">
-                                                    <a href="#!" class="detail-compra">
-                                                        <i class="icon-element icon-file"></i>
-                                                        <span class="title text-grey">Nombre Producto</span>
-                                                        <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                                <div class="divider"></div>
-                                                <li class="collection-item avatar">
-                                                    <a href="#!" class="detail-compra">
-                                                        <i class="icon-element icon-file"></i>
-                                                        <span class="title text-grey">Nombre Producto</span>
-                                                        <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                                <div class="divider"></div>
-                                                <li class="collection-item avatar">
-                                                    <a href="#!" class="detail-compra">
-                                                        <i class="icon-element icon-file"></i>
-                                                        <span class="title text-grey">Nombre Producto</span>
-                                                        <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                                <div class="divider"></div>
-                                                <li class="collection-item avatar">
-                                                    <a href="#!" class="detail-compra">
-                                                        <i class="icon-element icon-file"></i>
-                                                        <span class="title text-grey">Nombre Producto</span>
-                                                        <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <!-- Sin Movimientos -->
-                                            <div class="hide not-mov valign-wrapper">
-                                                <i class="icon-bell-off text-grey-soft"></i>
-                                                <p class="text-grey align-center">Sin registro de boletas</p>
-                                            </div>
-                                            <!-- Menu mis boletas mobile -->
-                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
-                                                <li>
-                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i></div>
-                                                    <div class="collapsible-body">
-                                                        <span class="title-perfil-mobile">Mis boletas</span>
-                                                        <span><a href="#"><i class="icon-file"></i> Ver todas mis boletas</a></span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="box-resumen col s12 l6">
-                                        <div class="info-resumen">
-                                            <h3 class="title-box-resumen text-primary no-margin">Solicitudes</h3>
-                                            <a class="hide-on-med-and-down right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
-                                            <div class="divider"></div>
-                                            <!-- Contenido 4 mis consultas -->
-                                            <ul class="collection collection-compras">
-                                                <li class="collection-item avatar consultas-preview">
-                                                    <a href="#!" class="detail-compra">
-                                                        <span class="title text-grey">Nº Solicitud 000123</span>
-                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-third">Atendida</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                                <div class="divider"></div>
-                                                <li class="collection-item avatar consultas-preview">
-                                                    <a href="#!" class="detail-compra">
-                                                        <span class="title text-grey">Nº Solicitud 000123</span>
-                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-primary">Pendiente</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                                <div class="divider"></div>
-                                                <li class="collection-item avatar consultas-preview">
-                                                    <a href="#!" class="detail-compra">
-                                                        <span class="title text-grey">Nº Solicitud 000123</span>
-                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-third">Atendida</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                                <div class="divider"></div>
-                                                <li class="collection-item avatar consultas-preview">
-                                                    <a href="#!" class="detail-compra">
-                                                        <span class="title text-grey">Nº Solicitud 000123</span>
-                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-third">Atendida</span></p>
-                                                        <i class="icon-search text-second icon-detail"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <!-- Sin Movimientos -->
-                                            <div class="hide not-mov valign-wrapper">
-                                                <i class="icon-bell-off text-grey-soft"></i>
-                                                <p class="text-grey align-center">Sin registro de solicitudes</p>
-                                            </div>
-                                            <!-- Menu mis solicitudes mobile -->
-                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
-                                                <li>
-                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i></div>
-                                                    <div class="collapsible-body">
-                                                        <span class="title-perfil-mobile">Consultas</span>
-                                                        <span><a class="drift-open-chat" href="#"><i class="icon-message-square"></i> Conversemos</a></span>
-                                                        <span><a href="#"><i class="icon-mail"></i> Solicitudes</a></span>
                                                     </div>
                                                 </li>
                                             </ul>

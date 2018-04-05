@@ -1,21 +1,22 @@
 //BIENVENIDA
 .mis-datos-categoria {
     & .welcome {
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
-        margin-bottom: 1rem;
+        margin-bottom: 2.5rem;
         @media screen and (max-width: 480px) {
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            margin-bottom: 1.5rem;
         }
         & .cont-photo-user {
             width: 100px;
             margin-right: 1.5rem;
-            margin-bottom: 1.5rem;
             position: relative;
             @media screen and (max-width: 480px) {
+                margin-bottom: 1.5rem;
                 margin-right: 0;
             }
             & .photo-user {
@@ -146,23 +147,23 @@
                 }
                 & .icon-edit-datos {
                     position: absolute;
-                    right: 7%;
-                    top: 1.5rem;
+                    right: 6%;
+                    top: 1rem;
                     font-size: 1.5rem;
                     transform: translateX(45px);
                     opacity: 0;
                     visibility: hidden;
                     color: $secondColor;
                     font-weight: lighter;
-                    @media screen and (max-width: 480px) {
-                        //top: inherit;
-                        //bottom: 1.5rem;
-                        //right: 7.5%;
-                        //transform: none;
-                        opacity: 1;
-                        visibility: visible;
-                        transform: translateX(0);
-                    }
+                    padding: .5rem;
+                    border-radius: 50%;
+                }
+                & .icon-edit-datos-alone {
+                    right: 3%;
+                }
+                & .icon-edit-datos:active {
+                    background: $secondColor;
+                    color: white;
                 }
                 //Info 1 Mis Datos
                 & .section {
@@ -280,6 +281,12 @@
                     }
                 }
             }
+            //Info Resumen Full Width
+            & .info-resumen-alone {
+                margin-right: 0;
+                height: auto;
+                overflow: visible;
+            }
             //Hover Info Resumen
             & .info-resumen:hover {
                 border: 1px solid $secondColor;
@@ -312,10 +319,19 @@
         border-bottom: 0;
         position: absolute;
         right: 20px;
-        & i {
+        margin-top: -7px;
+        & .icon-plus {
             margin-right: 0;
             font-size: 1.7rem;
             transition: $transition1;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 50%;
+        }
+        & .icon-plus:active {
+            background: $secondColor;
+            color: white;
         }
     }
     & .active .icon-plus {

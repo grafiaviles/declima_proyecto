@@ -190,6 +190,16 @@ a {
     border: 2px solid #ccc;
 }
 
+.input-field input[type=text].valid {
+    //border-bottom: 1px solid $thirdColor;
+    //box-shadow: 0 1px 0 0 $thirdColor;
+}
+
+.input-field input[type=text].invalid {
+    //border-bottom: 1px solid $thirdColor;
+    //box-shadow: 0 1px 0 0 $thirdColor;
+}
+
 .btn-help-form {
     font-size: .9rem;
     text-align: center;
