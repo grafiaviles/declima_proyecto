@@ -19,17 +19,17 @@ gulp.task('default', ['sass'], function() {
     gulp.watch('./scss/**/*.scss', ['sass']); //OBS SASS FILES
     gulp.watch('./www/js/*.js', ['javascript']).on('change', browserSync.reload); //OBS JAVASCRIPT FILES
     gulp.watch("./www/*.html").on('change', browserSync.reload); //OBS HTML FILES
-    gulp.watch('./*.html', ['htmlminify']);
+    gulp.watch('./template/*.html', ['htmlminify']);
 });
 
 //Minify HTML
 gulp.task('htmlminify', function() {
-    return gulp.src('./*.html')
+    return gulp.src('./template/*.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('./www'));
 });
 gulp.task('obsHtml', function() {
-    gulp.watch('./*.html', ['htmlminify']);
+    gulp.watch('./template/*.html', ['htmlminify']);
 });
 
 //Javascript Minify

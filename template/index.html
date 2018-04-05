@@ -57,6 +57,7 @@
     <meta name="organization" content="Declima - Servicios y Suministros para Sistemas de Climatización" />
     <meta name="locality" content="Santiago, Chile" />
 
+
 </head>
 
 <body>
@@ -619,22 +620,24 @@
                     <li class="list-category"><a href="#cotizador" class="modal-trigger waves-effect waves-dark active-link link-category" data-target="cotizador">Cotizar</a></li>
                     <li class="list-category"><a class="waves-effect waves-dark link-category">Contacto</a></li>
                     <!-- Login -->
-                    <li class="list-category"><a class="dropdown-button link-icon-category" data-activates='login'><i class="icon-user"></i></a></li>
+                    <li class="list-category hide"><a class="dropdown-button link-icon-category" data-activates='login'><i class="icon-user"></i></a></li>
                     <ul id='login' class='dropdown-content-menu-icon dropdown-content'>
                         <li><a href="#"><i class="icon-user-check"></i>Iniciar Sesión</a></li>
                         <li class="divider"></li>
                         <li><a href="#"><i class="icon-user-plus"></i>Regístrate</a></li>
                     </ul>
                     <!-- Mi Cuenta -->
-                    <li class="list-category hide">
+                    <li class="list-category">
                         <a class="dropdown-button user-active" data-activates='micuenta'>
-                            <div class="chip chip-user"><img src="img/user/avatar.jpg" alt="Contact Person">César A.</div>
+                            <div class="chip chip-user"><img src="img/user/avatar.jpg" alt="User Login">César Avilés<i class="icon-chevron-down"></i></div>
                         </a>
                     </li>
                     <ul id='micuenta' class='dropdown-content-menu-icon dropdown-content'>
-                        <li><a href="#"><i class="icon-user-check"></i>Iniciar Sesión</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="icon-user-plus"></i>Regístrate</a></li>
+                        <li><a href="#"><i class="icon-mi-cuenta icon-user"></i>Mi cuenta</a></li>
+                        <li class="hide"><a href="#"><i class="icon-mi-cuenta icon-tag"></i>Compras</a></li>
+                        <li class="hide"><a href="#"><i class="icon-mi-cuenta icon-heart"></i>Favoritos</a></li>
+                        <li class="hide"><a href="#"><i class="icon-mi-cuenta icon-help-circle"></i>Consultas</a></li>
+                        <li><a href="#"><i class="icon-mi-cuenta icon-log-out"></i>Cerrar sesión</a></li>
                     </ul>
                     <li class="list-category"><a href="#buscador-desktop" data-target="buscador-desktop" class="modal-trigger link-icon-category tooltipped" data-delay="50" data-tooltip="¿Qué buscas?"><i class="icon-search"></i></a></li>
                     <li class="list-category"><a href="#" class="button-collapse link-icon-category tooltipped" data-position="bottom" data-delay="50" data-tooltip="Carro de compras" data-activates="slide-carro"><i class="icon-shopping-cart"></i>
@@ -660,9 +663,9 @@
                         <div class="nav-wrapper">
                             <div class="col s12 cont-bradcrumb">
                                 <a href="#!" class="breadcrumb">Home</a>
-                                <a href="#!" class="breadcrumb">Aire Acondicionado</a>
-                                <a href="#!" class="breadcrumb breadcrumb-active">Equipos Residenciales</a>
-                                <a href="#!" class="hide-on-small-only calc right">Simulador Virtual<img class="img-calc" src="img/ficha-productos/calc-grafica.svg" width="60"></a>
+                                <a href="#!" class="breadcrumb breadcrumb-active">Mi cuenta</a>
+                                <a href="#!" class="hide close-sesion calc right hide-on-large-only">Hola, <span style="margin-left:4px;" class="bolder"> César Avilés</span></a>
+                                <a href="#!" class="close-sesion calc tooltipped right" data-position="bottom" data-delay="50" data-tooltip="Cerrar sesión"><i class="icon-log-out"></i></a>
                             </div>
                         </div>
                     </nav>
@@ -675,478 +678,324 @@
                         <!-- ASIDE MAIN -->
                         <aside class="col s12 m6 l3 aside-cat">
                             <div id="aside" class="col s12">
-                                <!-- Filtros Edit Mobile -->
-                                <div class="hide-on-large-only col s12 filtros-edit-mobile valign-wrapper" id="tabs-swipe-demo">
-                                    <div class="col s3 btn-filtros-mobile valign-wrapper">
-                                        <a href="#" data-activates="filtros-mobile" class="button-collapse"><i class="icon-sliders text-second"></i> Filtros</a>
-                                    </div>
-                                    <div class="col s9 filtros-mobile valign-wrapper">
-                                        <div class="chip">
-                                            Filtro 1
-                                            <i class="close icon-x"></i>
-                                        </div>
-                                        <div class="chip">
-                                            Filtro 2
-                                            <i class="close icon-x"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- FILTROS MOBILE -->
-                                <div id="filtros-mobile" class="side-nav cont-filtros-mobile">
-                                    <!-- Acordion Filtros Mobile -->
-                                    <ul class="acordion-filtros collapsible acordion-filtros-mobile" data-collapsible="accordion">
-                                        <!-- Filtro 1 -->
-                                        <li id="filtro-alcance">
-                                            <div class="collapsible-header collapsible-header-mobile active"><i class="icon-chevron-down"></i><b>Equipos Residenciales</b> </div>
-                                            <div class="collapsible-body">
-                                                <span>
-                                                    <form action="#" class="form-modelos">
-                                                        <p>
-                                                            <input class="with-gap" name="group1" type="radio" id="test1" checked/>
-                                                            <label for="test1">Ofertas Destacadas</label>
-                                                        </p>
-                                                        <p>
-                                                            <input class="with-gap" name="group1" type="radio" id="test2" />
-                                                            <label for="test2">Split Muro Blanc</label>
-                                                        </p>
-                                                        <p>
-                                                            <input class="with-gap" name="group1" type="radio" id="test3" />
-                                                            <label for="test3">Split Muro Inverter</label>
-                                                        </p>
-                                                        <p>
-                                                            <input class="with-gap" name="group1" type="radio" id="test4" />
-                                                            <label for="test4">Ventana</label>
-                                                        </p>
-                                                        <p>
-                                                            <input class="with-gap" name="group1" type="radio" id="test5" />
-                                                            <label for="test5">Portátiles</label>
-                                                        </p>
-                                                        <p>
-                                                            <input class="with-gap" name="group1" type="radio" id="testing6" />
-                                                            <label for="testing6">Con Instalación</label>
-                                                        </p>
-                                                        <p>
-                                                            <input class="with-gap" name="group1" type="radio" id="testing7" />
-                                                            <label for="testing7">Sin Instalación</label>
-                                                        </p>
-                                                    </form>
-                                                    </span>
-                                            </div>
-                                        </li>
-                                        <!-- Filtro 2 -->
-                                        <li>
-                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Precios</b></div>
-                                            <div class="collapsible-body">
-                                                <span>
-                                                            <form action="#">
-                                                                <p class="range-field">
-                                                                    <input type="range" id="test1" min="9000" max="24000"/>
-                                                                </p>
-                                                            </form>
-                                                        </span>
-                                            </div>
-                                        </li>
-                                        <!-- Filtro 3 -->
-                                        <li id="filtro-marca">
-                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Marca</b></div>
-                                            <div class="collapsible-body">
-                                                <span>
-                                                        <form class="form-check-box form-marca" action="#">
-                                                            <p>
-                                                                <input type="checkbox" id="midea" />
-                                                                <label for="midea">Midea (10)</label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="checkbox" id="carrier" />
-                                                                <label for="carrier">Carrier (3)</label>
-                                                            </p>
-                                                            <p>
-                                                                <input type="checkbox" id="otra" />
-                                                                <label  for="otra">Otra (6)</label>
-                                                            </p>
-                                                        </form>
-                                                    </span>
-                                            </div>
-                                        </li>
-                                        <!-- Filtro 4 -->
-                                        <li class="filtro-btu">
-                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Capacidad BTU/H</b></div>
-                                            <div class="collapsible-body">
-                                                <span>
-                                                            <form class="form-check-box form-btu" action="#">
-                                                                <p>
-                                                                    <input type="checkbox" id="9000" />
-                                                                    <label for="9000">9.000 (10)</label>
-                                                                </p>
-                                                                <p>
-                                                                    <input type="checkbox" id="12000" />
-                                                                    <label for="12000">12.000 (2)</label>
-                                                                </p>
-                                                                <p>
-                                                                    <input type="checkbox" id="18000" />
-                                                                    <label for="18000">18.000 (2)</label>
-                                                                </p>
-                                                                <p>
-                                                                    <input type="checkbox" id="24000" />
-                                                                    <label for="24000">24.000 (4)</label>
-                                                                </p>
-                                                                <p>
-                                                                    <input type="checkbox" id="48000" />
-                                                                    <label for="48000">48.000 (2)</label>
-                                                                </p>
-                                                                <p>
-                                                                    <input type="checkbox" id="72000" />
-                                                                    <label for="72000">72.000 (6)</label>
-                                                                </p>
-                                                            </form>
-                                                    </span>
-                                            </div>
-                                        </li>
-                                        <!-- Filtro 5 -->
-                                        <li id="filtro-alcance">
-                                            <div class="collapsible-header collapsible-header-mobile"><i class="icon-chevron-down"></i><b>Alcance m2</b> </div>
-                                            <div class="collapsible-body">
-                                                <span>
-                                                        <form action="#">
-                                                            <p class="range-field">
-                                                                <input type="range" id="test1" min="9000" max="24000"/>
-                                                            </p>
-                                                        </form>
-                                                    </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!-- Botones Filtros Mobile -->
-                                    <div class="cont-btn-filtros col s12">
-                                        <div class="row-btn-filtros row">
-                                            <a class="col s6 btn-filtros waves-effect waves-dark center-align second white-text bolder" href="#!">APLICAR</a>
-                                            <a class="col s6 btn-filtros waves-effect waves-dark center-align primary white-text bolder" href="#!">RESET</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ASIDE 1 FILTROS -->
+                                <!-- ASIDE MI CUENTA -->
                                 <div class="title-filtro hide-on-med-and-down">
                                     <h5 class="text-primary">
-                                        <a href="#!" class="hide icon-arrow-left text-primary"></a> Aire Acondicionado
+                                        <a href="#!" class="hide icon-arrow-left text-primary"></a>MI CUENTA
                                     </h5>
                                 </div>
-                                <!-- Acordion Filtros Desktop -->
+                                <!-- Acordion Filtros Mi Cuenta -->
                                 <ul class="collapsible acordion-filtros hide-on-med-and-down" data-collapsible="accordion">
-                                    <!-- Filtro 1 -->
-                                    <li id="filtro-alcance">
-                                        <div class="collapsible-header active"><i class="icon-chevron-down"></i>Equipos Residenciales </div>
+                                    <!-- Resumen -->
+                                    <li id="filtro-datos">
+                                        <a href="#" class="collapsible-header active"><i class="icon-chevron-right"></i>Resumen de mi cuenta</a>
+                                    </li>
+                                    <!-- Filtro 1 Mi perfil -->
+                                    <li id="filtro-datos">
+                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Mi perfil </div>
                                         <div class="collapsible-body">
                                             <span>
-                                            <form action="#" class="form-modelos">
-                                                <p>
-                                                    <input class="with-gap" name="group1" type="radio" id="test1" checked/>
-                                                    <label for="test1">Ofertas Destacadas</label>
-                                                </p>
-                                                <p>
-                                                    <input class="with-gap" name="group1" type="radio" id="test2" />
-                                                    <label for="test2">Split Muro Blanc</label>
-                                                </p>
-                                                <p>
-                                                    <input class="with-gap" name="group1" type="radio" id="test3" />
-                                                    <label for="test3">Split Muro Inverter</label>
-                                                </p>
-                                                <p>
-                                                    <input class="with-gap" name="group1" type="radio" id="test4" />
-                                                    <label for="test4">Ventana</label>
-                                                </p>
-                                                <p>
-                                                    <input class="with-gap" name="group1" type="radio" id="test5" />
-                                                    <label for="test5">Portátiles</label>
-                                                </p>
-                                                <p>
-                                                    <input class="with-gap" name="group1" type="radio" id="testing6" />
-                                                    <label for="testing6">Con Instalación</label>
-                                                </p>
-                                                <p>
-                                                    <input class="with-gap" name="group1" type="radio" id="testing7" />
-                                                    <label for="testing7">Sin Instalación</label>
-                                                </p>
-                                            </form>
+                                            <div class="container-datos-user">
+                                               <a class="text-grey" href=""><i class="icon-user"></i>Datos de usuario</a>
+                                               <a class="text-grey" href=""><i class="icon-map-pin"></i>Direcciones</a>
+                                               <a class="text-grey" href=""><i class="icon-lock"></i>Cambiar contraseña</a>
+                                            </div>
                                             </span>
                                         </div>
                                     </li>
-                                    <!-- Filtro 2 -->
-                                    <li>
-                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Precios</div>
+                                    <!-- Filtro 2 Mis compras -->
+                                    <li id="filtro-compras">
+                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Mis compras</div>
                                         <div class="collapsible-body">
                                             <span>
-                                                    <form action="#">
-                                                        <p class="range-field">
-                                                            <input type="range" id="test1" min="9000" max="24000"/>
-                                                        </p>
-                                                    </form>
-                                                </span>
-                                        </div>
-                                    </li>
-                                    <!-- Filtro 3 -->
-                                    <li id="filtro-marca">
-                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Marca</div>
-                                        <div class="collapsible-body">
-                                            <span>
-                                                <form class="form-check-box form-marca" action="#">
-                                                    <p>
-                                                        <input type="checkbox" id="midea" />
-                                                        <label for="midea">Midea (10)</label>
-                                                    </p>
-                                                    <p>
-                                                        <input type="checkbox" id="carrier" />
-                                                        <label for="carrier">Carrier (3)</label>
-                                                    </p>
-                                                    <p>
-                                                        <input type="checkbox" id="otra" />
-                                                        <label  for="otra">Otra (6)</label>
-                                                    </p>
-                                                </form>
+                                                <div class="container-datos-user">
+                                                    <a class="text-grey" href=""><i class="icon-tag"></i>Mis compras</a>
+                                                    <a class="text-grey" href=""><i class="icon-file"></i>Mis boletas</a>
+                                                    <a class="text-grey" href=""><i class="icon-heart"></i>Lista de favoritos</a>
+                                                    <a class="text-grey" href=""><i class="icon-alert-circle"></i>Reclamos y sugerencias</a>
+                                                </div>
                                             </span>
                                         </div>
                                     </li>
-                                    <!-- Filtro 4 -->
-                                    <li class="filtro-btu">
-                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Capacidad BTU/H</div>
+                                    <!-- Filtro 4 Consultas -->
+                                    <li id="filtro-medios-de-pago" class="hide">
+                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Medios de pago</div>
                                         <div class="collapsible-body">
                                             <span>
-                                                    <form class="form-check-box form-btu" action="#">
-                                                        <p>
-                                                            <input type="checkbox" id="9000" />
-                                                            <label for="9000">9.000 (10)</label>
-                                                        </p>
-                                                        <p>
-                                                            <input type="checkbox" id="12000" />
-                                                            <label for="12000">12.000 (2)</label>
-                                                        </p>
-                                                        <p>
-                                                            <input type="checkbox" id="18000" />
-                                                            <label for="18000">18.000 (2)</label>
-                                                        </p>
-                                                        <p>
-                                                            <input type="checkbox" id="24000" />
-                                                            <label for="24000">24.000 (4)</label>
-                                                        </p>
-                                                        <p>
-                                                            <input type="checkbox" id="48000" />
-                                                            <label for="48000">48.000 (2)</label>
-                                                        </p>
-                                                        <p>
-                                                            <input type="checkbox" id="72000" />
-                                                            <label for="72000">72.000 (6)</label>
-                                                        </p>
-                                                    </form>
+                                                <div class="container-datos-user">
+                                                    <a class="text-grey drift-open-chat waves-effect waves-light" href="#!"><i class="icon-credit-card"></i>Crédito</a>
+                                                    <a class="text-grey" href=""><i class="icon-dollar-sign"></i>Débito</a>
+                                                    <a class="text-grey" href=""><i class="icon-plus"></i>Otros Medios</a>
+                                                </div>
                                             </span>
                                         </div>
                                     </li>
-                                    <!-- Filtro 5 -->
-                                    <li id="filtro-alcance">
-                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Alcance m<sub>2</sub> </div>
+
+                                    <!-- Filtro 4 Consultas -->
+                                    <li id="filtro-consultas">
+                                        <div class="collapsible-header"><i class="icon-chevron-down"></i>Consultas</div>
                                         <div class="collapsible-body">
                                             <span>
-                                                <form action="#">
-                                                    <p class="range-field">
-                                                        <input type="range" id="test1" min="9000" max="24000"/>
-                                                    </p>
-                                                </form>
+                                                <div class="container-datos-user">
+                                                    <a class="text-grey drift-open-chat waves-effect waves-light" href="#!"><i class="icon-message-square"></i>Conversemos</a>
+                                                    <a class="text-grey" href=""><i class="icon-mail"></i>Solicitudes</a>
+                                                    
+                                                </div>
                                             </span>
                                         </div>
                                     </li>
                                 </ul>
-                                <!-- ASIDE 2 OFERTAS -->
-                                <div class="title-filtro hide-on-med-and-down">
-                                    <h5 class="text-primary">ACCESORIOS Y MÁS</h5>
-                                </div>
-                                <!-- Swiper -->
-                                <div class="swiper-ofertas hide-on-med-and-down">
-                                    <div class="swiper-wrapper">
-                                        <!-- Slider 1 -->
-                                        <div class="swiper-slide">
-                                            <a class="row cont-bag-product waves-effect waves-dark" href="">
-                                                <img class="circle responsive-img" src="img/menu/carro/product-001.jpg" alt="">
-                                                <div class="">
-                                                    <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
-                                                    <h3 class="left-align">$166.990</h3>
-                                                    <p class="left-align">Antes: $210.000</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <!-- Slider 2 -->
-                                        <div class="swiper-slide">
-                                            <a class="row cont-bag-product waves-effect waves-dark" href="">
-                                                <img src="img/menu/carro/product-001.jpg" alt="">
-                                                <div class="">
-                                                    <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
-                                                    <h3 class="left-align">$166.990</h3>
-                                                    <p class="left-align">Antes: $210.000</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <!-- Slider 3 -->
-                                        <div class="swiper-slide">
-                                            <a class="row cont-bag-product waves-effect waves-dark" href="">
-                                                <img src="img/menu/carro/product-001.jpg" alt="">
-                                                <div class="">
-                                                    <h5 class="left-align">Split Muro Inverter - 9.000 BTU - Carrier</h5>
-                                                    <h3 class="left-align">$166.990</h3>
-                                                    <p class="left-align">Antes: $210.000</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Add Pagination -->
-                                    <div class="swiper-pagination"></div>
-                                    <!-- Add Arrows -->
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                </div>
                             </div>
                         </aside>
-                        <!-- Filtros y Productos -->
+                        <!-- SECCIONES MI CUENTA -->
                         <div class="col s12 l9 section-productos">
-                            <div class="col s12 filtros-productos valign-wrapper">
-                                <!-- Filtros Edit -->
-                                <div class="col s12 m10 filtros-edit valign-wrapper hide-on-med-and-down" id="tabs-swipe-demo">
-                                    <p class="text-filtro text-second">Filtros:</p>
-                                    <div class="chip">
-                                        Filtro 1
-                                        <i class="close icon-x"></i>
+                            <!-- Secciones mi cuenta por categorias -->
+                            <div class="col s12 productos-categoria mis-datos-categoria">
+                                <div class="col s12 valign-wrapper welcome">
+                                    <div class="cont-photo-user">
+                                        <img class="photo-user circle" src="img/user/avatar.jpg" width="100" alt="User Photo">
                                     </div>
-                                    <div class="chip">
-                                        Filtro 2
-                                        <i class="close icon-x"></i>
-                                    </div>
-                                    <div class="chip">
-                                        Filtro 3
-                                        <i class="close icon-x"></i>
-                                    </div>
-                                    <div class="chip">
-                                        Filtro 4
-                                        <i class="close icon-x"></i>
+                                    <div class="text-welcome">
+                                        <h1 class="left-align text-primary title-section-user">César Avilés Cuevas</h1>
+                                        <span class="mail-section-user">caviles@declima.cl</span>
+                                        <p class="hide-on-small-only text-grey">Bienvenido a Declima, aquí podrás revisar el resumen de tu cuenta, datos personales, compras y más.</p>
                                     </div>
                                 </div>
-                                <!-- Filtros Layout -->
-                                <div class="col s12 m2 filtros-layout valign-wrapper hide-on-med-and-down">
-                                    <a href="#!" class="hide tooltipped icon-filtro-layout" data-position="bottom" data-delay="50" data-tooltip="Lista"><i class="icon-list"></i></a>
-                                    <a href="#!" class="hide tooltipped icon-filtro-layout" data-position="bottom" data-delay="50" data-tooltip="Grilla"><i class="icon-grid"></i></a>
-                                    <a href="#!" class="tooltipped icon-filtro-layout" data-position="bottom" data-delay="50" data-tooltip="Siguiente Categoría"><i class="icon-arrow-right"></i></a>
+                                <!-- Banner Descuento en primare compra al Registrarse -->
+                                <div class="banner-dcto col s12">
+                                    <div class="col s12 cont-banner-dcto">
+                                        <div class="col s12 m12 l8 figure-banner">
+                                            <img src="img/user/banner-dcto.svg" class="responsive-img banner-img" alt="">
+                                        </div>
+                                        <div class="col s12 m12 l4 code-dcto">
+                                            <p class="text-white">Copia este código:</p>
+                                            <span class="bolder text-white">12EDFT</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- Productos por categorias -->
-                            <div class="col s12 productos-categoria">
-                                <!-- Equipo 1 -->
-                                <div class="box-equipos-categoria col s12 m6 l4">
-                                    <div class="box-equipos-relacionados">
-                                        <div class="imagen-equipo">
-                                            <a href="#modal-preview" class="modal-trigger preview-product">
-                                                <i class="waves-effect waves-light icon-preview icon-maximize-2"></i>
-                                                <img class="img-product responsive-img" src="img/ficha-productos/img-test1.jpg">
-                                            </a>
-
-                                            <!-- Atributos -->
-                                            <div class="cont-icon-equipos valign-wrapper hide-on-small-only">
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Refrigerante R410"><i class="icon-feather icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Frío - Calor"><i class="icon-wind icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Control Remoto"><i class="icon-smartphone icon-equipos"></i></a>
-                                                <a href="#modal-compartir" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Compartir"><i class="icon-share-2 icon-equipos"></i></a>
+                                <!-- Datos principales en resumen -->
+                                <div class="col s12 datos-resumen">
+                                    <div class="box-resumen col s12 l6">
+                                        <div class="info-resumen">
+                                            <h3 class="title-box-resumen text-primary no-margin">Datos de usuario</h3>
+                                            <a class="hide-on-med-and-down right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar" href="#"><i class="icon-plus"></i></a>
+                                            <!-- Contenido 1 Datos -->
+                                            <div class="divider"></div>
+                                            <div class="section">
+                                                <h5>Nombre de usuario</h5>
+                                                <p class="text-grey">@pandy</p>
                                             </div>
-                                            <!-- Descuento -->
-                                            <span class="descuento-tag">
-                                                    <p>-50%</p>
-                                            </span>
-                                        </div>
-                                        <!-- Descripcion Comercial -->
-                                        <div class="descripcion-equipo">
-                                            <h3 class="name-equipo text-primary">Split Muro Blanc 18000 BTU</h3>
-                                            <p class="atributo-parrafo text-primary hide-on-small-only">Carrier - Alcance 15<sup>M2</sup></p>
-                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
-                                            <p class="precio-normal text-grey">Antes: $229.000</p>
-                                        </div>
-                                        <!-- Botones de Conversion -->
-                                        <div class="btn-box-equipos">
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-heart" data-position="bottom" data-delay="50" data-tooltip="Guardar en favoritos" onclick="Materialize.toast('Se añadio a mi lista de favoritos', 4000)"></a>
-                                            <a href="#" class="btn-ver-mas waves-effect waves-dark col s6">VER MÁS</a>
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro de compras', 4000)"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Equipo 2 -->
-                                <div class="box-equipos-categoria col s12 m6 l4">
-                                    <div class="box-equipos-relacionados">
-                                        <div class="imagen-equipo">
-                                            <a href="#modal-preview" class="modal-trigger preview-product">
-                                                <i class="waves-effect waves-light icon-preview icon-maximize-2"></i>
-                                                <img class="img-product responsive-img" src="img/ficha-productos/img-test1.jpg">
-                                            </a>
-
-                                            <!-- Atributos -->
-                                            <div class="cont-icon-equipos valign-wrapper hide-on-small-only">
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Refrigerante R410"><i class="icon-feather icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Frío - Calor"><i class="icon-wind icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Control Remoto"><i class="icon-smartphone icon-equipos"></i></a>
-                                                <a href="#modal-compartir" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Compartir"><i class="icon-share-2 icon-equipos"></i></a>
+                                            <div class="divider"></div>
+                                            <div class="section">
+                                                <h5>Email</h5>
+                                                <p class="text-grey">caviles@declima.cl</p>
                                             </div>
-                                            <!-- Descuento -->
-                                            <span class="descuento-tag">
-                                                    <p>-50%</p>
-                                            </span>
-                                        </div>
-                                        <!-- Descripcion Comercial -->
-                                        <div class="descripcion-equipo">
-                                            <h3 class="name-equipo text-primary">Split Muro Blanc 18000 BTU</h3>
-                                            <p class="atributo-parrafo text-primary hide-on-small-only">Carrier - Alcance 15<sup>M2</sup></p>
-                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
-                                            <p class="precio-normal text-grey">Antes: $229.000</p>
-                                        </div>
-                                        <!-- Botones de Conversion -->
-                                        <div class="btn-box-equipos">
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-heart" data-position="bottom" data-delay="50" data-tooltip="Guardar en favoritos" onclick="Materialize.toast('Se añadio a mi lista de favoritos', 4000)"></a>
-                                            <a href="#" class="btn-ver-mas waves-effect waves-dark col s6">VER MÁS</a>
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro de compras', 4000)"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Equipo 3 -->
-                                <div class="box-equipos-categoria col s12 m6 l4">
-                                    <div class="box-equipos-relacionados">
-                                        <div class="imagen-equipo">
-                                            <a href="#modal-preview" class="modal-trigger preview-product">
-                                                <i class="waves-effect waves-light icon-preview icon-maximize-2"></i>
-                                                <img class="img-product responsive-img" src="img/ficha-productos/img-test1.jpg">
-                                            </a>
-
-                                            <!-- Atributos -->
-                                            <div class="cont-icon-equipos valign-wrapper hide-on-small-only">
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Refrigerante R410"><i class="icon-feather icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Frío - Calor"><i class="icon-wind icon-equipos"></i></a>
-                                                <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Control Remoto"><i class="icon-smartphone icon-equipos"></i></a>
-                                                <a href="#modal-compartir" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Compartir"><i class="icon-share-2 icon-equipos"></i></a>
+                                            <div class="divider"></div>
+                                            <div class="section">
+                                                <h5>Teléfono</h5>
+                                                <p class="text-grey">--</p>
                                             </div>
-                                            <!-- Descuento -->
-                                            <span class="descuento-tag"> 
-                                                    <p>-50%</p>
-                                            </span>
+                                            <div class="divider"></div>
+                                            <div class="section section-ultimate">
+                                                <h5>Región</h5>
+                                                <p class="text-grey">Santiago</p>
+                                            </div>
+                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
+                                                <li>
+                                                    <div class="active collapsible-header"><i class="icon-plus text-second"></i></div>
+                                                    <div class="collapsible-body">
+                                                        <span class="title-perfil-mobile">Mi perfil</span>
+                                                        <span><a href="#"><i class="icon-user"></i> Datos de usuario</a></span>
+                                                        <span><a href="#"><i class="icon-map-pin"></i> Mis direcciones</a></span>
+                                                        <span><a href="#"><i class="icon-lock"></i> Cambiar contraseña</a></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <!-- Descripcion Comercial -->
-                                        <div class="descripcion-equipo">
-                                            <h3 class="name-equipo text-primary">Split Muro Blanc 18000 BTU</h3>
-                                            <p class="atributo-parrafo text-primary hide-on-small-only">Carrier - Alcance 15<sup>M2</sup></p>
-                                            <h2 class="precio-oferta text-primary"><sup>$ </sup>159.990</h2>
-                                            <p class="precio-normal text-grey">Antes: $229.000</p>
+                                    </div>
+                                    <div class="box-resumen col s12 l6">
+                                        <div class="info-resumen">
+                                            <h3 class="title-box-resumen text-primary no-margin">Mis Compras</h3>
+                                            <a class="right icon-edit-datos tooltipped hide" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
+                                            <div class="divider"></div>
+                                            <!-- Contenido 2 Mis compras -->
+                                            <ul class="hide collection collection-compras">
+                                                <li class="collection-item avatar">
+                                                    <a href="#!" class="detail-compra">
+                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey">$ 544.900 x 1 unidad / <span>Redcompra</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                                <div class="divider"></div>
+                                                <li class="collection-item avatar">
+                                                    <a href="#!" class="detail-compra">
+                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                                <div class="divider"></div>
+                                                <li class="collection-item avatar">
+                                                    <a href="#!" class="detail-compra">
+                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                                <div class="divider"></div>
+                                                <li class="collection-item avatar">
+                                                    <a href="#!" class="detail-compra">
+                                                        <img src="img/menu/carro/product-001.jpg" alt="Imagen Producto">
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey">$ 444.900 x 1 unidad / <span>Redcompra</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- Sin Movimientos -->
+                                            <div class="not-mov valign-wrapper">
+                                                <i class="icon-bell-off text-grey-soft"></i>
+                                                <p class="text-grey align-center">Sin registro de compras</p>
+                                            </div>
+                                            <!-- Menu mis compras mobile -->
+                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
+                                                <li>
+                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i></div>
+                                                    <div class="collapsible-body">
+                                                        <span class="title-perfil-mobile">Mis compras</span>
+                                                        <span><a href="#"><i class="icon-tag"></i> Mis compras</a></span>
+                                                        <span><a href="#"><i class="icon-file"></i> Mis boletas</a></span>
+                                                        <span><a href="#"><i class="icon-heart"></i> Lista de favoritos</a></span>
+                                                        <span><a href="#"><i class="icon-alert-circle"></i> Reclamos y Sugerencias</a></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <!-- Botones de Conversion -->
-                                        <div class="btn-box-equipos">
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-heart" data-position="bottom" data-delay="50" data-tooltip="Guardar en favoritos" onclick="Materialize.toast('Se añadio a mi lista de favoritos', 4000)"></a>
-                                            <a href="#" class="btn-ver-mas waves-effect waves-dark col s6">VER MÁS</a>
-                                            <a class="tooltipped icon-btn-action waves-effect waves-dark col s3 icon-shopping-cart" data-position="bottom" data-delay="50" data-tooltip="Agregar al carro" onclick="Materialize.toast('Se añadio al carro de compras', 4000)"></a>
+                                    </div>
+                                    <div class="box-resumen col s12 l6">
+                                        <div class="info-resumen">
+                                            <h3 class="title-box-resumen text-primary no-margin">Mis Boletas</h3>
+                                            <a class="hide-on-med-and-down right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
+                                            <div class="divider"></div>
+                                            <!-- Contenido 3 Mis boletas -->
+                                            <ul class="collection collection-compras">
+                                                <li class="collection-item avatar">
+                                                    <a href="#!" class="detail-compra">
+                                                        <i class="icon-element icon-file"></i>
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                                <div class="divider"></div>
+                                                <li class="collection-item avatar">
+                                                    <a href="#!" class="detail-compra">
+                                                        <i class="icon-element icon-file"></i>
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                                <div class="divider"></div>
+                                                <li class="collection-item avatar">
+                                                    <a href="#!" class="detail-compra">
+                                                        <i class="icon-element icon-file"></i>
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                                <div class="divider"></div>
+                                                <li class="collection-item avatar">
+                                                    <a href="#!" class="detail-compra">
+                                                        <i class="icon-element icon-file"></i>
+                                                        <span class="title text-grey">Nombre Producto</span>
+                                                        <p class="text-grey"><span>02-03-18</span> / <span>$ 159.990</span> / <span>Nº 000123</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- Sin Movimientos -->
+                                            <div class="hide not-mov valign-wrapper">
+                                                <i class="icon-bell-off text-grey-soft"></i>
+                                                <p class="text-grey align-center">Sin registro de boletas</p>
+                                            </div>
+                                            <!-- Menu mis boletas mobile -->
+                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
+                                                <li>
+                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i></div>
+                                                    <div class="collapsible-body">
+                                                        <span class="title-perfil-mobile">Mis boletas</span>
+                                                        <span><a href="#"><i class="icon-file"></i> Ver todas mis boletas</a></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="box-resumen col s12 l6">
+                                        <div class="info-resumen">
+                                            <h3 class="title-box-resumen text-primary no-margin">Solicitudes</h3>
+                                            <a class="hide-on-med-and-down right icon-edit-datos tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ver más" href="#"><i class="icon-plus"></i></a>
+                                            <div class="divider"></div>
+                                            <!-- Contenido 4 mis consultas -->
+                                            <ul class="collection collection-compras">
+                                                <li class="collection-item avatar consultas-preview">
+                                                    <a href="#!" class="detail-compra">
+                                                        <span class="title text-grey">Nº Solicitud 000123</span>
+                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-third">Atendida</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                                <div class="divider"></div>
+                                                <li class="collection-item avatar consultas-preview">
+                                                    <a href="#!" class="detail-compra">
+                                                        <span class="title text-grey">Nº Solicitud 000123</span>
+                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-primary">Pendiente</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                                <div class="divider"></div>
+                                                <li class="collection-item avatar consultas-preview">
+                                                    <a href="#!" class="detail-compra">
+                                                        <span class="title text-grey">Nº Solicitud 000123</span>
+                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-third">Atendida</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                                <div class="divider"></div>
+                                                <li class="collection-item avatar consultas-preview">
+                                                    <a href="#!" class="detail-compra">
+                                                        <span class="title text-grey">Nº Solicitud 000123</span>
+                                                        <p class="text-grey"><span>Venta de equipos</span> / <span>02-03-18</span> / <span class="text-third">Atendida</span></p>
+                                                        <i class="icon-search text-second icon-detail"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- Sin Movimientos -->
+                                            <div class="hide not-mov valign-wrapper">
+                                                <i class="icon-bell-off text-grey-soft"></i>
+                                                <p class="text-grey align-center">Sin registro de solicitudes</p>
+                                            </div>
+                                            <!-- Menu mis solicitudes mobile -->
+                                            <ul class="hide-on-large-only collapsible menu-perfil-mobile">
+                                                <li>
+                                                    <div class="collapsible-header"><i class="icon-plus text-second"></i></div>
+                                                    <div class="collapsible-body">
+                                                        <span class="title-perfil-mobile">Consultas</span>
+                                                        <span><a class="drift-open-chat" href="#"><i class="icon-message-square"></i> Conversemos</a></span>
+                                                        <span><a href="#"><i class="icon-mail"></i> Solicitudes</a></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -1419,7 +1268,6 @@
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/dist/slider-equipos.js"></script>
     <script type="text/javascript" src="js/dist/chat-drift.js"></script>
-
 </body>
 
 </html>

@@ -5759,7 +5759,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .mis-datos-categoria .welcome .text-welcome .title-section-user { color: #00587a; margin-bottom: 0; }
 
-@media screen and (max-width: 480px) { .mis-datos-categoria .welcome .text-welcome .title-section-user { text-align: center; } }
+@media screen and (max-width: 480px) { .mis-datos-categoria .welcome .text-welcome .title-section-user { text-align: center; font-size: 1.8rem; } }
 
 .mis-datos-categoria .welcome .text-welcome .mail-section-user { font-size: 1.2rem; color: #3fa7f3; display: block; margin-bottom: .5rem; }
 
