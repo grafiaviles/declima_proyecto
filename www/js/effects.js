@@ -97,3 +97,8 @@ $('.datepicker').pickadate({
     closeOnSelect: false, // Close upon selecting a date,
     container: undefined // ex. 'body' will append picker to body
 });
+
+
+$(document).ready(function() {
+    $('.scrollspy').scrollSpy();
+});

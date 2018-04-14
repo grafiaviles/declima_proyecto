@@ -7,3 +7,28 @@
         margin-bottom: 0;
     }
 }
+
+.cont-btns-user {
+    @media screen and (max-width: 480px) {
+        margin-bottom: 1.5rem;
+    }
+    & .btn {
+        font-weight: 600;
+        line-height: 45px;
+        height: 45px;
+        box-shadow: none;
+        outline: none;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+        border-radius: 3px;
+    }
+    & .btn-enviar {
+        //border: 2px solid $whiteColor;
+        background: $secondColor;
+        color: $whiteColor;
+    }
+    & .btn-limpiar {
+        border: 2px solid $whiteColor;
+        background: $whiteColor;
+        color: $secondColor;
+    }
+}

@@ -697,8 +697,8 @@
                                         <div class="collapsible-body">
                                             <span>
                                             <div class="container-datos-user">
-                                               <a class="scrollspy text-grey" href="#sectorDos"><i class="icon-user"></i>Datos de usuario</a>
-                                               <a class="scrollspy text-grey active" href="#sectorUno"><i class="icon-map-pin"></i>Direcciones</a>
+                                               <a class="scrollspy text-grey active" href="#sectorDos"><i class="icon-user"></i>Datos de usuario</a>
+                                               <a class="scrollspy text-grey" href="#sectorUno"><i class="icon-map-pin"></i>Direcciones</a>
                                                <a class="text-grey" href=""><i class="icon-lock"></i>Cambiar contraseña</a>
                                             </div>
                                             </span>
@@ -754,11 +754,11 @@
                             <div class="col s12 productos-categoria mis-datos-categoria">
                                 <div class="col s12 valign-wrapper welcome">
                                     <div class="cont-photo-user">
-                                        <i class="icon-title icon-lock"></i>
+                                        <img class="photo-user circle" src="img/user/avatar.jpg" width="100" alt="User Photo">
                                     </div>
                                     <div class="text-welcome">
-                                        <h1 class="left-align text-primary title-section-user">Contraseña</h1>
-                                        <span class="mail-section-user">Seguro y rápido</span>
+                                        <h1 class="left-align text-primary title-section-user">César Avilés Cuevas</h1>
+                                        <span class="mail-section-user">caviles@declima.cl</span>
                                     </div>
                                 </div>
                                 <!-- Banner Descuento en primare compra al Registrarse -->
@@ -777,12 +777,27 @@
                                 <div class="col s12 datos-resumen">
                                     <div class="box-resumen col s12">
                                         <div class="info-resumen info-resumen-alone info-edit-resposive">
-                                            <h3 class="title-box-resumen text-primary no-margin">Cambia tu contraseña</h3>
-                                            <a class="right icon-edit-datos icon-edit-datos-alone tooltipped" data-position="bottom" data-delay="50" data-tooltip="Nueva dirección" href="#"><i class="icon-plus"></i></a>
+                                            <h3 class="title-box-resumen text-primary no-margin">Mis datos</h3>
+                                            <a class="hide right icon-edit-datos icon-edit-datos-alone tooltipped" data-position="bottom" data-delay="50" data-tooltip="Editar" href="#"><i class="icon-edit"></i></a>
                                             <div class="divider"></div>
                                             <!-- Contenido Formulario -->
                                             <form id="sectorDos" action="">
                                                 <div class="row cont-user-form">
+                                                    <!-- Nombre y Apellido -->
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input placeholder="César Avilés" id="name_surname" class="validate" type="text" autofocus>
+                                                        <label for="name_surname" data-error="Error" data-success="Correcto">Nombre y Apellido</label>
+                                                    </div>
+                                                    <!-- Name Usuario -->
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input placeholder="@Pandy" id="nick_name" class="validate" type="text" minlength="9" maxlength="10">
+                                                        <label for="nick_name" data-error="Error" data-success="Correcto">Nombre de usuario</label>
+                                                    </div>
+                                                    <!-- Email -->
+                                                    <div class="input-field col s12 m6 l6">
+                                                        <input placeholder="caviles@gmail.com" id="mail" class="validate" type="email">
+                                                        <label for="mail" data-error="Error" data-success="Correcto">Email</label>
+                                                    </div>
                                                     <!-- Region -->
                                                     <div class="input-field col s12 m6">
                                                         <select data-error="Error" data-success="Correcto">
@@ -805,368 +820,15 @@
                                                         </select>
                                                         <label>Selecciona tu región</label>
                                                     </div>
-                                                    <!-- Comuna - Santiago -->
-                                                    <div class="input-field col s12 m6">
-                                                        <select data-error="Error" data-success="Correcto">
-                                                            <option value="" disabled selected>Santiago</option>
-                                                            <option value="">Alhue</option>
-                
-                                                            <option value="">Alto Jahuel</option>
-                                                        
-                                                            <option value="">Batuco</option>
-                                                        
-                                                            <option value="">Buin</option>
-                                                        
-                                                            <option value="">Calera De Tango</option>
-                                                        
-                                                            <option value="">Cerrillos</option>
-                                                        
-                                                            <option value="">Cerro Navia</option>
-                                                        
-                                                            <option value="">Chicureo</option>
-                                                        
-                                                            <option value="">Colina</option>
-                                                        
-                                                            <option value="">Conchalí</option>
-                                                        
-                                                            <option value="">Curacavi</option>
-                                                        
-                                                            <option value="">El Bosque</option>
-                                                        
-                                                            <option value="">El Monte</option>
-                                                        
-                                                            <option value="">El Paico</option>
-                                                        
-                                                            <option value="">Estacion Central</option>
-                                                        
-                                                            <option value="">Huechuraba</option>
-                                                        
-                                                            <option value="">Independencia</option>
-                                                        
-                                                            <option value="">Isla De Maipo</option>
-                                                        
-                                                            <option value="">La Cisterna</option>
-                                                        
-                                                            <option value="">La Florida</option>
-                                                        
-                                                            <option value="">La Granja</option>
-                                                        
-                                                            <option value="">La Pintana</option>
-                                                        
-                                                            <option value="">La Reina</option>
-                                                        
-                                                            <option value="">Lampa</option>
-                                                        
-                                                            <option value="">Las Condes</option>
-                                                        
-                                                            <option value="">Lo Barnechea</option>
-                                                        
-                                                            <option value="">Lo Espejo</option>
-                                                        
-                                                            <option value="">Lo Prado</option>
-                                                        
-                                                            <option value="">Longovilo</option>
-                                                        
-                                                            <option value="">Lonquen</option>
-                                                        
-                                                            <option value="">Macul</option>
-                                                        
-                                                            <option value="">Maipú</option>
-                                                        
-                                                            <option value="">Malloco</option>
-                                                        
-                                                            <option value="">Maria Pinto</option>
-                                                        
-                                                            <option value="">Melipilla</option>
-                                                        
-                                                            <option value="">Nos</option>
-                                                        
-                                                            <option value="">Padre Hurtado</option>
-                                                        
-                                                            <option value="">Paine</option>
-                                                        
-                                                            <option value="">Pedro Aguirre Cerda</option>
-                                                        
-                                                            <option value="">Peñaflor</option>
-                                                        
-                                                            <option value="">Peñalolén</option>
-                                                        
-                                                            <option value="">Pirque</option>
-                                                        
-                                                            <option value="">Providencia</option>
-                                                        
-                                                            <option value="">Pudahuel</option>
-                                                        
-                                                            <option value="">Puente Alto</option>
-                                                        
-                                                            <option value="">Quilicura</option>
-                                                        
-                                                            <option value="">Quinta Normal</option>
-                                                        
-                                                            <option value="">Recoleta</option>
-                                                        
-                                                            <option value="">Renca</option>
-                                                        
-                                                            <option value="">San Bernardo</option>
-                                                        
-                                                            <option value="">San Joaquín</option>
-                                                        
-                                                            <option value="">San Jose De Maipo</option>
-                                                        
-                                                            <option value="">San Jose De Melipilla</option>
-                                                        
-                                                            <option value="">San Miguel</option>
-                                                        
-                                                            <option value="">San Pedro</option>
-                                                        
-                                                            <option value="">San Pedro Quinta Region</option>
-                                                        
-                                                            <option value="">San Ramón</option>
-                                                        
-                                                            <option value="">Santiago</option>
-                                                        
-                                                            <option value="">Talagante</option>
-                                                        
-                                                            <option value="">Til-Til</option>
-                                                        
-                                                            <option value="">Vitacura</option>
-                                                        
-                                                            <option value="">Ñuñoa</option>
-                                                        </select>
-                                                        <label>Selecciona tu comuna</label>
-                                                    </div>
-                                                    <!-- Comuna - Antofagasta -->
-                                                    <div class="hide input-field col s12 m6">
-                                                        <select data-error="Error" data-success="Correcto">
-                                                            <option value="" disabled selected>Antofagasta</option>
-                                                            <option value="">Calama</option>
-                                                            <option value="">Codelco Radomiro Tomic</option>
-                                                            <option value="">Maria Elena</option>
-                                                            <option value="">Mejillones</option>
-                                                            <option value="">Ollague</option>
-                                                            <option value="">San Pedro De Atacama</option>
-                                                            <option value="">Sierra Gorda</option>
-                                                            <option value="">Taltal</option>
-                                                            <option value="">Tocopilla</option>
-                                                        </select>
-                                                        <label>Selecciona tu comuna</label>
-                                                    </div>
-                                                    <!-- Comuna - Arica y Parinacota -->
-                                                    <div class="hide input-field col s12 m6">
-                                                        <select data-error="Error" data-success="Correcto">
-                                                            <option value="" disabled selected>Arica</option>
-                                                            <option value="">Arica</option>
-                                                            <option value="">Camarones</option>
-                                                            <option value="">General Lagos</option>
-                                                            <option value="">Putre</option>
-                                                        </select>
-                                                        <label>Selecciona tu comuna</label>
-                                                    </div>
-                                                    <!-- Comuna - Atacama -->
-                                                    <div class="hide input-field col s12 m6">
-                                                        <select data-error="Error" data-success="Correcto">
-                                                            <option value="" disabled selected>Alto Del Carmen</option>
-                                                            <option value="">Caldera</option>
-                                                            <option value="">Chañaral</option>
-                                                            <option value="">Copiapo</option>
-                                                            <option value="">Diego De Almagro</option>
-                                                            <option value="">El Salvador</option>
-                                                            <option value="">Estacion Paipote</option>
-                                                            <option value="">Freirina</option>
-                                                            <option value="">Fuerte Baquedano</option>
-                                                            <option value="">Huasco</option>
-                                                            <option value="">Paipote</option>
-                                                            <option value="">Tierra Amarilla</option>
-                                                            <option value="">Vallenar</option>
-                                                        </select>
-                                                        <label>Selecciona tu comuna</label>
-                                                    </div>
-                                                    <!-- Comuna - Coquimbo -->
-                                                    <div class="hide input-field col s12 m6">
-                                                        <select data-error="Error" data-success="Correcto">
-                                                            <option value="" disabled selected>Andacollo</option>
-                                                            <option value="">Andacollo</option>
-                                                            <option value="">Canela</option>
-                                                            <option value="">Combarbala</option>
-                                                            <option value="">Coquimbo</option>
-                                                            <option value="">Illapel</option>
-                                                            <option value="">La Higuera</option>
-                                                            <option value="">La Serena</option>
-                                                            <option value="">Los Vilos</option>
-                                                            <option value="">Monte Patria</option>
-                                                            <option value="">Ovalle</option>
-                                                            <option value="">Paihuano</option>
-                                                            <option value="">Punitaqui</option>
-                                                            <option value="">Río Hurtado</option>
-                                                            <option value="">Salamanca</option>
-                                                            <option value="">Vicuña</option>
-                                                        </select>
-                                                        <label>Selecciona tu comuna</label>
-                                                    </div>
-                                                    <!-- Comuna - Araucania -->
-                                                    <div class="hide input-field col s12 m6">
-                                                        <select data-error="Error" data-success="Correcto">
-                                                            <option value="" disabled selected>Angol</option>
-                                                            <option value="">Carahue</option>
-                                                            <option value="">Cholchol</option>
-                                                            <option value="">Collipulli</option>
-                                                            <option value="">Cunco</option>
-                                                            <option value="">Curacautin</option>
-                                                            <option value="">Curarrehue</option>
-                                                            <option value="">Ercilla</option>
-                                                            <option value="">Freire</option>
-                                                            <option value="">Galvarino</option>
-                                                            <option value="">Gorbea</option>
-                                                            <option value="">Lautaro</option>
-                                                            <option value="">Loncoche</option>
-                                                            <option value="">Lonquimay</option>
-                                                            <option value="">Los Sauces</option>
-                                                            <option value="">Lumaco</option>
-                                                            <option value="">Melipeuco</option>
-                                                            <option value="">Mininco</option>
-                                                            <option value="">Nueva Imperial</option>
-                                                            <option value="">Padre Las Casas</option>
-                                                            <option value="">Perquenco</option>
-                                                            <option value="">Pitrufquen</option>
-                                                            <option value="">Pucon</option>
-                                                            <option value="">Puren</option>
-                                                            <option value="">Quepe</option>
-                                                            <option value="">Renaico</option>
-                                                            <option value="">Saavedra</option>
-                                                            <option value="">Temuco</option>
-                                                            <option value="">Teodoro Schmidt</option>
-                                                            <option value="">Toltén</option>
-                                                            <option value="">Traiguen</option>
-                                                            <option value="">Victoria</option>
-                                                            <option value="">Vilcún</option>
-                                                            <option value="">Villarrica</option>
-                                                        </select>
-                                                        <label>Selecciona tu comuna</label>
-                                                    </div>
-                                                    <!-- Comuna - Libertador B. O'Higgins -->
-                                                    <div class="hide input-field col s12 m6">
-                                                        <select data-error="Error" data-success="Correcto">
-                                                            <option value="" disabled selected>Bucalemu</option>
-                                                            <option value="">Bucalemu</option>
-                                                            <option value="">Chepica</option>
-                                                            <option value="">Chimbarongo</option>
-                                                            <option value="">Codegua</option>
-                                                            <option value="">Coinco</option>
-                                                            <option value="">Coltauco</option>
-                                                            <option value="">Doñihue</option>
-                                                            <option value="">Graneros</option>
-                                                            <option value="">La Estrella</option>
-                                                            <option value="">Las Cabras</option>
-                                                            <option value="">Litueche</option>
-                                                            <option value="">Lo Miranda</option>
-                                                            <option value="">Lolol</option>
-                                                            <option value="">Machali</option>
-                                                            <option value="">Malloa</option>
-                                                            <option value="">Marchigüe</option>
-                                                            <option value="">Nancagua</option>
-                                                            <option value="">Navidad</option>
-                                                            <option value="">Olivar</option>
-                                                            <option value="">Palmilla</option>
-                                                            <option value="">Paredones</option>
-                                                            <option value="">Pelequen</option>
-                                                            <option value="">Peralillo</option>
-                                                            <option value="">Peumo</option>
-                                                            <option value="">Pichidegua</option>
-                                                            <option value="">Pichilemu</option>
-                                                            <option value="">Placilla</option>
-                                                            <option value="">Pumanque</option>
-                                                            <option value="">Quinta De Tilcoco</option>
-                                                            <option value="">Rancagua</option>
-                                                            <option value="">Rengo</option>
-                                                            <option value="">Requinoa</option>
-                                                            <option value="">Rosario</option>
-                                                            <option value="">San Fernando</option>
-                                                            <option value="">San Francisco De Mostazal</option>
-                                                            <option value="">San Vicente</option>
-                                                            <option value="">Santa Amelia</option>
-                                                            <option value="">Santa Cruz</option>
-                                                        </select>
-                                                        <label>Selecciona tu comuna</label>
-                                                    </div>
-                                                    <!-- Comuna - Biobio -->
-                                                    <div class="hide input-field col s12 m6">
-                                                        <select data-error="Error" data-success="Correcto">
-                                                            <option value="" disabled selected>Tomé</option>
-                                                            <option value="">Antuco</option>
-                                                            <option value="">Arauco</option>
-                                                            <option value="">Bulnes</option>
-                                                            <option value="">Cabrero</option>
-                                                            <option value="">Cañete</option>
-                                                            <option value="">Chiguayante</option>
-                                                            <option value="">Chillan</option>
-                                                            <option value="">Chillan Viejo</option>
-                                                            <option value="">Cholguan</option>
-                                                            <option value="">Cobquecura</option>
-                                                            <option value="">Coelemu</option>
-                                                            <option value="">Coihueco</option>
-                                                            <option value="">Concepcion</option>
-                                                            <option value="">Contulmo</option>
-                                                            <option value="">Coronel</option>
-                                                            <option value="">Curanilahue</option>
-                                                            <option value="">El Carmen</option>
-                                                            <option value="">Florida</option>
-                                                            <option value="">Hualpén</option>
-                                                            <option value="">Hualqui</option>
-                                                            <option value="">Huepil</option>
-                                                            <option value="">Laja</option>
-                                                            <option value="">Lebu</option>
-                                                            <option value="">Los Alamos</option>
-                                                            <option value="">Los Angeles</option>
-                                                            <option value="">Lota</option>
-                                                            <option value="">Mulchen</option>
-                                                            <option value="">Nacimiento</option>
-                                                            <option value="">Negrete</option>
-                                                            <option value="">Ninhue</option>
-                                                            <option value="">Nueva Aldea</option>
-                                                            <option value="">Pemuco</option>
-                                                            <option value="">Penco</option>
-                                                            <option value="">Pinto</option>
-                                                            <option value="">Portezuelo</option>
-                                                            <option value="">Pueblo Seco</option>
-                                                            <option value="">Quilaco</option>
-                                                            <option value="">Quilleco</option>
-                                                            <option value="">Quillon</option>
-                                                            <option value="">Quirihue</option>
-                                                            <option value="">Quiriquina</option>
-                                                            <option value="">Ranquil</option>
-                                                            <option value="">San Carlos</option>
-                                                            <option value="">San Fabián</option>
-                                                            <option value="">San Ignacio</option>
-                                                            <option value="">San Nicolas</option>
-                                                            <option value="">San Pedro De La Paz</option>
-                                                            <option value="">San Rosendo</option>
-                                                            <option value="">Santa Barbara</option>
-                                                            <option value="">Santa Juana</option>
-                                                            <option value="">Talcahuano</option>
-                                                            <option value="">Tirua</option>
-                                                            <option value="">Tome</option>
-                                                            <option value="">Trehuaco</option>
-                                                            <option value="">Tucapel</option>
-                                                            <option value="">Yumbel</option>
-                                                            <option value="">Yungay</option>
-                                                            <option value="">Ñiquen</option>
-                                                        </select>
-                                                        <label>Selecciona tu comuna</label>
-                                                    </div>
-                                                    <!-- Nombre de calle -->
+                                                    <!-- Telefono -->
                                                     <div class="input-field col s12 m6 l6">
-                                                        <input placeholder="Irarrazabal" id="name_street" class="validate" type="text">
-                                                        <label for="name_street" data-error="Error" data-success="Correcto">Calle o Avenida</label>
+                                                        <input placeholder="+56 9 9381 9841" id="cel_number" class="validate" minlength="9" maxlength="12" type="tel">
+                                                        <label for="cel_number" data-error="Error" data-success="Correcto">Teléfono</label>
                                                     </div>
-                                                    <!-- Name Usuario -->
+                                                    <!-- Rut -->
                                                     <div class="input-field col s12 m6 l6">
-                                                        <input placeholder="#1401" id="number-home" class="validate" type="text" minlength="9" maxlength="10">
-                                                        <label for="number-home" data-error="Error" data-success="Correcto">Número</label>
-                                                    </div>
-                                                    <!-- Dato Adicional -->
-                                                    <div class="input-field col s12 m6 l6">
-                                                        <input placeholder="Dpto #407 - Piso 4" id="date-option" class="validate" type="text">
-                                                        <label for="date-option" data-error="Error" data-success="Correcto">Datos adicionales (opcional)</label>
+                                                        <input placeholder="10.123.456-1" id="rut" class="validate" minlength="9" maxlength="12" type="tel">
+                                                        <label for="rut" data-error="Error" data-success="Correcto">Rut</label>
                                                     </div>
                                                     <!-- Terminos y Condiciones -->
                                                     <div class="col s12 cont-btns-user">
