@@ -83,19 +83,9 @@
                             <h1 class="title-secction-main text-primary center-align col s12">Regístrate en Declima</h1>
                             <form id="form-user" class="form-user col s12 m12 l6">
                                 <div class="row">
-                                    <!-- Input Name User -->
-                                    <div class="input-field inline col s12 m6">
-                                        <input id="name" type="text" class="validate" autofocus autocorrect="off">
-                                        <label for="name" data-error="Error" data-success="Correcto">Nombre*</label>
-                                    </div>
-                                    <!-- Input Last Name-->
-                                    <div class="input-field inline col s12 m6">
-                                        <input id="nick-name" type="text" class="validate" autocorrect="off">
-                                        <label for="nick-name" data-error="Error" data-success="Correcto">Apellido*</label>
-                                    </div>
                                     <!-- Input Email -->
                                     <div class="input-field inline col s12 m6">
-                                        <input id="email" type="email" class="validate" autocorrect="off">
+                                        <input id="email" type="email" class="validate" autofocus autocorrect="off">
                                         <label for="email" data-error="Error" data-success="Correcto">Email*</label>
                                     </div>
                                     <!-- Input Password -->
@@ -108,15 +98,14 @@
                                     <!-- Mantenerme Conectado -->
                                     <div class="connect-always col s12 left">
                                         <p class="cont-checkbox col s6">
-                                            <input type="checkbox" id="connect-always" />
-                                            <label for="connect-always">Acepto <a href="#" target="_blank">Términos y Condiciones</a></label>
+                                            <input type="checkbox" id="terminos" />
+                                            <label for="terminos">Acepto <a href="#" target="_blank">Términos y Condiciones</a></label>
                                         </p>
                                         <p class="cont-checkbox col s6">
-                                            <input type="checkbox" id="view-pass" />
-                                            <label for="view-pass">Mostrar Contraseña</label>
+                                            <input type="checkbox" id="connect-always" />
+                                            <label for="connect-always">Mantenerme conectado</label>
                                         </p>
                                     </div>
-
                                     <!-- Buttom Input -->
                                     <div class="input-field inline col s12">
                                         <button class="my-disabled btn-submit waves-effect waves-light" type="submit" name="action">REGISTRARSE <i class="right icon-arrow-right arrow-login"></i></button>
